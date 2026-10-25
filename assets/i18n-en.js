@@ -15,7 +15,6 @@ window.__I18N_EN__ = {
     "主导航": "Main navigation",
     "学科": "Subjects",
     "数学": "Math",
-    "语文": "Chinese",
     "英语": "English",
     "物理": "Physics",
     "首页": "Home",
@@ -36,23 +35,15 @@ window.__I18N_EN__ = {
 
     /* ---------------------------------------------------------- 首页 */
     "先找到真正没学会的那一步": "Find the step that was never really learned",
-    "沿着先修关系自适应出题。数学从小学追到高中，语文覆盖统编版小学一至六年级，英语覆盖三年级到高中，物理覆盖初中八、九年级和高中必修、选择性必修。从你选的知识点往回追，定位薄弱根因，并给出一条按学习顺序排起的路径。":
-      "Questions adapt along the prerequisite chain. Math runs from primary school to high school; Chinese covers grades 1–6; English runs from grade 3 to high school; physics covers grades 8–9 plus the compulsory and selective-compulsory high-school books. Start from the knowledge point you picked, trace back to the weak root cause, and get a path ordered by when you should learn it.",
-    "数学：小学到高中 · 语文：小学一至六年级 · 英语：三年级到高中 · 物理：初中到高中":
-      "Math: primary to high school · Chinese: grades 1–6 · English: grade 3 to high school · Physics: middle to high school",
     "英语：三年级到高中": "English: grade 3 to high school",
     "物理：初中八、九年级 · 高中必修与选择性必修": "Physics: grades 8–9 · high-school compulsory & selective",
-    "语文：小学一至六年级 · 统编版": "Chinese: grades 1–6 · unified edition",
     "开始诊断": "Start diagnosing",
     "浏览知识图谱": "Browse the graph",
     "先看一遍演示：配方法": "See a demo: completing the square",
     "先看一遍演示：四年级上册英语": "See a demo: English, grade 4 vol. 1",
     "先看一遍演示：八年级上册物理": "See a demo: physics, grade 8 vol. 1",
-    "先看一遍演示：一年级上册语文": "See a demo: Chinese, grade 1 vol. 1",
     "三步": "Three steps",
     "选知识点": "Pick a knowledge point",
-    "数学从一年级到高中必修和选择性必修，语文从一年级到六年级，英语从三年级到高中，物理从八年级上册到高中选择性必修第三册。搜索或按册、章找到想检查的内容。":
-      "Math from grade 1 through the high-school compulsory and selective-compulsory books; Chinese grades 1–6; English from grade 3 to high school; physics from grade 8 vol. 1 to selective-compulsory book 3. Search, or browse by volume and chapter.",
     "自适应答题": "Answer adaptive questions",
     "先问目标本身。答错再出一道同级或更容易的题，仍然错才沿着先修往回追。":
       "The target itself comes first. A wrong answer brings an easier question at the same level; only a second miss sends the search back along the prerequisites.",
@@ -316,8 +307,6 @@ window.__I18N_EN__ = {
       "Pick an English topic you want to learn or check. Getting the first question right counts as mastered; a wrong answer brings an easier question at the same level — a second miss counts as weak and traces back through the prerequisites, a correct second answer is marked “shaky”.",
     "选一个想学会或想检查的物理知识点。第一题答对就算掌握；答错会再出一道同级或更容易的题——第二题也错才算薄弱，并回溯到物理里的先修；第二题答对则标为「不稳」。":
       "Pick a physics topic you want to learn or check. Getting the first question right counts as mastered; a wrong answer brings an easier question at the same level — a second miss counts as weak and traces back through the physics prerequisites, a correct second answer is marked “shaky”.",
-    "选一个想学会或想检查的语文知识点。第一题答对就算掌握；答错会再出一道同级或更容易的题——第二题也错才算薄弱，并回溯到先修；第二题答对则标为「不稳」。":
-      "Pick a Chinese topic you want to learn or check. Getting the first question right counts as mastered; a wrong answer brings an easier question at the same level — a second miss counts as weak and traces back through the prerequisites, a correct second answer is marked “shaky”.",
     "不选具体知识点，在一个年级（或一册）里抽查：每个知识点最多问 2 题，答错只在所选范围内回溯先修，最后按章汇总出哪几章薄弱。适合期初摸底、学期末复习。":
       "No single topic: sample a whole grade (or volume). Each topic gets at most two questions, tracing back only within the chosen scope, then chapters are summarised by weakness. Good for a start-of-term check or end-of-term revision.",
     "目标：": "Target: ",
@@ -608,8 +597,6 @@ window.__I18N_EN__ = {
       "Curriculum requirements from the 2022 (revised 2025) physics standard and the 2017 (revised 2020) senior-physics standard for the target and the topics on the learning path (IDs match the standard clauses).",
     "目标与学习路径上的知识点对应的《义务教育英语课程标准（2022年版）》和《普通高中英语课程标准（2017年版2025年修订）》公开转述（一级、二级、三级，以及高中必修、选择性必修）。":
       "Public paraphrases of the 2022 English standard and the 2017 (revised 2025) senior-English standard for the target and the topics on the learning path (levels 1–3 plus senior compulsory and selective compulsory).",
-    "目标与学习路径上的知识点对应的《义务教育语文课程标准（2022年版）》第一至第三学段的公开转述。":
-      "Public paraphrases of key stages 1–3 of the 2022 Chinese curriculum standard for the target and the topics on the learning path.",
     "物理和数学分开建图，这里只列出会用到的数学，不算先修，诊断时也不会追到数学。":
       "Physics has its own graph. Only the maths it uses is listed here — not as prerequisites, and the diagnostic never traces into maths.",
     "课标文件中找不到该条目": "Item not found in the curriculum standard file",
@@ -651,7 +638,6 @@ window.__I18N_EN__ = {
     "薄弱根因": "Weak root causes",
     "初中物理": "Middle-school physics",
     "高中物理": "Senior physics",
-    "小学语文": "Primary Chinese",
     "本次诊断": "This diagnostic",
     "诊断结果": "Result",
     "把本章全部": "All topics in this chapter",
@@ -668,7 +654,14 @@ window.__I18N_EN__ = {
     "从根因（和「不稳」的点）出发到目标之间、尚未判定为掌握的知识点，按年级从低到高排列（同一年级里先修在前），从上往下学。「不稳」「未测」的点也在路径上，建议先巩固 / 自查。":
       "Topics between the root causes (and the shaky points) and the target that are not yet mastered, ordered from the lowest grade up (prerequisites first within a grade). Work downwards. Shaky and untested points appear on the path too — consolidate or check them yourself.",
     "在这里输入答案（数字、分数、多个答案用逗号或“和”分开）":
-      "Type your answer (numbers or fractions; separate multiple answers with commas or \"and\")"
+      "Type your answer (numbers or fractions; separate multiple answers with commas or \"and\")",
+    "数学：小学到高中 · 英语：三年级到高中 · 物理：初中到高中":
+      "Math: primary to high school · English: grade 3 to high school · Physics: middle to high school",
+    "沿着先修关系自适应出题。数学从小学追到高中，英语覆盖三年级到高中，物理覆盖初中八、九年级和高中必修、选择性必修。从你选的知识点往回追，定位薄弱根因，并给出一条按学习顺序排起的路径。":
+      "Questions adapt along the prerequisite chain. Math runs from primary school to high school; English from grade 3 to high school; physics covers grades 8–9 plus the compulsory and selective-compulsory high-school books. Start from the knowledge point you picked, trace back to the weak root cause, and get a path ordered by when you should learn it.",
+    "数学从一年级到高中必修和选择性必修，英语从三年级到高中，物理从八年级上册到高中选择性必修第三册。搜索或按册、章找到想检查的内容。":
+      "Math from grade 1 through the high-school compulsory and selective-compulsory books; English from grade 3 to high school; physics from grade 8 vol. 1 to selective-compulsory book 3. Search, or browse by volume and chapter.",
+
   },
 
   /* 带数字的拼接串。命中就整串替换，捕获到的名字再查一次词典。 */
