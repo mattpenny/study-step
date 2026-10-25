@@ -11,7 +11,13 @@
 | `math-learning-units.json` | 從數學課程文件抽出的學習單元：小學 79 個、初中 31 個、高中必修 18 + 單元一 20 + 單元二 16 個，含範疇、年級與學習重點原文 |
 | `chapter-map.json` | 人工編寫的「人教版章 → 香港單元」對照（165 章），含逐條覆蓋與把握程度 |
 | `hk-edb-math.json` | 由上面兩個檔案套出來的 827 個知識點對照表 |
-| `mapping-report.md` | 對照結果統計：把握程度分佈、香港沒有對應內容的部分、沒被用到的香港單元 |
+| `mapping-report.md` | 數學對照統計：把握程度分佈、香港沒有對應內容的部分、沒被用到的香港單元 |
+| `physics-units.json` | 香港科學（中一至中三）14 個單元 + 物理（中四至中六）必修五單元 20 小節 + 4 個選修 |
+| `physics-chapter-map.json` | 人工編寫的「人教版物理章 → 香港單元」對照（49 章） |
+| `hk-edb-physics.json` | 269 個物理知識點的對照表 |
+| `mapping-report-physics.md` | 物理對照統計 |
+| `hk-edb-english.json` | 724 個英語知識點的結構對齊（學習階段 + 學習範疇 + 語言焦點） |
+| `mapping-report-english.md` | 英語對照說明：為甚麼只能做結構對齊 |
 | `pdf/` | 下載回來的 PDF，約 109 MB，**已 gitignore**（政府版權文件，不進倉庫） |
 
 重新取得：
@@ -22,6 +28,8 @@ python3 scripts/fetch_hk_edb.py --check      # 只檢查官方連結是否還有
 python3 scripts/extract_hk_math_units.py     # 重新抽取數學學習單元
 python3 scripts/build_hk_math_mapping.py     # 生成知識點對照表與報告
 python3 scripts/build_hk_math_mapping.py --check   # 只校驗 chapter-map.json 有沒有寫錯的章名
+python3 scripts/build_hk_physics_mapping.py  # 物理對照表與報告
+python3 scripts/build_hk_english_mapping.py  # 英語結構對齊與報告
 ```
 
 兩個腳本都需要 `pip install pypdf`（只有抽取那步需要）。
@@ -113,6 +121,38 @@ python3 scripts/build_hk_math_mapping.py --check   # 只校驗 chapter-map.json 
 > 這份表放在 `docs/hk-edb/` 而不是 `data/mappings/`：後者的 schema 是給「人教版以外的教科書版本」
 > 用的（`topicId/grade/term/unit/chapter`），課程對照塞進去過不了 `scripts/validate.py`。
 > 將來如果要做某一套香港教科書的版本對照，那一份才放 `data/mappings/`。
+
+## 物理對照
+
+`hk-edb-physics.json`：269 個物理知識點，exact 203 / inferred 66 / none 0。
+初中（八、九年級）對到科學（中一至中三）的 14 個單元，高中對到物理必修部分的五個單元及其小節：
+
+| 單元 | 小節 |
+| --- | --- |
+| I. 熱和氣體 | 溫度、熱和內能 / 傳熱過程 / 物態變化 / 氣體 |
+| II. 力和運動 | 位置與移動 / 力與運動 / 拋體運動 / 功、能量和功率 / 動量 / 勻速圓周運動 / 萬有引力 |
+| III. 波動 | 波的本質和性質 / 光 / 聲音 |
+| IV. 電和磁 | 靜電 / 電路和家居用電 / 電磁 |
+| V. 放射現象和核能 | 輻射與放射現象 / 原子模型 / 核能 |
+
+沒有被任何知識點對上的香港單元：`PHY-Ib` 傳熱過程、`PHY-IIIc` 聲音、四個選修單元，
+以及生物、化學類的科學單元（物理知識點本來就不會用到）。
+
+## 英語對照（只能做結構對齊）
+
+香港的英國語文課程**不規定學習單元**：它由三個學習範疇（Interpersonal / Knowledge /
+Experience）、各學習階段的學習目標，以及學校自訂的 modules → units → tasks 組成。
+所以 `hk-edb-english.json` 給的是「學習階段 + 學習範疇 + 語言焦點」，不是單元對照：
+
+| 學習階段 | 年級 | 知識點 |
+| --- | --- | ---: |
+| KS1 | P1–P3 | 71 |
+| KS2 | P4–P6 | 137 |
+| KS3 | S1–S3 | 257 |
+| KS4 | S4–S6 | 259 |
+
+至於「哪個語法點在哪一年教」，課程文件不指定。要逐點對齊，得拿某一套香港教科書
+（Longman / Oxford / Pearson 等）做版本對照，那種表才適合放 `data/mappings/`。
 
 ## 建議的下一步
 

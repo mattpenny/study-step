@@ -1,0 +1,246 @@
+{
+  "source": "EDB Science (S1-3) Supplement 2017 (Units 1-14) and Physics Curriculum and Assessment Guide (S4-6) 2015",
+  "note": "初中用科學（中一至中三）的 14 個單元；高中用物理課程及評估指引的必修部分五個單元（每單元再分小節 a–g），另有四個選修單元。",
+  "junior": {
+    "stage": "KS3",
+    "units": [
+      {
+        "code": "SCI1",
+        "name": "Introducing Science",
+        "zh": "科學入門"
+      },
+      {
+        "code": "SCI2",
+        "name": "Water",
+        "zh": "水"
+      },
+      {
+        "code": "SCI3",
+        "name": "Looking at Living Things",
+        "zh": "觀察生物"
+      },
+      {
+        "code": "SCI4",
+        "name": "Cells, Human Reproduction and Heredity",
+        "zh": "細胞、人類生殖與遺傳"
+      },
+      {
+        "code": "SCI5",
+        "name": "Energy",
+        "zh": "能量"
+      },
+      {
+        "code": "SCI6",
+        "name": "Matter as Particles",
+        "zh": "物質的粒子觀"
+      },
+      {
+        "code": "SCI7",
+        "name": "Living Things and Air",
+        "zh": "生物與空氣"
+      },
+      {
+        "code": "SCI8",
+        "name": "Making Use of Electricity",
+        "zh": "電的使用"
+      },
+      {
+        "code": "SCI9",
+        "name": "Common Acids and Alkalis",
+        "zh": "常見的酸和鹼"
+      },
+      {
+        "code": "SCI10",
+        "name": "Sensing the Environment",
+        "zh": "感應環境"
+      },
+      {
+        "code": "SCI11",
+        "name": "Force and Motion",
+        "zh": "力與運動"
+      },
+      {
+        "code": "SCI12",
+        "name": "A Healthy Body",
+        "zh": "健康的身體"
+      },
+      {
+        "code": "SCI13",
+        "name": "From Atoms to Materials",
+        "zh": "從原子到材料"
+      },
+      {
+        "code": "SCI14",
+        "name": "Light, Colours and Beyond",
+        "zh": "光、顏色與其他"
+      }
+    ]
+  },
+  "senior": {
+    "stage": "KS4",
+    "units": [
+      {
+        "code": "PHY-I",
+        "name": "Heat and Gases",
+        "zh": "熱和氣體",
+        "hours": 23,
+        "subtopics": [
+          {
+            "code": "PHY-Ia",
+            "name": "Temperature, heat and internal energy",
+            "zh": "溫度、熱和內能"
+          },
+          {
+            "code": "PHY-Ib",
+            "name": "Transfer processes",
+            "zh": "傳熱過程"
+          },
+          {
+            "code": "PHY-Ic",
+            "name": "Change of state",
+            "zh": "物態變化"
+          },
+          {
+            "code": "PHY-Id",
+            "name": "Gases",
+            "zh": "氣體"
+          }
+        ]
+      },
+      {
+        "code": "PHY-II",
+        "name": "Force and Motion",
+        "zh": "力和運動",
+        "hours": 50,
+        "subtopics": [
+          {
+            "code": "PHY-IIa",
+            "name": "Position and movement",
+            "zh": "位置與移動"
+          },
+          {
+            "code": "PHY-IIb",
+            "name": "Force and motion",
+            "zh": "力與運動"
+          },
+          {
+            "code": "PHY-IIc",
+            "name": "Projectile motion",
+            "zh": "拋體運動"
+          },
+          {
+            "code": "PHY-IId",
+            "name": "Work, energy and power",
+            "zh": "功、能量和功率"
+          },
+          {
+            "code": "PHY-IIe",
+            "name": "Momentum",
+            "zh": "動量"
+          },
+          {
+            "code": "PHY-IIf",
+            "name": "Uniform circular motion",
+            "zh": "勻速圓周運動"
+          },
+          {
+            "code": "PHY-IIg",
+            "name": "Gravitation",
+            "zh": "萬有引力"
+          }
+        ]
+      },
+      {
+        "code": "PHY-III",
+        "name": "Wave Motion",
+        "zh": "波動",
+        "hours": 47,
+        "subtopics": [
+          {
+            "code": "PHY-IIIa",
+            "name": "Nature and properties of waves",
+            "zh": "波的本質和性質"
+          },
+          {
+            "code": "PHY-IIIb",
+            "name": "Light",
+            "zh": "光"
+          },
+          {
+            "code": "PHY-IIIc",
+            "name": "Sound",
+            "zh": "聲音"
+          }
+        ]
+      },
+      {
+        "code": "PHY-IV",
+        "name": "Electricity and Magnetism",
+        "zh": "電和磁",
+        "hours": 48,
+        "subtopics": [
+          {
+            "code": "PHY-IVa",
+            "name": "Electrostatics",
+            "zh": "靜電"
+          },
+          {
+            "code": "PHY-IVb",
+            "name": "Circuits and domestic electricity",
+            "zh": "電路和家居用電"
+          },
+          {
+            "code": "PHY-IVc",
+            "name": "Electromagnetism",
+            "zh": "電磁"
+          }
+        ]
+      },
+      {
+        "code": "PHY-V",
+        "name": "Radioactivity and Nuclear Energy",
+        "zh": "放射現象和核能",
+        "hours": 16,
+        "subtopics": [
+          {
+            "code": "PHY-Va",
+            "name": "Radiation and radioactivity",
+            "zh": "輻射與放射現象"
+          },
+          {
+            "code": "PHY-Vb",
+            "name": "Atomic model",
+            "zh": "原子模型"
+          },
+          {
+            "code": "PHY-Vc",
+            "name": "Nuclear energy",
+            "zh": "核能"
+          }
+        ]
+      }
+    ],
+    "electives": [
+      {
+        "code": "PHY-E1",
+        "name": "Astronomy and Space Science",
+        "zh": "天文學和航天科學"
+      },
+      {
+        "code": "PHY-E2",
+        "name": "Atomic World",
+        "zh": "原子世界"
+      },
+      {
+        "code": "PHY-E3",
+        "name": "Energy and Use of Energy",
+        "zh": "能量和能源的使用"
+      },
+      {
+        "code": "PHY-E4",
+        "name": "Medical Physics",
+        "zh": "醫學物理學"
+      }
+    ]
+  }
+}
