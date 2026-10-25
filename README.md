@@ -459,7 +459,7 @@ python3 -m http.server 8000
 导航右上角的「简 / 繁 / EN」切换界面语言。选择存在 `localStorage` 的 `cmt.lang`，也可以用 `?lang=en`、`?lang=zh-Hant` 直接指定，切换时地址栏会同步这个参数。
 
 - **简体**：页面原文。HTML 和各个 `app.js` 里写的都是简体。
-- **繁體**：`assets/i18n-hant.js` 里的映射表（993 个单字 + 442 条词组，由 `scripts/build_i18n_hant.py` 从 OpenCC `s2tw` 反推，覆盖仓库里出现过的全部中文）。知识点名称、描述、题干这些课程内容也会一起转。
+- **繁體**：`assets/i18n-hant.js` 里的映射表（984 个单字 + 444 条词组，由 `scripts/build_i18n_hant.py` 从 OpenCC `s2hk` 反推，覆盖仓库里出现过的全部中文）。默认按**香港字形**输出（裏、台、峯、閲、温），要台湾字形就 `python3 scripts/build_i18n_hant.py --config s2tw` 重跑。知识点名称、描述、题干这些课程内容也会一起转。
 - **English**：只翻译界面，词典在 `assets/i18n-en.js` 的 `ui`，带数字的拼接串（例如「2222 个知识点」「第 1 题 / 上限 16」）写成 `patterns` 里的正则。知识点名称、描述、掌握标准、题干、解析这些课程内容没有英文版，英文模式下保持中文原样。
 
 实现上不改业务代码：`assets/i18n.js` 在渲染后替换文本节点和 `placeholder` / `title` / `aria-label` / `alt`，再用 `MutationObserver` 跟上后面动态渲染的内容；切回简体时按记录的原文还原。加新文案时，把简体原句加进 `i18n-en.js` 的 `ui` 就够了。
@@ -468,7 +468,8 @@ python3 -m http.server 8000
 node scripts/i18n-scan.js                 # 清点各页面的中文文案，写到 .i18n-inventory.json
 node scripts/i18n-scan.js --check en      # 用英文模式打开，列出还没翻译的串（查漏用）
 node scripts/i18n-scan.js --shots         # 顺便把各页面截图存到 .i18n-shots/
-python3 scripts/build_i18n_hant.py        # 重新生成繁体表（需要 pip install opencc-python-reimplemented）
+python3 scripts/build_i18n_hant.py        # 重新生成繁体表，默认香港字形（需要 pip install opencc-python-reimplemented）
+python3 scripts/build_i18n_hant.py --config s2tw   # 要台湾字形时用这个
 ```
 
 这两件事还不会跟着切换：诊断结果页的分享图（`diagnose/share.js` 用 canvas 画的，文案写死在脚本里），以及 `data/*.json` 里的课程内容本身（只有繁體会转，没有英文版）。

@@ -2,10 +2,14 @@
 """生成 assets/i18n-hant.js 的简→繁映射表。
 
 用法（需要 opencc-python-reimplemented）：
-    python3 scripts/build_i18n_hant.py
+    python3 scripts/build_i18n_hant.py              # 默认香港字形 s2hk
+    python3 scripts/build_i18n_hant.py --config s2tw  # 台湾字形
+
+默认用 s2hk（香港）：裏 / 台 / 峯 / 閲 / 温 这些字香港和台湾写法不同，
+本站面向香港课程，按香港字形输出。要台湾字形就传 --config s2tw 重跑。
 
 做法：把仓库里所有会显示给用户的中文（data/*.json、*.html、*.js 的字符串）
-收集起来，用 OpenCC(s2tw) 作为标准答案，然后
+收集起来，用 OpenCC 作为标准答案，然后
 
 1. 逐字映射：单字转换结果只有一个字时收进 charMap；
 2. 词组覆盖：对语料里出现过的 2–4 字片段，如果 OpenCC 整段转换的结果
@@ -54,7 +58,10 @@ def corpus_texts():
 
 
 def main():
-    cc = OpenCC("s2tw")
+    config = "s2hk"
+    if "--config" in sys.argv:
+        config = sys.argv[sys.argv.index("--config") + 1]
+    cc = OpenCC(config)
     chars = set()
     grams = {}
 
@@ -107,7 +114,7 @@ def main():
     payload = json.dumps(
         {
             "v": 1,
-            "source": "OpenCC s2tw",
+            "source": "OpenCC " + config,
             "chars": "".join(f"{k}{v}" for k, v in char_map.items()),
             "phrases": phrase_map,
         },
