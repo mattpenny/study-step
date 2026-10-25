@@ -386,6 +386,50 @@ body:not(.page-explore) .site-header {
 .nav-link.resource-search-btn:hover { background: var(--brand-soft); color: var(--brand-strong); }
 .resource-search-ico { width: 14px; height: 14px; flex: none; }
 .resource-search-btn:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
+
+/* 语言切换：简 / 繁 / EN。放在导航链接末尾，窄屏跟着换行。 */
+.lang-switch {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  padding: 3px;
+  margin-left: 4px;
+  border-radius: 999px;
+  background: var(--bg-muted);
+}
+.lang-btn {
+  border: 0;
+  background: transparent;
+  color: var(--muted);
+  font: inherit;
+  font-size: 0.86rem;
+  font-weight: 700;
+  line-height: 1;
+  min-height: 32px;
+  padding: 0 10px;
+  border-radius: 999px;
+  cursor: pointer;
+}
+.lang-btn:hover { color: var(--text); }
+.lang-btn.on {
+  background: var(--bg-elev);
+  color: var(--brand-strong);
+  box-shadow: 0 1px 2px rgba(23, 25, 31, 0.14);
+}
+.lang-btn:focus-visible { outline: 2px solid var(--focus); outline-offset: 1px; }
+
+/* 非简体时先藏住内容，等 i18n.js 换完再显示，避免闪一下简体。
+   1500ms 后无论如何都会放出来（i18n.js 里有兜底）。 */
+html.i18n-booting body { visibility: hidden; }
+
+@media (max-width: 720px) {
+  .lang-switch { margin-left: 0; }
+  .lang-btn { min-height: 30px; padding: 0 9px; font-size: 0.84rem; }
+}
+
+@media print {
+  .lang-switch { display: none; }
+}
 @media (max-width: 720px) {
   .nav-link.resource-search-btn { margin-left: 0; padding: 0 9px; min-height: 36px; }
   .resource-search-ico { display: none; }

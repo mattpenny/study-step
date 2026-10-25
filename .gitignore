@@ -11,3 +11,8 @@ __pycache__/
 PROMPT*.md
 chain.sh
 .cf-token-workers
+
+# i18n 清点工具的临时输出（scripts/i18n-scan.js）
+.i18n-inventory.json
+.i18n-remaining.json
+.i18n-shots/

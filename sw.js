@@ -3,7 +3,7 @@
  * 改了 SHELL 或 DATA 列表、或数据结构变了，就把 VERSION 加一。 */
 'use strict';
 
-var VERSION = 'v3';
+var VERSION = 'v4';
 var CACHE = 'cnm-pwa-' + VERSION;
 var SCOPE = self.registration.scope;
 
@@ -23,6 +23,9 @@ var SHELL = [
   'children/page.js',
   'children/history.js',
   'assets/site.css',
+  'assets/i18n.js',
+  'assets/i18n-en.js',
+  'assets/i18n-hant.js',
   'assets/explore.css',
   'assets/home.js',
   'assets/stats-config.js',

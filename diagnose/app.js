@@ -740,7 +740,9 @@
       h('button', { class: 'small', onclick: function () { if (confirm('确定放弃当前诊断并回到开始页吗？')) restart(); } }, '重新开始')));
     const page = h('div');
     if (demo) page.append(demoBanner());
-    page.append(childBar('question'));
+    // childBar() 在演示模式下返回 null，直接 append 会把 "null" 当文本插进页面
+    const bar = childBar('question');
+    if (bar) page.append(bar);
     page.append(card);
     show(page);
     const inp = document.getElementById('ans');
@@ -923,7 +925,8 @@
     const page = h('div');
     if (demo) page.append(demoBanner());
     saveToChild(sum);
-    page.append(childBar('result'));
+    const bar = childBar('result');
+    if (bar) page.append(bar);
 
     const targetsMastered = session.targets.every(function (id) { return E.statusOf(session, id) === 'mastered'; });
     const chapters = screen ? E.chapterSummary(D.graph, session) : null;
