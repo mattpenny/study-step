@@ -8,7 +8,10 @@
 | 檔案 | 內容 |
 | --- | --- |
 | `syllabus-index.json` | 28 份課程文件的清單：科目、語言、年份、適用學段、官方地址、位元組數、sha256 |
-| `math-learning-units.json` | 從數學課程文件抽出的學習單元：小學 72 個、初中 31 個，含領域與年級 |
+| `math-learning-units.json` | 從數學課程文件抽出的學習單元：小學 79 個、初中 31 個、高中必修 18 + 單元一 20 + 單元二 16 個，含範疇、年級與學習重點原文 |
+| `chapter-map.json` | 人工編寫的「人教版章 → 香港單元」對照（165 章），含逐條覆蓋與把握程度 |
+| `hk-edb-math.json` | 由上面兩個檔案套出來的 827 個知識點對照表 |
+| `mapping-report.md` | 對照結果統計：把握程度分佈、香港沒有對應內容的部分、沒被用到的香港單元 |
 | `pdf/` | 下載回來的 PDF，約 109 MB，**已 gitignore**（政府版權文件，不進倉庫） |
 
 重新取得：
@@ -17,6 +20,8 @@
 python3 scripts/fetch_hk_edb.py              # 下載缺失的 PDF 並刷新 syllabus-index.json
 python3 scripts/fetch_hk_edb.py --check      # 只檢查官方連結是否還有有效
 python3 scripts/extract_hk_math_units.py     # 重新抽取數學學習單元
+python3 scripts/build_hk_math_mapping.py     # 生成知識點對照表與報告
+python3 scripts/build_hk_math_mapping.py --check   # 只校驗 chapter-map.json 有沒有寫錯的章名
 ```
 
 兩個腳本都需要 `pip install pypdf`（只有抽取那步需要）。
@@ -87,6 +92,27 @@ python3 scripts/extract_hk_math_units.py     # 重新抽取數學學習單元
    香港用課程指引 + 學習單元 + 學習目標（小學單元編號如 `1N1`，初中如 `1.1`）。
 5. **知識點本身是照人教版章節建的**，`chapter` 寫的是「九上 第二十五章 一元二次方程 25.2」，
    不是香港教科書的章節。
+
+## 知識點對照（初稿）
+
+`hk-edb-math.json` 把 827 個數學知識點對到香港學習單元。做法是以**人教版章**為單位人工判斷，
+再套到章內每個知識點（一章跨多個單元時逐條覆蓋）：
+
+| 把握程度 | 知識點 | 含義 |
+| --- | ---: | --- |
+| exact | 438 | 章與單元基本一對一，可直接用 |
+| inferred | 330 | 方向對，但要人確認（跨年級、勉強歸類、香港沒有獨立單元） |
+| none | 59 | 香港課程沒有對應內容，`unit` 為 null |
+
+`none` 主要是：集合與邏輯用語、圓錐曲線、迴歸與獨立性檢驗、旋轉、超幾何分佈，
+以及小學的數學廣角（搭配、雞兔同籠、找次品、鴿巢）、部分綜合與實踐。
+
+反過來，`mapping-report.md` 還列出**沒被任何知識點對上的香港單元**（例如 M1 的泊松分佈、
+置信區間，M2 的行列式、矩陣、線性方程組），這些是香港有而人教版沒有的，可作為補充內容的清單。
+
+> 這份表放在 `docs/hk-edb/` 而不是 `data/mappings/`：後者的 schema 是給「人教版以外的教科書版本」
+> 用的（`topicId/grade/term/unit/chapter`），課程對照塞進去過不了 `scripts/validate.py`。
+> 將來如果要做某一套香港教科書的版本對照，那一份才放 `data/mappings/`。
 
 ## 建議的下一步
 

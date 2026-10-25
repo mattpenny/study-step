@@ -16,7 +16,8 @@
       "url": "https://www.edb.gov.hk/attachment/en/curriculum-development/kla/ma/curr/ME_KLACG_eng_2017_12_08.pdf",
       "status": 200,
       "bytes": 4057571,
-      "sha256": "6e83672f1103de1baf84c8f9eac03ec228c3588170c585b382e27c9b615f4be6"
+      "sha256": "6e83672f1103de1baf84c8f9eac03ec228c3588170c585b382e27c9b615f4be6",
+      "cached": true
     },
     {
       "file": "math-primary-content-2017",
@@ -30,7 +31,8 @@
       "url": "https://www.edb.gov.hk/attachment/en/curriculum-development/kla/ma/curr/pmc2017_e.pdf",
       "status": 200,
       "bytes": 1153573,
-      "sha256": "47305a994dfb0b43442f477f6bdad6cb7b3e4531a03bd2cdd7ce968f38cc4efd"
+      "sha256": "47305a994dfb0b43442f477f6bdad6cb7b3e4531a03bd2cdd7ce968f38cc4efd",
+      "cached": true
     },
     {
       "file": "math-primary-explanatory-ks1-2018",
@@ -44,7 +46,8 @@
       "url": "https://www.edb.gov.hk/attachment/en/curriculum-development/kla/ma/curr/EN_KS1_e.pdf",
       "status": 200,
       "bytes": 1084326,
-      "sha256": "1272ae6468956234c1e7b174c1553fbdbd47227e65cf6306768a0f6f9e770b81"
+      "sha256": "1272ae6468956234c1e7b174c1553fbdbd47227e65cf6306768a0f6f9e770b81",
+      "cached": true
     },
     {
       "file": "math-primary-explanatory-ks2-2020",
@@ -58,7 +61,8 @@
       "url": "https://www.edb.gov.hk/attachment/en/curriculum-development/kla/ma/curr/EN_KS2_e.pdf",
       "status": 200,
       "bytes": 1116086,
-      "sha256": "eb9f4d12b508874f2b4d9224bab734570e6ba33f67336b48c35bb1d67c5a39df"
+      "sha256": "eb9f4d12b508874f2b4d9224bab734570e6ba33f67336b48c35bb1d67c5a39df",
+      "cached": true
     },
     {
       "file": "math-js-content-2017",
@@ -72,7 +76,8 @@
       "url": "https://www.edb.gov.hk/attachment/en/curriculum-development/kla/ma/curr/jsmc2017_e.pdf",
       "status": 200,
       "bytes": 1454931,
-      "sha256": "a8b473b4e49362268ba79880d1fc008c2c853d71a451cc2a2867f5c9ec5e4627"
+      "sha256": "a8b473b4e49362268ba79880d1fc008c2c853d71a451cc2a2867f5c9ec5e4627",
+      "cached": true
     },
     {
       "file": "math-js-explanatory-ks3-2020",
@@ -86,7 +91,8 @@
       "url": "https://www.edb.gov.hk/attachment/en/curriculum-development/kla/ma/curr/EN_KS3_e.pdf",
       "status": 200,
       "bytes": 1826487,
-      "sha256": "538fd24df0ea7d5d9bfc60cd616b1173f19b7ce9dbbff795ed23d8d7e54b6438"
+      "sha256": "538fd24df0ea7d5d9bfc60cd616b1173f19b7ce9dbbff795ed23d8d7e54b6438",
+      "cached": true
     },
     {
       "file": "math-ss-content-2017",
@@ -100,7 +106,8 @@
       "url": "https://www.edb.gov.hk/attachment/en/curriculum-development/kla/ma/curr/ssmc2017_e.pdf",
       "status": 200,
       "bytes": 1734181,
-      "sha256": "0753185e7120b4b6b3dccb142491e5233e45221107d28f8dd16c161164fbbf86"
+      "sha256": "0753185e7120b4b6b3dccb142491e5233e45221107d28f8dd16c161164fbbf86",
+      "cached": true
     },
     {
       "file": "math-ca-guide-2017",
@@ -114,7 +121,8 @@
       "url": "https://www.edb.gov.hk/attachment/en/curriculum-development/kla/ma/curr/CA_2017_e.pdf",
       "status": 200,
       "bytes": 2552864,
-      "sha256": "ac719bece5c4ea53df811ad0c57c2e009d15c8898eab5ec2f3bffc44adbe9b95"
+      "sha256": "ac719bece5c4ea53df811ad0c57c2e009d15c8898eab5ec2f3bffc44adbe9b95",
+      "cached": true
     },
     {
       "file": "math-explanatory-cp",
@@ -128,7 +136,8 @@
       "url": "https://www.edb.gov.hk/attachment/en/curriculum-development/kla/ma/curr/EN_CP_e.pdf",
       "status": 200,
       "bytes": 497044,
-      "sha256": "6ee68cb65438ac56d5dbfa862c6712d376df71c058049eed869d2386c6725156"
+      "sha256": "6ee68cb65438ac56d5dbfa862c6712d376df71c058049eed869d2386c6725156",
+      "cached": true
     },
     {
       "file": "math-explanatory-m1",
@@ -142,7 +151,8 @@
       "url": "https://www.edb.gov.hk/attachment/en/curriculum-development/kla/ma/curr/EN_M1_e.pdf",
       "status": 200,
       "bytes": 1705696,
-      "sha256": "22ab5c1a86c49555f8dc818dfea2063fcae4f1d04144e0d1c4f080b733e07940"
+      "sha256": "22ab5c1a86c49555f8dc818dfea2063fcae4f1d04144e0d1c4f080b733e07940",
+      "cached": true
     },
     {
       "file": "math-explanatory-m2",
@@ -156,7 +166,64 @@
       "url": "https://www.edb.gov.hk/attachment/en/curriculum-development/kla/ma/curr/EN_M2_e.pdf",
       "status": 200,
       "bytes": 965625,
-      "sha256": "cefa99af4f94271878227497d967f10e93e40d398498d722117806288653caa4"
+      "sha256": "cefa99af4f94271878227497d967f10e93e40d398498d722117806288653caa4",
+      "cached": true
+    },
+    {
+      "file": "math-primary-content-2017-tc",
+      "subject": "math",
+      "lang": "tc",
+      "year": 2017,
+      "title": "Supplement to ME KLA Curriculum Guide: Learning Content of Primary Mathematics (Chinese)",
+      "title_zh": "數學教育學習領域課程指引補充文件：小學數學學習內容（中文版）",
+      "stages": "P1-P6",
+      "role": "content",
+      "url": "https://www.edb.gov.hk/attachment/tc/curriculum-development/kla/ma/curr/pmc2017_tc.pdf",
+      "status": 200,
+      "bytes": 1555174,
+      "sha256": "b03b06a07e5d0d19e0ccb75871876dca2e11daefa799ce42ca235677356f4fd7"
+    },
+    {
+      "file": "math-js-content-2017-tc",
+      "subject": "math",
+      "lang": "tc",
+      "year": 2017,
+      "title": "Supplement to ME KLA Curriculum Guide: Learning Content of Junior Secondary Mathematics (Chinese)",
+      "title_zh": "數學教育學習領域課程指引補充文件：初中數學學習內容（中文版）",
+      "stages": "S1-S3",
+      "role": "content",
+      "url": "https://www.edb.gov.hk/attachment/tc/curriculum-development/kla/ma/curr/jsmc2017_tc.pdf",
+      "status": 200,
+      "bytes": 1782893,
+      "sha256": "6b0e67afa0c05eefbde49ba157a8aaaae169d670684d32d416299fc71b1e29fd"
+    },
+    {
+      "file": "math-ss-content-2017-tc",
+      "subject": "math",
+      "lang": "tc",
+      "year": 2017,
+      "title": "Supplement to ME KLA Curriculum Guide: Learning Content of Senior Secondary Mathematics (Chinese)",
+      "title_zh": "數學教育學習領域課程指引補充文件：高中數學學習內容（中文版）",
+      "stages": "S4-S6",
+      "role": "content",
+      "url": "https://www.edb.gov.hk/attachment/tc/curriculum-development/kla/ma/curr/ssmc2017_tc.pdf",
+      "status": 200,
+      "bytes": 1949010,
+      "sha256": "a055c8792cffd81bf21ab9e4727e809cd270aabad018bc4c03a11dff8f153971"
+    },
+    {
+      "file": "math-ca-guide-2017-tc",
+      "subject": "math",
+      "lang": "tc",
+      "year": 2017,
+      "title": "Mathematics Curriculum and Assessment Guide (Secondary 4 - 6) (Chinese)",
+      "title_zh": "數學課程及評估指引（中四至中六）（中文版）",
+      "stages": "S4-S6",
+      "role": "ca-guide",
+      "url": "https://www.edb.gov.hk/attachment/tc/curriculum-development/kla/ma/curr/CA_2017_tc.pdf",
+      "status": 200,
+      "bytes": 2108878,
+      "sha256": "4f587886cb2ed64d4917db5cfa72c0556fc18ad5a98847c17337406363ae086f"
     },
     {
       "file": "eng-klacg-2017",
@@ -170,7 +237,8 @@
       "url": "https://www.edb.gov.hk/attachment/en/curriculum-development/kla/eng-edu/Curriculum%20Document/ELE%20KLACG_2017.pdf",
       "status": 200,
       "bytes": 11796405,
-      "sha256": "f383b7b9afd91e2ce997267b81cf58a8b85d0e952597688f2770fe0cc71ea1e9"
+      "sha256": "f383b7b9afd91e2ce997267b81cf58a8b85d0e952597688f2770fe0cc71ea1e9",
+      "cached": true
     },
     {
       "file": "eng-primary-cg-2025",
@@ -184,7 +252,8 @@
       "url": "https://www.edb.gov.hk/attachment/en/curriculum-development/kla/eng-edu/Curriculum%20Document/Pri_ELCG_Primary_1-6_2025.pdf",
       "status": 200,
       "bytes": 5129319,
-      "sha256": "0587fafb2c8c097ff3f44d817990a85a8c6a24495ede346a6d271454462b289d"
+      "sha256": "0587fafb2c8c097ff3f44d817990a85a8c6a24495ede346a6d271454462b289d",
+      "cached": true
     },
     {
       "file": "eng-js-supplement-2018",
@@ -198,7 +267,8 @@
       "url": "https://www.edb.gov.hk/attachment/en/curriculum-development/kla/eng-edu/Curriculum%20Document/ELE%20JS%20Supplement%202018.pdf",
       "status": 200,
       "bytes": 2429751,
-      "sha256": "b5f85eab8cee6007d173c17d6e241615a57606ca5403a062f503b6eb61ad7336"
+      "sha256": "b5f85eab8cee6007d173c17d6e241615a57606ca5403a062f503b6eb61ad7336",
+      "cached": true
     },
     {
       "file": "eng-ca-guide-2021",
@@ -212,7 +282,8 @@
       "url": "https://www.edb.gov.hk/attachment/en/curriculum-development/kla/eng-edu/Curriculum%20Document/English%20Language%20Curriculum%20and%20Assessment%20Guide%20(Secondary%204%20-%206)%20(2021).pdf",
       "status": 200,
       "bytes": 1605215,
-      "sha256": "729da6cae1ab24c0e7b0919c5c7b79d363d7f067e5ce9405cc655a185c724266"
+      "sha256": "729da6cae1ab24c0e7b0919c5c7b79d363d7f067e5ce9405cc655a185c724266",
+      "cached": true
     },
     {
       "file": "eng-examples-1-28",
@@ -226,7 +297,8 @@
       "url": "https://www.edb.gov.hk/attachment/en/curriculum-development/kla/eng-edu/ELE%20KLACG%202017_Examples%201-28.pdf",
       "status": 200,
       "bytes": 30066707,
-      "sha256": "e331f84ac6023fddfbd288e4ee60d8137b9b69da2969ecad251704cb4aa0115e"
+      "sha256": "e331f84ac6023fddfbd288e4ee60d8137b9b69da2969ecad251704cb4aa0115e",
+      "cached": true
     },
     {
       "file": "sci-klacg-2017",
@@ -240,7 +312,8 @@
       "url": "https://www.edb.gov.hk/attachment/en/curriculum-development/kla/science-edu/SEKLACG_ENG_2017.pdf",
       "status": 200,
       "bytes": 4309513,
-      "sha256": "1018aaac9a96283e7fbace542713e610c17d79a278eb91b6e7914deeceb52f4b"
+      "sha256": "1018aaac9a96283e7fbace542713e610c17d79a278eb91b6e7914deeceb52f4b",
+      "cached": true
     },
     {
       "file": "sci-primary-cg-2025-chi",
@@ -254,7 +327,8 @@
       "url": "https://www.edb.gov.hk/attachment/tc/curriculum-development/kla/science-edu/pri-sci/PSCG%282025%29.pdf",
       "status": 200,
       "bytes": 23199370,
-      "sha256": "5cfbcfecf523da42ec7167b9b9a84189d9f5bf812227c72379c294410377db32"
+      "sha256": "5cfbcfecf523da42ec7167b9b9a84189d9f5bf812227c72379c294410377db32",
+      "cached": true
     },
     {
       "file": "sci-js-supplement-2017",
@@ -268,7 +342,8 @@
       "url": "https://www.edb.gov.hk/attachment/en/curriculum-development/kla/science-edu/Science%28S1-3%29_supp_e_2017.pdf",
       "status": 200,
       "bytes": 2973542,
-      "sha256": "f763644a061319ae1485ed337c1425ed3dcd675f575d5fdb3e428eb72c07a08b"
+      "sha256": "f763644a061319ae1485ed337c1425ed3dcd675f575d5fdb3e428eb72c07a08b",
+      "cached": true
     },
     {
       "file": "sci-js-framework-2025",
@@ -282,7 +357,8 @@
       "url": "https://www.edb.gov.hk/attachment/en/curriculum-development/kla/science-edu/JS_Science_Curriculum_Framework_2025_english.pdf",
       "status": 200,
       "bytes": 1823800,
-      "sha256": "5aaa3beb526950bfea82b4661ba3309c5ff30e0c5511bcf5eedd0f614132fe31"
+      "sha256": "5aaa3beb526950bfea82b4661ba3309c5ff30e0c5511bcf5eedd0f614132fe31",
+      "cached": true
     },
     {
       "file": "phy-ca-guide-2015",
@@ -296,7 +372,8 @@
       "url": "https://www.edb.gov.hk/attachment/en/curriculum-development/kla/science-edu/Phy_C_and_A_Guide_updated_e_20151126.pdf",
       "status": 200,
       "bytes": 758560,
-      "sha256": "a1c73c1e0e87221af67025b993fb8297c5b5266eda0bc1c951731fdc59bf9aea"
+      "sha256": "a1c73c1e0e87221af67025b993fb8297c5b5266eda0bc1c951731fdc59bf9aea",
+      "cached": true
     },
     {
       "file": "chi-klacg-2017",
@@ -310,7 +387,8 @@
       "url": "https://www.edb.gov.hk/attachment/tc/curriculum-development/kla/chi-edu/curriculum-documents/CLEKLAG_2017_for_upload_final_R77.pdf",
       "status": 200,
       "bytes": 7476291,
-      "sha256": "d6c438a0eb7e5d32bbfd91bbd44add9f7dfa2a7aefca52f7d7bf1e6d74270ad4"
+      "sha256": "d6c438a0eb7e5d32bbfd91bbd44add9f7dfa2a7aefca52f7d7bf1e6d74270ad4",
+      "cached": true
     },
     {
       "file": "chi-primary-cg-2023",
@@ -324,7 +402,8 @@
       "url": "https://www.edb.gov.hk/attachment/tc/curriculum-development/kla/chi-edu/curriculum-documents/Primary_Chi_Lang_Curr_Guide_2023.pdf",
       "status": 200,
       "bytes": 943621,
-      "sha256": "e63610a1b4b6a4b57c5a21b0bebe97611140e117ee4b479336f51b3358227099"
+      "sha256": "e63610a1b4b6a4b57c5a21b0bebe97611140e117ee4b479336f51b3358227099",
+      "cached": true
     },
     {
       "file": "chi-primary-lo-2023",
@@ -338,7 +417,8 @@
       "url": "https://www.edb.gov.hk/attachment/tc/curriculum-development/kla/chi-edu/curriculum-documents/Pri_Chin_Lang_LO_2023.pdf",
       "status": 200,
       "bytes": 419441,
-      "sha256": "ed523c09b65b8d73945726abda167122aa18a593c038dd2de1f7e61da611a6ac"
+      "sha256": "ed523c09b65b8d73945726abda167122aa18a593c038dd2de1f7e61da611a6ac",
+      "cached": true
     },
     {
       "file": "chi-js-cg-2023",
@@ -352,7 +432,8 @@
       "url": "https://www.edb.gov.hk/attachment/tc/curriculum-development/kla/chi-edu/curriculum-documents/Junior_Sec_Chi_Lang_Curr_Guide_2023.pdf",
       "status": 200,
       "bytes": 1013576,
-      "sha256": "e7700b7dd65629c15deac2bc3e5a6135e699b004b393a1d062fb3ca1d14cf90c"
+      "sha256": "e7700b7dd65629c15deac2bc3e5a6135e699b004b393a1d062fb3ca1d14cf90c",
+      "cached": true
     },
     {
       "file": "chi-ca-guide-2021",
@@ -366,7 +447,8 @@
       "url": "https://www.edb.gov.hk/attachment/tc/curriculum-development/kla/chi-edu/CHI_LANG_CAGuide_2021.pdf",
       "status": 200,
       "bytes": 1000886,
-      "sha256": "4a51cc1b214596faf4135598b9f2ec6a3c97d3f2385744f90db425c5b6966cd0"
+      "sha256": "4a51cc1b214596faf4135598b9f2ec6a3c97d3f2385744f90db425c5b6966cd0",
+      "cached": true
     },
     {
       "file": "chi-sec-lo-2021",
@@ -380,7 +462,8 @@
       "url": "https://www.edb.gov.hk/attachment/tc/curriculum-development/kla/chi-edu/SEC_LO_2021.pdf",
       "status": 200,
       "bytes": 423862,
-      "sha256": "b529b059ce33cebf41af3b61e3d16aead16b2bc085fb69674e70c10035daeea4"
+      "sha256": "b529b059ce33cebf41af3b61e3d16aead16b2bc085fb69674e70c10035daeea4",
+      "cached": true
     },
     {
       "file": "pth-cg-2017",
@@ -394,7 +477,8 @@
       "url": "https://www.edb.gov.hk/attachment/tc/curriculum-development/kla/chi-edu/curriculum-documents/PTH_Curriculum_guide_for_upload_final.pdf",
       "status": 200,
       "bytes": 705865,
-      "sha256": "bd58d6a4ed0f2d3093959e4a0cee1df324b7d6d3042c8cbed700c65b429102a3"
+      "sha256": "bd58d6a4ed0f2d3093959e4a0cee1df324b7d6d3042c8cbed700c65b429102a3",
+      "cached": true
     }
   ]
 }

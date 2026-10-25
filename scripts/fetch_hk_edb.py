@@ -73,6 +73,24 @@ DOCS = [
          title_zh="數學延伸部分單元二（代數與微積分）闡釋", stages="S4-S6", role="explanatory",
          url=BASE + "/attachment/en/curriculum-development/kla/ma/curr/EN_M2_e.pdf"),
 
+    # 中文版（繁体）——對照時用中文單元名更直接
+    dict(file="math-primary-content-2017-tc", subject="math", lang="tc", year=2017,
+         title="Supplement to ME KLA Curriculum Guide: Learning Content of Primary Mathematics (Chinese)",
+         title_zh="數學教育學習領域課程指引補充文件：小學數學學習內容（中文版）", stages="P1-P6", role="content",
+         url=BASE + "/attachment/tc/curriculum-development/kla/ma/curr/pmc2017_tc.pdf"),
+    dict(file="math-js-content-2017-tc", subject="math", lang="tc", year=2017,
+         title="Supplement to ME KLA Curriculum Guide: Learning Content of Junior Secondary Mathematics (Chinese)",
+         title_zh="數學教育學習領域課程指引補充文件：初中數學學習內容（中文版）", stages="S1-S3", role="content",
+         url=BASE + "/attachment/tc/curriculum-development/kla/ma/curr/jsmc2017_tc.pdf"),
+    dict(file="math-ss-content-2017-tc", subject="math", lang="tc", year=2017,
+         title="Supplement to ME KLA Curriculum Guide: Learning Content of Senior Secondary Mathematics (Chinese)",
+         title_zh="數學教育學習領域課程指引補充文件：高中數學學習內容（中文版）", stages="S4-S6", role="content",
+         url=BASE + "/attachment/tc/curriculum-development/kla/ma/curr/ssmc2017_tc.pdf"),
+    dict(file="math-ca-guide-2017-tc", subject="math", lang="tc", year=2017,
+         title="Mathematics Curriculum and Assessment Guide (Secondary 4 - 6) (Chinese)",
+         title_zh="數學課程及評估指引（中四至中六）（中文版）", stages="S4-S6", role="ca-guide",
+         url=BASE + "/attachment/tc/curriculum-development/kla/ma/curr/CA_2017_tc.pdf"),
+
     # ---------------- 英國語文 English ----------------
     dict(file="eng-klacg-2017", subject="english", lang="en", year=2017,
          title="CDC English Language Education Key Learning Area Curriculum Guide (Primary 1 - Secondary 6)",
