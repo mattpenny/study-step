@@ -16,3 +16,5 @@ chain.sh
 .i18n-inventory.json
 .i18n-remaining.json
 .i18n-shots/
+# 香港教育局課程文件的 PDF：政府版權，不入庫（用 scripts/fetch_hk_edb.py 下載）
+docs/hk-edb/pdf/

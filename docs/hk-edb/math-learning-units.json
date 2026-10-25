@@ -1,0 +1,620 @@
+{
+  "source": "Supplement to Mathematics Education KLA Curriculum Guide (2017) - Learning Content of Primary / Junior Secondary Mathematics",
+  "note": "单元名由 PDF 文本抽取，跨行标题可能被截断，使用前请对照 PDF 抽查。小学编号 = 年级+领域首字母+序号；初中按领域分组。",
+  "primary": {
+    "strands": [
+      "Number",
+      "Algebra",
+      "Measures",
+      "Shape and Space",
+      "Data Handling"
+    ],
+    "units": [
+      {
+        "code": "1M1",
+        "name": "Length and distance (I)",
+        "strand": "Measures",
+        "year": 1
+      },
+      {
+        "code": "1M2",
+        "name": "Money (I)",
+        "strand": "Measures",
+        "year": 1
+      },
+      {
+        "code": "1M3",
+        "name": "Length and distance (II)",
+        "strand": "Measures",
+        "year": 1
+      },
+      {
+        "code": "1M4",
+        "name": "Time (I)",
+        "strand": "Measures",
+        "year": 1
+      },
+      {
+        "code": "1N1",
+        "name": "Numbers to 20",
+        "strand": "Number",
+        "year": 1
+      },
+      {
+        "code": "1N2",
+        "name": "Basic addition and subtraction",
+        "strand": "Number",
+        "year": 1
+      },
+      {
+        "code": "1N3",
+        "name": "Numbers to 100",
+        "strand": "Number",
+        "year": 1
+      },
+      {
+        "code": "1N4",
+        "name": "Addition and subtraction",
+        "strand": "Number",
+        "year": 1
+      },
+      {
+        "code": "1S3",
+        "name": "Directions and positions (I)",
+        "strand": "Shape and Space",
+        "year": 1
+      },
+      {
+        "code": "2D1",
+        "name": "Pictograms",
+        "strand": "Data Handling",
+        "year": 2
+      },
+      {
+        "code": "2M1",
+        "name": "Length and distance (III)",
+        "strand": "Measures",
+        "year": 2
+      },
+      {
+        "code": "2M2",
+        "name": "Time (II)",
+        "strand": "Measures",
+        "year": 2
+      },
+      {
+        "code": "2M3",
+        "name": "Money (II)",
+        "strand": "Measures",
+        "year": 2
+      },
+      {
+        "code": "2N2",
+        "name": "Addition and subtraction (II)",
+        "strand": "Number",
+        "year": 2
+      },
+      {
+        "code": "2N3",
+        "name": "Basic multiplication",
+        "strand": "Number",
+        "year": 2
+      },
+      {
+        "code": "2N5",
+        "name": "Addition and subtraction",
+        "strand": "Number",
+        "year": 2
+      },
+      {
+        "code": "2N6",
+        "name": "Basic division",
+        "strand": "Number",
+        "year": 2
+      },
+      {
+        "code": "2S2",
+        "name": "Angles",
+        "strand": "Shape and Space",
+        "year": 2
+      },
+      {
+        "code": "2S3",
+        "name": "Directions and positions",
+        "strand": "Shape and Space",
+        "year": 2
+      },
+      {
+        "code": "2S4",
+        "name": "Quadrilaterals (I)",
+        "strand": "Shape and Space",
+        "year": 2
+      },
+      {
+        "code": "3D1",
+        "name": "Bar charts (I)",
+        "strand": "Data Handling",
+        "year": 3
+      },
+      {
+        "code": "3M1",
+        "name": "Length and distance (IV)",
+        "strand": "Measures",
+        "year": 3
+      },
+      {
+        "code": "3M2",
+        "name": "Time (III)",
+        "strand": "Measures",
+        "year": 3
+      },
+      {
+        "code": "3M3",
+        "name": "Capacity",
+        "strand": "Measures",
+        "year": 3
+      },
+      {
+        "code": "3M4",
+        "name": "Time (IV)",
+        "strand": "Measures",
+        "year": 3
+      },
+      {
+        "code": "3M5",
+        "name": "Weight",
+        "strand": "Measures",
+        "year": 3
+      },
+      {
+        "code": "3N2",
+        "name": "Multiplication (I)",
+        "strand": "Number",
+        "year": 3
+      },
+      {
+        "code": "3N3",
+        "name": "Division (I)",
+        "strand": "Number",
+        "year": 3
+      },
+      {
+        "code": "3N4",
+        "name": "Four arithmetic operations",
+        "strand": "Number",
+        "year": 3
+      },
+      {
+        "code": "3N5",
+        "name": "Fractions (I)",
+        "strand": "Number",
+        "year": 3
+      },
+      {
+        "code": "3S1",
+        "name": "Quadrilaterals (II)",
+        "strand": "Shape and Space",
+        "year": 3
+      },
+      {
+        "code": "3S2",
+        "name": "Triangles",
+        "strand": "Shape and Space",
+        "year": 3
+      },
+      {
+        "code": "4D1",
+        "name": "Bar charts (II)",
+        "strand": "Data Handling",
+        "year": 4
+      },
+      {
+        "code": "4M1",
+        "name": "Perimeter (I)",
+        "strand": "Measures",
+        "year": 4
+      },
+      {
+        "code": "4M2",
+        "name": "Area (I)",
+        "strand": "Measures",
+        "year": 4
+      },
+      {
+        "code": "4N1",
+        "name": "Multiplication (II)",
+        "strand": "Number",
+        "year": 4
+      },
+      {
+        "code": "4N2",
+        "name": "Division (II)",
+        "strand": "Number",
+        "year": 4
+      },
+      {
+        "code": "4N3",
+        "name": "Multiples and factors",
+        "strand": "Number",
+        "year": 4
+      },
+      {
+        "code": "4N4",
+        "name": "Common multiples and common factors",
+        "strand": "Number",
+        "year": 4
+      },
+      {
+        "code": "4N5",
+        "name": "Four arithmetic operations",
+        "strand": "Number",
+        "year": 4
+      },
+      {
+        "code": "4N6",
+        "name": "Fractions (II)",
+        "strand": "Number",
+        "year": 4
+      },
+      {
+        "code": "4N7",
+        "name": "Decimals (I)",
+        "strand": "Number",
+        "year": 4
+      },
+      {
+        "code": "4N8",
+        "name": "Decimals (II)",
+        "strand": "Number",
+        "year": 4
+      },
+      {
+        "code": "4S1",
+        "name": "Quadrilaterals (III)",
+        "strand": "Shape and Space",
+        "year": 4
+      },
+      {
+        "code": "4S2",
+        "name": "Dissecting and forming",
+        "strand": "Shape and Space",
+        "year": 4
+      },
+      {
+        "code": "4S3",
+        "name": "Directions and positions",
+        "strand": "Shape and Space",
+        "year": 4
+      },
+      {
+        "code": "5A1",
+        "name": "Elementary algebra",
+        "strand": "Algebra",
+        "year": 5
+      },
+      {
+        "code": "5A2",
+        "name": "Simple equations (I)",
+        "strand": "Algebra",
+        "year": 5
+      },
+      {
+        "code": "5D1",
+        "name": "Bar charts (III)",
+        "strand": "Data Handling",
+        "year": 5
+      },
+      {
+        "code": "5M1",
+        "name": "Area (II)",
+        "strand": "Measures",
+        "year": 5
+      },
+      {
+        "code": "5M2",
+        "name": "V olume (I)",
+        "strand": "Measures",
+        "year": 5
+      },
+      {
+        "code": "5N1",
+        "name": "Multi-digit numbers",
+        "strand": "Number",
+        "year": 5
+      },
+      {
+        "code": "5N2",
+        "name": "Fractions (III)",
+        "strand": "Number",
+        "year": 5
+      },
+      {
+        "code": "5N3",
+        "name": "Fractions (IV)",
+        "strand": "Number",
+        "year": 5
+      },
+      {
+        "code": "5N4",
+        "name": "Decimals (III)",
+        "strand": "Number",
+        "year": 5
+      },
+      {
+        "code": "5N5",
+        "name": "Fractions (V)",
+        "strand": "Number",
+        "year": 5
+      },
+      {
+        "code": "5S1",
+        "name": "Circles",
+        "strand": "Shape and Space",
+        "year": 5
+      },
+      {
+        "code": "6A1",
+        "name": "Simple equations (II)",
+        "strand": "Algebra",
+        "year": 6
+      },
+      {
+        "code": "6D1",
+        "name": "Averages",
+        "strand": "Data Handling",
+        "year": 6
+      },
+      {
+        "code": "6D2",
+        "name": "Broken line graphs",
+        "strand": "Data Handling",
+        "year": 6
+      },
+      {
+        "code": "6D3",
+        "name": "Pie charts",
+        "strand": "Data Handling",
+        "year": 6
+      },
+      {
+        "code": "6D4",
+        "name": "Uses and abuses of statistics",
+        "strand": "Data Handling",
+        "year": 6
+      },
+      {
+        "code": "6M1",
+        "name": "Angle (degree)",
+        "strand": "Measures",
+        "year": 6
+      },
+      {
+        "code": "6M2",
+        "name": "V olume (II)",
+        "strand": "Measures",
+        "year": 6
+      },
+      {
+        "code": "6M3",
+        "name": "Perimeter (II)",
+        "strand": "Measures",
+        "year": 6
+      },
+      {
+        "code": "6M4",
+        "name": "Speed",
+        "strand": "Measures",
+        "year": 6
+      },
+      {
+        "code": "6M5",
+        "name": "Area (III)",
+        "strand": "Measures",
+        "year": 6
+      },
+      {
+        "code": "6N1",
+        "name": "Decimals (IV)",
+        "strand": "Number",
+        "year": 6
+      },
+      {
+        "code": "6N2",
+        "name": "Decimals (V)",
+        "strand": "Number",
+        "year": 6
+      },
+      {
+        "code": "6N3",
+        "name": "Percentages (I)",
+        "strand": "Number",
+        "year": 6
+      },
+      {
+        "code": "6N4",
+        "name": "Percentages (II)",
+        "strand": "Number",
+        "year": 6
+      },
+      {
+        "code": "6S1",
+        "name": "Symmetry",
+        "strand": "Shape and Space",
+        "year": 6
+      }
+    ]
+  },
+  "junior_secondary": {
+    "strands": [
+      "Number and Algebra",
+      "Measures, Shape and Space",
+      "Data Handling",
+      "Further Learning Unit"
+    ],
+    "units": [
+      {
+        "unit": 1,
+        "name": "Basic computation",
+        "strand": "Number and Algebra"
+      },
+      {
+        "unit": 2,
+        "name": "Directed numbers",
+        "strand": "Number and Algebra"
+      },
+      {
+        "unit": 3,
+        "name": "Approximate values and numerical estimation",
+        "strand": "Number and Algebra"
+      },
+      {
+        "unit": 4,
+        "name": "Rational and irrational numbers",
+        "strand": "Number and Algebra"
+      },
+      {
+        "unit": 5,
+        "name": "Using percentages",
+        "strand": "Number and Algebra"
+      },
+      {
+        "unit": 6,
+        "name": "Rates, ratios and proportions",
+        "strand": "Number and Algebra"
+      },
+      {
+        "unit": 7,
+        "name": "Algebraic expressions",
+        "strand": "Number and Algebra"
+      },
+      {
+        "unit": 8,
+        "name": "Linear equations in one unknown",
+        "strand": "Number and Algebra"
+      },
+      {
+        "unit": 9,
+        "name": "Linear equations in two unknowns",
+        "strand": "Number and Algebra"
+      },
+      {
+        "unit": 10,
+        "name": "Laws of integral indices",
+        "strand": "Number and Algebra"
+      },
+      {
+        "unit": 11,
+        "name": "Polynomials",
+        "strand": "Number and Algebra"
+      },
+      {
+        "unit": 12,
+        "name": "Identities",
+        "strand": "Number and Algebra"
+      },
+      {
+        "unit": 13,
+        "name": "Formulae",
+        "strand": "Number and Algebra"
+      },
+      {
+        "unit": 14,
+        "name": "Linear inequalities in one unknown",
+        "strand": "Number and Algebra"
+      },
+      {
+        "unit": 15,
+        "name": "Errors in measurement",
+        "strand": "Measures, Shape and Space"
+      },
+      {
+        "unit": 16,
+        "name": "Arc lengths and areas of sectors",
+        "strand": "Measures, Shape and Space"
+      },
+      {
+        "unit": 17,
+        "name": "3-D figures",
+        "strand": "Measures, Shape and Space"
+      },
+      {
+        "unit": 18,
+        "name": "Mensuration",
+        "strand": "Measures, Shape and Space"
+      },
+      {
+        "unit": 19,
+        "name": "Angles and parallel lines",
+        "strand": "Measures, Shape and Space"
+      },
+      {
+        "unit": 20,
+        "name": "Polygons",
+        "strand": "Measures, Shape and Space"
+      },
+      {
+        "unit": 21,
+        "name": "Congruent triangles",
+        "strand": "Measures, Shape and Space"
+      },
+      {
+        "unit": 22,
+        "name": "Similar triangles",
+        "strand": "Measures, Shape and Space"
+      },
+      {
+        "unit": 23,
+        "name": "Quadrilaterals",
+        "strand": "Measures, Shape and Space"
+      },
+      {
+        "unit": 24,
+        "name": "Centres of triangles",
+        "strand": "Measures, Shape and Space"
+      },
+      {
+        "unit": 25,
+        "name": "Pythagoras’ theorem",
+        "strand": "Measures, Shape and Space"
+      },
+      {
+        "unit": 26,
+        "name": "Rectangular coordinate system",
+        "strand": "Measures, Shape and Space"
+      },
+      {
+        "unit": 27,
+        "name": "Trigonometry",
+        "strand": "Measures, Shape and Space"
+      },
+      {
+        "unit": 28,
+        "name": "Organisation of data",
+        "strand": "Data Handling"
+      },
+      {
+        "unit": 29,
+        "name": "Presentation of data",
+        "strand": "Data Handling"
+      },
+      {
+        "unit": 30,
+        "name": "Measures of central tendency",
+        "strand": "Data Handling"
+      },
+      {
+        "unit": 31,
+        "name": "Probability",
+        "strand": "Data Handling"
+      }
+    ]
+  },
+  "senior_secondary": {
+    "note": "高中分必修部分 + 延伸单元一（微积分与统计）+ 延伸单元二（代数与微积分），见 math-ca-guide-2017 与 math-explanatory-cp / m1 / m2。",
+    "strands": [
+      "Compulsory Part",
+      "Module 1",
+      "Module 2"
+    ]
+  }
+}
