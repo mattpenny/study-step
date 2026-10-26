@@ -479,6 +479,14 @@
     return window.matchMedia('(max-width: 700px)').matches ? 8 : 10;
   }
 
+  /* Cytoscape 把标签画在 canvas 上，i18n 的 DOM 替换碰不到，
+   * 所以图上的文字要在建元素时自己转一次。 */
+  function localize(text) {
+    var I = window.I18N;
+    if (text == null || !I || typeof I.toHant !== 'function') return text;
+    return I.lang === 'zh-Hant' ? I.toHant(String(text)) : String(text);
+  }
+
   function clipLabel(name) {
     var chars = Array.from(name || '');
     var limit = labelLimit();
@@ -527,7 +535,7 @@
     var topic = byId.get(id);
     var tone = paint(topic.grade, colors);
     var current = id === selected;
-    var name = topic.name;
+    var name = localize(topic.name);
     return {
       data: {
         id: id,
@@ -589,14 +597,14 @@
     var elements = [];
     gradeMembers.forEach(function (ids, grade) {
       var tone = paint(grade, colors);
-      var word = gradeWord(grade);
-      var name = word + '·' + ids.length + '个';
+      var word = localize(gradeWord(grade));
+      var name = word + '·' + ids.length + localize('个');
       ids.forEach(function (id) { gradeOf.set(id, grade); });
       elements.push({
         data: {
           id: 'grade-' + grade,
           name: name,
-          full: word + '的 ' + ids.length + ' 个先修',
+          full: localize(word + '的 ' + ids.length + ' 个先修'),
           label: clipLabel(name),
           bg: tone.bg,
           border: tone.border,
@@ -1120,6 +1128,12 @@
   syncDepthButtons();
   applyQuery();
   bind();
+  if (window.I18N && window.I18N.onChange) {
+    window.I18N.onChange(function () {
+      if (!topics.length) return;
+      try { renderList(); renderGraph(); } catch (e) { /* 还没准备好就跳过 */ }
+    });
+  }
   load().then(function () { return loadQuestions(); }).then(function () {
     renderStageOptions();   /* 数据到了才知道这个学科有哪些阶段 */
     fillDomain();

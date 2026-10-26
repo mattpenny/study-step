@@ -183,6 +183,14 @@
     };
   }
   function labelLimit() { return window.matchMedia('(max-width: 700px)').matches ? 8 : 10; }
+  /* Cytoscape 把标签画在 canvas 上，i18n 的 DOM 替换碰不到，
+   * 所以图上的文字要在建元素时自己转一次。 */
+  function localize(text) {
+    var I = window.I18N;
+    if (text == null || !I || typeof I.toHant !== 'function') return text;
+    return I.lang === 'zh-Hant' ? I.toHant(String(text)) : String(text);
+  }
+
   function clipLabel(name) {
     const chars = Array.from(name || '');
     const limit = labelLimit();
@@ -1094,7 +1102,7 @@
     const topic = D.graph.byId[n.id];
     const grade = topic && typeof topic.grade === 'number' ? topic.grade : 7;
     const kind = stageKind(grade);
-    const name = nameOf(n.id);
+    const name = localize(nameOf(n.id));
     const bits = [name];
     if (n.isRoot) bits.push('薄弱根因');
     if (n.isTarget) bits.push('目标');
@@ -1131,10 +1139,10 @@
       const id = 'grade-' + grade;
       const kind = stageKind(grade);
       const tone = toneOf(kind, colors);
-      const name = gradeWord(grade) + '·' + ids.length + '个';
+      const name = localize(gradeWord(grade)) + '·' + ids.length + localize('个');
       elements.push({
         data: {
-          id: id, name: name, full: gradeWord(grade) + '的 ' + ids.length + ' 个知识点',
+          id: id, name: name, full: localize(gradeWord(grade) + '的 ' + ids.length + ' 个知识点'),
           label: clipLabel(name), bg: tone[0], border: tone[1], color: colors.text
         },
         classes: kind + ' grade'
@@ -1431,6 +1439,9 @@
   }
 
   async function init() {
+    if (window.I18N && window.I18N.onChange) {
+      window.I18N.onChange(function () { location.reload(); });
+    }
     subject = detectSubject();
     applySubjectChrome();
     try { await loadData(); } catch (e) {

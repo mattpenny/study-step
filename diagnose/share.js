@@ -1,5 +1,12 @@
 /* 诊断结果分享图：canvas 竖图，系统字体，二维码用本地 qrcode-generator 绘制。 */
 (function (global) {
+  /* 分享图用 canvas 画，i18n 的 DOM 替换碰不到，所以文字在这里自己转一次。 */
+  function L(text) {
+    var I = global.I18N;
+    if (text == null || !I || typeof I.toHant !== 'function') return text;
+    return I.lang === 'zh-Hant' ? I.toHant(String(text)) : String(text);
+  }
+
   'use strict';
   var SHARE_URL = 'https://math.pansgo.com/?from=share';
   var W = 1080;
@@ -143,15 +150,15 @@
     ctx.fill();
 
     drawLogo(ctx, 64, 56, 84);
-    text(ctx, m.siteName || '中小学·高中知识图谱', 168, 64, 800, 40, '#ffffff', 820);
-    text(ctx, '诊断结果', 168, 114, 500, 26, 'rgba(255,255,255,0.86)', 820);
+    text(ctx, L(m.siteName || '中小学·高中知识图谱'), 168, 64, 800, 40, '#ffffff', 820);
+    text(ctx, L('诊断结果'), 168, 114, 500, 26, 'rgba(255,255,255,0.86)', 820);
 
     ctx.fillStyle = '#ffffff';
     ctx.font = font(800, 56);
-    var headline = (m.scope || '本次诊断') + '  ' + (m.subject || '');
+    var headline = L(m.scope || '本次诊断') + '  ' + L(m.subject || '');
     var lines = wrap(ctx, headline.trim(), 940, 2);
     lines.forEach(function (line, i) { ctx.fillText(line, 64, 196 + i * 70); });
-    text(ctx, '生成日期  ' + (m.date || ''), 64, 196 + lines.length * 70 + 18, 500, 28, 'rgba(255,255,255,0.9)', 900);
+    text(ctx, L('生成日期') + '  ' + (m.date || ''), 64, 196 + lines.length * 70 + 18, 500, 28, 'rgba(255,255,255,0.9)', 900);
 
     var cardX = 48;
     var cardW = W - 96;
@@ -165,10 +172,10 @@
     ctx.restore();
 
     var stats = [
-      { n: m.mastered, label: '已掌握', fg: '#157a3a', bg: '#dcfce7' },
-      { n: m.shaky, label: '不稳', fg: '#b45309', bg: '#fef3c7' },
-      { n: m.weak, label: '薄弱', fg: '#b91c1c', bg: '#fee2e2' },
-      { n: m.untested, label: '未测', fg: '#475569', bg: '#e8eef6' }
+      { n: m.mastered, label: L('已掌握'), fg: '#157a3a', bg: '#dcfce7' },
+      { n: m.shaky, label: L('不稳'), fg: '#b45309', bg: '#fef3c7' },
+      { n: m.weak, label: L('薄弱'), fg: '#b91c1c', bg: '#fee2e2' },
+      { n: m.untested, label: L('未测'), fg: '#475569', bg: '#e8eef6' }
     ];
     var gap = 16;
     var chipW = (cardW - 40 - gap * 3) / 4;
@@ -188,13 +195,13 @@
     ctx.textAlign = 'left';
 
     var y = statsY + statsH + 36;
-    var spotTitle = m.spotKind === 'chapter' ? '最薄弱的章节' : '最薄弱的知识点';
+    var spotTitle = L(m.spotKind === 'chapter' ? '最薄弱的章节' : '最薄弱的知识点');
     text(ctx, spotTitle, 64, y, 800, 34, '#162033');
     y += 52;
     var spots = Array.isArray(m.spots) ? m.spots.slice(0, 3) : [];
     if (!spots.length) {
       card(ctx, cardX, y, cardW, 88, 18);
-      text(ctx, '这次没有明显薄弱的地方', 80, y + 28, 500, 28, '#5c6d82', cardW - 64);
+      text(ctx, L('这次没有明显薄弱的地方'), 80, y + 28, 500, 28, '#5c6d82', cardW - 64);
       y += 104;
     } else {
       spots.forEach(function (spot, i) {
@@ -210,24 +217,24 @@
         ctx.fillText(String(i + 1), cardX + 48, y + 57);
         ctx.textAlign = 'left';
         ctx.textBaseline = 'top';
-        text(ctx, spot.title || '', cardX + 88, y + 24, 700, 30, '#162033', cardW - 120);
-        text(ctx, spot.detail || '', cardX + 88, y + 64, 500, 24, '#5c6d82', cardW - 120);
+        text(ctx, L(spot.title || ''), cardX + 88, y + 24, 700, 30, '#162033', cardW - 120);
+        text(ctx, L(spot.detail || ''), cardX + 88, y + 64, 500, 24, '#5c6d82', cardW - 120);
         y += 126;
       });
     }
 
     y += 8;
-    text(ctx, '最该先补的根因', 64, y, 800, 34, '#162033');
+    text(ctx, L('最该先补的根因'), 64, y, 800, 34, '#162033');
     y += 52;
     var roots = Array.isArray(m.roots) ? m.roots.slice(0, 2) : [];
     if (!roots.length) {
       card(ctx, cardX, y, cardW, 88, 18);
-      text(ctx, '这次没有判出需要先补的根因', 80, y + 28, 500, 28, '#5c6d82', cardW - 64);
+      text(ctx, L('这次没有判出需要先补的根因'), 80, y + 28, 500, 28, '#5c6d82', cardW - 64);
     } else {
       roots.forEach(function (name) {
         card(ctx, cardX, y, cardW, 96, 18);
         fillRound(ctx, cardX + 24, y + 24, 8, 48, 4, '#b91c1c');
-        text(ctx, name, cardX + 52, y + 30, 700, 30, '#162033', cardW - 90);
+        text(ctx, L(name), cardX + 52, y + 30, 700, 30, '#162033', cardW - 90);
         y += 110;
       });
     }
@@ -252,7 +259,7 @@
     ctx.textBaseline = 'middle';
     ctx.fillStyle = '#0f766e';
     ctx.font = font(800, 48);
-    ctx.fillText('扫码打开本站', qrX + qrSize + 48, qrY + qrSize / 2 - 8);
+    ctx.fillText(L('扫码打开本站'), qrX + qrSize + 48, qrY + qrSize / 2 - 8);
     return canvas;
   }
 
