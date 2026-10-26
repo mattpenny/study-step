@@ -33,10 +33,15 @@ DIFFS = {"basic", "standard", "advanced"}
 CHECK_ONLY = "--check" in sys.argv
 
 errors = []
+warnings = []
 
 
 def err(msg):
     errors.append(msg)
+
+
+def warn(msg):
+    warnings.append(msg)
 
 
 def load(path):
@@ -173,10 +178,9 @@ def check_unit(doc, path, topic_ids):
             for tid in o.get("topics") or []:
                 if tid not in topic_ids:
                     err("%s：学习重点 %s 挂了不存在的知识点 %s" % (unit, code, tid))
-                elif tid in declared:
-                    err("%s：知识点 %s 同时挂在 %s 和 %s" % (unit, tid, declared[tid], code))
                 else:
-                    declared[tid] = code
+                    # 一个知识点可以同时服务多条学习重点（例如「认识硬幣」既讲币值也讲应用）
+                    declared.setdefault(tid, []).append(code)
         for tid in by_topic:
             if tid not in declared:
                 err("%s：知识点 %s 有题目，但没有归到任何一条学习重点" % (unit, tid))
@@ -185,6 +189,9 @@ def check_unit(doc, path, topic_ids):
             n = sum(by_topic.get(t, 0) for t in (o.get("topics") or []))
             if code and not n:
                 err("%s：学习重点 %s 没有题目" % (unit, code))
+        # EDB 有、但我们的知识点没覆盖到的学习重点：只提示，不阻断
+        for g in doc.get("gaps") or []:
+            warn("%s：学习重点 %s（%s）没有对应知识点" % (unit, g.get("code"), (g.get("text") or "")[:24]))
     return questions
 
 
@@ -213,6 +220,11 @@ def main():
         for o in doc.get("objectives") or []:
             n = sum(1 for q in qs if q.get("topicId") in (o.get("topics") or []))
             print("         %-6s %-28s %2d 题" % (o.get("code"), (o.get("text") or "")[:26], n))
+
+    if warnings:
+        print("\n提示（%d）：" % len(warnings))
+        for w in warnings[:20]:
+            print("  ! " + w)
 
     if errors:
         print("\n===== 校验未通过（%d）=====" % len(errors))

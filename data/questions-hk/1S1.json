@@ -1,0 +1,127 @@
+{
+  "unit": "1S1",
+  "unitName": "立體圖形(一)",
+  "keyStage": "KS1",
+  "strand": "圖形與空間",
+  "source": "EDB 小學 1S1 立體圖形(一)：學習重點 1 認識角柱、圓柱、角錐、圓錐和球的直觀概念",
+  "objectives": [
+    {
+      "code": "1",
+      "text": "認識角柱、圓柱、角錐、圓錐和球的直觀概念",
+      "topics": [
+        "cnm_p014"
+      ]
+    }
+  ],
+  "note": "香港用語是角柱／圓柱／角錐／圓錐／球；長方體和正方體都是角柱的例子。",
+  "questions": [
+    {
+      "id": "cnm_p014_q1",
+      "topicId": "cnm_p014",
+      "type": "choice",
+      "difficulty": "basic",
+      "prompt": "以下哪一個最容易滾動？",
+      "choices": [
+        {
+          "key": "A",
+          "text": "長方體"
+        },
+        {
+          "key": "B",
+          "text": "球"
+        },
+        {
+          "key": "C",
+          "text": "正方體"
+        },
+        {
+          "key": "D",
+          "text": "角柱"
+        }
+      ],
+      "answer": "B",
+      "explanation": "球的表面是曲面，向任何方向都能滾動。長方體、正方體、角柱都有平平的面。"
+    },
+    {
+      "id": "cnm_p014_q2",
+      "topicId": "cnm_p014",
+      "type": "choice",
+      "difficulty": "standard",
+      "prompt": "一個盒子有 6 個平平的面，每個面都是長方形。它是甚麼？",
+      "choices": [
+        {
+          "key": "A",
+          "text": "球"
+        },
+        {
+          "key": "B",
+          "text": "圓柱"
+        },
+        {
+          "key": "C",
+          "text": "長方體"
+        },
+        {
+          "key": "D",
+          "text": "圓錐"
+        }
+      ],
+      "answer": "C",
+      "explanation": "6 個長方形面的立體是長方體（屬於角柱）。球沒有平面，圓柱有圓形面，圓錐有一個圓形底面。"
+    },
+    {
+      "id": "cnm_p014_q3",
+      "topicId": "cnm_p014",
+      "type": "choice",
+      "difficulty": "advanced",
+      "prompt": "圓柱和球都可以滾動。以下哪一句對？",
+      "choices": [
+        {
+          "key": "A",
+          "text": "兩者都只有曲面"
+        },
+        {
+          "key": "B",
+          "text": "圓柱有兩個平面，球沒有平面"
+        },
+        {
+          "key": "C",
+          "text": "球有兩個平面"
+        },
+        {
+          "key": "D",
+          "text": "兩者都不能堆疊"
+        }
+      ],
+      "answer": "B",
+      "explanation": "圓柱兩端是兩個平面（圓形），中間是曲面；球整個表面都是曲面，沒有平面。"
+    },
+    {
+      "id": "cnm_p014_q4",
+      "topicId": "cnm_p014",
+      "type": "choice",
+      "difficulty": "advanced",
+      "prompt": "把兩個正方體疊起來，為甚麼可以疊得穩？",
+      "choices": [
+        {
+          "key": "A",
+          "text": "因為它們有平平的面"
+        },
+        {
+          "key": "B",
+          "text": "因為它們會滾動"
+        },
+        {
+          "key": "C",
+          "text": "因為它們是圓的"
+        },
+        {
+          "key": "D",
+          "text": "因為它們很輕"
+        }
+      ],
+      "answer": "A",
+      "explanation": "正方體有平平的面，平面與平面貼合就能疊穩。會滾的球和圓柱就疊不穩。"
+    }
+  ]
+}

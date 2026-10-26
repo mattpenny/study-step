@@ -1,0 +1,191 @@
+{
+  "unit": "1S2",
+  "unitName": "平面圖形",
+  "keyStage": "KS1",
+  "strand": "圖形與空間",
+  "source": "EDB 小學 1S2 平面圖形：學習重點 3 認識三角形、四邊形、五邊形、六邊形和圓形、5 以這些圖形拼砌平面圖形",
+  "objectives": [
+    {
+      "code": "3",
+      "text": "認識三角形、四邊形、五邊形、六邊形和圓形的基本概念",
+      "topics": [
+        "cnm_p023"
+      ]
+    },
+    {
+      "code": "5",
+      "text": "以這些圖形拼砌平面圖形",
+      "topics": [
+        "cnm_p024"
+      ]
+    }
+  ],
+  "gaps": [
+    {
+      "code": "1",
+      "text": "認識點、直線和曲線的直觀概念",
+      "reason": "沒有對應知識點。"
+    },
+    {
+      "code": "2",
+      "text": "繪畫和製作直線和曲線",
+      "reason": "沒有對應知識點。"
+    },
+    {
+      "code": "4",
+      "text": "繪畫和製作三角形至圓形",
+      "reason": "沒有對應知識點。"
+    }
+  ],
+  "note": "陷阱：圖形名稱由「邊數」決定，不看大小和方向；長方形、正方形都是四邊形。",
+  "questions": [
+    {
+      "id": "cnm_p023_q1",
+      "topicId": "cnm_p023",
+      "type": "numeric",
+      "difficulty": "basic",
+      "prompt": "三角形有幾條邊？",
+      "answer": "3",
+      "verify": "3",
+      "explanation": "三角形有 3 條邊。"
+    },
+    {
+      "id": "cnm_p023_q2",
+      "topicId": "cnm_p023",
+      "type": "choice",
+      "difficulty": "basic",
+      "prompt": "哪一個圖形有 4 條邊？",
+      "choices": [
+        {
+          "key": "A",
+          "text": "三角形"
+        },
+        {
+          "key": "B",
+          "text": "四邊形"
+        },
+        {
+          "key": "C",
+          "text": "五邊形"
+        },
+        {
+          "key": "D",
+          "text": "圓形"
+        }
+      ],
+      "answer": "B",
+      "explanation": "四邊形有 4 條邊。"
+    },
+    {
+      "id": "cnm_p023_q3",
+      "topicId": "cnm_p023",
+      "type": "choice",
+      "difficulty": "standard",
+      "prompt": "長方形和正方形都屬於哪一類圖形？",
+      "choices": [
+        {
+          "key": "A",
+          "text": "三角形"
+        },
+        {
+          "key": "B",
+          "text": "四邊形"
+        },
+        {
+          "key": "C",
+          "text": "五邊形"
+        },
+        {
+          "key": "D",
+          "text": "圓形"
+        }
+      ],
+      "answer": "B",
+      "explanation": "兩者都有 4 條邊，所以都是四邊形。正方形只是四條邊都相等的四邊形。"
+    },
+    {
+      "id": "cnm_p023_q4",
+      "topicId": "cnm_p023",
+      "type": "numeric",
+      "difficulty": "advanced",
+      "prompt": "五邊形有幾條邊？",
+      "answer": "5",
+      "verify": "5",
+      "explanation": "「五邊形」的名字就說明了它有 5 條邊。"
+    },
+    {
+      "id": "cnm_p024_q1",
+      "topicId": "cnm_p024",
+      "type": "numeric",
+      "difficulty": "basic",
+      "prompt": "用 2 個相同的三角形拼成一個四邊形。拼成的圖形有幾條邊？",
+      "answer": "4",
+      "verify": "4",
+      "explanation": "四邊形有 4 條邊。"
+    },
+    {
+      "id": "cnm_p024_q2",
+      "topicId": "cnm_p024",
+      "type": "choice",
+      "difficulty": "standard",
+      "prompt": "用 4 個相同的小正方形可以拼成甚麼？",
+      "choices": [
+        {
+          "key": "A",
+          "text": "圓形"
+        },
+        {
+          "key": "B",
+          "text": "三角形"
+        },
+        {
+          "key": "C",
+          "text": "大正方形"
+        },
+        {
+          "key": "D",
+          "text": "五邊形"
+        }
+      ],
+      "answer": "C",
+      "explanation": "2 × 2 排列就拼成一個大正方形。"
+    },
+    {
+      "id": "cnm_p024_q3",
+      "topicId": "cnm_p024",
+      "type": "choice",
+      "difficulty": "advanced",
+      "prompt": "把一個正方形沿對角線剪開，會得到兩個甚麼圖形？",
+      "choices": [
+        {
+          "key": "A",
+          "text": "正方形"
+        },
+        {
+          "key": "B",
+          "text": "三角形"
+        },
+        {
+          "key": "C",
+          "text": "長方形"
+        },
+        {
+          "key": "D",
+          "text": "圓形"
+        }
+      ],
+      "answer": "B",
+      "explanation": "沿對角線剪開，得到兩個三角形。"
+    },
+    {
+      "id": "cnm_p024_q4",
+      "topicId": "cnm_p024",
+      "type": "numeric",
+      "difficulty": "advanced",
+      "prompt": "一個大正方形由 4 個小正方形拼成。要拼成 2 個這樣的大正方形，一共要用幾個小正方形？",
+      "answer": "8",
+      "verify": "4*2",
+      "explanation": "每個大正方形用 4 個，2 個就是 4 × 2 = 8 個。"
+    }
+  ]
+}

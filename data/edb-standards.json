@@ -101,7 +101,7 @@
       "unit": "1N1",
       "title": "20以內的數",
       "source": "EDB 課程指引",
-      "topicCount": 10
+      "topicCount": 8
     },
     {
       "id": "edb-math:1N2",
@@ -111,7 +111,7 @@
       "unit": "1N2",
       "title": "基本加法和減法",
       "source": "EDB 課程指引",
-      "topicCount": 13
+      "topicCount": 14
     },
     {
       "id": "edb-math:1N3",
@@ -121,7 +121,7 @@
       "unit": "1N3",
       "title": "100以內的數",
       "source": "EDB 課程指引",
-      "topicCount": 2
+      "topicCount": 3
     },
     {
       "id": "edb-math:1N4",

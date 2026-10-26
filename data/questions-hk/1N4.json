@@ -1,0 +1,563 @@
+{
+  "unit": "1N4",
+  "unitName": "加法和減法(一)",
+  "keyStage": "KS1",
+  "strand": "數",
+  "source": "EDB 小學 1N4 加法和減法(一)：學習重點 1 兩個數的加法、4 兩個數的減法、5 加減法的直式、6 解簡易應用題",
+  "objectives": [
+    {
+      "code": "1",
+      "text": "進行兩個數的加法運算",
+      "topics": [
+        "cnm_p030",
+        "cnm_p031"
+      ]
+    },
+    {
+      "code": "4",
+      "text": "進行兩個數的減法運算",
+      "topics": [
+        "cnm_p032"
+      ]
+    },
+    {
+      "code": "5",
+      "text": "認識加法和減法的直式",
+      "topics": [
+        "cnm_p033",
+        "cnm_p034"
+      ]
+    },
+    {
+      "code": "6",
+      "text": "解簡易應用題（部分與總數、相差、比多比少）",
+      "topics": [
+        "cnm_p035",
+        "cnm_p217",
+        "cnm_p218"
+      ]
+    }
+  ],
+  "gaps": [
+    {
+      "code": "2",
+      "text": "進行三個數的加法運算",
+      "reason": "沒有對應知識點（現有「連加」在 1N2）。"
+    },
+    {
+      "code": "3",
+      "text": "認識加法結合性質",
+      "reason": "沒有對應知識點。"
+    }
+  ],
+  "note": "陷阱：進位忘記加 1、退位忘記減 1、以及「比多」「比少」要用加還是減。",
+  "questions": [
+    {
+      "id": "cnm_p030_q1",
+      "topicId": "cnm_p030",
+      "type": "numeric",
+      "difficulty": "basic",
+      "prompt": "30 + 40 = ?",
+      "answer": "70",
+      "verify": "30+40",
+      "explanation": "3 個十加 4 個十，得 7 個十，即 70。"
+    },
+    {
+      "id": "cnm_p030_q2",
+      "topicId": "cnm_p030",
+      "type": "numeric",
+      "difficulty": "basic",
+      "prompt": "80 − 50 = ?",
+      "answer": "30",
+      "verify": "80-50",
+      "explanation": "8 個十減 5 個十，得 3 個十，即 30。"
+    },
+    {
+      "id": "cnm_p030_q3",
+      "topicId": "cnm_p030",
+      "type": "choice",
+      "difficulty": "standard",
+      "prompt": "20 + 5 = ?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "25"
+        },
+        {
+          "key": "B",
+          "text": "70"
+        },
+        {
+          "key": "C",
+          "text": "205"
+        },
+        {
+          "key": "D",
+          "text": "15"
+        }
+      ],
+      "answer": "A",
+      "explanation": "20 加 5 個一，得 25。選 B 是把 20 當成 2 個十再加 5 個十。"
+    },
+    {
+      "id": "cnm_p030_q4",
+      "topicId": "cnm_p030",
+      "type": "numeric",
+      "difficulty": "advanced",
+      "prompt": "60 + 30 = ?",
+      "answer": "90",
+      "verify": "60+30",
+      "explanation": "6 個十加 3 個十，得 9 個十，即 90。"
+    },
+    {
+      "id": "cnm_p031_q1",
+      "topicId": "cnm_p031",
+      "type": "numeric",
+      "difficulty": "basic",
+      "prompt": "34 + 5 = ?",
+      "answer": "39",
+      "verify": "34+5",
+      "explanation": "個位 4 + 5 = 9，十位不變，得 39。"
+    },
+    {
+      "id": "cnm_p031_q2",
+      "topicId": "cnm_p031",
+      "type": "numeric",
+      "difficulty": "basic",
+      "prompt": "28 + 7 = ?",
+      "answer": "35",
+      "verify": "28+7",
+      "explanation": "8 + 7 = 15，個位寫 5 向十位進 1，得 35。"
+    },
+    {
+      "id": "cnm_p031_q3",
+      "topicId": "cnm_p031",
+      "type": "choice",
+      "difficulty": "standard",
+      "prompt": "46 + 8 = ?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "54"
+        },
+        {
+          "key": "B",
+          "text": "44"
+        },
+        {
+          "key": "C",
+          "text": "53"
+        },
+        {
+          "key": "D",
+          "text": "414"
+        }
+      ],
+      "answer": "A",
+      "explanation": "6 + 8 = 14，個位寫 4，向十位進 1，得 54。選 B 是忘記進位。"
+    },
+    {
+      "id": "cnm_p031_q4",
+      "topicId": "cnm_p031",
+      "type": "numeric",
+      "difficulty": "advanced",
+      "prompt": "57 + 6 = ?",
+      "answer": "63",
+      "verify": "57+6",
+      "explanation": "7 + 6 = 13，寫 3 進 1，5 + 1 = 6，得 63。"
+    },
+    {
+      "id": "cnm_p032_q1",
+      "topicId": "cnm_p032",
+      "type": "numeric",
+      "difficulty": "basic",
+      "prompt": "47 − 5 = ?",
+      "answer": "42",
+      "verify": "47-5",
+      "explanation": "個位 7 − 5 = 2，十位不變，得 42。"
+    },
+    {
+      "id": "cnm_p032_q2",
+      "topicId": "cnm_p032",
+      "type": "numeric",
+      "difficulty": "basic",
+      "prompt": "52 − 8 = ?",
+      "answer": "44",
+      "verify": "52-8",
+      "explanation": "2 不夠減 8，向十位借 1：12 − 8 = 4，十位剩 4，得 44。"
+    },
+    {
+      "id": "cnm_p032_q3",
+      "topicId": "cnm_p032",
+      "type": "choice",
+      "difficulty": "standard",
+      "prompt": "63 − 7 = ?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "56"
+        },
+        {
+          "key": "B",
+          "text": "66"
+        },
+        {
+          "key": "C",
+          "text": "54"
+        },
+        {
+          "key": "D",
+          "text": "57"
+        }
+      ],
+      "answer": "A",
+      "explanation": "13 − 7 = 6，十位剩 5，得 56。選 B 是忘記借位後十位要減 1。"
+    },
+    {
+      "id": "cnm_p032_q4",
+      "topicId": "cnm_p032",
+      "type": "numeric",
+      "difficulty": "advanced",
+      "prompt": "90 − 6 = ?",
+      "answer": "84",
+      "verify": "90-6",
+      "explanation": "0 不夠減 6，向十位借：10 − 6 = 4，十位剩 8，得 84。"
+    },
+    {
+      "id": "cnm_p033_q1",
+      "topicId": "cnm_p033",
+      "type": "numeric",
+      "difficulty": "basic",
+      "prompt": "36 + 47 = ?",
+      "answer": "83",
+      "verify": "36+47",
+      "explanation": "個位 6 + 7 = 13 寫 3 進 1；十位 3 + 4 + 1 = 8，得 83。"
+    },
+    {
+      "id": "cnm_p033_q2",
+      "topicId": "cnm_p033",
+      "type": "numeric",
+      "difficulty": "basic",
+      "prompt": "58 + 29 = ?",
+      "answer": "87",
+      "verify": "58+29",
+      "explanation": "8 + 9 = 17 寫 7 進 1；5 + 2 + 1 = 8，得 87。"
+    },
+    {
+      "id": "cnm_p033_q3",
+      "topicId": "cnm_p033",
+      "type": "choice",
+      "difficulty": "standard",
+      "prompt": "45 + 38 = ?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "73"
+        },
+        {
+          "key": "B",
+          "text": "83"
+        },
+        {
+          "key": "C",
+          "text": "82"
+        },
+        {
+          "key": "D",
+          "text": "713"
+        }
+      ],
+      "answer": "B",
+      "explanation": "5 + 8 = 13 寫 3 進 1；4 + 3 + 1 = 8，得 83。選 A 是忘記把進位的 1 加到十位。"
+    },
+    {
+      "id": "cnm_p033_q4",
+      "topicId": "cnm_p033",
+      "type": "numeric",
+      "difficulty": "advanced",
+      "prompt": "27 + 65 = ?",
+      "answer": "92",
+      "verify": "27+65",
+      "explanation": "7 + 5 = 12 寫 2 進 1；2 + 6 + 1 = 9，得 92。"
+    },
+    {
+      "id": "cnm_p034_q1",
+      "topicId": "cnm_p034",
+      "type": "numeric",
+      "difficulty": "basic",
+      "prompt": "74 − 28 = ?",
+      "answer": "46",
+      "verify": "74-28",
+      "explanation": "4 不夠減 8，借位：14 − 8 = 6；十位 7 − 1 − 2 = 4，得 46。"
+    },
+    {
+      "id": "cnm_p034_q2",
+      "topicId": "cnm_p034",
+      "type": "numeric",
+      "difficulty": "basic",
+      "prompt": "50 − 17 = ?",
+      "answer": "33",
+      "verify": "50-17",
+      "explanation": "0 不夠減 7，借位：10 − 7 = 3；十位 5 − 1 − 1 = 3，得 33。"
+    },
+    {
+      "id": "cnm_p034_q3",
+      "topicId": "cnm_p034",
+      "type": "choice",
+      "difficulty": "standard",
+      "prompt": "62 − 35 = ?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "27"
+        },
+        {
+          "key": "B",
+          "text": "37"
+        },
+        {
+          "key": "C",
+          "text": "33"
+        },
+        {
+          "key": "D",
+          "text": "97"
+        }
+      ],
+      "answer": "A",
+      "explanation": "12 − 5 = 7；十位 6 − 1 − 3 = 2，得 27。選 B 是忘記借位後十位要減 1。"
+    },
+    {
+      "id": "cnm_p034_q4",
+      "topicId": "cnm_p034",
+      "type": "numeric",
+      "difficulty": "advanced",
+      "prompt": "81 − 46 = ?",
+      "answer": "35",
+      "verify": "81-46",
+      "explanation": "11 − 6 = 5；十位 8 − 1 − 4 = 3，得 35。"
+    },
+    {
+      "id": "cnm_p035_q1",
+      "topicId": "cnm_p035",
+      "type": "numeric",
+      "difficulty": "basic",
+      "prompt": "一共有 15 粒糖，其中 6 粒是紅的，其餘是藍的。藍色有幾粒？",
+      "answer": "9",
+      "verify": "15-6",
+      "explanation": "總數減去一部分，就是另一部分：15 − 6 = 9。"
+    },
+    {
+      "id": "cnm_p035_q2",
+      "topicId": "cnm_p035",
+      "type": "numeric",
+      "difficulty": "basic",
+      "prompt": "班上有 28 人，其中 13 人是男生。女生有幾人？",
+      "answer": "15",
+      "verify": "28-13",
+      "explanation": "28 − 13 = 15。"
+    },
+    {
+      "id": "cnm_p035_q3",
+      "topicId": "cnm_p035",
+      "type": "choice",
+      "difficulty": "standard",
+      "prompt": "書架上有 40 本書，借走了一些，還剩 25 本。借走了幾本？",
+      "choices": [
+        {
+          "key": "A",
+          "text": "15 本"
+        },
+        {
+          "key": "B",
+          "text": "65 本"
+        },
+        {
+          "key": "C",
+          "text": "25 本"
+        },
+        {
+          "key": "D",
+          "text": "40 本"
+        }
+      ],
+      "answer": "A",
+      "explanation": "總數 − 剩下 = 借走：40 − 25 = 15。選 B 是把兩個數相加。"
+    },
+    {
+      "id": "cnm_p035_q4",
+      "topicId": "cnm_p035",
+      "type": "choice",
+      "difficulty": "advanced",
+      "prompt": "一箱有 50 個橙，吃了一些後剩 32 個。吃了幾個？",
+      "choices": [
+        {
+          "key": "A",
+          "text": "18 個"
+        },
+        {
+          "key": "B",
+          "text": "82 個"
+        },
+        {
+          "key": "C",
+          "text": "32 個"
+        },
+        {
+          "key": "D",
+          "text": "22 個"
+        }
+      ],
+      "answer": "A",
+      "explanation": "50 − 32 = 18。"
+    },
+    {
+      "id": "cnm_p217_q1",
+      "topicId": "cnm_p217",
+      "type": "numeric",
+      "difficulty": "basic",
+      "prompt": "小美有 12 張貼紙，小明有 8 張。小美比小明多幾張？",
+      "answer": "4",
+      "verify": "12-8",
+      "explanation": "求相差用大數減小數：12 − 8 = 4。"
+    },
+    {
+      "id": "cnm_p217_q2",
+      "topicId": "cnm_p217",
+      "type": "numeric",
+      "difficulty": "basic",
+      "prompt": "樹上有 15 隻麻雀，電線上有 9 隻。樹上比電線多幾隻？",
+      "answer": "6",
+      "verify": "15-9",
+      "explanation": "15 − 9 = 6。"
+    },
+    {
+      "id": "cnm_p217_q3",
+      "topicId": "cnm_p217",
+      "type": "choice",
+      "difficulty": "standard",
+      "prompt": "哥哥高 130 厘米，弟弟高 115 厘米。哥哥比弟弟高幾厘米？",
+      "choices": [
+        {
+          "key": "A",
+          "text": "15 厘米"
+        },
+        {
+          "key": "B",
+          "text": "245 厘米"
+        },
+        {
+          "key": "C",
+          "text": "25 厘米"
+        },
+        {
+          "key": "D",
+          "text": "115 厘米"
+        }
+      ],
+      "answer": "A",
+      "explanation": "130 − 115 = 15。選 B 是把兩個數相加。"
+    },
+    {
+      "id": "cnm_p217_q4",
+      "topicId": "cnm_p217",
+      "type": "choice",
+      "difficulty": "advanced",
+      "prompt": "一班有 35 人，二班有 29 人。二班比一班少幾人？",
+      "choices": [
+        {
+          "key": "A",
+          "text": "6 人"
+        },
+        {
+          "key": "B",
+          "text": "64 人"
+        },
+        {
+          "key": "C",
+          "text": "29 人"
+        },
+        {
+          "key": "D",
+          "text": "5 人"
+        }
+      ],
+      "answer": "A",
+      "explanation": "35 − 29 = 6。問「少幾」也是大數減小數。"
+    },
+    {
+      "id": "cnm_p218_q1",
+      "topicId": "cnm_p218",
+      "type": "numeric",
+      "difficulty": "basic",
+      "prompt": "小明有 9 粒糖，小美比小明多 3 粒。小美有幾粒？",
+      "answer": "12",
+      "verify": "9+3",
+      "explanation": "「比……多」用加法：9 + 3 = 12。"
+    },
+    {
+      "id": "cnm_p218_q2",
+      "topicId": "cnm_p218",
+      "type": "numeric",
+      "difficulty": "basic",
+      "prompt": "小美有 12 粒糖，小明比小美少 3 粒。小明有幾粒？",
+      "answer": "9",
+      "verify": "12-3",
+      "explanation": "「比……少」用減法：12 − 3 = 9。"
+    },
+    {
+      "id": "cnm_p218_q3",
+      "topicId": "cnm_p218",
+      "type": "choice",
+      "difficulty": "standard",
+      "prompt": "紅繩長 25 厘米，藍繩比紅繩長 8 厘米。藍繩長幾厘米？",
+      "choices": [
+        {
+          "key": "A",
+          "text": "33 厘米"
+        },
+        {
+          "key": "B",
+          "text": "17 厘米"
+        },
+        {
+          "key": "C",
+          "text": "8 厘米"
+        },
+        {
+          "key": "D",
+          "text": "25 厘米"
+        }
+      ],
+      "answer": "A",
+      "explanation": "「比紅繩長」用加法：25 + 8 = 33。選 B 是當成「比紅繩短」。"
+    },
+    {
+      "id": "cnm_p218_q4",
+      "topicId": "cnm_p218",
+      "type": "choice",
+      "difficulty": "advanced",
+      "prompt": "一年級有 40 人，二年級比一年級少 6 人。二年級有幾人？",
+      "choices": [
+        {
+          "key": "A",
+          "text": "34 人"
+        },
+        {
+          "key": "B",
+          "text": "46 人"
+        },
+        {
+          "key": "C",
+          "text": "6 人"
+        },
+        {
+          "key": "D",
+          "text": "40 人"
+        }
+      ],
+      "answer": "A",
+      "explanation": "「比一年級少」用減法：40 − 6 = 34。選 B 是看到「少」仍然相加。"
+    }
+  ]
+}

@@ -1,0 +1,250 @@
+{
+  "unit": "1N3",
+  "unitName": "100以內的數",
+  "keyStage": "KS1",
+  "strand": "數",
+  "source": "EDB 小學 1N3 100以內的數：學習重點 1 認識100以內的數、2 認識個位和十位、3 比較數的大小",
+  "objectives": [
+    {
+      "code": "1",
+      "text": "認識100以內的數",
+      "topics": [
+        "cnm_p028"
+      ]
+    },
+    {
+      "code": "2",
+      "text": "認識個位和十位的概念",
+      "topics": [
+        "cnm_p017"
+      ]
+    },
+    {
+      "code": "3",
+      "text": "比較數的大小",
+      "topics": [
+        "cnm_p029"
+      ]
+    }
+  ],
+  "gaps": [
+    {
+      "code": "4",
+      "text": "以每……估計物件數量",
+      "reason": "沒有對應知識點。"
+    },
+    {
+      "code": "5",
+      "text": "估計物件的數量",
+      "reason": "沒有對應知識點。"
+    }
+  ],
+  "note": "陷阱：位值（把 60 讀成 6）、位值倒置（38 與 83）、以及比較時只看其中一位。",
+  "questions": [
+    {
+      "id": "cnm_p028_q1",
+      "topicId": "cnm_p028",
+      "type": "numeric",
+      "difficulty": "basic",
+      "prompt": "由 90 數到 100。100 是幾個十？",
+      "answer": "10",
+      "verify": "10",
+      "explanation": "100 = 10 個十。"
+    },
+    {
+      "id": "cnm_p028_q2",
+      "topicId": "cnm_p028",
+      "type": "numeric",
+      "difficulty": "basic",
+      "prompt": "99 的後面一個數是幾？",
+      "answer": "100",
+      "verify": "99+1",
+      "explanation": "99 之後是 100。"
+    },
+    {
+      "id": "cnm_p028_q3",
+      "topicId": "cnm_p028",
+      "type": "choice",
+      "difficulty": "standard",
+      "prompt": "十位是 6、個位是 0，這個數是甚麼？",
+      "choices": [
+        {
+          "key": "A",
+          "text": "6"
+        },
+        {
+          "key": "B",
+          "text": "60"
+        },
+        {
+          "key": "C",
+          "text": "06"
+        },
+        {
+          "key": "D",
+          "text": "600"
+        }
+      ],
+      "answer": "B",
+      "explanation": "十位 6 表示 60，個位 0 表示沒有，所以是 60。選 A 是把位值當成數字本身。"
+    },
+    {
+      "id": "cnm_p028_q4",
+      "topicId": "cnm_p028",
+      "type": "numeric",
+      "difficulty": "advanced",
+      "prompt": "100 裡面有幾個十？",
+      "answer": "10",
+      "verify": "10",
+      "explanation": "100 = 10 個十。"
+    },
+    {
+      "id": "cnm_p017_q1",
+      "topicId": "cnm_p017",
+      "type": "numeric",
+      "difficulty": "basic",
+      "prompt": "在 47 中，十位上的數字是幾？",
+      "answer": "4",
+      "verify": "4",
+      "explanation": "47 的十位是 4，表示 4 個十。"
+    },
+    {
+      "id": "cnm_p017_q2",
+      "topicId": "cnm_p017",
+      "type": "numeric",
+      "difficulty": "basic",
+      "prompt": "在 47 中，個位上的數字是幾？",
+      "answer": "7",
+      "verify": "7",
+      "explanation": "47 的個位是 7。"
+    },
+    {
+      "id": "cnm_p017_q3",
+      "topicId": "cnm_p017",
+      "type": "choice",
+      "difficulty": "standard",
+      "prompt": "十位是 3、個位是 8，這個數是甚麼？",
+      "choices": [
+        {
+          "key": "A",
+          "text": "38"
+        },
+        {
+          "key": "B",
+          "text": "83"
+        },
+        {
+          "key": "C",
+          "text": "11"
+        },
+        {
+          "key": "D",
+          "text": "308"
+        }
+      ],
+      "answer": "A",
+      "explanation": "十位 3 = 30，個位 8，合起來是 38。"
+    },
+    {
+      "id": "cnm_p017_q4",
+      "topicId": "cnm_p017",
+      "type": "choice",
+      "difficulty": "advanced",
+      "prompt": "在 70 中，個位上的數字是幾？",
+      "choices": [
+        {
+          "key": "A",
+          "text": "7"
+        },
+        {
+          "key": "B",
+          "text": "0"
+        },
+        {
+          "key": "C",
+          "text": "70"
+        },
+        {
+          "key": "D",
+          "text": "沒有個位"
+        }
+      ],
+      "answer": "B",
+      "explanation": "70 的個位是 0。選 D 是以為「沒有」就不用寫 0。"
+    },
+    {
+      "id": "cnm_p029_q1",
+      "topicId": "cnm_p029",
+      "type": "numeric",
+      "difficulty": "basic",
+      "prompt": "63 和 36，哪一個較大？",
+      "answer": "63",
+      "verify": "63",
+      "explanation": "63 的十位是 6，36 的十位是 3，所以 63 較大。"
+    },
+    {
+      "id": "cnm_p029_q2",
+      "topicId": "cnm_p029",
+      "type": "choice",
+      "difficulty": "standard",
+      "prompt": "45 和 54 比較，哪一句對？",
+      "choices": [
+        {
+          "key": "A",
+          "text": "45 較大"
+        },
+        {
+          "key": "B",
+          "text": "54 較大"
+        },
+        {
+          "key": "C",
+          "text": "一樣大"
+        },
+        {
+          "key": "D",
+          "text": "不能比較"
+        }
+      ],
+      "answer": "B",
+      "explanation": "先比十位：5 比 4 大，所以 54 較大。兩個數字相同但位置不同，大小不同。"
+    },
+    {
+      "id": "cnm_p029_q3",
+      "topicId": "cnm_p029",
+      "type": "choice",
+      "difficulty": "standard",
+      "prompt": "78 和 72，哪一個較大？",
+      "choices": [
+        {
+          "key": "A",
+          "text": "78"
+        },
+        {
+          "key": "B",
+          "text": "72"
+        },
+        {
+          "key": "C",
+          "text": "一樣大"
+        },
+        {
+          "key": "D",
+          "text": "不能比較"
+        }
+      ],
+      "answer": "A",
+      "explanation": "十位相同（都是 7），再比個位：8 比 2 大，所以 78 較大。"
+    },
+    {
+      "id": "cnm_p029_q4",
+      "topicId": "cnm_p029",
+      "type": "numeric",
+      "difficulty": "advanced",
+      "prompt": "比 59 大 1 的數是幾？",
+      "answer": "60",
+      "verify": "59+1",
+      "explanation": "59 之後是 60，十位進 1。"
+    }
+  ]
+}

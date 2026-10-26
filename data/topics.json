@@ -139,9 +139,9 @@
     "semester": "全",
     "strand": "數",
     "domain": "數",
-    "unit": "1N1",
-    "unitName": "20以內的數",
-    "chapter": "1N1 20以內的數",
+    "unit": "1N2",
+    "unitName": "基本加法和減法",
+    "chapter": "1N2 基本加法和減法",
     "type": "conceptual",
     "description": "知道 0 表示一个也没有，会读写 0。",
     "mastery_criteria": [
@@ -155,7 +155,7 @@
     "external": false,
     "standards": [
       {
-        "id": "edb-math:1N1",
+        "id": "edb-math:1N2",
         "confidence": "exact"
       }
     ]
@@ -523,9 +523,9 @@
     "semester": "全",
     "strand": "數",
     "domain": "數",
-    "unit": "1N1",
-    "unitName": "20以內的數",
-    "chapter": "1N1 20以內的數",
+    "unit": "1N3",
+    "unitName": "100以內的數",
+    "chapter": "1N3 100以內的數",
     "type": "conceptual",
     "description": "知道两位数里十位上的数表示几个十，个位上的数表示几个一。",
     "mastery_criteria": [
@@ -539,7 +539,7 @@
     "external": false,
     "standards": [
       {
-        "id": "edb-math:1N1",
+        "id": "edb-math:1N3",
         "confidence": "exact"
       }
     ]

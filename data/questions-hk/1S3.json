@@ -1,0 +1,134 @@
+{
+  "unit": "1S3",
+  "unitName": "方向和位置(一)",
+  "keyStage": "KS1",
+  "strand": "圖形與空間",
+  "source": "EDB 小學 1S3 方向和位置(一)：學習重點 1 以「上」、「下」、「左」、「右」、「前」、「後」和「之間」描述位置",
+  "objectives": [
+    {
+      "code": "1",
+      "text": "從觀測者的角度以「上、下、左、右、前、後、之間」描述物件的相對位置",
+      "topics": [
+        "cnm_p015"
+      ]
+    }
+  ],
+  "gaps": [
+    {
+      "code": "2",
+      "text": "設計數獨遊戲",
+      "reason": "抽取時混入了 1E1 增潤課題的內容，不是本單元學習重點。"
+    }
+  ],
+  "note": "陷阱：換了觀察者，左右會相反（p015 q3）。這是小一最常見的誤解。",
+  "questions": [
+    {
+      "id": "cnm_p015_q1",
+      "topicId": "cnm_p015",
+      "type": "choice",
+      "difficulty": "basic",
+      "prompt": "鉛筆在書本的上面。書本在鉛筆的哪一邊？",
+      "choices": [
+        {
+          "key": "A",
+          "text": "上面"
+        },
+        {
+          "key": "B",
+          "text": "下面"
+        },
+        {
+          "key": "C",
+          "text": "左邊"
+        },
+        {
+          "key": "D",
+          "text": "右邊"
+        }
+      ],
+      "answer": "B",
+      "explanation": "上下是相對的：鉛筆在書本上面，書本就在鉛筆下面。"
+    },
+    {
+      "id": "cnm_p015_q2",
+      "topicId": "cnm_p015",
+      "type": "choice",
+      "difficulty": "basic",
+      "prompt": "小明面向黑板，老師站在他後面。老師在小明的哪一邊？",
+      "choices": [
+        {
+          "key": "A",
+          "text": "前面"
+        },
+        {
+          "key": "B",
+          "text": "後面"
+        },
+        {
+          "key": "C",
+          "text": "左邊"
+        },
+        {
+          "key": "D",
+          "text": "右邊"
+        }
+      ],
+      "answer": "B",
+      "explanation": "老師在小明後面。"
+    },
+    {
+      "id": "cnm_p015_q3",
+      "topicId": "cnm_p015",
+      "type": "choice",
+      "difficulty": "advanced",
+      "prompt": "小美和小明面對面站著。小美的右手邊，對小明來說是哪一邊？",
+      "choices": [
+        {
+          "key": "A",
+          "text": "右手邊"
+        },
+        {
+          "key": "B",
+          "text": "左手邊"
+        },
+        {
+          "key": "C",
+          "text": "前面"
+        },
+        {
+          "key": "D",
+          "text": "後面"
+        }
+      ],
+      "answer": "B",
+      "explanation": "面對面時左右相反：小美的右邊，正是小明的左邊。"
+    },
+    {
+      "id": "cnm_p015_q4",
+      "topicId": "cnm_p015",
+      "type": "choice",
+      "difficulty": "standard",
+      "prompt": "三個小朋友排成一行：小明在左，小美在中間，小華在右。小華在小美的哪一邊？",
+      "choices": [
+        {
+          "key": "A",
+          "text": "左邊"
+        },
+        {
+          "key": "B",
+          "text": "右邊"
+        },
+        {
+          "key": "C",
+          "text": "前面"
+        },
+        {
+          "key": "D",
+          "text": "後面"
+        }
+      ],
+      "answer": "B",
+      "explanation": "小華在小美右邊。"
+    }
+  ]
+}

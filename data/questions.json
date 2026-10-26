@@ -2,375 +2,234 @@
   {
     "id": "cnm_p001_q1",
     "topicId": "cnm_p001",
-    "difficulty": "basic",
     "type": "numeric",
-    "prompt": "3 的后面一个数是几？",
-    "answer": "4",
-    "explanation": "3 的后面是 4。",
-    "verify": "3+1"
+    "difficulty": "basic",
+    "prompt": "4 的後面一個數是幾？",
+    "answer": "5",
+    "verify": "4+1",
+    "explanation": "4 之後是 5。"
   },
   {
     "id": "cnm_p001_q2",
     "topicId": "cnm_p001",
-    "difficulty": "basic",
     "type": "numeric",
-    "prompt": "4 的前面一个数是几？",
-    "answer": "3",
-    "explanation": "4 的前面是 3。",
-    "verify": "4-1"
+    "difficulty": "basic",
+    "prompt": "3 的前面一個數是幾？",
+    "answer": "2",
+    "verify": "3-1",
+    "explanation": "3 之前是 2。"
   },
   {
     "id": "cnm_p001_q3",
     "topicId": "cnm_p001",
+    "type": "choice",
     "difficulty": "standard",
-    "type": "numeric",
-    "prompt": "2 的后面一个数是几？",
-    "answer": "3",
-    "explanation": "从 2 再数一个就是 3。",
-    "verify": "2+1"
+    "prompt": "由 2 數到 5（2 和 5 都要數），一共數了幾個數？",
+    "choices": [
+      {
+        "key": "A",
+        "text": "3 個"
+      },
+      {
+        "key": "B",
+        "text": "4 個"
+      },
+      {
+        "key": "C",
+        "text": "5 個"
+      },
+      {
+        "key": "D",
+        "text": "2 個"
+      }
+    ],
+    "answer": "B",
+    "explanation": "2、3、4、5，共 4 個。用 5 − 2 = 3 會漏掉起點 2，要 5 − 2 + 1 = 4。"
   },
   {
     "id": "cnm_p001_q4",
     "topicId": "cnm_p001",
-    "difficulty": "standard",
-    "type": "choice",
-    "prompt": "第几是看顺序，从 1 开始数。排队时左边第 1 个，表示的是什么？",
-    "choices": [
-      {
-        "key": "A",
-        "text": "顺序，从 1 开始数"
-      },
-      {
-        "key": "B",
-        "text": "一共有多少个"
-      },
-      {
-        "key": "C",
-        "text": "比别人多几个"
-      }
-    ],
-    "answer": "A",
-    "explanation": "第几说的是位置顺序，不是总数。",
-    "verify": "'顺序，从 1 开始数'"
+    "type": "numeric",
+    "difficulty": "advanced",
+    "prompt": "倒數：6、5、4、3、□。□ 是幾？",
+    "answer": "2",
+    "verify": "6-4",
+    "explanation": "每次少 1，3 之後是 2。"
   },
   {
     "id": "cnm_p002_q1",
     "topicId": "cnm_p002",
-    "difficulty": "basic",
     "type": "numeric",
-    "prompt": "计算：4－2＝？",
-    "answer": "2",
-    "explanation": "4 比 2 大，4－2＝2。",
-    "verify": "4-2"
+    "difficulty": "basic",
+    "prompt": "4 和 2，較大的數是幾？",
+    "answer": "4",
+    "verify": "4",
+    "explanation": "4 比 2 大。"
   },
   {
     "id": "cnm_p002_q2",
     "topicId": "cnm_p002",
+    "type": "choice",
     "difficulty": "basic",
-    "type": "numeric",
-    "prompt": "计算：5－1＝？",
-    "answer": "4",
-    "explanation": "5－1＝4，所以 5 比 1 大。",
-    "verify": "5-1"
+    "prompt": "3 和 3 比較，結果是甚麼？",
+    "choices": [
+      {
+        "key": "A",
+        "text": "3 比 3 大"
+      },
+      {
+        "key": "B",
+        "text": "3 比 3 小"
+      },
+      {
+        "key": "C",
+        "text": "一樣多"
+      },
+      {
+        "key": "D",
+        "text": "不能比較"
+      }
+    ],
+    "answer": "C",
+    "explanation": "兩個數相同，就是一樣多，沒有誰大誰小。"
   },
   {
     "id": "cnm_p002_q3",
     "topicId": "cnm_p002",
+    "type": "choice",
     "difficulty": "standard",
-    "type": "numeric",
-    "prompt": "小明有 5 颗珠子，小红有 3 颗。小明比小红多几颗？计算：5－3＝？",
-    "answer": "2",
-    "explanation": "多几颗用减法，5－3＝2。",
-    "verify": "5-3"
+    "prompt": "哥哥有 4 粒糖，妹妹有 2 粒糖。哪一句對？",
+    "choices": [
+      {
+        "key": "A",
+        "text": "妹妹比哥哥多"
+      },
+      {
+        "key": "B",
+        "text": "哥哥比妹妹多"
+      },
+      {
+        "key": "C",
+        "text": "一樣多"
+      },
+      {
+        "key": "D",
+        "text": "不知道"
+      }
+    ],
+    "answer": "B",
+    "explanation": "4 比 2 多，所以哥哥比妹妹多。"
   },
   {
     "id": "cnm_p002_q4",
     "topicId": "cnm_p002",
-    "difficulty": "standard",
     "type": "choice",
-    "prompt": "盘子里有 4 个苹果，碗里有 2 个梨。哪种水果多？",
+    "difficulty": "advanced",
+    "prompt": "有 5 個蘋果和 5 個橙。小明說：「蘋果比橙多，因為蘋果比較大。」他的說法對不對？",
     "choices": [
       {
         "key": "A",
-        "text": "苹果多"
+        "text": "對，蘋果比較大"
       },
       {
         "key": "B",
-        "text": "梨多"
+        "text": "不對，兩者一樣多"
       },
       {
         "key": "C",
-        "text": "一样多"
+        "text": "對，蘋果比較重"
       },
       {
         "key": "D",
-        "text": "无法比较"
+        "text": "不知道"
       }
     ],
-    "answer": "A",
-    "explanation": "4 比 2 大，所以苹果多。",
-    "verify": "'苹果多'"
+    "answer": "B",
+    "explanation": "比較多少只看數量，不看大小。都是 5 個，就是一樣多。"
   },
   {
     "id": "cnm_p003_q1",
     "topicId": "cnm_p003",
-    "difficulty": "basic",
     "type": "numeric",
-    "prompt": "4 的后面一个数是几？",
+    "difficulty": "basic",
+    "prompt": "一排有 5 個小朋友，一共有幾個小朋友？",
     "answer": "5",
-    "explanation": "第 4 个的后面是第 5 个，数是 5。",
-    "verify": "4+1"
+    "verify": "5",
+    "explanation": "問「一共幾個」是數總數，答案是 5。"
   },
   {
     "id": "cnm_p003_q2",
     "topicId": "cnm_p003",
-    "difficulty": "basic",
-    "type": "choice",
-    "prompt": "从左数，排在最前面的是第几个？",
-    "choices": [
-      {
-        "key": "A",
-        "text": "第1个"
-      },
-      {
-        "key": "B",
-        "text": "第5个"
-      },
-      {
-        "key": "C",
-        "text": "一共有5个"
-      }
-    ],
-    "answer": "A",
-    "explanation": "最前面是第1个；「一共有几个」说的是总数，不是第几。",
-    "verify": "'第1个'"
+    "type": "numeric",
+    "difficulty": "standard",
+    "prompt": "由左邊數起，小美排第 3 個。小美的左邊有幾個小朋友？",
+    "answer": "2",
+    "verify": "3-1",
+    "explanation": "第 3 個的左邊是第 1、第 2 個，共 2 人。「第幾個」不是「有幾個」。"
   },
   {
     "id": "cnm_p003_q3",
     "topicId": "cnm_p003",
+    "type": "choice",
     "difficulty": "standard",
-    "type": "numeric",
-    "prompt": "计算：3＋1＝？",
-    "answer": "4",
-    "explanation": "第 3 个再往后一个是第 4 个，3＋1＝4。",
-    "verify": "3+1"
+    "prompt": "排隊有 6 人，小明排最後一個。小明前面有幾人？",
+    "choices": [
+      {
+        "key": "A",
+        "text": "6 人"
+      },
+      {
+        "key": "B",
+        "text": "5 人"
+      },
+      {
+        "key": "C",
+        "text": "7 人"
+      },
+      {
+        "key": "D",
+        "text": "4 人"
+      }
+    ],
+    "answer": "B",
+    "explanation": "最後一個是第 6，前面有 5 人。"
   },
   {
     "id": "cnm_p003_q4",
     "topicId": "cnm_p003",
-    "difficulty": "standard",
     "type": "numeric",
-    "prompt": "5 个小朋友排成一队，小华排在第 5 个，小丽排在小华的前面一个。小丽排第几？",
-    "answer": "4",
-    "explanation": "小华是第 5 个，排在他前面一个的是第 4 个，5－1＝4。",
-    "verify": "5-1"
+    "difficulty": "advanced",
+    "prompt": "由左數起，紅波排第 2，藍波排第 5。紅波和藍波之間有幾個波？",
+    "answer": "2",
+    "verify": "5-2-1",
+    "explanation": "中間是第 3 和第 4 個，共 2 個。要減去兩端的兩個波。"
   },
   {
     "id": "cnm_p004_q1",
     "topicId": "cnm_p004",
-    "difficulty": "basic",
     "type": "numeric",
-    "prompt": "5 可以分成 2 和几？",
+    "difficulty": "basic",
+    "prompt": "5 可以分成 2 和幾？",
     "answer": "3",
-    "explanation": "5 分成 2 和 3，因为 2＋3＝5。",
-    "verify": "5-2"
+    "verify": "5-2",
+    "explanation": "2 和 3 合起來是 5。"
   },
   {
     "id": "cnm_p004_q2",
     "topicId": "cnm_p004",
-    "difficulty": "basic",
     "type": "numeric",
-    "prompt": "计算：1＋4＝？",
+    "difficulty": "basic",
+    "prompt": "3 和 2 合起來是幾？",
     "answer": "5",
-    "explanation": "1＋4＝5。",
-    "verify": "1+4"
+    "verify": "3+2",
+    "explanation": "3 加 2 得 5。"
   },
   {
     "id": "cnm_p004_q3",
     "topicId": "cnm_p004",
-    "difficulty": "standard",
-    "type": "numeric",
-    "prompt": "有 4 个圆片，又放进来 1 个。一共有多少个？计算：4＋1＝？",
-    "answer": "5",
-    "explanation": "把两部分合起来，4＋1＝5。",
-    "verify": "4+1"
-  },
-  {
-    "id": "cnm_p004_q4",
-    "topicId": "cnm_p004",
-    "difficulty": "standard",
     "type": "choice",
-    "prompt": "3＋2 的得数是哪一个？",
-    "choices": [
-      {
-        "key": "A",
-        "text": "6"
-      },
-      {
-        "key": "B",
-        "text": "4"
-      },
-      {
-        "key": "C",
-        "text": "7"
-      },
-      {
-        "key": "D",
-        "text": "5"
-      }
-    ],
-    "answer": "D",
-    "explanation": "3＋2＝5。",
-    "verify": "3+2"
-  },
-  {
-    "id": "cnm_p005_q1",
-    "topicId": "cnm_p005",
-    "difficulty": "basic",
-    "type": "numeric",
-    "prompt": "计算：3－3＝？",
-    "answer": "0",
-    "explanation": "3 个全部拿走，一个也没有，就是 0。",
-    "verify": "3-3"
-  },
-  {
-    "id": "cnm_p005_q2",
-    "topicId": "cnm_p005",
-    "difficulty": "basic",
-    "type": "choice",
-    "prompt": "0 表示一个也没有。盘子里一个苹果也没有，用哪个数表示？",
-    "choices": [
-      {
-        "key": "A",
-        "text": "0"
-      },
-      {
-        "key": "B",
-        "text": "1"
-      },
-      {
-        "key": "C",
-        "text": "5"
-      }
-    ],
-    "answer": "A",
-    "explanation": "一个也没有，用 0 表示。",
-    "verify": "0"
-  },
-  {
-    "id": "cnm_p005_q3",
-    "topicId": "cnm_p005",
     "difficulty": "standard",
-    "type": "numeric",
-    "prompt": "计算：5－5＝？",
-    "answer": "0",
-    "explanation": "5－5＝0。",
-    "verify": "5-5"
-  },
-  {
-    "id": "cnm_p005_q4",
-    "topicId": "cnm_p005",
-    "difficulty": "standard",
-    "type": "numeric",
-    "prompt": "计算：0＋4＝？",
-    "answer": "4",
-    "explanation": "一个也没有，再放上 4 个，还是 4。",
-    "verify": "0+4"
-  },
-  {
-    "id": "cnm_p006_q1",
-    "topicId": "cnm_p006",
-    "difficulty": "basic",
-    "type": "numeric",
-    "prompt": "计算：2＋3＝？",
-    "answer": "5",
-    "explanation": "2＋3＝5。",
-    "verify": "2+3"
-  },
-  {
-    "id": "cnm_p006_q2",
-    "topicId": "cnm_p006",
-    "difficulty": "basic",
-    "type": "numeric",
-    "prompt": "计算：1＋3＝？",
-    "answer": "4",
-    "explanation": "1＋3＝4。",
-    "verify": "1+3"
-  },
-  {
-    "id": "cnm_p006_q3",
-    "topicId": "cnm_p006",
-    "difficulty": "standard",
-    "type": "numeric",
-    "prompt": "有 2 朵花，又放进来 2 朵。一共有多少朵？计算：2＋2＝？",
-    "answer": "4",
-    "explanation": "把两部分合起来，2＋2＝4。",
-    "verify": "2+2"
-  },
-  {
-    "id": "cnm_p006_q4",
-    "topicId": "cnm_p006",
-    "difficulty": "standard",
-    "type": "choice",
-    "prompt": "4＋1 的得数是哪一个？",
-    "choices": [
-      {
-        "key": "A",
-        "text": "6"
-      },
-      {
-        "key": "B",
-        "text": "5"
-      },
-      {
-        "key": "C",
-        "text": "4"
-      },
-      {
-        "key": "D",
-        "text": "7"
-      }
-    ],
-    "answer": "B",
-    "explanation": "4＋1＝5。",
-    "verify": "4+1"
-  },
-  {
-    "id": "cnm_p007_q1",
-    "topicId": "cnm_p007",
-    "difficulty": "basic",
-    "type": "numeric",
-    "prompt": "计算：5－2＝？",
-    "answer": "3",
-    "explanation": "5－2＝3。",
-    "verify": "5-2"
-  },
-  {
-    "id": "cnm_p007_q2",
-    "topicId": "cnm_p007",
-    "difficulty": "basic",
-    "type": "numeric",
-    "prompt": "计算：4－1＝？",
-    "answer": "3",
-    "explanation": "4－1＝3。",
-    "verify": "4-1"
-  },
-  {
-    "id": "cnm_p007_q3",
-    "topicId": "cnm_p007",
-    "difficulty": "standard",
-    "type": "numeric",
-    "prompt": "有 5 个气球，拿走 3 个。还剩多少个？计算：5－3＝？",
-    "answer": "2",
-    "explanation": "从总数里去掉一部分，5－3＝2。",
-    "verify": "5-3"
-  },
-  {
-    "id": "cnm_p007_q4",
-    "topicId": "cnm_p007",
-    "difficulty": "standard",
-    "type": "choice",
-    "prompt": "3－1 的得数是哪一个？",
+    "prompt": "4 可以分成 1 和幾？",
     "choices": [
       {
         "key": "A",
@@ -386,93 +245,559 @@
       },
       {
         "key": "D",
-        "text": "1"
+        "text": "5"
+      }
+    ],
+    "answer": "B",
+    "explanation": "1 + 3 = 4，所以另一份是 3。"
+  },
+  {
+    "id": "cnm_p004_q4",
+    "topicId": "cnm_p004",
+    "type": "numeric",
+    "difficulty": "advanced",
+    "prompt": "把 5 分成兩份，其中一份是 0，另一份是幾？",
+    "answer": "5",
+    "verify": "5-0",
+    "explanation": "0 和 5 合起來是 5，所以另一份是 5。"
+  },
+  {
+    "id": "cnm_p005_q1",
+    "topicId": "cnm_p005",
+    "type": "numeric",
+    "difficulty": "basic",
+    "prompt": "盤子上有 0 個蘋果，即是盤上有幾個蘋果？",
+    "answer": "0",
+    "verify": "0",
+    "explanation": "0 表示一個也沒有。"
+  },
+  {
+    "id": "cnm_p005_q2",
+    "topicId": "cnm_p005",
+    "type": "numeric",
+    "difficulty": "basic",
+    "prompt": "3 − 3 = ?",
+    "answer": "0",
+    "verify": "3-3",
+    "explanation": "全部減去，得 0。"
+  },
+  {
+    "id": "cnm_p005_q3",
+    "topicId": "cnm_p005",
+    "type": "choice",
+    "difficulty": "standard",
+    "prompt": "0 + 4 = ?",
+    "choices": [
+      {
+        "key": "A",
+        "text": "0"
+      },
+      {
+        "key": "B",
+        "text": "4"
+      },
+      {
+        "key": "C",
+        "text": "04"
+      },
+      {
+        "key": "D",
+        "text": "不能計算"
+      }
+    ],
+    "answer": "B",
+    "explanation": "0 加任何數，還是那個數：0 + 4 = 4。選 A 是把「0 就是沒有」誤解成「結果是 0」。"
+  },
+  {
+    "id": "cnm_p005_q4",
+    "topicId": "cnm_p005",
+    "type": "choice",
+    "difficulty": "advanced",
+    "prompt": "小明說：「0 就是沒有，所以 0 不是數。」他的說法對不對？",
+    "choices": [
+      {
+        "key": "A",
+        "text": "對，0 不是數"
+      },
+      {
+        "key": "B",
+        "text": "不對，0 是一個數，表示一個也沒有"
+      },
+      {
+        "key": "C",
+        "text": "對，0 只能出現在答案裡"
+      },
+      {
+        "key": "D",
+        "text": "不知道"
+      }
+    ],
+    "answer": "B",
+    "explanation": "0 是一個數，可以寫、可以比大小、可以計算，只是它表示「沒有」。0 比 1 小。"
+  },
+  {
+    "id": "cnm_p006_q1",
+    "topicId": "cnm_p006",
+    "type": "numeric",
+    "difficulty": "basic",
+    "prompt": "2 + 3 = ?",
+    "answer": "5",
+    "verify": "2+3",
+    "explanation": "2 和 3 合起來是 5。"
+  },
+  {
+    "id": "cnm_p006_q2",
+    "topicId": "cnm_p006",
+    "type": "numeric",
+    "difficulty": "basic",
+    "prompt": "4 + 1 = ?",
+    "answer": "5",
+    "verify": "4+1",
+    "explanation": "4 再數 1 個就是 5。"
+  },
+  {
+    "id": "cnm_p006_q3",
+    "topicId": "cnm_p006",
+    "type": "choice",
+    "difficulty": "standard",
+    "prompt": "有 2 隻紅鳥和 3 隻藍鳥，一共有幾隻鳥？",
+    "choices": [
+      {
+        "key": "A",
+        "text": "1 隻"
+      },
+      {
+        "key": "B",
+        "text": "5 隻"
+      },
+      {
+        "key": "C",
+        "text": "6 隻"
+      },
+      {
+        "key": "D",
+        "text": "4 隻"
+      }
+    ],
+    "answer": "B",
+    "explanation": "求「一共」用加法：2 + 3 = 5。選 A 是用 3 − 2，把「合起來」當成「相差」。 "
+  },
+  {
+    "id": "cnm_p006_q4",
+    "topicId": "cnm_p006",
+    "type": "choice",
+    "difficulty": "advanced",
+    "prompt": "1 + 3 和 3 + 1 的答案一樣嗎？",
+    "choices": [
+      {
+        "key": "A",
+        "text": "一樣，都是 4"
+      },
+      {
+        "key": "B",
+        "text": "不一樣，1 + 3 較大"
+      },
+      {
+        "key": "C",
+        "text": "不一樣，3 + 1 較大"
+      },
+      {
+        "key": "D",
+        "text": "不知道"
       }
     ],
     "answer": "A",
-    "explanation": "3－1＝2。",
-    "verify": "3-1"
+    "explanation": "兩個數交換位置，和不变。但減法沒有這個性質：3 − 1 和 1 − 3 不一樣。"
+  },
+  {
+    "id": "cnm_p007_q1",
+    "topicId": "cnm_p007",
+    "type": "numeric",
+    "difficulty": "basic",
+    "prompt": "5 − 2 = ?",
+    "answer": "3",
+    "verify": "5-2",
+    "explanation": "5 去掉 2 個，剩 3 個。"
+  },
+  {
+    "id": "cnm_p007_q2",
+    "topicId": "cnm_p007",
+    "type": "numeric",
+    "difficulty": "basic",
+    "prompt": "4 − 4 = ?",
+    "answer": "0",
+    "verify": "4-4",
+    "explanation": "全部去掉，就是 0。"
+  },
+  {
+    "id": "cnm_p007_q3",
+    "topicId": "cnm_p007",
+    "type": "choice",
+    "difficulty": "standard",
+    "prompt": "有 5 粒糖，吃了 2 粒，還有幾粒？",
+    "choices": [
+      {
+        "key": "A",
+        "text": "3 粒"
+      },
+      {
+        "key": "B",
+        "text": "7 粒"
+      },
+      {
+        "key": "C",
+        "text": "2 粒"
+      },
+      {
+        "key": "D",
+        "text": "5 粒"
+      }
+    ],
+    "answer": "A",
+    "explanation": "「吃了」是去掉，用減法：5 − 2 = 3。選 B 是看到數字就相加。"
+  },
+  {
+    "id": "cnm_p007_q4",
+    "topicId": "cnm_p007",
+    "type": "choice",
+    "difficulty": "advanced",
+    "prompt": "樹上有 5 隻鳥，飛走了 5 隻，樹上還有幾隻？",
+    "choices": [
+      {
+        "key": "A",
+        "text": "5 隻"
+      },
+      {
+        "key": "B",
+        "text": "10 隻"
+      },
+      {
+        "key": "C",
+        "text": "0 隻"
+      },
+      {
+        "key": "D",
+        "text": "1 隻"
+      }
+    ],
+    "answer": "C",
+    "explanation": "5 − 5 = 0，全部飛走了。"
   },
   {
     "id": "cnm_p008_q1",
     "topicId": "cnm_p008",
-    "difficulty": "basic",
     "type": "numeric",
-    "prompt": "9 的后面一个数是几？",
+    "difficulty": "basic",
+    "prompt": "9 的後面一個數是幾？",
     "answer": "10",
-    "explanation": "9 再添 1 是 10。",
-    "verify": "9+1"
+    "verify": "9+1",
+    "explanation": "9 之後是 10。"
   },
   {
     "id": "cnm_p008_q2",
     "topicId": "cnm_p008",
-    "difficulty": "basic",
     "type": "numeric",
-    "prompt": "8 的前面一个数是几？",
-    "answer": "7",
-    "explanation": "8 的前面是 7。",
-    "verify": "8-1"
+    "difficulty": "basic",
+    "prompt": "7 的前面一個數是幾？",
+    "answer": "6",
+    "verify": "7-1",
+    "explanation": "7 之前是 6。"
   },
   {
     "id": "cnm_p008_q3",
     "topicId": "cnm_p008",
+    "type": "choice",
     "difficulty": "standard",
-    "type": "numeric",
-    "prompt": "6 的后面一个数是几？",
-    "answer": "7",
-    "explanation": "6 的后面是 7。",
-    "verify": "6+1"
+    "prompt": "由 6 數到 10（6 和 10 都要數），一共數了幾個數？",
+    "choices": [
+      {
+        "key": "A",
+        "text": "4 個"
+      },
+      {
+        "key": "B",
+        "text": "5 個"
+      },
+      {
+        "key": "C",
+        "text": "6 個"
+      },
+      {
+        "key": "D",
+        "text": "10 個"
+      }
+    ],
+    "answer": "B",
+    "explanation": "6、7、8、9、10，共 5 個。10 − 6 = 4 會漏掉起點。"
   },
   {
     "id": "cnm_p008_q4",
     "topicId": "cnm_p008",
-    "difficulty": "standard",
     "type": "numeric",
-    "prompt": "计算：10－1＝？",
-    "answer": "9",
-    "explanation": "10 的前面一个数是 9。",
-    "verify": "10-1"
+    "difficulty": "advanced",
+    "prompt": "10 裡面有幾個「一」？",
+    "answer": "10",
+    "verify": "10",
+    "explanation": "10 就是 10 個一。（10 也是 1 個十，但這裡問「一」。）"
   },
   {
     "id": "cnm_p009_q1",
     "topicId": "cnm_p009",
-    "difficulty": "basic",
     "type": "numeric",
-    "prompt": "计算：9－6＝？",
+    "difficulty": "basic",
+    "prompt": "8 比 5 多幾？",
     "answer": "3",
-    "explanation": "9－6＝3。",
-    "verify": "9-6"
+    "verify": "8-5",
+    "explanation": "求多幾用大數減小數：8 − 5 = 3。"
   },
   {
     "id": "cnm_p009_q2",
     "topicId": "cnm_p009",
-    "difficulty": "basic",
     "type": "numeric",
-    "prompt": "计算：10－7＝？",
-    "answer": "3",
-    "explanation": "10－7＝3。",
-    "verify": "10-7"
+    "difficulty": "basic",
+    "prompt": "5 比 9 少幾？",
+    "answer": "4",
+    "verify": "9-5",
+    "explanation": "求少幾也是大數減小數：9 − 5 = 4。"
   },
   {
     "id": "cnm_p009_q3",
     "topicId": "cnm_p009",
+    "type": "choice",
     "difficulty": "standard",
-    "type": "numeric",
-    "prompt": "一串有 10 颗珠子，另一串有 8 颗。10 颗的比 8 颗的多几颗？计算：10－8＝？",
-    "answer": "2",
-    "explanation": "10－8＝2。",
-    "verify": "10-8"
+    "prompt": "哥哥有 9 粒糖，妹妹有 6 粒。妹妹比哥哥少幾粒？",
+    "choices": [
+      {
+        "key": "A",
+        "text": "3 粒"
+      },
+      {
+        "key": "B",
+        "text": "6 粒"
+      },
+      {
+        "key": "C",
+        "text": "15 粒"
+      },
+      {
+        "key": "D",
+        "text": "9 粒"
+      }
+    ],
+    "answer": "A",
+    "explanation": "9 − 6 = 3。C 是把兩個數相加，題目問的是「少幾」，不是「合起來」。 "
   },
   {
     "id": "cnm_p009_q4",
     "topicId": "cnm_p009",
-    "difficulty": "standard",
+    "type": "numeric",
+    "difficulty": "advanced",
+    "prompt": "小美有 8 張貼紙，小明有 5 張。小明比小美少幾張？",
+    "answer": "3",
+    "verify": "8-5",
+    "explanation": "8 − 5 = 3。題目把「誰比誰少」換了說法，仍然是大數減小數。"
+  },
+  {
+    "id": "cnm_p010_q1",
+    "topicId": "cnm_p010",
+    "type": "numeric",
+    "difficulty": "basic",
+    "prompt": "6 + 3 = ?",
+    "answer": "9",
+    "verify": "6+3",
+    "explanation": "6 再數 3 個：7、8、9。"
+  },
+  {
+    "id": "cnm_p010_q2",
+    "topicId": "cnm_p010",
+    "type": "numeric",
+    "difficulty": "basic",
+    "prompt": "8 + 2 = ?",
+    "answer": "10",
+    "verify": "8+2",
+    "explanation": "8 和 2 剛好湊成 10。"
+  },
+  {
+    "id": "cnm_p010_q3",
+    "topicId": "cnm_p010",
     "type": "choice",
-    "prompt": "比 7 大又比 9 小的数是几？",
+    "difficulty": "standard",
+    "prompt": "小明有 4 本書，姐姐有 6 本。一共有幾本書？",
     "choices": [
       {
         "key": "A",
-        "text": "6"
+        "text": "2 本"
+      },
+      {
+        "key": "B",
+        "text": "10 本"
+      },
+      {
+        "key": "C",
+        "text": "24 本"
+      },
+      {
+        "key": "D",
+        "text": "6 本"
+      }
+    ],
+    "answer": "B",
+    "explanation": "4 + 6 = 10。選 A 是用 6 − 4 求相差，但題目問「一共」。"
+  },
+  {
+    "id": "cnm_p010_q4",
+    "topicId": "cnm_p010",
+    "type": "numeric",
+    "difficulty": "advanced",
+    "prompt": "7 + 3 = ?",
+    "answer": "10",
+    "verify": "7+3",
+    "explanation": "7 和 3 湊成 10。"
+  },
+  {
+    "id": "cnm_p011_q1",
+    "topicId": "cnm_p011",
+    "type": "numeric",
+    "difficulty": "basic",
+    "prompt": "9 − 4 = ?",
+    "answer": "5",
+    "verify": "9-4",
+    "explanation": "9 去掉 4，剩 5。"
+  },
+  {
+    "id": "cnm_p011_q2",
+    "topicId": "cnm_p011",
+    "type": "numeric",
+    "difficulty": "basic",
+    "prompt": "10 − 3 = ?",
+    "answer": "7",
+    "verify": "10-3",
+    "explanation": "10 去掉 3，剩 7。"
+  },
+  {
+    "id": "cnm_p011_q3",
+    "topicId": "cnm_p011",
+    "type": "choice",
+    "difficulty": "standard",
+    "prompt": "有 8 個蘋果，吃了 3 個，還有幾個？",
+    "choices": [
+      {
+        "key": "A",
+        "text": "5 個"
+      },
+      {
+        "key": "B",
+        "text": "11 個"
+      },
+      {
+        "key": "C",
+        "text": "3 個"
+      },
+      {
+        "key": "D",
+        "text": "8 個"
+      }
+    ],
+    "answer": "A",
+    "explanation": "8 − 3 = 5。"
+  },
+  {
+    "id": "cnm_p011_q4",
+    "topicId": "cnm_p011",
+    "type": "numeric",
+    "difficulty": "advanced",
+    "prompt": "10 − 10 = ?",
+    "answer": "0",
+    "verify": "10-10",
+    "explanation": "全部拿走，就是 0。"
+  },
+  {
+    "id": "cnm_p012_q1",
+    "topicId": "cnm_p012",
+    "type": "numeric",
+    "difficulty": "basic",
+    "prompt": "2 + 3 + 4 = ?",
+    "answer": "9",
+    "verify": "2+3+4",
+    "explanation": "先算 2 + 3 = 5，再算 5 + 4 = 9。"
+  },
+  {
+    "id": "cnm_p012_q2",
+    "topicId": "cnm_p012",
+    "type": "numeric",
+    "difficulty": "basic",
+    "prompt": "10 − 2 − 3 = ?",
+    "answer": "5",
+    "verify": "10-2-3",
+    "explanation": "先算 10 − 2 = 8，再算 8 − 3 = 5。"
+  },
+  {
+    "id": "cnm_p012_q3",
+    "topicId": "cnm_p012",
+    "type": "choice",
+    "difficulty": "standard",
+    "prompt": "10 − 4 − 3 = ?",
+    "choices": [
+      {
+        "key": "A",
+        "text": "3"
+      },
+      {
+        "key": "B",
+        "text": "9"
+      },
+      {
+        "key": "C",
+        "text": "1"
+      },
+      {
+        "key": "D",
+        "text": "17"
+      }
+    ],
+    "answer": "A",
+    "explanation": "從左到右：10 − 4 = 6，6 − 3 = 3。選 B 是先算 4 − 3 = 1，順序錯了。"
+  },
+  {
+    "id": "cnm_p012_q4",
+    "topicId": "cnm_p012",
+    "type": "numeric",
+    "difficulty": "advanced",
+    "prompt": "1 + 2 + 3 + 4 = ?",
+    "answer": "10",
+    "verify": "1+2+3+4",
+    "explanation": "逐個加：1+2=3，3+3=6，6+4=10。"
+  },
+  {
+    "id": "cnm_p013_q1",
+    "topicId": "cnm_p013",
+    "type": "numeric",
+    "difficulty": "basic",
+    "prompt": "7 + 2 − 3 = ?",
+    "answer": "6",
+    "verify": "7+2-3",
+    "explanation": "從左到右：7 + 2 = 9，9 − 3 = 6。"
+  },
+  {
+    "id": "cnm_p013_q2",
+    "topicId": "cnm_p013",
+    "type": "numeric",
+    "difficulty": "basic",
+    "prompt": "9 − 5 + 1 = ?",
+    "answer": "5",
+    "verify": "9-5+1",
+    "explanation": "從左到右：9 − 5 = 4，4 + 1 = 5。"
+  },
+  {
+    "id": "cnm_p013_q3",
+    "topicId": "cnm_p013",
+    "type": "choice",
+    "difficulty": "standard",
+    "prompt": "8 − 3 + 2 = ?",
+    "choices": [
+      {
+        "key": "A",
+        "text": "3"
       },
       {
         "key": "B",
@@ -480,331 +805,184 @@
       },
       {
         "key": "C",
-        "text": "8"
+        "text": "13"
       },
       {
         "key": "D",
         "text": "9"
       }
     ],
-    "answer": "C",
-    "explanation": "7、8、9 里，比 7 大又比 9 小的只有 8。",
-    "verify": "8"
-  },
-  {
-    "id": "cnm_p010_q1",
-    "topicId": "cnm_p010",
-    "difficulty": "basic",
-    "type": "numeric",
-    "prompt": "计算：6＋3＝？",
-    "answer": "9",
-    "explanation": "6＋3＝9。",
-    "verify": "6+3"
-  },
-  {
-    "id": "cnm_p010_q2",
-    "topicId": "cnm_p010",
-    "difficulty": "basic",
-    "type": "numeric",
-    "prompt": "计算：7＋2＝？",
-    "answer": "9",
-    "explanation": "7＋2＝9。",
-    "verify": "7+2"
-  },
-  {
-    "id": "cnm_p010_q3",
-    "topicId": "cnm_p010",
-    "difficulty": "standard",
-    "type": "numeric",
-    "prompt": "有 4 支铅笔，又放进来 5 支。一共有多少支？计算：4＋5＝？",
-    "answer": "9",
-    "explanation": "把两部分合起来，4＋5＝9。",
-    "verify": "4+5"
-  },
-  {
-    "id": "cnm_p010_q4",
-    "topicId": "cnm_p010",
-    "difficulty": "standard",
-    "type": "choice",
-    "prompt": "8＋2 的得数是哪一个？",
-    "choices": [
-      {
-        "key": "A",
-        "text": "11"
-      },
-      {
-        "key": "B",
-        "text": "9"
-      },
-      {
-        "key": "C",
-        "text": "12"
-      },
-      {
-        "key": "D",
-        "text": "10"
-      }
-    ],
-    "answer": "D",
-    "explanation": "8＋2＝10。",
-    "verify": "8+2"
-  },
-  {
-    "id": "cnm_p011_q1",
-    "topicId": "cnm_p011",
-    "difficulty": "basic",
-    "type": "numeric",
-    "prompt": "计算：10－3＝？",
-    "answer": "7",
-    "explanation": "10－3＝7。",
-    "verify": "10-3"
-  },
-  {
-    "id": "cnm_p011_q2",
-    "topicId": "cnm_p011",
-    "difficulty": "basic",
-    "type": "numeric",
-    "prompt": "计算：9－4＝？",
-    "answer": "5",
-    "explanation": "9－4＝5。",
-    "verify": "9-4"
-  },
-  {
-    "id": "cnm_p011_q3",
-    "topicId": "cnm_p011",
-    "difficulty": "standard",
-    "type": "numeric",
-    "prompt": "有 8 颗糖果，拿走 2 颗。还剩多少颗？计算：8－2＝？",
-    "answer": "6",
-    "explanation": "从总数里去掉一部分，8－2＝6。",
-    "verify": "8-2"
-  },
-  {
-    "id": "cnm_p011_q4",
-    "topicId": "cnm_p011",
-    "difficulty": "standard",
-    "type": "choice",
-    "prompt": "10－6 的得数是哪一个？",
-    "choices": [
-      {
-        "key": "A",
-        "text": "4"
-      },
-      {
-        "key": "B",
-        "text": "5"
-      },
-      {
-        "key": "C",
-        "text": "6"
-      },
-      {
-        "key": "D",
-        "text": "3"
-      }
-    ],
-    "answer": "A",
-    "explanation": "10－6＝4。",
-    "verify": "10-6"
-  },
-  {
-    "id": "cnm_p012_q1",
-    "topicId": "cnm_p012",
-    "difficulty": "basic",
-    "type": "numeric",
-    "prompt": "计算：2＋3＋4＝？",
-    "answer": "9",
-    "explanation": "先算 2＋3＝5，再算 5＋4＝9。",
-    "verify": "2+3+4"
-  },
-  {
-    "id": "cnm_p012_q2",
-    "topicId": "cnm_p012",
-    "difficulty": "basic",
-    "type": "numeric",
-    "prompt": "计算：9－2－3＝？",
-    "answer": "4",
-    "explanation": "先算 9－2＝7，再算 7－3＝4。",
-    "verify": "9-2-3"
-  },
-  {
-    "id": "cnm_p012_q3",
-    "topicId": "cnm_p012",
-    "difficulty": "standard",
-    "type": "numeric",
-    "prompt": "树上先停 1 只鸟，又飞来 6 只，再飞来 2 只。现在有几只？计算：1＋6＋2＝？",
-    "answer": "9",
-    "explanation": "1＋6＝7，7＋2＝9。",
-    "verify": "1+6+2"
-  },
-  {
-    "id": "cnm_p012_q4",
-    "topicId": "cnm_p012",
-    "difficulty": "standard",
-    "type": "numeric",
-    "prompt": "有 10 块饼干，吃了 1 块，又吃了 4 块。还剩几块？计算：10－1－4＝？",
-    "answer": "5",
-    "explanation": "10－1＝9，9－4＝5。",
-    "verify": "10-1-4"
-  },
-  {
-    "id": "cnm_p013_q1",
-    "topicId": "cnm_p013",
-    "difficulty": "basic",
-    "type": "numeric",
-    "prompt": "计算：5＋3－2＝？",
-    "answer": "6",
-    "explanation": "先 5＋3＝8，再 8－2＝6。",
-    "verify": "5+3-2"
-  },
-  {
-    "id": "cnm_p013_q2",
-    "topicId": "cnm_p013",
-    "difficulty": "basic",
-    "type": "numeric",
-    "prompt": "计算：8－3＋2＝？",
-    "answer": "7",
-    "explanation": "先 8－3＝5，再 5＋2＝7。",
-    "verify": "8-3+2"
-  },
-  {
-    "id": "cnm_p013_q3",
-    "topicId": "cnm_p013",
-    "difficulty": "standard",
-    "type": "numeric",
-    "prompt": "有 4 支笔，又买来 5 支，送出 6 支。还剩几支？计算：4＋5－6＝？",
-    "answer": "3",
-    "explanation": "4＋5＝9，9－6＝3。",
-    "verify": "4+5-6"
+    "answer": "B",
+    "explanation": "從左到右：8 − 3 = 5，5 + 2 = 7。選 A 是先把 3 + 2 算成 5，再 8 − 5，順序錯了。"
   },
   {
     "id": "cnm_p013_q4",
     "topicId": "cnm_p013",
-    "difficulty": "standard",
-    "type": "numeric",
-    "prompt": "计算：9－4＋3＝？",
-    "answer": "8",
-    "explanation": "9－4＝5，5＋3＝8。",
-    "verify": "9-4+3"
+    "type": "choice",
+    "difficulty": "advanced",
+    "prompt": "6 + 4 − 5 = ?",
+    "choices": [
+      {
+        "key": "A",
+        "text": "5"
+      },
+      {
+        "key": "B",
+        "text": "15"
+      },
+      {
+        "key": "C",
+        "text": "3"
+      },
+      {
+        "key": "D",
+        "text": "7"
+      }
+    ],
+    "answer": "A",
+    "explanation": "6 + 4 = 10，10 − 5 = 5。"
   },
   {
     "id": "cnm_p014_q1",
     "topicId": "cnm_p014",
-    "difficulty": "basic",
     "type": "choice",
-    "prompt": "下面哪一个是长方体？积木盒子常常是这种形状。",
+    "difficulty": "basic",
+    "prompt": "以下哪一個最容易滾動？",
     "choices": [
       {
         "key": "A",
-        "text": "长方体",
-        "figure": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 202.2 139.2\"><polygon points=\"32,121.2 150,121.2 150,49.2 32,49.2\" fill=\"currentColor\" fill-opacity=\"0.10\" stroke=\"none\"/><polygon points=\"32,49.2 150,49.2 180.2,26 62.2,26\" fill=\"currentColor\" fill-opacity=\"0.20\" stroke=\"none\"/><polygon points=\"150,121.2 180.2,98 180.2,26 150,49.2\" fill=\"currentColor\" fill-opacity=\"0.15\" stroke=\"none\"/><line x1=\"32\" y1=\"121.2\" x2=\"62.2\" y2=\"98\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-dasharray=\"7 5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><line x1=\"62.2\" y1=\"98\" x2=\"180.2\" y2=\"98\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-dasharray=\"7 5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><line x1=\"62.2\" y1=\"98\" x2=\"62.2\" y2=\"26\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-dasharray=\"7 5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><line x1=\"32\" y1=\"121.2\" x2=\"150\" y2=\"121.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><line x1=\"150\" y1=\"121.2\" x2=\"150\" y2=\"49.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><line x1=\"150\" y1=\"49.2\" x2=\"32\" y2=\"49.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><line x1=\"32\" y1=\"49.2\" x2=\"32\" y2=\"121.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><line x1=\"150\" y1=\"121.2\" x2=\"180.2\" y2=\"98\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><line x1=\"180.2\" y1=\"98\" x2=\"180.2\" y2=\"26\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><line x1=\"180.2\" y1=\"26\" x2=\"150\" y2=\"49.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><line x1=\"32\" y1=\"49.2\" x2=\"62.2\" y2=\"26\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><line x1=\"62.2\" y1=\"26\" x2=\"180.2\" y2=\"26\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/></svg>"
+        "text": "長方體"
       },
       {
         "key": "B",
-        "text": "球",
-        "figure": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 188 176\"><path d=\"M 38.5 90 A 59.5 21.1 0 0 0 157.5 90\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-dasharray=\"7 5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><circle cx=\"98\" cy=\"90\" r=\"62\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M 38.5 90 A 59.5 21.1 0 0 1 157.5 90\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M 98 28 A 26 62 0 0 1 98 152\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-dasharray=\"7 5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M 98 152 A 26 62 0 0 1 98 28\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/></svg>"
+        "text": "球"
       },
       {
         "key": "C",
-        "text": "圆柱",
-        "figure": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 208 176\"><path d=\"M 56 140 A 58 16 0 0 0 172 140\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-dasharray=\"7 5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><line x1=\"56\" y1=\"44\" x2=\"56\" y2=\"140\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><line x1=\"172\" y1=\"44\" x2=\"172\" y2=\"140\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M 56 140 A 58 16 0 0 1 172 140\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><ellipse cx=\"114\" cy=\"44\" rx=\"58\" ry=\"16\" fill=\"currentColor\" fill-opacity=\"0.18\" stroke=\"none\"/><ellipse cx=\"114\" cy=\"44\" rx=\"58\" ry=\"16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/></svg>"
+        "text": "正方體"
+      },
+      {
+        "key": "D",
+        "text": "角柱"
       }
     ],
-    "answer": "A",
-    "explanation": "长方体有平平的面，相对的面一样大。",
-    "verify": "'长方体'",
-    "hideChoiceText": true
+    "answer": "B",
+    "explanation": "球的表面是曲面，向任何方向都能滾動。長方體、正方體、角柱都有平平的面。"
   },
   {
     "id": "cnm_p014_q2",
     "topicId": "cnm_p014",
-    "difficulty": "basic",
     "type": "choice",
-    "prompt": "下面哪一个是圆柱？茶叶罐常常是这种形状。",
+    "difficulty": "standard",
+    "prompt": "一個盒子有 6 個平平的面，每個面都是長方形。它是甚麼？",
     "choices": [
       {
         "key": "A",
-        "text": "球",
-        "figure": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 188 176\"><path d=\"M 38.5 90 A 59.5 21.1 0 0 0 157.5 90\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-dasharray=\"7 5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><circle cx=\"98\" cy=\"90\" r=\"62\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M 38.5 90 A 59.5 21.1 0 0 1 157.5 90\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M 98 28 A 26 62 0 0 1 98 152\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-dasharray=\"7 5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M 98 152 A 26 62 0 0 1 98 28\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/></svg>"
+        "text": "球"
       },
       {
         "key": "B",
-        "text": "圆柱",
-        "figure": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 208 176\"><path d=\"M 56 140 A 58 16 0 0 0 172 140\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-dasharray=\"7 5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><line x1=\"56\" y1=\"44\" x2=\"56\" y2=\"140\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><line x1=\"172\" y1=\"44\" x2=\"172\" y2=\"140\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M 56 140 A 58 16 0 0 1 172 140\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><ellipse cx=\"114\" cy=\"44\" rx=\"58\" ry=\"16\" fill=\"currentColor\" fill-opacity=\"0.18\" stroke=\"none\"/><ellipse cx=\"114\" cy=\"44\" rx=\"58\" ry=\"16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/></svg>"
+        "text": "圓柱"
       },
       {
         "key": "C",
-        "text": "长方体",
-        "figure": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 202.2 139.2\"><polygon points=\"32,121.2 150,121.2 150,49.2 32,49.2\" fill=\"currentColor\" fill-opacity=\"0.10\" stroke=\"none\"/><polygon points=\"32,49.2 150,49.2 180.2,26 62.2,26\" fill=\"currentColor\" fill-opacity=\"0.20\" stroke=\"none\"/><polygon points=\"150,121.2 180.2,98 180.2,26 150,49.2\" fill=\"currentColor\" fill-opacity=\"0.15\" stroke=\"none\"/><line x1=\"32\" y1=\"121.2\" x2=\"62.2\" y2=\"98\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-dasharray=\"7 5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><line x1=\"62.2\" y1=\"98\" x2=\"180.2\" y2=\"98\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-dasharray=\"7 5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><line x1=\"62.2\" y1=\"98\" x2=\"62.2\" y2=\"26\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-dasharray=\"7 5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><line x1=\"32\" y1=\"121.2\" x2=\"150\" y2=\"121.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><line x1=\"150\" y1=\"121.2\" x2=\"150\" y2=\"49.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><line x1=\"150\" y1=\"49.2\" x2=\"32\" y2=\"49.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><line x1=\"32\" y1=\"49.2\" x2=\"32\" y2=\"121.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><line x1=\"150\" y1=\"121.2\" x2=\"180.2\" y2=\"98\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><line x1=\"180.2\" y1=\"98\" x2=\"180.2\" y2=\"26\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><line x1=\"180.2\" y1=\"26\" x2=\"150\" y2=\"49.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><line x1=\"32\" y1=\"49.2\" x2=\"62.2\" y2=\"26\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><line x1=\"62.2\" y1=\"26\" x2=\"180.2\" y2=\"26\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/></svg>"
+        "text": "長方體"
+      },
+      {
+        "key": "D",
+        "text": "圓錐"
       }
     ],
-    "answer": "B",
-    "explanation": "圆柱上下一样粗，侧面是弯曲的。",
-    "verify": "'圆柱'",
-    "hideChoiceText": true
+    "answer": "C",
+    "explanation": "6 個長方形面的立體是長方體（屬於角柱）。球沒有平面，圓柱有圓形面，圓錐有一個圓形底面。"
   },
   {
     "id": "cnm_p014_q3",
     "topicId": "cnm_p014",
-    "difficulty": "standard",
     "type": "choice",
-    "prompt": "球滚起来最容易。下面哪一种最好滚？",
+    "difficulty": "advanced",
+    "prompt": "圓柱和球都可以滾動。以下哪一句對？",
     "choices": [
       {
         "key": "A",
-        "text": "球",
-        "figure": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 188 176\"><path d=\"M 38.5 90 A 59.5 21.1 0 0 0 157.5 90\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-dasharray=\"7 5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><circle cx=\"98\" cy=\"90\" r=\"62\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M 38.5 90 A 59.5 21.1 0 0 1 157.5 90\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M 98 28 A 26 62 0 0 1 98 152\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-dasharray=\"7 5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M 98 152 A 26 62 0 0 1 98 28\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/></svg>"
+        "text": "兩者都只有曲面"
       },
       {
         "key": "B",
-        "text": "长方体",
-        "figure": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 202.2 139.2\"><polygon points=\"32,121.2 150,121.2 150,49.2 32,49.2\" fill=\"currentColor\" fill-opacity=\"0.10\" stroke=\"none\"/><polygon points=\"32,49.2 150,49.2 180.2,26 62.2,26\" fill=\"currentColor\" fill-opacity=\"0.20\" stroke=\"none\"/><polygon points=\"150,121.2 180.2,98 180.2,26 150,49.2\" fill=\"currentColor\" fill-opacity=\"0.15\" stroke=\"none\"/><line x1=\"32\" y1=\"121.2\" x2=\"62.2\" y2=\"98\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-dasharray=\"7 5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><line x1=\"62.2\" y1=\"98\" x2=\"180.2\" y2=\"98\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-dasharray=\"7 5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><line x1=\"62.2\" y1=\"98\" x2=\"62.2\" y2=\"26\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-dasharray=\"7 5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><line x1=\"32\" y1=\"121.2\" x2=\"150\" y2=\"121.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><line x1=\"150\" y1=\"121.2\" x2=\"150\" y2=\"49.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><line x1=\"150\" y1=\"49.2\" x2=\"32\" y2=\"49.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><line x1=\"32\" y1=\"49.2\" x2=\"32\" y2=\"121.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><line x1=\"150\" y1=\"121.2\" x2=\"180.2\" y2=\"98\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><line x1=\"180.2\" y1=\"98\" x2=\"180.2\" y2=\"26\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><line x1=\"180.2\" y1=\"26\" x2=\"150\" y2=\"49.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><line x1=\"32\" y1=\"49.2\" x2=\"62.2\" y2=\"26\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><line x1=\"62.2\" y1=\"26\" x2=\"180.2\" y2=\"26\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/></svg>"
+        "text": "圓柱有兩個平面，球沒有平面"
       },
       {
         "key": "C",
-        "text": "正方体",
-        "figure": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 184.7 164.4\"><polygon points=\"32,146.4 118,146.4 118,60.4 32,60.4\" fill=\"currentColor\" fill-opacity=\"0.10\" stroke=\"none\"/><polygon points=\"32,60.4 118,60.4 162.7,26 76.7,26\" fill=\"currentColor\" fill-opacity=\"0.20\" stroke=\"none\"/><polygon points=\"118,146.4 162.7,112 162.7,26 118,60.4\" fill=\"currentColor\" fill-opacity=\"0.15\" stroke=\"none\"/><line x1=\"32\" y1=\"146.4\" x2=\"76.7\" y2=\"112\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-dasharray=\"7 5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><line x1=\"76.7\" y1=\"112\" x2=\"162.7\" y2=\"112\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-dasharray=\"7 5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><line x1=\"76.7\" y1=\"112\" x2=\"76.7\" y2=\"26\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-dasharray=\"7 5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><line x1=\"32\" y1=\"146.4\" x2=\"118\" y2=\"146.4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><line x1=\"118\" y1=\"146.4\" x2=\"118\" y2=\"60.4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><line x1=\"118\" y1=\"60.4\" x2=\"32\" y2=\"60.4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><line x1=\"32\" y1=\"60.4\" x2=\"32\" y2=\"146.4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><line x1=\"118\" y1=\"146.4\" x2=\"162.7\" y2=\"112\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><line x1=\"162.7\" y1=\"112\" x2=\"162.7\" y2=\"26\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><line x1=\"162.7\" y1=\"26\" x2=\"118\" y2=\"60.4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><line x1=\"32\" y1=\"60.4\" x2=\"76.7\" y2=\"26\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><line x1=\"76.7\" y1=\"26\" x2=\"162.7\" y2=\"26\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><line x1=\"75\" y1=\"139.4\" x2=\"75\" y2=\"153.4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><line x1=\"111\" y1=\"103.4\" x2=\"125\" y2=\"103.4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><line x1=\"39\" y1=\"103.4\" x2=\"25\" y2=\"103.4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><line x1=\"136.1\" y1=\"123.7\" x2=\"144.6\" y2=\"134.7\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><line x1=\"155.7\" y1=\"69\" x2=\"169.7\" y2=\"69\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><line x1=\"50.1\" y1=\"37.7\" x2=\"58.6\" y2=\"48.7\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/></svg>"
+        "text": "球有兩個平面"
+      },
+      {
+        "key": "D",
+        "text": "兩者都不能堆疊"
       }
     ],
-    "answer": "A",
-    "explanation": "球没有平平的面，所以最容易滚。",
-    "verify": "'球'",
-    "hideChoiceText": true
+    "answer": "B",
+    "explanation": "圓柱兩端是兩個平面（圓形），中間是曲面；球整個表面都是曲面，沒有平面。"
   },
   {
     "id": "cnm_p014_q4",
     "topicId": "cnm_p014",
-    "difficulty": "standard",
     "type": "choice",
-    "prompt": "下面哪一个是长方体？冰箱更接近哪一种形状？",
+    "difficulty": "advanced",
+    "prompt": "把兩個正方體疊起來，為甚麼可以疊得穩？",
     "choices": [
       {
         "key": "A",
-        "text": "圆柱",
-        "figure": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 208 176\"><path d=\"M 56 140 A 58 16 0 0 0 172 140\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-dasharray=\"7 5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><line x1=\"56\" y1=\"44\" x2=\"56\" y2=\"140\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><line x1=\"172\" y1=\"44\" x2=\"172\" y2=\"140\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M 56 140 A 58 16 0 0 1 172 140\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><ellipse cx=\"114\" cy=\"44\" rx=\"58\" ry=\"16\" fill=\"currentColor\" fill-opacity=\"0.18\" stroke=\"none\"/><ellipse cx=\"114\" cy=\"44\" rx=\"58\" ry=\"16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/></svg>"
+        "text": "因為它們有平平的面"
       },
       {
         "key": "B",
-        "text": "球",
-        "figure": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 188 176\"><path d=\"M 38.5 90 A 59.5 21.1 0 0 0 157.5 90\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-dasharray=\"7 5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><circle cx=\"98\" cy=\"90\" r=\"62\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M 38.5 90 A 59.5 21.1 0 0 1 157.5 90\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M 98 28 A 26 62 0 0 1 98 152\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-dasharray=\"7 5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><path d=\"M 98 152 A 26 62 0 0 1 98 28\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/></svg>"
+        "text": "因為它們會滾動"
       },
       {
         "key": "C",
-        "text": "长方体",
-        "figure": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 202.2 139.2\"><polygon points=\"32,121.2 150,121.2 150,49.2 32,49.2\" fill=\"currentColor\" fill-opacity=\"0.10\" stroke=\"none\"/><polygon points=\"32,49.2 150,49.2 180.2,26 62.2,26\" fill=\"currentColor\" fill-opacity=\"0.20\" stroke=\"none\"/><polygon points=\"150,121.2 180.2,98 180.2,26 150,49.2\" fill=\"currentColor\" fill-opacity=\"0.15\" stroke=\"none\"/><line x1=\"32\" y1=\"121.2\" x2=\"62.2\" y2=\"98\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-dasharray=\"7 5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><line x1=\"62.2\" y1=\"98\" x2=\"180.2\" y2=\"98\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-dasharray=\"7 5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><line x1=\"62.2\" y1=\"98\" x2=\"62.2\" y2=\"26\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-dasharray=\"7 5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><line x1=\"32\" y1=\"121.2\" x2=\"150\" y2=\"121.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><line x1=\"150\" y1=\"121.2\" x2=\"150\" y2=\"49.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><line x1=\"150\" y1=\"49.2\" x2=\"32\" y2=\"49.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><line x1=\"32\" y1=\"49.2\" x2=\"32\" y2=\"121.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><line x1=\"150\" y1=\"121.2\" x2=\"180.2\" y2=\"98\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><line x1=\"180.2\" y1=\"98\" x2=\"180.2\" y2=\"26\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><line x1=\"180.2\" y1=\"26\" x2=\"150\" y2=\"49.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><line x1=\"32\" y1=\"49.2\" x2=\"62.2\" y2=\"26\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><line x1=\"62.2\" y1=\"26\" x2=\"180.2\" y2=\"26\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/></svg>"
+        "text": "因為它們是圓的"
+      },
+      {
+        "key": "D",
+        "text": "因為它們很輕"
       }
     ],
-    "answer": "C",
-    "explanation": "冰箱有六个平平的面，接近长方体。",
-    "verify": "'长方体'",
-    "hideChoiceText": true
+    "answer": "A",
+    "explanation": "正方體有平平的面，平面與平面貼合就能疊穩。會滾的球和圓柱就疊不穩。"
   },
   {
     "id": "cnm_p015_q1",
     "topicId": "cnm_p015",
-    "difficulty": "basic",
     "type": "choice",
-    "prompt": "面向黑板站好，你正对着的那一边叫什么？",
+    "difficulty": "basic",
+    "prompt": "鉛筆在書本的上面。書本在鉛筆的哪一邊？",
+    "choices": [
+      {
+        "key": "A",
+        "text": "上面"
+      },
+      {
+        "key": "B",
+        "text": "下面"
+      },
+      {
+        "key": "C",
+        "text": "左邊"
+      },
+      {
+        "key": "D",
+        "text": "右邊"
+      }
+    ],
+    "answer": "B",
+    "explanation": "上下是相對的：鉛筆在書本上面，書本就在鉛筆下面。"
+  },
+  {
+    "id": "cnm_p015_q2",
+    "topicId": "cnm_p015",
+    "type": "choice",
+    "difficulty": "basic",
+    "prompt": "小明面向黑板，老師站在他後面。老師在小明的哪一邊？",
     "choices": [
       {
         "key": "A",
@@ -812,712 +990,165 @@
       },
       {
         "key": "B",
-        "text": "后面"
+        "text": "後面"
       },
       {
         "key": "C",
-        "text": "左边"
+        "text": "左邊"
+      },
+      {
+        "key": "D",
+        "text": "右邊"
       }
     ],
-    "answer": "A",
-    "explanation": "正对着的方向是前面，背对的是后面。",
-    "verify": "'前面'"
-  },
-  {
-    "id": "cnm_p015_q2",
-    "topicId": "cnm_p015",
-    "difficulty": "basic",
-    "type": "numeric",
-    "prompt": "计算：1＋1＝？",
-    "answer": "2",
-    "explanation": "左边 1 个、右边 1 个，一共 2 个。",
-    "verify": "1+1"
+    "answer": "B",
+    "explanation": "老師在小明後面。"
   },
   {
     "id": "cnm_p015_q3",
     "topicId": "cnm_p015",
-    "difficulty": "standard",
-    "type": "numeric",
-    "prompt": "书架上面有 3 本书，下面有 2 本书。上下一共有几本？计算：3＋2＝？",
-    "answer": "5",
-    "explanation": "3＋2＝5。",
-    "verify": "3+2"
+    "type": "choice",
+    "difficulty": "advanced",
+    "prompt": "小美和小明面對面站著。小美的右手邊，對小明來說是哪一邊？",
+    "choices": [
+      {
+        "key": "A",
+        "text": "右手邊"
+      },
+      {
+        "key": "B",
+        "text": "左手邊"
+      },
+      {
+        "key": "C",
+        "text": "前面"
+      },
+      {
+        "key": "D",
+        "text": "後面"
+      }
+    ],
+    "answer": "B",
+    "explanation": "面對面時左右相反：小美的右邊，正是小明的左邊。"
   },
   {
     "id": "cnm_p015_q4",
     "topicId": "cnm_p015",
+    "type": "choice",
     "difficulty": "standard",
-    "type": "numeric",
-    "prompt": "前面有 4 个同学，后面有 1 个同学。前后一共有几人？计算：4＋1＝？",
-    "answer": "5",
-    "explanation": "4＋1＝5。",
-    "verify": "4+1"
+    "prompt": "三個小朋友排成一行：小明在左，小美在中間，小華在右。小華在小美的哪一邊？",
+    "choices": [
+      {
+        "key": "A",
+        "text": "左邊"
+      },
+      {
+        "key": "B",
+        "text": "右邊"
+      },
+      {
+        "key": "C",
+        "text": "前面"
+      },
+      {
+        "key": "D",
+        "text": "後面"
+      }
+    ],
+    "answer": "B",
+    "explanation": "小華在小美右邊。"
   },
   {
     "id": "cnm_p016_q1",
     "topicId": "cnm_p016",
-    "difficulty": "basic",
     "type": "numeric",
-    "prompt": "19 的后面一个数是几？",
-    "answer": "20",
-    "explanation": "19 的后面是 20。",
-    "verify": "19+1"
+    "difficulty": "basic",
+    "prompt": "12 的後面一個數是幾？",
+    "answer": "13",
+    "verify": "12+1",
+    "explanation": "12 之後是 13。"
   },
   {
     "id": "cnm_p016_q2",
     "topicId": "cnm_p016",
-    "difficulty": "basic",
     "type": "numeric",
-    "prompt": "11 的前面一个数是几？",
-    "answer": "10",
-    "explanation": "11 的前面是 10。",
-    "verify": "11-1"
+    "difficulty": "basic",
+    "prompt": "20 是幾個十？",
+    "answer": "2",
+    "verify": "2",
+    "explanation": "20 是 2 個十。"
   },
   {
     "id": "cnm_p016_q3",
     "topicId": "cnm_p016",
+    "type": "choice",
     "difficulty": "standard",
-    "type": "numeric",
-    "prompt": "15 的后面一个数是几？",
-    "answer": "16",
-    "explanation": "15 的后面是 16。",
-    "verify": "15+1"
+    "prompt": "由 10 數到 20（10 和 20 都要數），一共數了幾個數？",
+    "choices": [
+      {
+        "key": "A",
+        "text": "10 個"
+      },
+      {
+        "key": "B",
+        "text": "11 個"
+      },
+      {
+        "key": "C",
+        "text": "20 個"
+      },
+      {
+        "key": "D",
+        "text": "12 個"
+      }
+    ],
+    "answer": "B",
+    "explanation": "10 到 20 共 11 個數。20 − 10 = 10 漏了起點 10。"
   },
   {
     "id": "cnm_p016_q4",
     "topicId": "cnm_p016",
-    "difficulty": "standard",
     "type": "numeric",
-    "prompt": "十位上是 1、个位上是 4，这个两位数是多少？",
-    "answer": "14",
-    "explanation": "1 个十和 4 个一是 14。",
-    "verify": "10+4"
+    "difficulty": "advanced",
+    "prompt": "15 裡面有 1 個十和幾個一？",
+    "answer": "5",
+    "verify": "15-10",
+    "explanation": "15 = 10 + 5，即 1 個十和 5 個一。"
   },
   {
     "id": "cnm_p017_q1",
     "topicId": "cnm_p017",
-    "difficulty": "basic",
     "type": "numeric",
-    "prompt": "17 的十位是几？",
-    "answer": "1",
-    "explanation": "17 的十位是 1，表示 1 个十。",
-    "verify": "1"
+    "difficulty": "basic",
+    "prompt": "在 47 中，十位上的數字是幾？",
+    "answer": "4",
+    "verify": "4",
+    "explanation": "47 的十位是 4，表示 4 個十。"
   },
   {
     "id": "cnm_p017_q2",
     "topicId": "cnm_p017",
-    "difficulty": "basic",
     "type": "numeric",
-    "prompt": "17 的个位是几？",
+    "difficulty": "basic",
+    "prompt": "在 47 中，個位上的數字是幾？",
     "answer": "7",
-    "explanation": "17 的个位是 7。",
-    "verify": "7"
+    "verify": "7",
+    "explanation": "47 的個位是 7。"
   },
   {
     "id": "cnm_p017_q3",
     "topicId": "cnm_p017",
-    "difficulty": "standard",
-    "type": "numeric",
-    "prompt": "十位上是 1、个位上是 8，这个两位数是多少？",
-    "answer": "18",
-    "explanation": "1 个十和 8 个一是 18。",
-    "verify": "10+8"
-  },
-  {
-    "id": "cnm_p017_q4",
-    "topicId": "cnm_p017",
-    "difficulty": "standard",
-    "type": "numeric",
-    "prompt": "20 的个位是几？",
-    "answer": "0",
-    "explanation": "20 的个位是 0，表示没有单个的一。",
-    "verify": "0"
-  },
-  {
-    "id": "cnm_p018_q1",
-    "topicId": "cnm_p018",
-    "difficulty": "basic",
-    "type": "numeric",
-    "prompt": "计算：12＋3＝？",
-    "answer": "15",
-    "explanation": "个位 2＋3＝5，十位仍是 1，得 15。",
-    "verify": "12+3"
-  },
-  {
-    "id": "cnm_p018_q2",
-    "topicId": "cnm_p018",
-    "difficulty": "basic",
-    "type": "numeric",
-    "prompt": "计算：10＋7＝？",
-    "answer": "17",
-    "explanation": "10＋7＝17。",
-    "verify": "10+7"
-  },
-  {
-    "id": "cnm_p018_q3",
-    "topicId": "cnm_p018",
-    "difficulty": "standard",
-    "type": "numeric",
-    "prompt": "有 11 支彩笔，又拿来 4 支。一共有几支？计算：11＋4＝？",
-    "answer": "15",
-    "explanation": "11＋4＝15。",
-    "verify": "11+4"
-  },
-  {
-    "id": "cnm_p018_q4",
-    "topicId": "cnm_p018",
-    "difficulty": "standard",
-    "type": "numeric",
-    "prompt": "计算：14＋5＝？",
-    "answer": "19",
-    "explanation": "个位 4＋5＝9，不进位，得 19。",
-    "verify": "14+5"
-  },
-  {
-    "id": "cnm_p019_q1",
-    "topicId": "cnm_p019",
-    "difficulty": "basic",
     "type": "choice",
-    "prompt": "用凑十法算 9＋3 时，把 3 拆成几和几更方便？",
+    "difficulty": "standard",
+    "prompt": "十位是 3、個位是 8，這個數是甚麼？",
     "choices": [
       {
         "key": "A",
-        "text": "1和2"
+        "text": "38"
       },
       {
         "key": "B",
-        "text": "3和0"
-      },
-      {
-        "key": "C",
-        "text": "2和3"
-      }
-    ],
-    "answer": "A",
-    "explanation": "9再加1就凑成10，所以把3拆成1和2：9＋1＝10，10＋2＝12。",
-    "verify": "'1和2'"
-  },
-  {
-    "id": "cnm_p019_q2",
-    "topicId": "cnm_p019",
-    "difficulty": "basic",
-    "type": "numeric",
-    "prompt": "计算：9＋1＝？",
-    "answer": "10",
-    "explanation": "9＋1＝10，这是凑十的第一步。",
-    "verify": "9+1"
-  },
-  {
-    "id": "cnm_p019_q3",
-    "topicId": "cnm_p019",
-    "difficulty": "standard",
-    "type": "numeric",
-    "prompt": "盒子里有 9 块糖，再放进 4 块。先凑成 10，一共有几块？计算：9＋4＝？",
-    "answer": "13",
-    "explanation": "9＋1＝10，10＋3＝13。",
-    "verify": "9+4"
-  },
-  {
-    "id": "cnm_p019_q4",
-    "topicId": "cnm_p019",
-    "difficulty": "standard",
-    "type": "numeric",
-    "prompt": "计算：8＋2＝？",
-    "answer": "10",
-    "explanation": "8＋2＝10。",
-    "verify": "8+2"
-  },
-  {
-    "id": "cnm_p020_q1",
-    "topicId": "cnm_p020",
-    "difficulty": "basic",
-    "type": "numeric",
-    "prompt": "计算：9＋2＝？",
-    "answer": "11",
-    "explanation": "9＋2＝11。",
-    "verify": "9+2"
-  },
-  {
-    "id": "cnm_p020_q2",
-    "topicId": "cnm_p020",
-    "difficulty": "basic",
-    "type": "numeric",
-    "prompt": "计算：9＋5＝？",
-    "answer": "14",
-    "explanation": "9＋5＝14。",
-    "verify": "9+5"
-  },
-  {
-    "id": "cnm_p020_q3",
-    "topicId": "cnm_p020",
-    "difficulty": "standard",
-    "type": "numeric",
-    "prompt": "有 9 张贴纸，又放进来 4 张。一共有多少张？计算：9＋4＝？",
-    "answer": "13",
-    "explanation": "把两部分合起来，9＋4＝13。",
-    "verify": "9+4"
-  },
-  {
-    "id": "cnm_p020_q4",
-    "topicId": "cnm_p020",
-    "difficulty": "standard",
-    "type": "choice",
-    "prompt": "9＋6 的得数是哪一个？",
-    "choices": [
-      {
-        "key": "A",
-        "text": "16"
-      },
-      {
-        "key": "B",
-        "text": "14"
-      },
-      {
-        "key": "C",
-        "text": "17"
-      },
-      {
-        "key": "D",
-        "text": "15"
-      }
-    ],
-    "answer": "D",
-    "explanation": "9＋6＝15。",
-    "verify": "9+6"
-  },
-  {
-    "id": "cnm_p021_q1",
-    "topicId": "cnm_p021",
-    "difficulty": "basic",
-    "type": "numeric",
-    "prompt": "计算：8＋3＝？",
-    "answer": "11",
-    "explanation": "8＋3＝11。",
-    "verify": "8+3"
-  },
-  {
-    "id": "cnm_p021_q2",
-    "topicId": "cnm_p021",
-    "difficulty": "basic",
-    "type": "numeric",
-    "prompt": "计算：7＋5＝？",
-    "answer": "12",
-    "explanation": "7＋5＝12。",
-    "verify": "7+5"
-  },
-  {
-    "id": "cnm_p021_q3",
-    "topicId": "cnm_p021",
-    "difficulty": "standard",
-    "type": "numeric",
-    "prompt": "有 6 个皮球，又放进来 6 个。一共有多少个？计算：6＋6＝？",
-    "answer": "12",
-    "explanation": "把两部分合起来，6＋6＝12。",
-    "verify": "6+6"
-  },
-  {
-    "id": "cnm_p021_q4",
-    "topicId": "cnm_p021",
-    "difficulty": "standard",
-    "type": "choice",
-    "prompt": "8＋7 的得数是哪一个？",
-    "choices": [
-      {
-        "key": "A",
-        "text": "15"
-      },
-      {
-        "key": "B",
-        "text": "16"
-      },
-      {
-        "key": "C",
-        "text": "14"
-      },
-      {
-        "key": "D",
-        "text": "17"
-      }
-    ],
-    "answer": "A",
-    "explanation": "8＋7＝15。",
-    "verify": "8+7"
-  },
-  {
-    "id": "cnm_p022_q1",
-    "topicId": "cnm_p022",
-    "difficulty": "basic",
-    "type": "choice",
-    "prompt": "分类要先定标准。把铅笔按颜色分开，要先确定什么？",
-    "choices": [
-      {
-        "key": "A",
-        "text": "分类标准"
-      },
-      {
-        "key": "B",
-        "text": "一共有多少支"
-      },
-      {
-        "key": "C",
-        "text": "哪支最长"
-      }
-    ],
-    "answer": "A",
-    "explanation": "先定标准，才能把物品分成不同的类。",
-    "verify": "'分类标准'"
-  },
-  {
-    "id": "cnm_p022_q2",
-    "topicId": "cnm_p022",
-    "difficulty": "basic",
-    "type": "numeric",
-    "prompt": "计算：3＋2＝？",
-    "answer": "5",
-    "explanation": "红色 3 支、蓝色 2 支，一共 5 支。",
-    "verify": "3+2"
-  },
-  {
-    "id": "cnm_p022_q3",
-    "topicId": "cnm_p022",
-    "difficulty": "standard",
-    "type": "numeric",
-    "prompt": "游戏里数出三角 4 个、圆 3 个。一共有几个图形？计算：4＋3＝？",
-    "answer": "7",
-    "explanation": "4＋3＝7。",
-    "verify": "4+3"
-  },
-  {
-    "id": "cnm_p022_q4",
-    "topicId": "cnm_p022",
-    "difficulty": "standard",
-    "type": "numeric",
-    "prompt": "同学按男女分成两组，男生 6 人、女生 4 人。一共有几人？计算：6＋4＝？",
-    "answer": "10",
-    "explanation": "6＋4＝10。",
-    "verify": "6+4"
-  },
-  {
-    "id": "cnm_p023_q1",
-    "topicId": "cnm_p023",
-    "difficulty": "basic",
-    "type": "choice",
-    "prompt": "下面哪一个是三角形？",
-    "choices": [
-      {
-        "key": "A",
-        "text": "三角形",
-        "figure": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 220 170\"><polygon points=\"110,22 26,150 194,150\" fill=\"currentColor\" fill-opacity=\"0.12\" stroke=\"none\"/><polygon points=\"110,22 26,150 194,150\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/></svg>"
-      },
-      {
-        "key": "B",
-        "text": "圆",
-        "figure": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 220 170\"><circle cx=\"110\" cy=\"86\" r=\"64\" fill=\"currentColor\" fill-opacity=\"0.1\" stroke=\"none\"/><circle cx=\"110\" cy=\"86\" r=\"64\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><circle cx=\"110\" cy=\"86\" r=\"3\" fill=\"currentColor\"/></svg>"
-      },
-      {
-        "key": "C",
-        "text": "长方形",
-        "figure": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 220 170\"><rect x=\"26\" y=\"42\" width=\"168\" height=\"86\" fill=\"currentColor\" fill-opacity=\"0.12\" stroke=\"none\"/><rect x=\"26\" y=\"42\" width=\"168\" height=\"86\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/></svg>"
-      }
-    ],
-    "answer": "A",
-    "explanation": "三角形有 3 条边、3 个角。",
-    "verify": "'三角形'",
-    "hideChoiceText": true
-  },
-  {
-    "id": "cnm_p023_q2",
-    "topicId": "cnm_p023",
-    "difficulty": "basic",
-    "type": "choice",
-    "prompt": "下面哪一个是正方形？",
-    "choices": [
-      {
-        "key": "A",
-        "text": "长方形",
-        "figure": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 220 170\"><rect x=\"26\" y=\"42\" width=\"168\" height=\"86\" fill=\"currentColor\" fill-opacity=\"0.12\" stroke=\"none\"/><rect x=\"26\" y=\"42\" width=\"168\" height=\"86\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/></svg>"
-      },
-      {
-        "key": "B",
-        "text": "正方形",
-        "figure": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 220 170\"><rect x=\"48\" y=\"26\" width=\"118\" height=\"118\" fill=\"currentColor\" fill-opacity=\"0.12\" stroke=\"none\"/><rect x=\"48\" y=\"26\" width=\"118\" height=\"118\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><line x1=\"107\" y1=\"136\" x2=\"107\" y2=\"152\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><line x1=\"174\" y1=\"85\" x2=\"158\" y2=\"85\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><line x1=\"107\" y1=\"18\" x2=\"107\" y2=\"34\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><line x1=\"56\" y1=\"85\" x2=\"40\" y2=\"85\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/></svg>"
-      },
-      {
-        "key": "C",
-        "text": "三角形",
-        "figure": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 220 170\"><polygon points=\"110,22 26,150 194,150\" fill=\"currentColor\" fill-opacity=\"0.12\" stroke=\"none\"/><polygon points=\"110,22 26,150 194,150\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/></svg>"
-      }
-    ],
-    "answer": "B",
-    "explanation": "正方形四条边一样长。",
-    "verify": "'正方形'",
-    "hideChoiceText": true
-  },
-  {
-    "id": "cnm_p023_q3",
-    "topicId": "cnm_p023",
-    "difficulty": "standard",
-    "type": "choice",
-    "prompt": "长方形有几条边？",
-    "choices": [
-      {
-        "key": "A",
-        "text": "3条"
-      },
-      {
-        "key": "B",
-        "text": "4条"
-      },
-      {
-        "key": "C",
-        "text": "没有边"
-      }
-    ],
-    "answer": "B",
-    "explanation": "长方形有 4 条边。",
-    "verify": "'4条'",
-    "figure": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 220 170\"><rect x=\"26\" y=\"42\" width=\"168\" height=\"86\" fill=\"currentColor\" fill-opacity=\"0.12\" stroke=\"none\"/><rect x=\"26\" y=\"42\" width=\"168\" height=\"86\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/></svg>"
-  },
-  {
-    "id": "cnm_p023_q4",
-    "topicId": "cnm_p023",
-    "difficulty": "standard",
-    "type": "choice",
-    "prompt": "正方形的四条边怎样？",
-    "choices": [
-      {
-        "key": "A",
-        "text": "四条边都相等"
-      },
-      {
-        "key": "B",
-        "text": "只有三条边"
-      },
-      {
-        "key": "C",
-        "text": "没有角"
-      }
-    ],
-    "answer": "A",
-    "explanation": "正方形四条边一样长。",
-    "verify": "'四条边都相等'",
-    "figure": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 220 170\"><rect x=\"50\" y=\"24\" width=\"120\" height=\"120\" fill=\"currentColor\" fill-opacity=\"0.12\" stroke=\"none\"/><rect x=\"50\" y=\"24\" width=\"120\" height=\"120\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><line x1=\"64\" y1=\"24\" x2=\"64\" y2=\"38\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><line x1=\"64\" y1=\"38\" x2=\"50\" y2=\"38\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><line x1=\"110\" y1=\"16\" x2=\"110\" y2=\"32\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><line x1=\"178\" y1=\"84\" x2=\"162\" y2=\"84\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><line x1=\"110\" y1=\"152\" x2=\"110\" y2=\"136\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><line x1=\"42\" y1=\"84\" x2=\"58\" y2=\"84\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/></svg>"
-  },
-  {
-    "id": "cnm_p024_q1",
-    "topicId": "cnm_p024",
-    "difficulty": "basic",
-    "type": "numeric",
-    "prompt": "用 2 个三角形和 2 个正方形拼成一幅小房子图，一共用了几个图形？",
-    "answer": "4",
-    "explanation": "三角形 2 个，正方形 2 个，合起来 2＋2＝4 个。",
-    "verify": "2+2"
-  },
-  {
-    "id": "cnm_p024_q2",
-    "topicId": "cnm_p024",
-    "difficulty": "basic",
-    "type": "numeric",
-    "prompt": "一棵小树图案是用 3 个三角形和 1 个正方形拼成的。三角形比正方形多几个？",
-    "answer": "2",
-    "explanation": "三角形有 3 个，正方形有 1 个，3－1＝2，多 2 个。",
-    "verify": "3-1"
-  },
-  {
-    "id": "cnm_p024_q3",
-    "topicId": "cnm_p024",
-    "difficulty": "standard",
-    "type": "numeric",
-    "prompt": "用 2 个三角形和 1 个正方形拼图。一共用了几个图形？计算：2＋1＝？",
-    "answer": "3",
-    "explanation": "2＋1＝3。",
-    "verify": "2+1",
-    "figure": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 250 130\"><polygon points=\"20,30 70,110 20,110\" fill=\"currentColor\" fill-opacity=\"0.12\" stroke=\"none\"/><polygon points=\"20,30 70,110 20,110\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><polygon points=\"90,30 140,110 90,110\" fill=\"currentColor\" fill-opacity=\"0.12\" stroke=\"none\"/><polygon points=\"90,30 140,110 90,110\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/><rect x=\"160\" y=\"40\" width=\"70\" height=\"70\" fill=\"currentColor\" fill-opacity=\"0.12\" stroke=\"none\"/><rect x=\"160\" y=\"40\" width=\"70\" height=\"70\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/></svg>"
-  },
-  {
-    "id": "cnm_p024_q4",
-    "topicId": "cnm_p024",
-    "difficulty": "standard",
-    "type": "numeric",
-    "prompt": "七巧板里拿出 4 块，又放回 1 块。还在外面的有几块？计算：4－1＝？",
-    "answer": "3",
-    "explanation": "4－1＝3。",
-    "verify": "4-1"
-  },
-  {
-    "id": "cnm_p025_q1",
-    "topicId": "cnm_p025",
-    "difficulty": "basic",
-    "type": "choice",
-    "prompt": "破十法是先把十几分成 10 和几。算 13－9，先把 13 分成 10 和几？",
-    "choices": [
-      {
-        "key": "A",
-        "text": "3"
-      },
-      {
-        "key": "B",
-        "text": "4"
-      },
-      {
-        "key": "C",
-        "text": "9"
-      }
-    ],
-    "answer": "A",
-    "explanation": "13 分成 10 和 3，10－9＝1，再加 3 得 4。",
-    "verify": "13-10"
-  },
-  {
-    "id": "cnm_p025_q2",
-    "topicId": "cnm_p025",
-    "difficulty": "basic",
-    "type": "numeric",
-    "prompt": "计算：12－9＝？",
-    "answer": "3",
-    "explanation": "12－9＝3。",
-    "verify": "12-9"
-  },
-  {
-    "id": "cnm_p025_q3",
-    "topicId": "cnm_p025",
-    "difficulty": "standard",
-    "type": "numeric",
-    "prompt": "有 15 支笔，用去 9 支。还剩几支？计算：15－9＝？",
-    "answer": "6",
-    "explanation": "15－9＝6。",
-    "verify": "15-9"
-  },
-  {
-    "id": "cnm_p025_q4",
-    "topicId": "cnm_p025",
-    "difficulty": "standard",
-    "type": "choice",
-    "prompt": "14－9 的得数是哪一个？",
-    "choices": [
-      {
-        "key": "A",
-        "text": "4"
-      },
-      {
-        "key": "B",
-        "text": "6"
-      },
-      {
-        "key": "C",
-        "text": "23"
-      },
-      {
-        "key": "D",
-        "text": "5"
-      }
-    ],
-    "answer": "D",
-    "explanation": "14－9＝5。",
-    "verify": "14-9"
-  },
-  {
-    "id": "cnm_p026_q1",
-    "topicId": "cnm_p026",
-    "difficulty": "basic",
-    "type": "numeric",
-    "prompt": "计算：14－8＝？",
-    "answer": "6",
-    "explanation": "14－8＝6。",
-    "verify": "14-8"
-  },
-  {
-    "id": "cnm_p026_q2",
-    "topicId": "cnm_p026",
-    "difficulty": "basic",
-    "type": "numeric",
-    "prompt": "计算：13－7＝？",
-    "answer": "6",
-    "explanation": "13－7＝6。",
-    "verify": "13-7"
-  },
-  {
-    "id": "cnm_p026_q3",
-    "topicId": "cnm_p026",
-    "difficulty": "standard",
-    "type": "numeric",
-    "prompt": "有 15 个小球，拿走 6 个。还剩多少个？计算：15－6＝？",
-    "answer": "9",
-    "explanation": "从总数里去掉一部分，15－6＝9。",
-    "verify": "15-6"
-  },
-  {
-    "id": "cnm_p026_q4",
-    "topicId": "cnm_p026",
-    "difficulty": "standard",
-    "type": "choice",
-    "prompt": "12－8 的得数是哪一个？",
-    "choices": [
-      {
-        "key": "A",
-        "text": "5"
-      },
-      {
-        "key": "B",
-        "text": "6"
-      },
-      {
-        "key": "C",
-        "text": "3"
-      },
-      {
-        "key": "D",
-        "text": "4"
-      }
-    ],
-    "answer": "D",
-    "explanation": "12－8＝4。",
-    "verify": "12-8"
-  },
-  {
-    "id": "cnm_p027_q1",
-    "topicId": "cnm_p027",
-    "difficulty": "basic",
-    "type": "numeric",
-    "prompt": "计算：13－5＝？",
-    "answer": "8",
-    "explanation": "13－5＝8。",
-    "verify": "13-5"
-  },
-  {
-    "id": "cnm_p027_q2",
-    "topicId": "cnm_p027",
-    "difficulty": "basic",
-    "type": "numeric",
-    "prompt": "计算：16－4＝？",
-    "answer": "12",
-    "explanation": "16－4＝12。",
-    "verify": "16-4"
-  },
-  {
-    "id": "cnm_p027_q3",
-    "topicId": "cnm_p027",
-    "difficulty": "standard",
-    "type": "numeric",
-    "prompt": "有 12 颗纽扣，拿走 3 颗。还剩多少颗？计算：12－3＝？",
-    "answer": "9",
-    "explanation": "从总数里去掉一部分，12－3＝9。",
-    "verify": "12-3"
-  },
-  {
-    "id": "cnm_p027_q4",
-    "topicId": "cnm_p027",
-    "difficulty": "standard",
-    "type": "choice",
-    "prompt": "11－2 的得数是哪一个？",
-    "choices": [
-      {
-        "key": "A",
-        "text": "9"
-      },
-      {
-        "key": "B",
-        "text": "10"
+        "text": "83"
       },
       {
         "key": "C",
@@ -1525,512 +1156,1439 @@
       },
       {
         "key": "D",
-        "text": "8"
+        "text": "308"
       }
     ],
     "answer": "A",
-    "explanation": "11－2＝9。",
-    "verify": "11-2"
+    "explanation": "十位 3 = 30，個位 8，合起來是 38。"
+  },
+  {
+    "id": "cnm_p017_q4",
+    "topicId": "cnm_p017",
+    "type": "choice",
+    "difficulty": "advanced",
+    "prompt": "在 70 中，個位上的數字是幾？",
+    "choices": [
+      {
+        "key": "A",
+        "text": "7"
+      },
+      {
+        "key": "B",
+        "text": "0"
+      },
+      {
+        "key": "C",
+        "text": "70"
+      },
+      {
+        "key": "D",
+        "text": "沒有個位"
+      }
+    ],
+    "answer": "B",
+    "explanation": "70 的個位是 0。選 D 是以為「沒有」就不用寫 0。"
+  },
+  {
+    "id": "cnm_p018_q1",
+    "topicId": "cnm_p018",
+    "type": "numeric",
+    "difficulty": "basic",
+    "prompt": "12 + 3 = ?",
+    "answer": "15",
+    "verify": "12+3",
+    "explanation": "個位 2 + 3 = 5，十位不變，得 15。"
+  },
+  {
+    "id": "cnm_p018_q2",
+    "topicId": "cnm_p018",
+    "type": "numeric",
+    "difficulty": "basic",
+    "prompt": "10 + 7 = ?",
+    "answer": "17",
+    "verify": "10+7",
+    "explanation": "10 加 7，就是 17。"
+  },
+  {
+    "id": "cnm_p018_q3",
+    "topicId": "cnm_p018",
+    "type": "choice",
+    "difficulty": "standard",
+    "prompt": "14 + 5 = ?",
+    "choices": [
+      {
+        "key": "A",
+        "text": "19"
+      },
+      {
+        "key": "B",
+        "text": "64"
+      },
+      {
+        "key": "C",
+        "text": "9"
+      },
+      {
+        "key": "D",
+        "text": "15"
+      }
+    ],
+    "answer": "A",
+    "explanation": "個位 4 + 5 = 9，十位仍是 1，得 19。選 B 是把十位的 1 也拿去加 5 了。"
+  },
+  {
+    "id": "cnm_p018_q4",
+    "topicId": "cnm_p018",
+    "type": "numeric",
+    "difficulty": "advanced",
+    "prompt": "13 + 6 = ?",
+    "answer": "19",
+    "verify": "13+6",
+    "explanation": "個位 3 + 6 = 9，得 19。"
+  },
+  {
+    "id": "cnm_p019_q1",
+    "topicId": "cnm_p019",
+    "type": "numeric",
+    "difficulty": "basic",
+    "prompt": "用湊十法算 8 + 5：先從 5 拿出 2 給 8，湊成 10。5 還剩幾？",
+    "answer": "3",
+    "verify": "5-2",
+    "explanation": "5 拿出 2，還剩 3。"
+  },
+  {
+    "id": "cnm_p019_q2",
+    "topicId": "cnm_p019",
+    "type": "numeric",
+    "difficulty": "basic",
+    "prompt": "8 + 5 = ?",
+    "answer": "13",
+    "verify": "8+5",
+    "explanation": "湊十法：8 + 2 = 10，10 + 3 = 13。"
+  },
+  {
+    "id": "cnm_p019_q3",
+    "topicId": "cnm_p019",
+    "type": "choice",
+    "difficulty": "standard",
+    "prompt": "用湊十法算 9 + 6，9 需要加幾才湊成 10？",
+    "choices": [
+      {
+        "key": "A",
+        "text": "1"
+      },
+      {
+        "key": "B",
+        "text": "2"
+      },
+      {
+        "key": "C",
+        "text": "6"
+      },
+      {
+        "key": "D",
+        "text": "9"
+      }
+    ],
+    "answer": "A",
+    "explanation": "9 + 1 = 10，所以需要 1。"
+  },
+  {
+    "id": "cnm_p019_q4",
+    "topicId": "cnm_p019",
+    "type": "choice",
+    "difficulty": "advanced",
+    "prompt": "算 7 + 6：先把 6 分成 3 和 3，7 + 3 = 10，再 10 + 3。答案是？",
+    "choices": [
+      {
+        "key": "A",
+        "text": "12"
+      },
+      {
+        "key": "B",
+        "text": "13"
+      },
+      {
+        "key": "C",
+        "text": "16"
+      },
+      {
+        "key": "D",
+        "text": "11"
+      }
+    ],
+    "answer": "B",
+    "explanation": "10 + 3 = 13。選 C 是忘記已經湊成 10，直接把 10 和 6 相加。"
+  },
+  {
+    "id": "cnm_p020_q1",
+    "topicId": "cnm_p020",
+    "type": "numeric",
+    "difficulty": "basic",
+    "prompt": "9 + 2 = ?",
+    "answer": "11",
+    "verify": "9+2",
+    "explanation": "9 + 1 = 10，再 + 1 = 11。"
+  },
+  {
+    "id": "cnm_p020_q2",
+    "topicId": "cnm_p020",
+    "type": "numeric",
+    "difficulty": "basic",
+    "prompt": "9 + 7 = ?",
+    "answer": "16",
+    "verify": "9+7",
+    "explanation": "9 + 1 = 10，7 剩 6，10 + 6 = 16。"
+  },
+  {
+    "id": "cnm_p020_q3",
+    "topicId": "cnm_p020",
+    "type": "choice",
+    "difficulty": "standard",
+    "prompt": "9 + 9 = ?",
+    "choices": [
+      {
+        "key": "A",
+        "text": "18"
+      },
+      {
+        "key": "B",
+        "text": "17"
+      },
+      {
+        "key": "C",
+        "text": "99"
+      },
+      {
+        "key": "D",
+        "text": "19"
+      }
+    ],
+    "answer": "A",
+    "explanation": "9 + 1 = 10，另一個 9 剩 8，10 + 8 = 18。"
+  },
+  {
+    "id": "cnm_p020_q4",
+    "topicId": "cnm_p020",
+    "type": "choice",
+    "difficulty": "advanced",
+    "prompt": "算 9 + 4：從 4 拿 1 給 9，9 + 1 = 10，4 剩 3。所以 9 + 4 = ?",
+    "choices": [
+      {
+        "key": "A",
+        "text": "13"
+      },
+      {
+        "key": "B",
+        "text": "14"
+      },
+      {
+        "key": "C",
+        "text": "12"
+      },
+      {
+        "key": "D",
+        "text": "15"
+      }
+    ],
+    "answer": "A",
+    "explanation": "10 + 3 = 13。選 B 是忘了把借出的 1 減掉。"
+  },
+  {
+    "id": "cnm_p021_q1",
+    "topicId": "cnm_p021",
+    "type": "numeric",
+    "difficulty": "basic",
+    "prompt": "8 + 7 = ?",
+    "answer": "15",
+    "verify": "8+7",
+    "explanation": "8 + 2 = 10，7 剩 5，10 + 5 = 15。"
+  },
+  {
+    "id": "cnm_p021_q2",
+    "topicId": "cnm_p021",
+    "type": "numeric",
+    "difficulty": "basic",
+    "prompt": "7 + 6 = ?",
+    "answer": "13",
+    "verify": "7+6",
+    "explanation": "7 + 3 = 10，6 剩 3，10 + 3 = 13。"
+  },
+  {
+    "id": "cnm_p021_q3",
+    "topicId": "cnm_p021",
+    "type": "choice",
+    "difficulty": "standard",
+    "prompt": "8 + 8 = ?",
+    "choices": [
+      {
+        "key": "A",
+        "text": "16"
+      },
+      {
+        "key": "B",
+        "text": "15"
+      },
+      {
+        "key": "C",
+        "text": "17"
+      },
+      {
+        "key": "D",
+        "text": "88"
+      }
+    ],
+    "answer": "A",
+    "explanation": "8 + 2 = 10，另一個 8 剩 6，10 + 6 = 16。"
+  },
+  {
+    "id": "cnm_p021_q4",
+    "topicId": "cnm_p021",
+    "type": "choice",
+    "difficulty": "advanced",
+    "prompt": "6 + 7 = ?",
+    "choices": [
+      {
+        "key": "A",
+        "text": "13"
+      },
+      {
+        "key": "B",
+        "text": "12"
+      },
+      {
+        "key": "C",
+        "text": "14"
+      },
+      {
+        "key": "D",
+        "text": "11"
+      }
+    ],
+    "answer": "A",
+    "explanation": "6 + 4 = 10，7 剩 3，10 + 3 = 13。也可以想 7 + 6，答案一樣。"
+  },
+  {
+    "id": "cnm_p022_q1",
+    "topicId": "cnm_p022",
+    "type": "numeric",
+    "difficulty": "basic",
+    "prompt": "課室有 6 張桌子和 4 張椅子。桌子比椅子多幾張？",
+    "answer": "2",
+    "verify": "6-4",
+    "explanation": "6 − 4 = 2。"
+  },
+  {
+    "id": "cnm_p022_q2",
+    "topicId": "cnm_p022",
+    "type": "choice",
+    "difficulty": "standard",
+    "prompt": "蘋果、香蕉和橙可以分為一類。以下哪一個也可以放入同一類？",
+    "choices": [
+      {
+        "key": "A",
+        "text": "麵包"
+      },
+      {
+        "key": "B",
+        "text": "提子"
+      },
+      {
+        "key": "C",
+        "text": "牛奶"
+      },
+      {
+        "key": "D",
+        "text": "鉛筆"
+      }
+    ],
+    "answer": "B",
+    "explanation": "這一類是水果。提子是水果；麵包、牛奶是食物但不是水果，鉛筆不是食物。"
+  },
+  {
+    "id": "cnm_p022_q3",
+    "topicId": "cnm_p022",
+    "type": "choice",
+    "difficulty": "standard",
+    "prompt": "小明把紅波、藍波和紅積木放在一起。他用的分類標準是甚麼？",
+    "choices": [
+      {
+        "key": "A",
+        "text": "顏色"
+      },
+      {
+        "key": "B",
+        "text": "形狀"
+      },
+      {
+        "key": "C",
+        "text": "大小"
+      },
+      {
+        "key": "D",
+        "text": "用途"
+      }
+    ],
+    "answer": "A",
+    "explanation": "有波也有積木，形狀不同；共同點是顏色（紅、藍都是顏色）。所以標準是顏色。"
+  },
+  {
+    "id": "cnm_p022_q4",
+    "topicId": "cnm_p022",
+    "type": "numeric",
+    "difficulty": "advanced",
+    "prompt": "一籃水果有 3 個蘋果、2 個橙和 1 個梨。一共有幾個水果？",
+    "answer": "6",
+    "verify": "3+2+1",
+    "explanation": "3 + 2 + 1 = 6。要三種都數，不要只數其中兩種。"
+  },
+  {
+    "id": "cnm_p023_q1",
+    "topicId": "cnm_p023",
+    "type": "numeric",
+    "difficulty": "basic",
+    "prompt": "三角形有幾條邊？",
+    "answer": "3",
+    "verify": "3",
+    "explanation": "三角形有 3 條邊。"
+  },
+  {
+    "id": "cnm_p023_q2",
+    "topicId": "cnm_p023",
+    "type": "choice",
+    "difficulty": "basic",
+    "prompt": "哪一個圖形有 4 條邊？",
+    "choices": [
+      {
+        "key": "A",
+        "text": "三角形"
+      },
+      {
+        "key": "B",
+        "text": "四邊形"
+      },
+      {
+        "key": "C",
+        "text": "五邊形"
+      },
+      {
+        "key": "D",
+        "text": "圓形"
+      }
+    ],
+    "answer": "B",
+    "explanation": "四邊形有 4 條邊。"
+  },
+  {
+    "id": "cnm_p023_q3",
+    "topicId": "cnm_p023",
+    "type": "choice",
+    "difficulty": "standard",
+    "prompt": "長方形和正方形都屬於哪一類圖形？",
+    "choices": [
+      {
+        "key": "A",
+        "text": "三角形"
+      },
+      {
+        "key": "B",
+        "text": "四邊形"
+      },
+      {
+        "key": "C",
+        "text": "五邊形"
+      },
+      {
+        "key": "D",
+        "text": "圓形"
+      }
+    ],
+    "answer": "B",
+    "explanation": "兩者都有 4 條邊，所以都是四邊形。正方形只是四條邊都相等的四邊形。"
+  },
+  {
+    "id": "cnm_p023_q4",
+    "topicId": "cnm_p023",
+    "type": "numeric",
+    "difficulty": "advanced",
+    "prompt": "五邊形有幾條邊？",
+    "answer": "5",
+    "verify": "5",
+    "explanation": "「五邊形」的名字就說明了它有 5 條邊。"
+  },
+  {
+    "id": "cnm_p024_q1",
+    "topicId": "cnm_p024",
+    "type": "numeric",
+    "difficulty": "basic",
+    "prompt": "用 2 個相同的三角形拼成一個四邊形。拼成的圖形有幾條邊？",
+    "answer": "4",
+    "verify": "4",
+    "explanation": "四邊形有 4 條邊。"
+  },
+  {
+    "id": "cnm_p024_q2",
+    "topicId": "cnm_p024",
+    "type": "choice",
+    "difficulty": "standard",
+    "prompt": "用 4 個相同的小正方形可以拼成甚麼？",
+    "choices": [
+      {
+        "key": "A",
+        "text": "圓形"
+      },
+      {
+        "key": "B",
+        "text": "三角形"
+      },
+      {
+        "key": "C",
+        "text": "大正方形"
+      },
+      {
+        "key": "D",
+        "text": "五邊形"
+      }
+    ],
+    "answer": "C",
+    "explanation": "2 × 2 排列就拼成一個大正方形。"
+  },
+  {
+    "id": "cnm_p024_q3",
+    "topicId": "cnm_p024",
+    "type": "choice",
+    "difficulty": "advanced",
+    "prompt": "把一個正方形沿對角線剪開，會得到兩個甚麼圖形？",
+    "choices": [
+      {
+        "key": "A",
+        "text": "正方形"
+      },
+      {
+        "key": "B",
+        "text": "三角形"
+      },
+      {
+        "key": "C",
+        "text": "長方形"
+      },
+      {
+        "key": "D",
+        "text": "圓形"
+      }
+    ],
+    "answer": "B",
+    "explanation": "沿對角線剪開，得到兩個三角形。"
+  },
+  {
+    "id": "cnm_p024_q4",
+    "topicId": "cnm_p024",
+    "type": "numeric",
+    "difficulty": "advanced",
+    "prompt": "一個大正方形由 4 個小正方形拼成。要拼成 2 個這樣的大正方形，一共要用幾個小正方形？",
+    "answer": "8",
+    "verify": "4*2",
+    "explanation": "每個大正方形用 4 個，2 個就是 4 × 2 = 8 個。"
+  },
+  {
+    "id": "cnm_p025_q1",
+    "topicId": "cnm_p025",
+    "type": "numeric",
+    "difficulty": "basic",
+    "prompt": "13 − 9 = ?",
+    "answer": "4",
+    "verify": "13-9",
+    "explanation": "破十法：13 − 10 = 3，再加回 1，得 4。"
+  },
+  {
+    "id": "cnm_p025_q2",
+    "topicId": "cnm_p025",
+    "type": "numeric",
+    "difficulty": "basic",
+    "prompt": "17 − 9 = ?",
+    "answer": "8",
+    "verify": "17-9",
+    "explanation": "17 − 10 = 7，再加回 1，得 8。"
+  },
+  {
+    "id": "cnm_p025_q3",
+    "topicId": "cnm_p025",
+    "type": "choice",
+    "difficulty": "standard",
+    "prompt": "12 − 9 = ?",
+    "choices": [
+      {
+        "key": "A",
+        "text": "3"
+      },
+      {
+        "key": "B",
+        "text": "2"
+      },
+      {
+        "key": "C",
+        "text": "21"
+      },
+      {
+        "key": "D",
+        "text": "1"
+      }
+    ],
+    "answer": "A",
+    "explanation": "12 − 10 = 2，再加回 1，得 3。選 B 是忘了把多減的 1 加回去。"
+  },
+  {
+    "id": "cnm_p025_q4",
+    "topicId": "cnm_p025",
+    "type": "numeric",
+    "difficulty": "advanced",
+    "prompt": "18 − 9 = ?",
+    "answer": "9",
+    "verify": "18-9",
+    "explanation": "18 − 10 = 8，加回 1 得 9。（也可以想 9 + 9 = 18。）"
+  },
+  {
+    "id": "cnm_p026_q1",
+    "topicId": "cnm_p026",
+    "type": "numeric",
+    "difficulty": "basic",
+    "prompt": "14 − 8 = ?",
+    "answer": "6",
+    "verify": "14-8",
+    "explanation": "14 − 10 = 4，加回 2，得 6。"
+  },
+  {
+    "id": "cnm_p026_q2",
+    "topicId": "cnm_p026",
+    "type": "numeric",
+    "difficulty": "basic",
+    "prompt": "15 − 7 = ?",
+    "answer": "8",
+    "verify": "15-7",
+    "explanation": "15 − 10 = 5，加回 3，得 8。"
+  },
+  {
+    "id": "cnm_p026_q3",
+    "topicId": "cnm_p026",
+    "type": "choice",
+    "difficulty": "standard",
+    "prompt": "13 − 6 = ?",
+    "choices": [
+      {
+        "key": "A",
+        "text": "7"
+      },
+      {
+        "key": "B",
+        "text": "6"
+      },
+      {
+        "key": "C",
+        "text": "19"
+      },
+      {
+        "key": "D",
+        "text": "5"
+      }
+    ],
+    "answer": "A",
+    "explanation": "13 − 10 = 3，加回 4，得 7。（也可以想 6 + 7 = 13。）"
+  },
+  {
+    "id": "cnm_p026_q4",
+    "topicId": "cnm_p026",
+    "type": "choice",
+    "difficulty": "advanced",
+    "prompt": "用「想加算減」算 14 − 8：因為 8 + 6 = 14，所以 14 − 8 = ?",
+    "choices": [
+      {
+        "key": "A",
+        "text": "6"
+      },
+      {
+        "key": "B",
+        "text": "8"
+      },
+      {
+        "key": "C",
+        "text": "22"
+      },
+      {
+        "key": "D",
+        "text": "5"
+      }
+    ],
+    "answer": "A",
+    "explanation": "加法和減法互為逆運算，8 + 6 = 14 就表示 14 − 8 = 6。"
+  },
+  {
+    "id": "cnm_p027_q1",
+    "topicId": "cnm_p027",
+    "type": "numeric",
+    "difficulty": "basic",
+    "prompt": "12 − 5 = ?",
+    "answer": "7",
+    "verify": "12-5",
+    "explanation": "12 − 2 = 10，再減 3，得 7。"
+  },
+  {
+    "id": "cnm_p027_q2",
+    "topicId": "cnm_p027",
+    "type": "numeric",
+    "difficulty": "basic",
+    "prompt": "11 − 4 = ?",
+    "answer": "7",
+    "verify": "11-4",
+    "explanation": "11 − 1 = 10，再減 3，得 7。"
+  },
+  {
+    "id": "cnm_p027_q3",
+    "topicId": "cnm_p027",
+    "type": "choice",
+    "difficulty": "standard",
+    "prompt": "13 − 3 = ?",
+    "choices": [
+      {
+        "key": "A",
+        "text": "10"
+      },
+      {
+        "key": "B",
+        "text": "16"
+      },
+      {
+        "key": "C",
+        "text": "9"
+      },
+      {
+        "key": "D",
+        "text": "11"
+      }
+    ],
+    "answer": "A",
+    "explanation": "13 − 3 = 10。減 3 剛好把個位的 3 減掉。"
+  },
+  {
+    "id": "cnm_p027_q4",
+    "topicId": "cnm_p027",
+    "type": "choice",
+    "difficulty": "advanced",
+    "prompt": "15 − 2 = ?",
+    "choices": [
+      {
+        "key": "A",
+        "text": "13"
+      },
+      {
+        "key": "B",
+        "text": "17"
+      },
+      {
+        "key": "C",
+        "text": "12"
+      },
+      {
+        "key": "D",
+        "text": "3"
+      }
+    ],
+    "answer": "A",
+    "explanation": "個位 5 − 2 = 3，十位不變，得 13。"
   },
   {
     "id": "cnm_p028_q1",
     "topicId": "cnm_p028",
-    "difficulty": "basic",
     "type": "numeric",
-    "prompt": "39 的后面一个数是几？",
-    "answer": "40",
-    "explanation": "39 的后面是 40。",
-    "verify": "39+1"
+    "difficulty": "basic",
+    "prompt": "由 90 數到 100。100 是幾個十？",
+    "answer": "10",
+    "verify": "10",
+    "explanation": "100 = 10 個十。"
   },
   {
     "id": "cnm_p028_q2",
     "topicId": "cnm_p028",
-    "difficulty": "basic",
     "type": "numeric",
-    "prompt": "50 的前面一个数是几？",
-    "answer": "49",
-    "explanation": "50 的前面是 49。",
-    "verify": "50-1"
+    "difficulty": "basic",
+    "prompt": "99 的後面一個數是幾？",
+    "answer": "100",
+    "verify": "99+1",
+    "explanation": "99 之後是 100。"
   },
   {
     "id": "cnm_p028_q3",
     "topicId": "cnm_p028",
+    "type": "choice",
     "difficulty": "standard",
-    "type": "numeric",
-    "prompt": "十位上是 4、个位上是 6，这个两位数是多少？",
-    "answer": "46",
-    "explanation": "4 个十和 6 个一是 46。",
-    "verify": "40+6"
+    "prompt": "十位是 6、個位是 0，這個數是甚麼？",
+    "choices": [
+      {
+        "key": "A",
+        "text": "6"
+      },
+      {
+        "key": "B",
+        "text": "60"
+      },
+      {
+        "key": "C",
+        "text": "06"
+      },
+      {
+        "key": "D",
+        "text": "600"
+      }
+    ],
+    "answer": "B",
+    "explanation": "十位 6 表示 60，個位 0 表示沒有，所以是 60。選 A 是把位值當成數字本身。"
   },
   {
     "id": "cnm_p028_q4",
     "topicId": "cnm_p028",
-    "difficulty": "standard",
     "type": "numeric",
-    "prompt": "70 里面有几个十？",
-    "answer": "7",
-    "explanation": "70 是 7 个十。",
-    "verify": "7"
+    "difficulty": "advanced",
+    "prompt": "100 裡面有幾個十？",
+    "answer": "10",
+    "verify": "10",
+    "explanation": "100 = 10 個十。"
   },
   {
     "id": "cnm_p029_q1",
     "topicId": "cnm_p029",
-    "difficulty": "basic",
     "type": "numeric",
-    "prompt": "计算：40－20＝？",
-    "answer": "20",
-    "explanation": "40 比 20 大 20。",
-    "verify": "40-20"
+    "difficulty": "basic",
+    "prompt": "63 和 36，哪一個較大？",
+    "answer": "63",
+    "verify": "63",
+    "explanation": "63 的十位是 6，36 的十位是 3，所以 63 較大。"
   },
   {
     "id": "cnm_p029_q2",
     "topicId": "cnm_p029",
-    "difficulty": "basic",
-    "type": "numeric",
-    "prompt": "计算：35－30＝？",
-    "answer": "5",
-    "explanation": "十位相同，比个位，35－30＝5。",
-    "verify": "35-30"
+    "type": "choice",
+    "difficulty": "standard",
+    "prompt": "45 和 54 比較，哪一句對？",
+    "choices": [
+      {
+        "key": "A",
+        "text": "45 較大"
+      },
+      {
+        "key": "B",
+        "text": "54 較大"
+      },
+      {
+        "key": "C",
+        "text": "一樣大"
+      },
+      {
+        "key": "D",
+        "text": "不能比較"
+      }
+    ],
+    "answer": "B",
+    "explanation": "先比十位：5 比 4 大，所以 54 較大。兩個數字相同但位置不同，大小不同。"
   },
   {
     "id": "cnm_p029_q3",
     "topicId": "cnm_p029",
+    "type": "choice",
     "difficulty": "standard",
-    "type": "numeric",
-    "prompt": "小华拍球 28 下，小丽拍球 20 下。小华比小丽多几下？计算：28－20＝？",
-    "answer": "8",
-    "explanation": "28－20＝8。",
-    "verify": "28-20"
+    "prompt": "78 和 72，哪一個較大？",
+    "choices": [
+      {
+        "key": "A",
+        "text": "78"
+      },
+      {
+        "key": "B",
+        "text": "72"
+      },
+      {
+        "key": "C",
+        "text": "一樣大"
+      },
+      {
+        "key": "D",
+        "text": "不能比較"
+      }
+    ],
+    "answer": "A",
+    "explanation": "十位相同（都是 7），再比個位：8 比 2 大，所以 78 較大。"
   },
   {
     "id": "cnm_p029_q4",
     "topicId": "cnm_p029",
-    "difficulty": "standard",
-    "type": "choice",
-    "prompt": "在 47、74、39、58 这几个数中，最大的数是几？",
-    "choices": [
-      {
-        "key": "A",
-        "text": "47"
-      },
-      {
-        "key": "B",
-        "text": "74"
-      },
-      {
-        "key": "C",
-        "text": "39"
-      },
-      {
-        "key": "D",
-        "text": "58"
-      }
-    ],
-    "answer": "B",
-    "explanation": "先比十位：7 最大，所以 74 最大。",
-    "verify": "74"
+    "type": "numeric",
+    "difficulty": "advanced",
+    "prompt": "比 59 大 1 的數是幾？",
+    "answer": "60",
+    "verify": "59+1",
+    "explanation": "59 之後是 60，十位進 1。"
   },
   {
     "id": "cnm_p030_q1",
     "topicId": "cnm_p030",
-    "difficulty": "basic",
     "type": "numeric",
-    "prompt": "计算：30＋20＝？",
-    "answer": "50",
-    "explanation": "3 个十加 2 个十是 5 个十，等于 50。",
-    "verify": "30+20"
+    "difficulty": "basic",
+    "prompt": "30 + 40 = ?",
+    "answer": "70",
+    "verify": "30+40",
+    "explanation": "3 個十加 4 個十，得 7 個十，即 70。"
   },
   {
     "id": "cnm_p030_q2",
     "topicId": "cnm_p030",
-    "difficulty": "basic",
     "type": "numeric",
-    "prompt": "计算：50－20＝？",
+    "difficulty": "basic",
+    "prompt": "80 − 50 = ?",
     "answer": "30",
-    "explanation": "5 个十减 2 个十是 3 个十，等于 30。",
-    "verify": "50-20"
+    "verify": "80-50",
+    "explanation": "8 個十減 5 個十，得 3 個十，即 30。"
   },
   {
     "id": "cnm_p030_q3",
     "topicId": "cnm_p030",
+    "type": "choice",
     "difficulty": "standard",
-    "type": "numeric",
-    "prompt": "有 4 捆小棒，每捆 10 根，另外还有 8 根。一共有多少根？计算：40＋8＝？",
-    "answer": "48",
-    "explanation": "40＋8＝48。",
-    "verify": "40+8"
+    "prompt": "20 + 5 = ?",
+    "choices": [
+      {
+        "key": "A",
+        "text": "25"
+      },
+      {
+        "key": "B",
+        "text": "70"
+      },
+      {
+        "key": "C",
+        "text": "205"
+      },
+      {
+        "key": "D",
+        "text": "15"
+      }
+    ],
+    "answer": "A",
+    "explanation": "20 加 5 個一，得 25。選 B 是把 20 當成 2 個十再加 5 個十。"
   },
   {
     "id": "cnm_p030_q4",
     "topicId": "cnm_p030",
-    "difficulty": "standard",
     "type": "numeric",
-    "prompt": "计算：70－40＝？",
-    "answer": "30",
-    "explanation": "70－40＝30。",
-    "verify": "70-40"
+    "difficulty": "advanced",
+    "prompt": "60 + 30 = ?",
+    "answer": "90",
+    "verify": "60+30",
+    "explanation": "6 個十加 3 個十，得 9 個十，即 90。"
   },
   {
     "id": "cnm_p031_q1",
     "topicId": "cnm_p031",
+    "type": "numeric",
     "difficulty": "basic",
-    "type": "choice",
-    "prompt": "个位满十要向十位进 1。27＋5 的个位 7＋5 满十了，十位要怎样？",
-    "choices": [
-      {
-        "key": "A",
-        "text": "向十位进 1"
-      },
-      {
-        "key": "B",
-        "text": "向个位借 1"
-      },
-      {
-        "key": "C",
-        "text": "十位改成 0"
-      }
-    ],
-    "answer": "A",
-    "explanation": "个位写成 2，十位 2 加进来的 1 变成 3，得 32。",
-    "verify": "'向十位进 1'"
+    "prompt": "34 + 5 = ?",
+    "answer": "39",
+    "verify": "34+5",
+    "explanation": "個位 4 + 5 = 9，十位不變，得 39。"
   },
   {
     "id": "cnm_p031_q2",
     "topicId": "cnm_p031",
-    "difficulty": "basic",
     "type": "numeric",
-    "prompt": "计算：26＋3＝？",
-    "answer": "29",
-    "explanation": "个位 6＋3＝9，不进位，得 29。",
-    "verify": "26+3"
+    "difficulty": "basic",
+    "prompt": "28 + 7 = ?",
+    "answer": "35",
+    "verify": "28+7",
+    "explanation": "8 + 7 = 15，個位寫 5 向十位進 1，得 35。"
   },
   {
     "id": "cnm_p031_q3",
     "topicId": "cnm_p031",
+    "type": "choice",
     "difficulty": "standard",
-    "type": "numeric",
-    "prompt": "停车处有 34 辆车，又开来 20 辆。现在有多少辆？计算：34＋20＝？",
-    "answer": "54",
-    "explanation": "34＋20＝54。",
-    "verify": "34+20"
+    "prompt": "46 + 8 = ?",
+    "choices": [
+      {
+        "key": "A",
+        "text": "54"
+      },
+      {
+        "key": "B",
+        "text": "44"
+      },
+      {
+        "key": "C",
+        "text": "53"
+      },
+      {
+        "key": "D",
+        "text": "414"
+      }
+    ],
+    "answer": "A",
+    "explanation": "6 + 8 = 14，個位寫 4，向十位進 1，得 54。選 B 是忘記進位。"
   },
   {
     "id": "cnm_p031_q4",
     "topicId": "cnm_p031",
-    "difficulty": "standard",
     "type": "numeric",
-    "prompt": "计算：48＋6＝？",
-    "answer": "54",
-    "explanation": "8＋6＝14，向十位进 1，得 54。",
-    "verify": "48+6"
+    "difficulty": "advanced",
+    "prompt": "57 + 6 = ?",
+    "answer": "63",
+    "verify": "57+6",
+    "explanation": "7 + 6 = 13，寫 3 進 1，5 + 1 = 6，得 63。"
   },
   {
     "id": "cnm_p032_q1",
     "topicId": "cnm_p032",
+    "type": "numeric",
     "difficulty": "basic",
-    "type": "choice",
-    "prompt": "退位减法要向十位借 1 当 10。32－7 个位不够减，要怎样？",
-    "choices": [
-      {
-        "key": "A",
-        "text": "向十位借 1 当 10"
-      },
-      {
-        "key": "B",
-        "text": "向个位进 1"
-      },
-      {
-        "key": "C",
-        "text": "直接用 7 减 2"
-      }
-    ],
-    "answer": "A",
-    "explanation": "借 1 后个位是 12－7＝5，十位剩下 2，得 25。",
-    "verify": "'向十位借 1 当 10'"
+    "prompt": "47 − 5 = ?",
+    "answer": "42",
+    "verify": "47-5",
+    "explanation": "個位 7 − 5 = 2，十位不變，得 42。"
   },
   {
     "id": "cnm_p032_q2",
     "topicId": "cnm_p032",
-    "difficulty": "basic",
     "type": "numeric",
-    "prompt": "计算：58－4＝？",
-    "answer": "54",
-    "explanation": "个位够减，58－4＝54。",
-    "verify": "58-4"
+    "difficulty": "basic",
+    "prompt": "52 − 8 = ?",
+    "answer": "44",
+    "verify": "52-8",
+    "explanation": "2 不夠減 8，向十位借 1：12 − 8 = 4，十位剩 4，得 44。"
   },
   {
     "id": "cnm_p032_q3",
     "topicId": "cnm_p032",
+    "type": "choice",
     "difficulty": "standard",
-    "type": "numeric",
-    "prompt": "有 46 本故事书，借出 20 本。还剩多少本？计算：46－20＝？",
-    "answer": "26",
-    "explanation": "46－20＝26。",
-    "verify": "46-20"
+    "prompt": "63 − 7 = ?",
+    "choices": [
+      {
+        "key": "A",
+        "text": "56"
+      },
+      {
+        "key": "B",
+        "text": "66"
+      },
+      {
+        "key": "C",
+        "text": "54"
+      },
+      {
+        "key": "D",
+        "text": "57"
+      }
+    ],
+    "answer": "A",
+    "explanation": "13 − 7 = 6，十位剩 5，得 56。選 B 是忘記借位後十位要減 1。"
   },
   {
     "id": "cnm_p032_q4",
     "topicId": "cnm_p032",
-    "difficulty": "standard",
     "type": "numeric",
-    "prompt": "计算：43－8＝？",
-    "answer": "35",
-    "explanation": "个位 3 不够减 8，退位后得 35。",
-    "verify": "43-8"
+    "difficulty": "advanced",
+    "prompt": "90 − 6 = ?",
+    "answer": "84",
+    "verify": "90-6",
+    "explanation": "0 不夠減 6，向十位借：10 − 6 = 4，十位剩 8，得 84。"
   },
   {
     "id": "cnm_p033_q1",
     "topicId": "cnm_p033",
-    "difficulty": "basic",
     "type": "numeric",
-    "prompt": "计算：23＋14＝？",
-    "answer": "37",
-    "explanation": "个位 3＋4＝7，十位 2＋1＝3，得 37。",
-    "verify": "23+14"
+    "difficulty": "basic",
+    "prompt": "36 + 47 = ?",
+    "answer": "83",
+    "verify": "36+47",
+    "explanation": "個位 6 + 7 = 13 寫 3 進 1；十位 3 + 4 + 1 = 8，得 83。"
   },
   {
     "id": "cnm_p033_q2",
     "topicId": "cnm_p033",
-    "difficulty": "basic",
     "type": "numeric",
-    "prompt": "计算：32＋25＝？",
-    "answer": "57",
-    "explanation": "32＋25＝57。",
-    "verify": "32+25"
+    "difficulty": "basic",
+    "prompt": "58 + 29 = ?",
+    "answer": "87",
+    "verify": "58+29",
+    "explanation": "8 + 9 = 17 寫 7 進 1；5 + 2 + 1 = 8，得 87。"
   },
   {
     "id": "cnm_p033_q3",
     "topicId": "cnm_p033",
+    "type": "choice",
     "difficulty": "standard",
-    "type": "numeric",
-    "prompt": "一班 27 人、二班 16 人去植树。两班一共有多少人？计算：27＋16＝？",
-    "answer": "43",
-    "explanation": "个位 7＋6＝13，进 1，得 43。",
-    "verify": "27+16"
+    "prompt": "45 + 38 = ?",
+    "choices": [
+      {
+        "key": "A",
+        "text": "73"
+      },
+      {
+        "key": "B",
+        "text": "83"
+      },
+      {
+        "key": "C",
+        "text": "82"
+      },
+      {
+        "key": "D",
+        "text": "713"
+      }
+    ],
+    "answer": "B",
+    "explanation": "5 + 8 = 13 寫 3 進 1；4 + 3 + 1 = 8，得 83。選 A 是忘記把進位的 1 加到十位。"
   },
   {
     "id": "cnm_p033_q4",
     "topicId": "cnm_p033",
-    "difficulty": "standard",
     "type": "numeric",
-    "prompt": "计算：48＋35＝？",
-    "answer": "83",
-    "explanation": "8＋5＝13，进 1，4＋3＋1＝8，得 83。",
-    "verify": "48+35"
+    "difficulty": "advanced",
+    "prompt": "27 + 65 = ?",
+    "answer": "92",
+    "verify": "27+65",
+    "explanation": "7 + 5 = 12 寫 2 進 1；2 + 6 + 1 = 9，得 92。"
   },
   {
     "id": "cnm_p034_q1",
     "topicId": "cnm_p034",
-    "difficulty": "basic",
     "type": "numeric",
-    "prompt": "计算：67－24＝？",
-    "answer": "43",
-    "explanation": "67－24＝43。",
-    "verify": "67-24"
+    "difficulty": "basic",
+    "prompt": "74 − 28 = ?",
+    "answer": "46",
+    "verify": "74-28",
+    "explanation": "4 不夠減 8，借位：14 − 8 = 6；十位 7 − 1 − 2 = 4，得 46。"
   },
   {
     "id": "cnm_p034_q2",
     "topicId": "cnm_p034",
-    "difficulty": "basic",
     "type": "numeric",
-    "prompt": "计算：80－30＝？",
-    "answer": "50",
-    "explanation": "80－30＝50。",
-    "verify": "80-30"
+    "difficulty": "basic",
+    "prompt": "50 − 17 = ?",
+    "answer": "33",
+    "verify": "50-17",
+    "explanation": "0 不夠減 7，借位：10 − 7 = 3；十位 5 − 1 − 1 = 3，得 33。"
   },
   {
     "id": "cnm_p034_q3",
     "topicId": "cnm_p034",
+    "type": "choice",
     "difficulty": "standard",
-    "type": "numeric",
-    "prompt": "有 52 张纸，用去 18 张。还剩多少张？计算：52－18＝？",
-    "answer": "34",
-    "explanation": "个位不够减，退位后得 34。",
-    "verify": "52-18"
+    "prompt": "62 − 35 = ?",
+    "choices": [
+      {
+        "key": "A",
+        "text": "27"
+      },
+      {
+        "key": "B",
+        "text": "37"
+      },
+      {
+        "key": "C",
+        "text": "33"
+      },
+      {
+        "key": "D",
+        "text": "97"
+      }
+    ],
+    "answer": "A",
+    "explanation": "12 − 5 = 7；十位 6 − 1 − 3 = 2，得 27。選 B 是忘記借位後十位要減 1。"
   },
   {
     "id": "cnm_p034_q4",
     "topicId": "cnm_p034",
-    "difficulty": "standard",
     "type": "numeric",
-    "prompt": "计算：70－26＝？",
-    "answer": "44",
-    "explanation": "0 减 6 要退位，70－26＝44。",
-    "verify": "70-26"
+    "difficulty": "advanced",
+    "prompt": "81 − 46 = ?",
+    "answer": "35",
+    "verify": "81-46",
+    "explanation": "11 − 6 = 5；十位 8 − 1 − 4 = 3，得 35。"
   },
   {
     "id": "cnm_p035_q1",
     "topicId": "cnm_p035",
-    "difficulty": "basic",
     "type": "numeric",
-    "prompt": "计算：20＋15＝？",
-    "answer": "35",
-    "explanation": "两个部分相加得到总数，20＋15＝35。",
-    "verify": "20+15"
+    "difficulty": "basic",
+    "prompt": "一共有 15 粒糖，其中 6 粒是紅的，其餘是藍的。藍色有幾粒？",
+    "answer": "9",
+    "verify": "15-6",
+    "explanation": "總數減去一部分，就是另一部分：15 − 6 = 9。"
   },
   {
     "id": "cnm_p035_q2",
     "topicId": "cnm_p035",
-    "difficulty": "basic",
     "type": "numeric",
-    "prompt": "计算：35－15＝？",
-    "answer": "20",
-    "explanation": "总数减去一部分，35－15＝20。",
-    "verify": "35-15"
+    "difficulty": "basic",
+    "prompt": "班上有 28 人，其中 13 人是男生。女生有幾人？",
+    "answer": "15",
+    "verify": "28-13",
+    "explanation": "28 − 13 = 15。"
   },
   {
     "id": "cnm_p035_q3",
     "topicId": "cnm_p035",
+    "type": "choice",
     "difficulty": "standard",
-    "type": "numeric",
-    "prompt": "果园里有桃树和梨树共 40 棵，桃树 18 棵。梨树有多少棵？计算：40－18＝？",
-    "answer": "22",
-    "explanation": "40－18＝22。",
-    "verify": "40-18"
+    "prompt": "書架上有 40 本書，借走了一些，還剩 25 本。借走了幾本？",
+    "choices": [
+      {
+        "key": "A",
+        "text": "15 本"
+      },
+      {
+        "key": "B",
+        "text": "65 本"
+      },
+      {
+        "key": "C",
+        "text": "25 本"
+      },
+      {
+        "key": "D",
+        "text": "40 本"
+      }
+    ],
+    "answer": "A",
+    "explanation": "總數 − 剩下 = 借走：40 − 25 = 15。選 B 是把兩個數相加。"
   },
   {
     "id": "cnm_p035_q4",
     "topicId": "cnm_p035",
-    "difficulty": "standard",
-    "type": "numeric",
-    "prompt": "男生 16 人，女生 14 人。全班一共有多少人？计算：16＋14＝？",
-    "answer": "30",
-    "explanation": "16＋14＝30。",
-    "verify": "16+14"
+    "type": "choice",
+    "difficulty": "advanced",
+    "prompt": "一箱有 50 個橙，吃了一些後剩 32 個。吃了幾個？",
+    "choices": [
+      {
+        "key": "A",
+        "text": "18 個"
+      },
+      {
+        "key": "B",
+        "text": "82 個"
+      },
+      {
+        "key": "C",
+        "text": "32 個"
+      },
+      {
+        "key": "D",
+        "text": "22 個"
+      }
+    ],
+    "answer": "A",
+    "explanation": "50 − 32 = 18。"
   },
   {
     "id": "cnm_p217_q1",
     "topicId": "cnm_p217",
-    "difficulty": "basic",
     "type": "numeric",
-    "prompt": "计算：15－9＝？ 15 比 9 多几？",
-    "answer": "6",
-    "explanation": "15－9＝6，所以 15 比 9 多 6。",
-    "verify": "15-9"
+    "difficulty": "basic",
+    "prompt": "小美有 12 張貼紙，小明有 8 張。小美比小明多幾張？",
+    "answer": "4",
+    "verify": "12-8",
+    "explanation": "求相差用大數減小數：12 − 8 = 4。"
   },
   {
     "id": "cnm_p217_q2",
     "topicId": "cnm_p217",
-    "difficulty": "basic",
     "type": "numeric",
-    "prompt": "红花有 42 朵，黄花有 30 朵。红花比黄花多多少朵？",
-    "answer": "12",
-    "explanation": "求相差几用大数减小数：42－30＝12。",
-    "verify": "42-30"
+    "difficulty": "basic",
+    "prompt": "樹上有 15 隻麻雀，電線上有 9 隻。樹上比電線多幾隻？",
+    "answer": "6",
+    "verify": "15-9",
+    "explanation": "15 − 9 = 6。"
   },
   {
     "id": "cnm_p217_q3",
     "topicId": "cnm_p217",
+    "type": "choice",
     "difficulty": "standard",
-    "type": "numeric",
-    "prompt": "小明跳绳跳了 56 下，小军跳了 71 下。小明比小军少跳多少下？",
-    "answer": "15",
-    "explanation": "少几也是求相差几：71－56＝15。",
-    "verify": "71-56"
+    "prompt": "哥哥高 130 厘米，弟弟高 115 厘米。哥哥比弟弟高幾厘米？",
+    "choices": [
+      {
+        "key": "A",
+        "text": "15 厘米"
+      },
+      {
+        "key": "B",
+        "text": "245 厘米"
+      },
+      {
+        "key": "C",
+        "text": "25 厘米"
+      },
+      {
+        "key": "D",
+        "text": "115 厘米"
+      }
+    ],
+    "answer": "A",
+    "explanation": "130 − 115 = 15。選 B 是把兩個數相加。"
   },
   {
     "id": "cnm_p217_q4",
     "topicId": "cnm_p217",
-    "difficulty": "standard",
-    "type": "numeric",
-    "prompt": "一班有 38 人，二班有 45 人。两个班相差多少人？",
-    "answer": "7",
-    "explanation": "45－38＝7。",
-    "verify": "45-38"
+    "type": "choice",
+    "difficulty": "advanced",
+    "prompt": "一班有 35 人，二班有 29 人。二班比一班少幾人？",
+    "choices": [
+      {
+        "key": "A",
+        "text": "6 人"
+      },
+      {
+        "key": "B",
+        "text": "64 人"
+      },
+      {
+        "key": "C",
+        "text": "29 人"
+      },
+      {
+        "key": "D",
+        "text": "5 人"
+      }
+    ],
+    "answer": "A",
+    "explanation": "35 − 29 = 6。問「少幾」也是大數減小數。"
   },
   {
     "id": "cnm_p218_q1",
     "topicId": "cnm_p218",
-    "difficulty": "basic",
     "type": "numeric",
-    "prompt": "小猫钓了 12 条鱼，小狗比小猫多钓 5 条。小狗钓了多少条？",
-    "answer": "17",
-    "explanation": "比 12 多 5，用加法：12＋5＝17。",
-    "verify": "12+5"
+    "difficulty": "basic",
+    "prompt": "小明有 9 粒糖，小美比小明多 3 粒。小美有幾粒？",
+    "answer": "12",
+    "verify": "9+3",
+    "explanation": "「比……多」用加法：9 + 3 = 12。"
   },
   {
     "id": "cnm_p218_q2",
     "topicId": "cnm_p218",
-    "difficulty": "basic",
     "type": "numeric",
-    "prompt": "树上有 40 只鸟，地上的比树上少 8 只。地上有多少只？",
-    "answer": "32",
-    "explanation": "比 40 少 8，用减法：40－8＝32。",
-    "verify": "40-8"
+    "difficulty": "basic",
+    "prompt": "小美有 12 粒糖，小明比小美少 3 粒。小明有幾粒？",
+    "answer": "9",
+    "verify": "12-3",
+    "explanation": "「比……少」用減法：12 − 3 = 9。"
   },
   {
     "id": "cnm_p218_q3",
     "topicId": "cnm_p218",
+    "type": "choice",
     "difficulty": "standard",
-    "type": "numeric",
-    "prompt": "妈妈买了 35 个苹果，梨比苹果少 9 个。梨有多少个？",
-    "answer": "26",
-    "explanation": "35－9＝26。",
-    "verify": "35-9"
+    "prompt": "紅繩長 25 厘米，藍繩比紅繩長 8 厘米。藍繩長幾厘米？",
+    "choices": [
+      {
+        "key": "A",
+        "text": "33 厘米"
+      },
+      {
+        "key": "B",
+        "text": "17 厘米"
+      },
+      {
+        "key": "C",
+        "text": "8 厘米"
+      },
+      {
+        "key": "D",
+        "text": "25 厘米"
+      }
+    ],
+    "answer": "A",
+    "explanation": "「比紅繩長」用加法：25 + 8 = 33。選 B 是當成「比紅繩短」。"
   },
   {
     "id": "cnm_p218_q4",
     "topicId": "cnm_p218",
-    "difficulty": "standard",
-    "type": "numeric",
-    "prompt": "小明有 24 张卡片，小红比小明多 7 张，小丽比小红少 10 张。小丽有多少张？",
-    "answer": "21",
-    "explanation": "先算小红：24＋7＝31；再算小丽：31－10＝21。",
-    "verify": "24+7-10"
+    "type": "choice",
+    "difficulty": "advanced",
+    "prompt": "一年級有 40 人，二年級比一年級少 6 人。二年級有幾人？",
+    "choices": [
+      {
+        "key": "A",
+        "text": "34 人"
+      },
+      {
+        "key": "B",
+        "text": "46 人"
+      },
+      {
+        "key": "C",
+        "text": "6 人"
+      },
+      {
+        "key": "D",
+        "text": "40 人"
+      }
+    ],
+    "answer": "A",
+    "explanation": "「比一年級少」用減法：40 − 6 = 34。選 B 是看到「少」仍然相加。"
   },
   {
     "id": "cnm_p036_q1",
     "topicId": "cnm_p036",
+    "type": "numeric",
     "difficulty": "basic",
-    "type": "choice",
-    "prompt": "人民币 1 元等于多少角？",
-    "choices": [
-      {
-        "key": "A",
-        "text": "10角"
-      },
-      {
-        "key": "B",
-        "text": "100角"
-      },
-      {
-        "key": "C",
-        "text": "2角"
-      }
-    ],
-    "answer": "A",
-    "explanation": "1 元＝10 角。",
-    "verify": "'10角'"
+    "prompt": "1 元等於幾角？",
+    "answer": "10",
+    "verify": "10",
+    "explanation": "1 元 = 10 角。"
   },
   {
     "id": "cnm_p036_q2",
     "topicId": "cnm_p036",
-    "difficulty": "basic",
     "type": "numeric",
-    "prompt": "3 元是多少角？",
-    "answer": "30",
-    "explanation": "1 元是 10 角，3 元是 30 角。",
-    "verify": "3*10"
+    "difficulty": "standard",
+    "prompt": "一個麵包標價 $6.50。6 元 5 角合起來是幾角？",
+    "answer": "65",
+    "verify": "6*10+5",
+    "explanation": "6 元 = 60 角，再加 5 角，共 65 角。"
   },
   {
     "id": "cnm_p036_q3",
     "topicId": "cnm_p036",
+    "type": "choice",
     "difficulty": "standard",
-    "type": "numeric",
-    "prompt": "5 角是多少分？",
-    "answer": "50",
-    "explanation": "1 角＝10 分，5 角＝50 分。",
-    "verify": "5*10"
+    "prompt": "以下哪一個硬幣的幣值最大？",
+    "choices": [
+      {
+        "key": "A",
+        "text": "1 角"
+      },
+      {
+        "key": "B",
+        "text": "2 角"
+      },
+      {
+        "key": "C",
+        "text": "5 角"
+      },
+      {
+        "key": "D",
+        "text": "1 元"
+      }
+    ],
+    "answer": "D",
+    "explanation": "1元 = 10角，比 5角 大，所以 1 元硬幣最大。"
   },
   {
     "id": "cnm_p036_q4",
     "topicId": "cnm_p036",
-    "difficulty": "standard",
     "type": "numeric",
-    "prompt": "一本本子 2 元，一块橡皮 1 元。一共要付多少元？计算：2＋1＝？",
-    "answer": "3",
-    "explanation": "2＋1＝3。",
-    "verify": "2+1"
+    "difficulty": "advanced",
+    "prompt": "一個橙標價 $3.50。用 5 元付款，應找回幾角？",
+    "answer": "15",
+    "verify": "50-35",
+    "explanation": "5 元 = 50 角，$3.50 = 35 角，50 − 35 = 15 角（即 1 元 5 角）。"
   },
   {
     "id": "cnm_p037_q1",

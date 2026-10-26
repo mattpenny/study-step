@@ -1,0 +1,90 @@
+{
+  "unit": "1M2",
+  "unitName": "貨幣(一)",
+  "keyStage": "KS1",
+  "strand": "度量",
+  "source": "EDB 小學 1M2 貨幣(一)：學習重點 1 認識香港流通的硬幣、2 認識價錢牌上標價的記法、3 認識硬幣在日常生活中的應用",
+  "objectives": [
+    {
+      "code": "1",
+      "text": "認識香港流通的硬幣（1角、2角、5角、1元、2元、5元、10元）",
+      "topics": [
+        "cnm_p036"
+      ]
+    },
+    {
+      "code": "2",
+      "text": "認識價錢牌上標價的記法（如 $2.50 讀作二元五角）",
+      "topics": [
+        "cnm_p036"
+      ]
+    },
+    {
+      "code": "3",
+      "text": "認識硬幣在日常生活中的應用（點算、換算，總值不多於10元）",
+      "topics": [
+        "cnm_p036"
+      ]
+    }
+  ],
+  "note": "香港用港元與角（硬幣上刻「壹毫」即一角、「壹圓」即一元）。原知識點叫「認識人民幣」，題目已全部改為港元。",
+  "questions": [
+    {
+      "id": "cnm_p036_q1",
+      "topicId": "cnm_p036",
+      "type": "numeric",
+      "difficulty": "basic",
+      "prompt": "1 元等於幾角？",
+      "answer": "10",
+      "verify": "10",
+      "explanation": "1 元 = 10 角。"
+    },
+    {
+      "id": "cnm_p036_q2",
+      "topicId": "cnm_p036",
+      "type": "numeric",
+      "difficulty": "standard",
+      "prompt": "一個麵包標價 $6.50。6 元 5 角合起來是幾角？",
+      "answer": "65",
+      "verify": "6*10+5",
+      "explanation": "6 元 = 60 角，再加 5 角，共 65 角。"
+    },
+    {
+      "id": "cnm_p036_q3",
+      "topicId": "cnm_p036",
+      "type": "choice",
+      "difficulty": "standard",
+      "prompt": "以下哪一個硬幣的幣值最大？",
+      "choices": [
+        {
+          "key": "A",
+          "text": "1 角"
+        },
+        {
+          "key": "B",
+          "text": "2 角"
+        },
+        {
+          "key": "C",
+          "text": "5 角"
+        },
+        {
+          "key": "D",
+          "text": "1 元"
+        }
+      ],
+      "answer": "D",
+      "explanation": "1元 = 10角，比 5角 大，所以 1 元硬幣最大。"
+    },
+    {
+      "id": "cnm_p036_q4",
+      "topicId": "cnm_p036",
+      "type": "numeric",
+      "difficulty": "advanced",
+      "prompt": "一個橙標價 $3.50。用 5 元付款，應找回幾角？",
+      "answer": "15",
+      "verify": "50-35",
+      "explanation": "5 元 = 50 角，$3.50 = 35 角，50 − 35 = 15 角（即 1 元 5 角）。"
+    }
+  ]
+}
