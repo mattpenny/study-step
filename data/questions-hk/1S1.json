@@ -24,7 +24,8 @@
       "choices": [
         {
           "key": "A",
-          "text": "長方體"
+          "text": "長方體",
+          "misconception": "長方體有平平的面，滾不動"
         },
         {
           "key": "B",
@@ -32,11 +33,13 @@
         },
         {
           "key": "C",
-          "text": "正方體"
+          "text": "正方體",
+          "misconception": "正方體有平平的面，滾不動"
         },
         {
           "key": "D",
-          "text": "角柱"
+          "text": "角柱",
+          "misconception": "角柱有平平的面，滾不動"
         }
       ],
       "answer": "B",
@@ -51,11 +54,13 @@
       "choices": [
         {
           "key": "A",
-          "text": "球"
+          "text": "球",
+          "misconception": "球沒有平面，也沒有邊"
         },
         {
           "key": "B",
-          "text": "圓柱"
+          "text": "圓柱",
+          "misconception": "圓柱兩端是圓形，不是長方形"
         },
         {
           "key": "C",
@@ -63,7 +68,8 @@
         },
         {
           "key": "D",
-          "text": "圓錐"
+          "text": "圓錐",
+          "misconception": "圓錐只有一個圓形底面和一個頂點"
         }
       ],
       "answer": "C",
@@ -78,7 +84,8 @@
       "choices": [
         {
           "key": "A",
-          "text": "兩者都只有曲面"
+          "text": "兩者都只有曲面",
+          "misconception": "圓柱兩端有平面，不是只有曲面"
         },
         {
           "key": "B",
@@ -86,11 +93,13 @@
         },
         {
           "key": "C",
-          "text": "球有兩個平面"
+          "text": "球有兩個平面",
+          "misconception": "球整個表面都是曲面，沒有平面"
         },
         {
           "key": "D",
-          "text": "兩者都不能堆疊"
+          "text": "兩者都不能堆疊",
+          "misconception": "圓柱有平面，可以疊"
         }
       ],
       "answer": "B",
@@ -109,15 +118,18 @@
         },
         {
           "key": "B",
-          "text": "因為它們會滾動"
+          "text": "因為它們會滾動",
+          "misconception": "會滾的立體反而疊不穩"
         },
         {
           "key": "C",
-          "text": "因為它們是圓的"
+          "text": "因為它們是圓的",
+          "misconception": "正方體的面是正方形，不是圓"
         },
         {
           "key": "D",
-          "text": "因為它們很輕"
+          "text": "因為它們很輕",
+          "misconception": "輕重和能不能疊穩沒有關係"
         }
       ],
       "answer": "A",
@@ -134,7 +146,8 @@
         {
           "key": "A",
           "text": "長方體",
-          "figure": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 160 160\"><polygon points=\"36,56 116,56 116,128 36,128\" fill=\"currentColor\" fill-opacity=\"0.12\" stroke=\"none\"/><line x1=\"36\" y1=\"56\" x2=\"116\" y2=\"56\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><line x1=\"116\" y1=\"56\" x2=\"116\" y2=\"128\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><line x1=\"116\" y1=\"128\" x2=\"36\" y2=\"128\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><line x1=\"36\" y1=\"128\" x2=\"36\" y2=\"56\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><line x1=\"36\" y1=\"56\" x2=\"62\" y2=\"32\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><line x1=\"116\" y1=\"56\" x2=\"142\" y2=\"32\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><line x1=\"62\" y1=\"32\" x2=\"142\" y2=\"32\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><line x1=\"142\" y1=\"32\" x2=\"142\" y2=\"104\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><line x1=\"116\" y1=\"128\" x2=\"142\" y2=\"104\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\" stroke-linecap=\"round\"/></svg>"
+          "figure": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 160 160\"><polygon points=\"36,56 116,56 116,128 36,128\" fill=\"currentColor\" fill-opacity=\"0.12\" stroke=\"none\"/><line x1=\"36\" y1=\"56\" x2=\"116\" y2=\"56\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><line x1=\"116\" y1=\"56\" x2=\"116\" y2=\"128\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><line x1=\"116\" y1=\"128\" x2=\"36\" y2=\"128\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><line x1=\"36\" y1=\"128\" x2=\"36\" y2=\"56\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><line x1=\"36\" y1=\"56\" x2=\"62\" y2=\"32\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><line x1=\"116\" y1=\"56\" x2=\"142\" y2=\"32\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><line x1=\"62\" y1=\"32\" x2=\"142\" y2=\"32\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><line x1=\"142\" y1=\"32\" x2=\"142\" y2=\"104\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><line x1=\"116\" y1=\"128\" x2=\"142\" y2=\"104\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\" stroke-linecap=\"round\"/></svg>",
+          "misconception": "長方體有平面，只會滑動不會滾"
         },
         {
           "key": "B",
@@ -144,12 +157,14 @@
         {
           "key": "C",
           "text": "圓柱",
-          "figure": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 160 160\"><path d=\"M42,46 L42,124 A38,13 0 0 0 118,124 L118,46 Z\" fill=\"currentColor\" fill-opacity=\"0.12\" stroke=\"none\"/><line x1=\"42\" y1=\"46\" x2=\"42\" y2=\"124\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><line x1=\"118\" y1=\"46\" x2=\"118\" y2=\"124\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><path d=\"M42,124 A38,13 0 0 0 118,124\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><ellipse cx=\"80\" cy=\"46\" rx=\"38\" ry=\"13\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\"/></svg>"
+          "figure": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 160 160\"><path d=\"M42,46 L42,124 A38,13 0 0 0 118,124 L118,46 Z\" fill=\"currentColor\" fill-opacity=\"0.12\" stroke=\"none\"/><line x1=\"42\" y1=\"46\" x2=\"42\" y2=\"124\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><line x1=\"118\" y1=\"46\" x2=\"118\" y2=\"124\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><path d=\"M42,124 A38,13 0 0 0 118,124\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><ellipse cx=\"80\" cy=\"46\" rx=\"38\" ry=\"13\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\"/></svg>",
+          "misconception": "圓柱只能向一個方向滾"
         },
         {
           "key": "D",
           "text": "角錐",
-          "figure": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 160 160\"><path d=\"M80,28 L35,122 A45,14 0 0 0 125,122 Z\" fill=\"currentColor\" fill-opacity=\"0.12\" stroke=\"none\"/><line x1=\"80\" y1=\"28\" x2=\"35\" y2=\"122\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><line x1=\"80\" y1=\"28\" x2=\"125\" y2=\"122\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><path d=\"M35,122 A45,14 0 0 0 125,122\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><path d=\"M35,122 A45,14 0 0 1 125,122\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\"/></svg>"
+          "figure": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 160 160\"><path d=\"M80,28 L35,122 A45,14 0 0 0 125,122 Z\" fill=\"currentColor\" fill-opacity=\"0.12\" stroke=\"none\"/><line x1=\"80\" y1=\"28\" x2=\"35\" y2=\"122\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><line x1=\"80\" y1=\"28\" x2=\"125\" y2=\"122\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><path d=\"M35,122 A45,14 0 0 0 125,122\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><path d=\"M35,122 A45,14 0 0 1 125,122\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\"/></svg>",
+          "misconception": "角錐有平面，滾不動"
         }
       ],
       "answer": "B",

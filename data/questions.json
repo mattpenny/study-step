@@ -28,7 +28,8 @@
     "choices": [
       {
         "key": "A",
-        "text": "3 個"
+        "text": "3 個",
+        "misconception": "用 5−2 = 3，漏掉起點 2"
       },
       {
         "key": "B",
@@ -36,11 +37,13 @@
       },
       {
         "key": "C",
-        "text": "5 個"
+        "text": "5 個",
+        "misconception": "把最大的數 5 當成數量"
       },
       {
         "key": "D",
-        "text": "2 個"
+        "text": "2 個",
+        "misconception": "只數了兩端，中間沒數"
       }
     ],
     "answer": "B",
@@ -75,11 +78,13 @@
     "choices": [
       {
         "key": "A",
-        "text": "3 比 3 大"
+        "text": "3 比 3 大",
+        "misconception": "以為數字出現兩次就比較大"
       },
       {
         "key": "B",
-        "text": "3 比 3 小"
+        "text": "3 比 3 小",
+        "misconception": "同上，只是方向弄反"
       },
       {
         "key": "C",
@@ -87,7 +92,8 @@
       },
       {
         "key": "D",
-        "text": "不能比較"
+        "text": "不能比較",
+        "misconception": "以為相同就不能比較"
       }
     ],
     "answer": "C",
@@ -102,7 +108,8 @@
     "choices": [
       {
         "key": "A",
-        "text": "妹妹比哥哥多"
+        "text": "妹妹比哥哥多",
+        "misconception": "看錯方向：2 其實比 4 少"
       },
       {
         "key": "B",
@@ -110,11 +117,13 @@
       },
       {
         "key": "C",
-        "text": "一樣多"
+        "text": "一樣多",
+        "misconception": "沒比較就說一樣多"
       },
       {
         "key": "D",
-        "text": "不知道"
+        "text": "不知道",
+        "misconception": "沒有把兩個數拿來比"
       }
     ],
     "answer": "B",
@@ -129,7 +138,8 @@
     "choices": [
       {
         "key": "A",
-        "text": "對，蘋果比較大"
+        "text": "對，蘋果比較大",
+        "misconception": "把「大」當成「多」，體積和數量是兩回事"
       },
       {
         "key": "B",
@@ -137,11 +147,13 @@
       },
       {
         "key": "C",
-        "text": "對，蘋果比較重"
+        "text": "對，蘋果比較重",
+        "misconception": "把重量當成數量"
       },
       {
         "key": "D",
-        "text": "不知道"
+        "text": "不知道",
+        "misconception": "沒分清「比較大」和「比較多」"
       }
     ],
     "answer": "B",
@@ -176,7 +188,8 @@
     "choices": [
       {
         "key": "A",
-        "text": "6 人"
+        "text": "6 人",
+        "misconception": "把「第 6 個」當成前面有 6 人"
       },
       {
         "key": "B",
@@ -184,11 +197,13 @@
       },
       {
         "key": "C",
-        "text": "7 人"
+        "text": "7 人",
+        "misconception": "把最後一個人也數進去，多算 1"
       },
       {
         "key": "D",
-        "text": "4 人"
+        "text": "4 人",
+        "misconception": "數錯中間的人數"
       }
     ],
     "answer": "B",
@@ -233,7 +248,8 @@
     "choices": [
       {
         "key": "A",
-        "text": "2"
+        "text": "2",
+        "misconception": "1 + 2 = 3，不是 4"
       },
       {
         "key": "B",
@@ -241,11 +257,13 @@
       },
       {
         "key": "C",
-        "text": "4"
+        "text": "4",
+        "misconception": "把整個 4 當成另一份，沒有分開"
       },
       {
         "key": "D",
-        "text": "5"
+        "text": "5",
+        "misconception": "1 + 5 = 6，超過 4"
       }
     ],
     "answer": "B",
@@ -290,7 +308,8 @@
     "choices": [
       {
         "key": "A",
-        "text": "0"
+        "text": "0",
+        "misconception": "把「0 就是沒有」誤解成結果是 0"
       },
       {
         "key": "B",
@@ -298,11 +317,13 @@
       },
       {
         "key": "C",
-        "text": "04"
+        "text": "04",
+        "misconception": "把 0 和 4 併寫"
       },
       {
         "key": "D",
-        "text": "不能計算"
+        "text": "不能計算",
+        "misconception": "以為 0 不能參與計算"
       }
     ],
     "answer": "B",
@@ -317,7 +338,8 @@
     "choices": [
       {
         "key": "A",
-        "text": "對，0 不是數"
+        "text": "對，0 不是數",
+        "misconception": "把「沒有」當成「不存在」"
       },
       {
         "key": "B",
@@ -325,11 +347,13 @@
       },
       {
         "key": "C",
-        "text": "對，0 只能出現在答案裡"
+        "text": "對，0 只能出現在答案裡",
+        "misconception": "以為 0 只是計算出來的結果"
       },
       {
         "key": "D",
-        "text": "不知道"
+        "text": "不知道",
+        "misconception": "沒想過 0 能不能比大小"
       }
     ],
     "answer": "B",
@@ -364,7 +388,8 @@
     "choices": [
       {
         "key": "A",
-        "text": "1 隻"
+        "text": "1 隻",
+        "misconception": "用 3−2 = 1 求相差，但題目問「一共」"
       },
       {
         "key": "B",
@@ -372,11 +397,13 @@
       },
       {
         "key": "C",
-        "text": "6 隻"
+        "text": "6 隻",
+        "misconception": "用了乘法 2 × 3"
       },
       {
         "key": "D",
-        "text": "4 隻"
+        "text": "4 隻",
+        "misconception": "數錯"
       }
     ],
     "answer": "B",
@@ -395,15 +422,18 @@
       },
       {
         "key": "B",
-        "text": "不一樣，1 + 3 較大"
+        "text": "不一樣，1 + 3 較大",
+        "misconception": "以為排在前面的數比較大"
       },
       {
         "key": "C",
-        "text": "不一樣，3 + 1 較大"
+        "text": "不一樣，3 + 1 較大",
+        "misconception": "以為大數在前就比較大"
       },
       {
         "key": "D",
-        "text": "不知道"
+        "text": "不知道",
+        "misconception": "沒有把兩邊都算一次"
       }
     ],
     "answer": "A",
@@ -442,15 +472,18 @@
       },
       {
         "key": "B",
-        "text": "7 粒"
+        "text": "7 粒",
+        "misconception": "看到數字就相加：5 + 2 = 7"
       },
       {
         "key": "C",
-        "text": "2 粒"
+        "text": "2 粒",
+        "misconception": "抄了吃掉的數"
       },
       {
         "key": "D",
-        "text": "5 粒"
+        "text": "5 粒",
+        "misconception": "以為沒有變化"
       }
     ],
     "answer": "A",
@@ -465,11 +498,13 @@
     "choices": [
       {
         "key": "A",
-        "text": "5 隻"
+        "text": "5 隻",
+        "misconception": "以為飛走了還在"
       },
       {
         "key": "B",
-        "text": "10 隻"
+        "text": "10 隻",
+        "misconception": "用了加法 5 + 5"
       },
       {
         "key": "C",
@@ -477,7 +512,8 @@
       },
       {
         "key": "D",
-        "text": "1 隻"
+        "text": "1 隻",
+        "misconception": "以為還會剩 1 隻"
       }
     ],
     "answer": "C",
@@ -512,7 +548,8 @@
     "choices": [
       {
         "key": "A",
-        "text": "4 個"
+        "text": "4 個",
+        "misconception": "用 10−6 = 4，漏掉起點 6"
       },
       {
         "key": "B",
@@ -520,11 +557,13 @@
       },
       {
         "key": "C",
-        "text": "6 個"
+        "text": "6 個",
+        "misconception": "由 5 開始數，多算一個"
       },
       {
         "key": "D",
-        "text": "10 個"
+        "text": "10 個",
+        "misconception": "把最大的數 10 當成數量"
       }
     ],
     "answer": "B",
@@ -573,15 +612,18 @@
       },
       {
         "key": "B",
-        "text": "6 粒"
+        "text": "6 粒",
+        "misconception": "直接抄了妹妹的 6 粒"
       },
       {
         "key": "C",
-        "text": "15 粒"
+        "text": "15 粒",
+        "misconception": "用了加法：9 + 6 = 15"
       },
       {
         "key": "D",
-        "text": "9 粒"
+        "text": "9 粒",
+        "misconception": "直接抄了哥哥的 9 粒"
       }
     ],
     "answer": "A",
@@ -626,7 +668,8 @@
     "choices": [
       {
         "key": "A",
-        "text": "2 本"
+        "text": "2 本",
+        "misconception": "用 6−4 = 2 求相差，但題目問「一共」"
       },
       {
         "key": "B",
@@ -634,11 +677,13 @@
       },
       {
         "key": "C",
-        "text": "24 本"
+        "text": "24 本",
+        "misconception": "用了乘法 4 × 6"
       },
       {
         "key": "D",
-        "text": "6 本"
+        "text": "6 本",
+        "misconception": "抄了姐姐的本數"
       }
     ],
     "answer": "B",
@@ -687,15 +732,18 @@
       },
       {
         "key": "B",
-        "text": "11 個"
+        "text": "11 個",
+        "misconception": "用了加法 8 + 3 = 11"
       },
       {
         "key": "C",
-        "text": "3 個"
+        "text": "3 個",
+        "misconception": "抄了吃掉的數"
       },
       {
         "key": "D",
-        "text": "8 個"
+        "text": "8 個",
+        "misconception": "以為沒有變化"
       }
     ],
     "answer": "A",
@@ -744,15 +792,18 @@
       },
       {
         "key": "B",
-        "text": "9"
+        "text": "9",
+        "misconception": "先算 4−3 = 1，再 10−1，順序錯了"
       },
       {
         "key": "C",
-        "text": "1"
+        "text": "1",
+        "misconception": "只算了 4−3，忘了再從 10 減"
       },
       {
         "key": "D",
-        "text": "17"
+        "text": "17",
+        "misconception": "把減法當成加法"
       }
     ],
     "answer": "A",
@@ -797,7 +848,8 @@
     "choices": [
       {
         "key": "A",
-        "text": "3"
+        "text": "3",
+        "misconception": "先算 3+2 = 5，再 8−5，順序錯了"
       },
       {
         "key": "B",
@@ -805,11 +857,13 @@
       },
       {
         "key": "C",
-        "text": "13"
+        "text": "13",
+        "misconception": "把減法當成加法"
       },
       {
         "key": "D",
-        "text": "9"
+        "text": "9",
+        "misconception": "先減後加：8−3+2 算成 8+3−2"
       }
     ],
     "answer": "B",
@@ -828,15 +882,18 @@
       },
       {
         "key": "B",
-        "text": "15"
+        "text": "15",
+        "misconception": "把減法當成加法"
       },
       {
         "key": "C",
-        "text": "3"
+        "text": "3",
+        "misconception": "符號看錯，把 +4 看成 −4"
       },
       {
         "key": "D",
-        "text": "7"
+        "text": "7",
+        "misconception": "先減 4 再加 5：6−4+5 = 7，順序錯了"
       }
     ],
     "answer": "A",
@@ -851,7 +908,8 @@
     "choices": [
       {
         "key": "A",
-        "text": "長方體"
+        "text": "長方體",
+        "misconception": "長方體有平平的面，滾不動"
       },
       {
         "key": "B",
@@ -859,11 +917,13 @@
       },
       {
         "key": "C",
-        "text": "正方體"
+        "text": "正方體",
+        "misconception": "正方體有平平的面，滾不動"
       },
       {
         "key": "D",
-        "text": "角柱"
+        "text": "角柱",
+        "misconception": "角柱有平平的面，滾不動"
       }
     ],
     "answer": "B",
@@ -878,11 +938,13 @@
     "choices": [
       {
         "key": "A",
-        "text": "球"
+        "text": "球",
+        "misconception": "球沒有平面，也沒有邊"
       },
       {
         "key": "B",
-        "text": "圓柱"
+        "text": "圓柱",
+        "misconception": "圓柱兩端是圓形，不是長方形"
       },
       {
         "key": "C",
@@ -890,7 +952,8 @@
       },
       {
         "key": "D",
-        "text": "圓錐"
+        "text": "圓錐",
+        "misconception": "圓錐只有一個圓形底面和一個頂點"
       }
     ],
     "answer": "C",
@@ -905,7 +968,8 @@
     "choices": [
       {
         "key": "A",
-        "text": "兩者都只有曲面"
+        "text": "兩者都只有曲面",
+        "misconception": "圓柱兩端有平面，不是只有曲面"
       },
       {
         "key": "B",
@@ -913,11 +977,13 @@
       },
       {
         "key": "C",
-        "text": "球有兩個平面"
+        "text": "球有兩個平面",
+        "misconception": "球整個表面都是曲面，沒有平面"
       },
       {
         "key": "D",
-        "text": "兩者都不能堆疊"
+        "text": "兩者都不能堆疊",
+        "misconception": "圓柱有平面，可以疊"
       }
     ],
     "answer": "B",
@@ -936,15 +1002,18 @@
       },
       {
         "key": "B",
-        "text": "因為它們會滾動"
+        "text": "因為它們會滾動",
+        "misconception": "會滾的立體反而疊不穩"
       },
       {
         "key": "C",
-        "text": "因為它們是圓的"
+        "text": "因為它們是圓的",
+        "misconception": "正方體的面是正方形，不是圓"
       },
       {
         "key": "D",
-        "text": "因為它們很輕"
+        "text": "因為它們很輕",
+        "misconception": "輕重和能不能疊穩沒有關係"
       }
     ],
     "answer": "A",
@@ -961,7 +1030,8 @@
       {
         "key": "A",
         "text": "長方體",
-        "figure": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 160 160\"><polygon points=\"36,56 116,56 116,128 36,128\" fill=\"currentColor\" fill-opacity=\"0.12\" stroke=\"none\"/><line x1=\"36\" y1=\"56\" x2=\"116\" y2=\"56\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><line x1=\"116\" y1=\"56\" x2=\"116\" y2=\"128\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><line x1=\"116\" y1=\"128\" x2=\"36\" y2=\"128\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><line x1=\"36\" y1=\"128\" x2=\"36\" y2=\"56\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><line x1=\"36\" y1=\"56\" x2=\"62\" y2=\"32\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><line x1=\"116\" y1=\"56\" x2=\"142\" y2=\"32\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><line x1=\"62\" y1=\"32\" x2=\"142\" y2=\"32\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><line x1=\"142\" y1=\"32\" x2=\"142\" y2=\"104\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><line x1=\"116\" y1=\"128\" x2=\"142\" y2=\"104\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\" stroke-linecap=\"round\"/></svg>"
+        "figure": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 160 160\"><polygon points=\"36,56 116,56 116,128 36,128\" fill=\"currentColor\" fill-opacity=\"0.12\" stroke=\"none\"/><line x1=\"36\" y1=\"56\" x2=\"116\" y2=\"56\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><line x1=\"116\" y1=\"56\" x2=\"116\" y2=\"128\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><line x1=\"116\" y1=\"128\" x2=\"36\" y2=\"128\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><line x1=\"36\" y1=\"128\" x2=\"36\" y2=\"56\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><line x1=\"36\" y1=\"56\" x2=\"62\" y2=\"32\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><line x1=\"116\" y1=\"56\" x2=\"142\" y2=\"32\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><line x1=\"62\" y1=\"32\" x2=\"142\" y2=\"32\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><line x1=\"142\" y1=\"32\" x2=\"142\" y2=\"104\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><line x1=\"116\" y1=\"128\" x2=\"142\" y2=\"104\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\" stroke-linecap=\"round\"/></svg>",
+        "misconception": "長方體有平面，只會滑動不會滾"
       },
       {
         "key": "B",
@@ -971,12 +1041,14 @@
       {
         "key": "C",
         "text": "圓柱",
-        "figure": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 160 160\"><path d=\"M42,46 L42,124 A38,13 0 0 0 118,124 L118,46 Z\" fill=\"currentColor\" fill-opacity=\"0.12\" stroke=\"none\"/><line x1=\"42\" y1=\"46\" x2=\"42\" y2=\"124\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><line x1=\"118\" y1=\"46\" x2=\"118\" y2=\"124\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><path d=\"M42,124 A38,13 0 0 0 118,124\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><ellipse cx=\"80\" cy=\"46\" rx=\"38\" ry=\"13\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\"/></svg>"
+        "figure": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 160 160\"><path d=\"M42,46 L42,124 A38,13 0 0 0 118,124 L118,46 Z\" fill=\"currentColor\" fill-opacity=\"0.12\" stroke=\"none\"/><line x1=\"42\" y1=\"46\" x2=\"42\" y2=\"124\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><line x1=\"118\" y1=\"46\" x2=\"118\" y2=\"124\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><path d=\"M42,124 A38,13 0 0 0 118,124\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><ellipse cx=\"80\" cy=\"46\" rx=\"38\" ry=\"13\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\"/></svg>",
+        "misconception": "圓柱只能向一個方向滾"
       },
       {
         "key": "D",
         "text": "角錐",
-        "figure": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 160 160\"><path d=\"M80,28 L35,122 A45,14 0 0 0 125,122 Z\" fill=\"currentColor\" fill-opacity=\"0.12\" stroke=\"none\"/><line x1=\"80\" y1=\"28\" x2=\"35\" y2=\"122\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><line x1=\"80\" y1=\"28\" x2=\"125\" y2=\"122\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><path d=\"M35,122 A45,14 0 0 0 125,122\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><path d=\"M35,122 A45,14 0 0 1 125,122\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\"/></svg>"
+        "figure": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 160 160\"><path d=\"M80,28 L35,122 A45,14 0 0 0 125,122 Z\" fill=\"currentColor\" fill-opacity=\"0.12\" stroke=\"none\"/><line x1=\"80\" y1=\"28\" x2=\"35\" y2=\"122\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><line x1=\"80\" y1=\"28\" x2=\"125\" y2=\"122\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><path d=\"M35,122 A45,14 0 0 0 125,122\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><path d=\"M35,122 A45,14 0 0 1 125,122\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\"/></svg>",
+        "misconception": "角錐有平面，滾不動"
       }
     ],
     "answer": "B",
@@ -991,7 +1063,8 @@
     "choices": [
       {
         "key": "A",
-        "text": "上面"
+        "text": "上面",
+        "misconception": "只照著題目的說法，沒有把方向反過來"
       },
       {
         "key": "B",
@@ -999,11 +1072,13 @@
       },
       {
         "key": "C",
-        "text": "左邊"
+        "text": "左邊",
+        "misconception": "把上下混淆成左右"
       },
       {
         "key": "D",
-        "text": "右邊"
+        "text": "右邊",
+        "misconception": "把上下混淆成左右"
       }
     ],
     "answer": "B",
@@ -1018,7 +1093,8 @@
     "choices": [
       {
         "key": "A",
-        "text": "前面"
+        "text": "前面",
+        "misconception": "把「後面」當成「前面」"
       },
       {
         "key": "B",
@@ -1026,11 +1102,13 @@
       },
       {
         "key": "C",
-        "text": "左邊"
+        "text": "左邊",
+        "misconception": "混淆了前後和左右"
       },
       {
         "key": "D",
-        "text": "右邊"
+        "text": "右邊",
+        "misconception": "混淆了前後和左右"
       }
     ],
     "answer": "B",
@@ -1045,7 +1123,8 @@
     "choices": [
       {
         "key": "A",
-        "text": "右手邊"
+        "text": "右手邊",
+        "misconception": "忘了面對面時左右會相反"
       },
       {
         "key": "B",
@@ -1053,11 +1132,13 @@
       },
       {
         "key": "C",
-        "text": "前面"
+        "text": "前面",
+        "misconception": "這題問左右，不是前後"
       },
       {
         "key": "D",
-        "text": "後面"
+        "text": "後面",
+        "misconception": "這題問左右，不是前後"
       }
     ],
     "answer": "B",
@@ -1072,7 +1153,8 @@
     "choices": [
       {
         "key": "A",
-        "text": "左邊"
+        "text": "左邊",
+        "misconception": "左右顛倒"
       },
       {
         "key": "B",
@@ -1080,11 +1162,13 @@
       },
       {
         "key": "C",
-        "text": "前面"
+        "text": "前面",
+        "misconception": "三人排成一行，沒有前後之分"
       },
       {
         "key": "D",
-        "text": "後面"
+        "text": "後面",
+        "misconception": "三人排成一行，沒有前後之分"
       }
     ],
     "answer": "B",
@@ -1104,15 +1188,18 @@
       },
       {
         "key": "B",
-        "text": "下面"
+        "text": "下面",
+        "misconception": "看錯位置：球在盒頂，不在盒底"
       },
       {
         "key": "C",
-        "text": "左邊"
+        "text": "左邊",
+        "misconception": "只看了水平位置，忽略了上下"
       },
       {
         "key": "D",
-        "text": "右邊"
+        "text": "右邊",
+        "misconception": "只看了水平位置，忽略了上下"
       }
     ],
     "answer": "A",
@@ -1147,7 +1234,8 @@
     "choices": [
       {
         "key": "A",
-        "text": "10 個"
+        "text": "10 個",
+        "misconception": "用 20−10 = 10，漏掉起點 10"
       },
       {
         "key": "B",
@@ -1155,11 +1243,13 @@
       },
       {
         "key": "C",
-        "text": "20 個"
+        "text": "20 個",
+        "misconception": "把最大的數 20 當成數量"
       },
       {
         "key": "D",
-        "text": "12 個"
+        "text": "12 個",
+        "misconception": "多數了兩個"
       }
     ],
     "answer": "B",
@@ -1208,15 +1298,18 @@
       },
       {
         "key": "B",
-        "text": "83"
+        "text": "83",
+        "misconception": "十位和個位對調"
       },
       {
         "key": "C",
-        "text": "11"
+        "text": "11",
+        "misconception": "把 3 和 8 相加"
       },
       {
         "key": "D",
-        "text": "308"
+        "text": "308",
+        "misconception": "中間多插了一個 0"
       }
     ],
     "answer": "A",
@@ -1231,7 +1324,8 @@
     "choices": [
       {
         "key": "A",
-        "text": "7"
+        "text": "7",
+        "misconception": "把十位當成個位"
       },
       {
         "key": "B",
@@ -1239,11 +1333,13 @@
       },
       {
         "key": "C",
-        "text": "70"
+        "text": "70",
+        "misconception": "抄了整個數"
       },
       {
         "key": "D",
-        "text": "沒有個位"
+        "text": "沒有個位",
+        "misconception": "以為 0 不用寫出來"
       }
     ],
     "answer": "B",
@@ -1282,15 +1378,18 @@
       },
       {
         "key": "B",
-        "text": "64"
+        "text": "64",
+        "misconception": "把十位的 1 也拿去加 5"
       },
       {
         "key": "C",
-        "text": "9"
+        "text": "9",
+        "misconception": "只算個位 4+5 = 9，漏了十位"
       },
       {
         "key": "D",
-        "text": "15"
+        "text": "15",
+        "misconception": "個位算對但十位抄錯"
       }
     ],
     "answer": "A",
@@ -1339,15 +1438,18 @@
       },
       {
         "key": "B",
-        "text": "2"
+        "text": "2",
+        "misconception": "記成 8 要加 2 才湊十"
       },
       {
         "key": "C",
-        "text": "6"
+        "text": "6",
+        "misconception": "直接抄了 6"
       },
       {
         "key": "D",
-        "text": "9"
+        "text": "9",
+        "misconception": "直接抄了 9"
       }
     ],
     "answer": "A",
@@ -1362,7 +1464,8 @@
     "choices": [
       {
         "key": "A",
-        "text": "12"
+        "text": "12",
+        "misconception": "忘記把剩下的 3 加回去"
       },
       {
         "key": "B",
@@ -1370,11 +1473,13 @@
       },
       {
         "key": "C",
-        "text": "16"
+        "text": "16",
+        "misconception": "湊成 10 之後又把 6 整個加上去"
       },
       {
         "key": "D",
-        "text": "11"
+        "text": "11",
+        "misconception": "少加了 2"
       }
     ],
     "answer": "B",
@@ -1413,15 +1518,18 @@
       },
       {
         "key": "B",
-        "text": "17"
+        "text": "17",
+        "misconception": "湊十後少加了 1"
       },
       {
         "key": "C",
-        "text": "99"
+        "text": "99",
+        "misconception": "把兩個 9 併寫成 99"
       },
       {
         "key": "D",
-        "text": "19"
+        "text": "19",
+        "misconception": "多加 1"
       }
     ],
     "answer": "A",
@@ -1440,15 +1548,18 @@
       },
       {
         "key": "B",
-        "text": "14"
+        "text": "14",
+        "misconception": "忘了把借出的 1 從 4 減掉"
       },
       {
         "key": "C",
-        "text": "12"
+        "text": "12",
+        "misconception": "少加了 2"
       },
       {
         "key": "D",
-        "text": "15"
+        "text": "15",
+        "misconception": "多加 2"
       }
     ],
     "answer": "A",
@@ -1487,15 +1598,18 @@
       },
       {
         "key": "B",
-        "text": "15"
+        "text": "15",
+        "misconception": "少加了 1"
       },
       {
         "key": "C",
-        "text": "17"
+        "text": "17",
+        "misconception": "多加 1"
       },
       {
         "key": "D",
-        "text": "88"
+        "text": "88",
+        "misconception": "把兩個 8 併寫成 88"
       }
     ],
     "answer": "A",
@@ -1514,15 +1628,18 @@
       },
       {
         "key": "B",
-        "text": "12"
+        "text": "12",
+        "misconception": "少加了 1"
       },
       {
         "key": "C",
-        "text": "14"
+        "text": "14",
+        "misconception": "多加 1"
       },
       {
         "key": "D",
-        "text": "11"
+        "text": "11",
+        "misconception": "少加了 2"
       }
     ],
     "answer": "A",
@@ -1547,7 +1664,8 @@
     "choices": [
       {
         "key": "A",
-        "text": "麵包"
+        "text": "麵包",
+        "misconception": "麵包是食物，但不是水果"
       },
       {
         "key": "B",
@@ -1555,11 +1673,13 @@
       },
       {
         "key": "C",
-        "text": "牛奶"
+        "text": "牛奶",
+        "misconception": "牛奶是飲品，不是水果"
       },
       {
         "key": "D",
-        "text": "鉛筆"
+        "text": "鉛筆",
+        "misconception": "鉛筆不是食物"
       }
     ],
     "answer": "B",
@@ -1578,15 +1698,18 @@
       },
       {
         "key": "B",
-        "text": "形狀"
+        "text": "形狀",
+        "misconception": "有波也有積木，形狀不同，不是形狀"
       },
       {
         "key": "C",
-        "text": "大小"
+        "text": "大小",
+        "misconception": "題目沒提大小"
       },
       {
         "key": "D",
-        "text": "用途"
+        "text": "用途",
+        "misconception": "不是按用途分"
       }
     ],
     "answer": "A",
@@ -1621,7 +1744,8 @@
     "choices": [
       {
         "key": "A",
-        "text": "三角形"
+        "text": "三角形",
+        "misconception": "三角形只有 3 條邊"
       },
       {
         "key": "B",
@@ -1629,11 +1753,13 @@
       },
       {
         "key": "C",
-        "text": "五邊形"
+        "text": "五邊形",
+        "misconception": "五邊形有 5 條邊"
       },
       {
         "key": "D",
-        "text": "圓形"
+        "text": "圓形",
+        "misconception": "圓形由曲線圍成，沒有直邊"
       }
     ],
     "answer": "B",
@@ -1648,7 +1774,8 @@
     "choices": [
       {
         "key": "A",
-        "text": "三角形"
+        "text": "三角形",
+        "misconception": "不是 3 條邊，所以不是三角形"
       },
       {
         "key": "B",
@@ -1656,11 +1783,13 @@
       },
       {
         "key": "C",
-        "text": "五邊形"
+        "text": "五邊形",
+        "misconception": "不是 5 條邊"
       },
       {
         "key": "D",
-        "text": "圓形"
+        "text": "圓形",
+        "misconception": "不是由曲線圍成"
       }
     ],
     "answer": "B",
@@ -1687,7 +1816,8 @@
       {
         "key": "A",
         "text": "三角形",
-        "figure": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 160 160\"><polygon points=\"80,30 20,132 140,132\" fill=\"currentColor\" fill-opacity=\"0.12\" stroke=\"none\"/><polygon points=\"80,30 20,132 140,132\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/></svg>"
+        "figure": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 160 160\"><polygon points=\"80,30 20,132 140,132\" fill=\"currentColor\" fill-opacity=\"0.12\" stroke=\"none\"/><polygon points=\"80,30 20,132 140,132\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/></svg>",
+        "misconception": "圖中是 3 條邊，不是 4 條"
       },
       {
         "key": "B",
@@ -1697,12 +1827,14 @@
       {
         "key": "C",
         "text": "圓形",
-        "figure": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 160 160\"><circle cx=\"80\" cy=\"82\" r=\"50\" fill=\"currentColor\" fill-opacity=\"0.12\" stroke=\"none\"/><circle cx=\"80\" cy=\"82\" r=\"50\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\"/></svg>"
+        "figure": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 160 160\"><circle cx=\"80\" cy=\"82\" r=\"50\" fill=\"currentColor\" fill-opacity=\"0.12\" stroke=\"none\"/><circle cx=\"80\" cy=\"82\" r=\"50\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\"/></svg>",
+        "misconception": "圓形沒有直邊"
       },
       {
         "key": "D",
         "text": "六邊形",
-        "figure": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 160 160\"><polygon points=\"135,80 107,128 53,128 25,80 53,32 107,32\" fill=\"currentColor\" fill-opacity=\"0.12\" stroke=\"none\"/><polygon points=\"135,80 107,128 53,128 25,80 53,32 107,32\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/></svg>"
+        "figure": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 160 160\"><polygon points=\"135,80 107,128 53,128 25,80 53,32 107,32\" fill=\"currentColor\" fill-opacity=\"0.12\" stroke=\"none\"/><polygon points=\"135,80 107,128 53,128 25,80 53,32 107,32\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/></svg>",
+        "misconception": "圖中是 6 條邊"
       }
     ],
     "answer": "B",
@@ -1738,11 +1870,13 @@
     "choices": [
       {
         "key": "A",
-        "text": "圓形"
+        "text": "圓形",
+        "misconception": "正方形拼不出圓形"
       },
       {
         "key": "B",
-        "text": "三角形"
+        "text": "三角形",
+        "misconception": "4 個正方形拼不出三角形"
       },
       {
         "key": "C",
@@ -1750,7 +1884,8 @@
       },
       {
         "key": "D",
-        "text": "五邊形"
+        "text": "五邊形",
+        "misconception": "拼不出五邊形"
       }
     ],
     "answer": "C",
@@ -1765,7 +1900,8 @@
     "choices": [
       {
         "key": "A",
-        "text": "正方形"
+        "text": "正方形",
+        "misconception": "剪開之後不是正方形"
       },
       {
         "key": "B",
@@ -1773,11 +1909,13 @@
       },
       {
         "key": "C",
-        "text": "長方形"
+        "text": "長方形",
+        "misconception": "沿對角線剪不會得到長方形"
       },
       {
         "key": "D",
-        "text": "圓形"
+        "text": "圓形",
+        "misconception": "剪直線不會出現圓"
       }
     ],
     "answer": "B",
@@ -1826,15 +1964,18 @@
       },
       {
         "key": "B",
-        "text": "2"
+        "text": "2",
+        "misconception": "12−10 = 2，忘了把多減的 1 加回"
       },
       {
         "key": "C",
-        "text": "21"
+        "text": "21",
+        "misconception": "把減法當成加法"
       },
       {
         "key": "D",
-        "text": "1"
+        "text": "1",
+        "misconception": "算錯"
       }
     ],
     "answer": "A",
@@ -1883,15 +2024,18 @@
       },
       {
         "key": "B",
-        "text": "6"
+        "text": "6",
+        "misconception": "抄了減數 6"
       },
       {
         "key": "C",
-        "text": "19"
+        "text": "19",
+        "misconception": "把減法當成加法"
       },
       {
         "key": "D",
-        "text": "5"
+        "text": "5",
+        "misconception": "算成 13−8"
       }
     ],
     "answer": "A",
@@ -1910,15 +2054,18 @@
       },
       {
         "key": "B",
-        "text": "8"
+        "text": "8",
+        "misconception": "抄了減數 8"
       },
       {
         "key": "C",
-        "text": "22"
+        "text": "22",
+        "misconception": "把減法當成加法"
       },
       {
         "key": "D",
-        "text": "5"
+        "text": "5",
+        "misconception": "想成 8+5 = 13，抄錯了另一個加數"
       }
     ],
     "answer": "A",
@@ -1957,15 +2104,18 @@
       },
       {
         "key": "B",
-        "text": "16"
+        "text": "16",
+        "misconception": "把減法當成加法"
       },
       {
         "key": "C",
-        "text": "9"
+        "text": "9",
+        "misconception": "算成 13−4"
       },
       {
         "key": "D",
-        "text": "11"
+        "text": "11",
+        "misconception": "算成 13−2"
       }
     ],
     "answer": "A",
@@ -1984,15 +2134,18 @@
       },
       {
         "key": "B",
-        "text": "17"
+        "text": "17",
+        "misconception": "把減法當成加法"
       },
       {
         "key": "C",
-        "text": "12"
+        "text": "12",
+        "misconception": "算成 15−3"
       },
       {
         "key": "D",
-        "text": "3"
+        "text": "3",
+        "misconception": "個位減完之後又減了一次"
       }
     ],
     "answer": "A",
@@ -2027,7 +2180,8 @@
     "choices": [
       {
         "key": "A",
-        "text": "6"
+        "text": "6",
+        "misconception": "把十位的 6 當成 6 個一"
       },
       {
         "key": "B",
@@ -2035,11 +2189,13 @@
       },
       {
         "key": "C",
-        "text": "06"
+        "text": "06",
+        "misconception": "位值順序寫反"
       },
       {
         "key": "D",
-        "text": "600"
+        "text": "600",
+        "misconception": "多補了兩個 0"
       }
     ],
     "answer": "B",
@@ -2074,7 +2230,8 @@
     "choices": [
       {
         "key": "A",
-        "text": "45 較大"
+        "text": "45 較大",
+        "misconception": "以為寫在前面的數比較小"
       },
       {
         "key": "B",
@@ -2082,11 +2239,13 @@
       },
       {
         "key": "C",
-        "text": "一樣大"
+        "text": "一樣大",
+        "misconception": "看到同樣的兩個數字就以為相等"
       },
       {
         "key": "D",
-        "text": "不能比較"
+        "text": "不能比較",
+        "misconception": "沒比較十位"
       }
     ],
     "answer": "B",
@@ -2105,15 +2264,18 @@
       },
       {
         "key": "B",
-        "text": "72"
+        "text": "72",
+        "misconception": "十位相同時沒有再比個位"
       },
       {
         "key": "C",
-        "text": "一樣大"
+        "text": "一樣大",
+        "misconception": "十位相同就以為相等"
       },
       {
         "key": "D",
-        "text": "不能比較"
+        "text": "不能比較",
+        "misconception": "沒比較個位"
       }
     ],
     "answer": "A",
@@ -2162,15 +2324,18 @@
       },
       {
         "key": "B",
-        "text": "70"
+        "text": "70",
+        "misconception": "把 20 當成 2 個十，再加 5 個十"
       },
       {
         "key": "C",
-        "text": "205"
+        "text": "205",
+        "misconception": "直接把兩個數併寫"
       },
       {
         "key": "D",
-        "text": "15"
+        "text": "15",
+        "misconception": "用了減法 20−5"
       }
     ],
     "answer": "A",
@@ -2219,15 +2384,18 @@
       },
       {
         "key": "B",
-        "text": "44"
+        "text": "44",
+        "misconception": "6+8 = 14，但忘了向十位進 1"
       },
       {
         "key": "C",
-        "text": "53"
+        "text": "53",
+        "misconception": "進位後十位算錯"
       },
       {
         "key": "D",
-        "text": "414"
+        "text": "414",
+        "misconception": "把 4 和 14 併寫"
       }
     ],
     "answer": "A",
@@ -2276,15 +2444,18 @@
       },
       {
         "key": "B",
-        "text": "66"
+        "text": "66",
+        "misconception": "把減法當成加法"
       },
       {
         "key": "C",
-        "text": "54"
+        "text": "54",
+        "misconception": "借位後十位沒有減 1"
       },
       {
         "key": "D",
-        "text": "57"
+        "text": "57",
+        "misconception": "借位後個位算錯"
       }
     ],
     "answer": "A",
@@ -2329,7 +2500,8 @@
     "choices": [
       {
         "key": "A",
-        "text": "73"
+        "text": "73",
+        "misconception": "進位的 1 沒有加到十位"
       },
       {
         "key": "B",
@@ -2337,11 +2509,13 @@
       },
       {
         "key": "C",
-        "text": "82"
+        "text": "82",
+        "misconception": "個位相加算錯"
       },
       {
         "key": "D",
-        "text": "713"
+        "text": "713",
+        "misconception": "把 7 和 13 併寫"
       }
     ],
     "answer": "B",
@@ -2390,15 +2564,18 @@
       },
       {
         "key": "B",
-        "text": "37"
+        "text": "37",
+        "misconception": "借位後十位沒有減 1"
       },
       {
         "key": "C",
-        "text": "33"
+        "text": "33",
+        "misconception": "借位後個位算錯"
       },
       {
         "key": "D",
-        "text": "97"
+        "text": "97",
+        "misconception": "把減法當成加法"
       }
     ],
     "answer": "A",
@@ -2447,15 +2624,18 @@
       },
       {
         "key": "B",
-        "text": "65 本"
+        "text": "65 本",
+        "misconception": "把兩個數相加：40 + 25"
       },
       {
         "key": "C",
-        "text": "25 本"
+        "text": "25 本",
+        "misconception": "抄了剩下的數"
       },
       {
         "key": "D",
-        "text": "40 本"
+        "text": "40 本",
+        "misconception": "以為沒有借走"
       }
     ],
     "answer": "A",
@@ -2474,15 +2654,18 @@
       },
       {
         "key": "B",
-        "text": "82 個"
+        "text": "82 個",
+        "misconception": "把兩個數相加：50 + 32"
       },
       {
         "key": "C",
-        "text": "32 個"
+        "text": "32 個",
+        "misconception": "抄了剩下的數"
       },
       {
         "key": "D",
-        "text": "22 個"
+        "text": "22 個",
+        "misconception": "50−32 算錯"
       }
     ],
     "answer": "A",
@@ -2521,15 +2704,18 @@
       },
       {
         "key": "B",
-        "text": "245 厘米"
+        "text": "245 厘米",
+        "misconception": "把兩個身高相加"
       },
       {
         "key": "C",
-        "text": "25 厘米"
+        "text": "25 厘米",
+        "misconception": "130−115 算錯"
       },
       {
         "key": "D",
-        "text": "115 厘米"
+        "text": "115 厘米",
+        "misconception": "抄了弟弟的身高"
       }
     ],
     "answer": "A",
@@ -2548,15 +2734,18 @@
       },
       {
         "key": "B",
-        "text": "64 人"
+        "text": "64 人",
+        "misconception": "把兩班人數相加"
       },
       {
         "key": "C",
-        "text": "29 人"
+        "text": "29 人",
+        "misconception": "抄了二班人數"
       },
       {
         "key": "D",
-        "text": "5 人"
+        "text": "5 人",
+        "misconception": "35−29 算錯"
       }
     ],
     "answer": "A",
@@ -2595,15 +2784,18 @@
       },
       {
         "key": "B",
-        "text": "17 厘米"
+        "text": "17 厘米",
+        "misconception": "當成「比紅繩短」，用了減法"
       },
       {
         "key": "C",
-        "text": "8 厘米"
+        "text": "8 厘米",
+        "misconception": "只抄了相差的 8 厘米"
       },
       {
         "key": "D",
-        "text": "25 厘米"
+        "text": "25 厘米",
+        "misconception": "抄了紅繩的長度"
       }
     ],
     "answer": "A",
@@ -2622,15 +2814,18 @@
       },
       {
         "key": "B",
-        "text": "46 人"
+        "text": "46 人",
+        "misconception": "看到「少」仍然用加法"
       },
       {
         "key": "C",
-        "text": "6 人"
+        "text": "6 人",
+        "misconception": "只抄了相差的 6 人"
       },
       {
         "key": "D",
-        "text": "40 人"
+        "text": "40 人",
+        "misconception": "以為兩級人數一樣"
       }
     ],
     "answer": "A",
@@ -2665,15 +2860,18 @@
     "choices": [
       {
         "key": "A",
-        "text": "1 角"
+        "text": "1 角",
+        "misconception": "只比數字，沒看單位：1 角比 1 元小"
       },
       {
         "key": "B",
-        "text": "2 角"
+        "text": "2 角",
+        "misconception": "只看數字 2 比 1 大，忽略了幣值"
       },
       {
         "key": "C",
-        "text": "5 角"
+        "text": "5 角",
+        "misconception": "以為 5 角最大，忘了 1 元 = 10 角"
       },
       {
         "key": "D",

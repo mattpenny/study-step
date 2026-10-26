@@ -70,7 +70,8 @@
       "choices": [
         {
           "key": "A",
-          "text": "6"
+          "text": "6",
+          "misconception": "把十位的 6 當成 6 個一"
         },
         {
           "key": "B",
@@ -78,11 +79,13 @@
         },
         {
           "key": "C",
-          "text": "06"
+          "text": "06",
+          "misconception": "位值順序寫反"
         },
         {
           "key": "D",
-          "text": "600"
+          "text": "600",
+          "misconception": "多補了兩個 0"
         }
       ],
       "answer": "B",
@@ -131,15 +134,18 @@
         },
         {
           "key": "B",
-          "text": "83"
+          "text": "83",
+          "misconception": "十位和個位對調"
         },
         {
           "key": "C",
-          "text": "11"
+          "text": "11",
+          "misconception": "把 3 和 8 相加"
         },
         {
           "key": "D",
-          "text": "308"
+          "text": "308",
+          "misconception": "中間多插了一個 0"
         }
       ],
       "answer": "A",
@@ -154,7 +160,8 @@
       "choices": [
         {
           "key": "A",
-          "text": "7"
+          "text": "7",
+          "misconception": "把十位當成個位"
         },
         {
           "key": "B",
@@ -162,11 +169,13 @@
         },
         {
           "key": "C",
-          "text": "70"
+          "text": "70",
+          "misconception": "抄了整個數"
         },
         {
           "key": "D",
-          "text": "沒有個位"
+          "text": "沒有個位",
+          "misconception": "以為 0 不用寫出來"
         }
       ],
       "answer": "B",
@@ -191,7 +200,8 @@
       "choices": [
         {
           "key": "A",
-          "text": "45 較大"
+          "text": "45 較大",
+          "misconception": "以為寫在前面的數比較小"
         },
         {
           "key": "B",
@@ -199,11 +209,13 @@
         },
         {
           "key": "C",
-          "text": "一樣大"
+          "text": "一樣大",
+          "misconception": "看到同樣的兩個數字就以為相等"
         },
         {
           "key": "D",
-          "text": "不能比較"
+          "text": "不能比較",
+          "misconception": "沒比較十位"
         }
       ],
       "answer": "B",
@@ -222,15 +234,18 @@
         },
         {
           "key": "B",
-          "text": "72"
+          "text": "72",
+          "misconception": "十位相同時沒有再比個位"
         },
         {
           "key": "C",
-          "text": "一樣大"
+          "text": "一樣大",
+          "misconception": "十位相同就以為相等"
         },
         {
           "key": "D",
-          "text": "不能比較"
+          "text": "不能比較",
+          "misconception": "沒比較個位"
         }
       ],
       "answer": "A",

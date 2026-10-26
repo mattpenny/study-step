@@ -601,8 +601,19 @@
     return q.answer;
   }
 
-  function feedbackBlock(q) {
+  /* 选错时，把该选项代表的错误想法讲出来：分数变成诊断。 */
+  function misconceptionOf(q, pickedKey) {
+    if (!q || q.type !== 'choice' || !pickedKey) return '';
+    const picked = (q.choices || []).find(function (c) { return c.key === pickedKey; });
+    return picked && picked.misconception ? picked.misconception : '';
+  }
+
+  function feedbackBlock(q, pickedKey) {
+    const mis = misconceptionOf(q, pickedKey);
     return h('div', { class: 'feedback' },
+      mis ? h('div', { class: 'misconception' },
+        h('b', null, '你的想法：'), mis,
+        h('div', { class: 'small' }, '这个想法哪里不对，看下面的解析。')) : null,
       h('div', { class: 'refans' }, h('b', null, '参考答案：'), answerText(q)),
       q.explanation ? h('div', { class: 'explain', id: 'explain' }, h('b', null, '解析：'), q.explanation) : null);
   }
@@ -670,7 +681,7 @@
       card.append(
         h('div', { class: 'muted' }, '你的答案：' + (q.type === 'choice' ? answerOfKey(q, ui.answer) : ui.answer)),
         h('div', { class: 'verdict ' + (ok ? 'ok' : 'no') }, ok ? '自动判定：正确' : '自动判定：不正确'),
-        feedbackBlock(q),
+        feedbackBlock(q, ok ? null : (q.type === 'choice' ? ui.answer : null)),
         h('div', { class: 'row' },
           h('button', { class: 'primary', id: 'btn-next', onclick: function () { commit(ok ? 'correct' : 'wrong'); } }, '下一题'),
           h('button', { id: 'btn-flip', onclick: function () { commit(ok ? 'wrong' : 'correct'); } }, ok ? '判错了，我其实没做对' : '判错了，我其实做对了'),

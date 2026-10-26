@@ -58,15 +58,18 @@
       "choices": [
         {
           "key": "A",
-          "text": "1 角"
+          "text": "1 角",
+          "misconception": "只比數字，沒看單位：1 角比 1 元小"
         },
         {
           "key": "B",
-          "text": "2 角"
+          "text": "2 角",
+          "misconception": "只看數字 2 比 1 大，忽略了幣值"
         },
         {
           "key": "C",
-          "text": "5 角"
+          "text": "5 角",
+          "misconception": "以為 5 角最大，忘了 1 元 = 10 角"
         },
         {
           "key": "D",

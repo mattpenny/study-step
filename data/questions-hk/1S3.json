@@ -31,7 +31,8 @@
       "choices": [
         {
           "key": "A",
-          "text": "上面"
+          "text": "上面",
+          "misconception": "只照著題目的說法，沒有把方向反過來"
         },
         {
           "key": "B",
@@ -39,11 +40,13 @@
         },
         {
           "key": "C",
-          "text": "左邊"
+          "text": "左邊",
+          "misconception": "把上下混淆成左右"
         },
         {
           "key": "D",
-          "text": "右邊"
+          "text": "右邊",
+          "misconception": "把上下混淆成左右"
         }
       ],
       "answer": "B",
@@ -58,7 +61,8 @@
       "choices": [
         {
           "key": "A",
-          "text": "前面"
+          "text": "前面",
+          "misconception": "把「後面」當成「前面」"
         },
         {
           "key": "B",
@@ -66,11 +70,13 @@
         },
         {
           "key": "C",
-          "text": "左邊"
+          "text": "左邊",
+          "misconception": "混淆了前後和左右"
         },
         {
           "key": "D",
-          "text": "右邊"
+          "text": "右邊",
+          "misconception": "混淆了前後和左右"
         }
       ],
       "answer": "B",
@@ -85,7 +91,8 @@
       "choices": [
         {
           "key": "A",
-          "text": "右手邊"
+          "text": "右手邊",
+          "misconception": "忘了面對面時左右會相反"
         },
         {
           "key": "B",
@@ -93,11 +100,13 @@
         },
         {
           "key": "C",
-          "text": "前面"
+          "text": "前面",
+          "misconception": "這題問左右，不是前後"
         },
         {
           "key": "D",
-          "text": "後面"
+          "text": "後面",
+          "misconception": "這題問左右，不是前後"
         }
       ],
       "answer": "B",
@@ -112,7 +121,8 @@
       "choices": [
         {
           "key": "A",
-          "text": "左邊"
+          "text": "左邊",
+          "misconception": "左右顛倒"
         },
         {
           "key": "B",
@@ -120,11 +130,13 @@
         },
         {
           "key": "C",
-          "text": "前面"
+          "text": "前面",
+          "misconception": "三人排成一行，沒有前後之分"
         },
         {
           "key": "D",
-          "text": "後面"
+          "text": "後面",
+          "misconception": "三人排成一行，沒有前後之分"
         }
       ],
       "answer": "B",
@@ -144,15 +156,18 @@
         },
         {
           "key": "B",
-          "text": "下面"
+          "text": "下面",
+          "misconception": "看錯位置：球在盒頂，不在盒底"
         },
         {
           "key": "C",
-          "text": "左邊"
+          "text": "左邊",
+          "misconception": "只看了水平位置，忽略了上下"
         },
         {
           "key": "D",
-          "text": "右邊"
+          "text": "右邊",
+          "misconception": "只看了水平位置，忽略了上下"
         }
       ],
       "answer": "A",

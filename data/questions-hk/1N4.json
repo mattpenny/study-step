@@ -85,15 +85,18 @@
         },
         {
           "key": "B",
-          "text": "70"
+          "text": "70",
+          "misconception": "把 20 當成 2 個十，再加 5 個十"
         },
         {
           "key": "C",
-          "text": "205"
+          "text": "205",
+          "misconception": "直接把兩個數併寫"
         },
         {
           "key": "D",
-          "text": "15"
+          "text": "15",
+          "misconception": "用了減法 20−5"
         }
       ],
       "answer": "A",
@@ -142,15 +145,18 @@
         },
         {
           "key": "B",
-          "text": "44"
+          "text": "44",
+          "misconception": "6+8 = 14，但忘了向十位進 1"
         },
         {
           "key": "C",
-          "text": "53"
+          "text": "53",
+          "misconception": "進位後十位算錯"
         },
         {
           "key": "D",
-          "text": "414"
+          "text": "414",
+          "misconception": "把 4 和 14 併寫"
         }
       ],
       "answer": "A",
@@ -199,15 +205,18 @@
         },
         {
           "key": "B",
-          "text": "66"
+          "text": "66",
+          "misconception": "把減法當成加法"
         },
         {
           "key": "C",
-          "text": "54"
+          "text": "54",
+          "misconception": "借位後十位沒有減 1"
         },
         {
           "key": "D",
-          "text": "57"
+          "text": "57",
+          "misconception": "借位後個位算錯"
         }
       ],
       "answer": "A",
@@ -252,7 +261,8 @@
       "choices": [
         {
           "key": "A",
-          "text": "73"
+          "text": "73",
+          "misconception": "進位的 1 沒有加到十位"
         },
         {
           "key": "B",
@@ -260,11 +270,13 @@
         },
         {
           "key": "C",
-          "text": "82"
+          "text": "82",
+          "misconception": "個位相加算錯"
         },
         {
           "key": "D",
-          "text": "713"
+          "text": "713",
+          "misconception": "把 7 和 13 併寫"
         }
       ],
       "answer": "B",
@@ -313,15 +325,18 @@
         },
         {
           "key": "B",
-          "text": "37"
+          "text": "37",
+          "misconception": "借位後十位沒有減 1"
         },
         {
           "key": "C",
-          "text": "33"
+          "text": "33",
+          "misconception": "借位後個位算錯"
         },
         {
           "key": "D",
-          "text": "97"
+          "text": "97",
+          "misconception": "把減法當成加法"
         }
       ],
       "answer": "A",
@@ -370,15 +385,18 @@
         },
         {
           "key": "B",
-          "text": "65 本"
+          "text": "65 本",
+          "misconception": "把兩個數相加：40 + 25"
         },
         {
           "key": "C",
-          "text": "25 本"
+          "text": "25 本",
+          "misconception": "抄了剩下的數"
         },
         {
           "key": "D",
-          "text": "40 本"
+          "text": "40 本",
+          "misconception": "以為沒有借走"
         }
       ],
       "answer": "A",
@@ -397,15 +415,18 @@
         },
         {
           "key": "B",
-          "text": "82 個"
+          "text": "82 個",
+          "misconception": "把兩個數相加：50 + 32"
         },
         {
           "key": "C",
-          "text": "32 個"
+          "text": "32 個",
+          "misconception": "抄了剩下的數"
         },
         {
           "key": "D",
-          "text": "22 個"
+          "text": "22 個",
+          "misconception": "50−32 算錯"
         }
       ],
       "answer": "A",
@@ -444,15 +465,18 @@
         },
         {
           "key": "B",
-          "text": "245 厘米"
+          "text": "245 厘米",
+          "misconception": "把兩個身高相加"
         },
         {
           "key": "C",
-          "text": "25 厘米"
+          "text": "25 厘米",
+          "misconception": "130−115 算錯"
         },
         {
           "key": "D",
-          "text": "115 厘米"
+          "text": "115 厘米",
+          "misconception": "抄了弟弟的身高"
         }
       ],
       "answer": "A",
@@ -471,15 +495,18 @@
         },
         {
           "key": "B",
-          "text": "64 人"
+          "text": "64 人",
+          "misconception": "把兩班人數相加"
         },
         {
           "key": "C",
-          "text": "29 人"
+          "text": "29 人",
+          "misconception": "抄了二班人數"
         },
         {
           "key": "D",
-          "text": "5 人"
+          "text": "5 人",
+          "misconception": "35−29 算錯"
         }
       ],
       "answer": "A",
@@ -518,15 +545,18 @@
         },
         {
           "key": "B",
-          "text": "17 厘米"
+          "text": "17 厘米",
+          "misconception": "當成「比紅繩短」，用了減法"
         },
         {
           "key": "C",
-          "text": "8 厘米"
+          "text": "8 厘米",
+          "misconception": "只抄了相差的 8 厘米"
         },
         {
           "key": "D",
-          "text": "25 厘米"
+          "text": "25 厘米",
+          "misconception": "抄了紅繩的長度"
         }
       ],
       "answer": "A",
@@ -545,15 +575,18 @@
         },
         {
           "key": "B",
-          "text": "46 人"
+          "text": "46 人",
+          "misconception": "看到「少」仍然用加法"
         },
         {
           "key": "C",
-          "text": "6 人"
+          "text": "6 人",
+          "misconception": "只抄了相差的 6 人"
         },
         {
           "key": "D",
-          "text": "40 人"
+          "text": "40 人",
+          "misconception": "以為兩級人數一樣"
         }
       ],
       "answer": "A",

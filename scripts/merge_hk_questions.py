@@ -97,6 +97,7 @@ def check_unit(doc, path, topic_ids):
         return []
 
     seen_ids = set()
+    untagged = []
     by_topic = Counter()
     prompts = {}
     for i, q in enumerate(questions):
@@ -136,6 +137,15 @@ def check_unit(doc, path, topic_ids):
         if q.get("type") == "choice":
             choices = q.get("choices") or []
             keys = [c.get("key") for c in choices if isinstance(c, dict)]
+            # 错误选项要标注它代表哪种错误想法；正确选项不能标（否则等于告诉学生答案）
+            for c in choices:
+                if not isinstance(c, dict):
+                    continue
+                tag = c.get("misconception")
+                if c.get("key") == answer and tag:
+                    err("%s：正确选项 %s 不应该有 misconception" % (where, c.get("key")))
+                elif c.get("key") != answer and not tag:
+                    untagged.append(qid)
             if len(choices) < 2:
                 err("%s：选择题至少 2 个选项" % where)
             if len(set(keys)) != len(keys):
@@ -192,6 +202,9 @@ def check_unit(doc, path, topic_ids):
         # EDB 有、但我们的知识点没覆盖到的学习重点：只提示，不阻断
         for g in doc.get("gaps") or []:
             warn("%s：学习重点 %s（%s）没有对应知识点" % (unit, g.get("code"), (g.get("text") or "")[:24]))
+    if untagged:
+        warn("%s：%d 道选择题的错误选项还没有标注 misconception（%s）"
+             % (unit, len(untagged), "、".join(untagged[:4])))
     return questions
 
 

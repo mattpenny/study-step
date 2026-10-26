@@ -66,5 +66,15 @@
     "teacher": "所教班級的逐題作答、分數、掌握度；可看單一學生",
     "parent": "只看到總分與薄弱點摘要，不顯示逐題答案",
     "note": "學生為未成年人，屬 PDPO 下的個人資料。需要：明確同意、保存期限、查閱與更正機制、以及老師只能看自己班級（按班級做權限，而不是全校可見）。"
+  },
+  "misconception": {
+    "status": "P1 完成，S11 待補",
+    "field": "choices[].misconception",
+    "rule": "只標錯誤選項；正確選項不可標，否則等於告訴學生答案",
+    "ui": "答錯時顯示「你的想法：…」，答對不顯示",
+    "coverage": {
+      "tagged": 198,
+      "untaggedChoiceQuestions": 57
+    }
   }
 }

@@ -5,140 +5,587 @@
   "strand": "數",
   "source": "EDB《數學教育學習領域課程指引》小學 1N1 20以內的數：學習重點 1 認識1至20各數、2 順數和倒數、3 序數和基數、4 20以內的奇數和偶數、5 2至18各數的分解和合成",
   "objectives": [
-    { "code": "1", "text": "認識1至20各數（數數、讀數、寫數）", "topics": ["cnm_p008", "cnm_p016", "cnm_p022"] },
-    { "code": "2", "text": "進行順數和倒數", "topics": ["cnm_p001"] },
-    { "code": "3", "text": "認識序數和基數的概念，並比較兩組物件的數量", "topics": ["cnm_p002", "cnm_p003", "cnm_p009"] },
-    { "code": "5", "text": "認識2至18各數的分解和合成", "topics": ["cnm_p004"] }
+    {
+      "code": "1",
+      "text": "認識1至20各數（數數、讀數、寫數）",
+      "topics": [
+        "cnm_p008",
+        "cnm_p016",
+        "cnm_p022"
+      ]
+    },
+    {
+      "code": "2",
+      "text": "進行順數和倒數",
+      "topics": [
+        "cnm_p001"
+      ]
+    },
+    {
+      "code": "3",
+      "text": "認識序數和基數的概念，並比較兩組物件的數量",
+      "topics": [
+        "cnm_p002",
+        "cnm_p003",
+        "cnm_p009"
+      ]
+    },
+    {
+      "code": "5",
+      "text": "認識2至18各數的分解和合成",
+      "topics": [
+        "cnm_p004"
+      ]
+    }
   ],
   "gaps": [
-    { "code": "4", "text": "認識20以內的奇數和偶數（單數／雙數）", "reason": "現有知識點把「奇數和偶數」放在 4N3，小一沒有對應點，需要補一個知識點。" }
+    {
+      "code": "4",
+      "text": "認識20以內的奇數和偶數（單數／雙數）",
+      "reason": "現有知識點把「奇數和偶數」放在 4N3，小一沒有對應點，需要補一個知識點。"
+    }
   ],
   "note": "題目刻意設陷阱：數數的「差幾」不等於「有幾個」（p001 q3、p008 q3、p016 q3），序數與基數之別（p003），「一樣多」不等於「多」（p002）。干擾項就是常見錯法。",
   "questions": [
-    { "id": "cnm_p001_q1", "topicId": "cnm_p001", "type": "numeric", "difficulty": "basic",
-      "prompt": "4 的後面一個數是幾？", "answer": "5", "verify": "4+1",
-      "explanation": "4 之後是 5。" },
-    { "id": "cnm_p001_q2", "topicId": "cnm_p001", "type": "numeric", "difficulty": "basic",
-      "prompt": "3 的前面一個數是幾？", "answer": "2", "verify": "3-1",
-      "explanation": "3 之前是 2。" },
-    { "id": "cnm_p001_q3", "topicId": "cnm_p001", "type": "choice", "difficulty": "standard",
+    {
+      "id": "cnm_p001_q1",
+      "topicId": "cnm_p001",
+      "type": "numeric",
+      "difficulty": "basic",
+      "prompt": "4 的後面一個數是幾？",
+      "answer": "5",
+      "verify": "4+1",
+      "explanation": "4 之後是 5。"
+    },
+    {
+      "id": "cnm_p001_q2",
+      "topicId": "cnm_p001",
+      "type": "numeric",
+      "difficulty": "basic",
+      "prompt": "3 的前面一個數是幾？",
+      "answer": "2",
+      "verify": "3-1",
+      "explanation": "3 之前是 2。"
+    },
+    {
+      "id": "cnm_p001_q3",
+      "topicId": "cnm_p001",
+      "type": "choice",
+      "difficulty": "standard",
       "prompt": "由 2 數到 5（2 和 5 都要數），一共數了幾個數？",
-      "choices": [ { "key": "A", "text": "3 個" }, { "key": "B", "text": "4 個" }, { "key": "C", "text": "5 個" }, { "key": "D", "text": "2 個" } ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "3 個",
+          "misconception": "用 5−2 = 3，漏掉起點 2"
+        },
+        {
+          "key": "B",
+          "text": "4 個"
+        },
+        {
+          "key": "C",
+          "text": "5 個",
+          "misconception": "把最大的數 5 當成數量"
+        },
+        {
+          "key": "D",
+          "text": "2 個",
+          "misconception": "只數了兩端，中間沒數"
+        }
+      ],
       "answer": "B",
-      "explanation": "2、3、4、5，共 4 個。用 5 − 2 = 3 會漏掉起點 2，要 5 − 2 + 1 = 4。" },
-    { "id": "cnm_p001_q4", "topicId": "cnm_p001", "type": "numeric", "difficulty": "advanced",
-      "prompt": "倒數：6、5、4、3、□。□ 是幾？", "answer": "2", "verify": "6-4",
-      "explanation": "每次少 1，3 之後是 2。" },
-
-    { "id": "cnm_p002_q1", "topicId": "cnm_p002", "type": "numeric", "difficulty": "basic",
-      "prompt": "4 和 2，較大的數是幾？", "answer": "4", "verify": "4",
-      "explanation": "4 比 2 大。" },
-    { "id": "cnm_p002_q2", "topicId": "cnm_p002", "type": "choice", "difficulty": "basic",
+      "explanation": "2、3、4、5，共 4 個。用 5 − 2 = 3 會漏掉起點 2，要 5 − 2 + 1 = 4。"
+    },
+    {
+      "id": "cnm_p001_q4",
+      "topicId": "cnm_p001",
+      "type": "numeric",
+      "difficulty": "advanced",
+      "prompt": "倒數：6、5、4、3、□。□ 是幾？",
+      "answer": "2",
+      "verify": "6-4",
+      "explanation": "每次少 1，3 之後是 2。"
+    },
+    {
+      "id": "cnm_p002_q1",
+      "topicId": "cnm_p002",
+      "type": "numeric",
+      "difficulty": "basic",
+      "prompt": "4 和 2，較大的數是幾？",
+      "answer": "4",
+      "verify": "4",
+      "explanation": "4 比 2 大。"
+    },
+    {
+      "id": "cnm_p002_q2",
+      "topicId": "cnm_p002",
+      "type": "choice",
+      "difficulty": "basic",
       "prompt": "3 和 3 比較，結果是甚麼？",
-      "choices": [ { "key": "A", "text": "3 比 3 大" }, { "key": "B", "text": "3 比 3 小" }, { "key": "C", "text": "一樣多" }, { "key": "D", "text": "不能比較" } ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "3 比 3 大",
+          "misconception": "以為數字出現兩次就比較大"
+        },
+        {
+          "key": "B",
+          "text": "3 比 3 小",
+          "misconception": "同上，只是方向弄反"
+        },
+        {
+          "key": "C",
+          "text": "一樣多"
+        },
+        {
+          "key": "D",
+          "text": "不能比較",
+          "misconception": "以為相同就不能比較"
+        }
+      ],
       "answer": "C",
-      "explanation": "兩個數相同，就是一樣多，沒有誰大誰小。" },
-    { "id": "cnm_p002_q3", "topicId": "cnm_p002", "type": "choice", "difficulty": "standard",
+      "explanation": "兩個數相同，就是一樣多，沒有誰大誰小。"
+    },
+    {
+      "id": "cnm_p002_q3",
+      "topicId": "cnm_p002",
+      "type": "choice",
+      "difficulty": "standard",
       "prompt": "哥哥有 4 粒糖，妹妹有 2 粒糖。哪一句對？",
-      "choices": [ { "key": "A", "text": "妹妹比哥哥多" }, { "key": "B", "text": "哥哥比妹妹多" }, { "key": "C", "text": "一樣多" }, { "key": "D", "text": "不知道" } ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "妹妹比哥哥多",
+          "misconception": "看錯方向：2 其實比 4 少"
+        },
+        {
+          "key": "B",
+          "text": "哥哥比妹妹多"
+        },
+        {
+          "key": "C",
+          "text": "一樣多",
+          "misconception": "沒比較就說一樣多"
+        },
+        {
+          "key": "D",
+          "text": "不知道",
+          "misconception": "沒有把兩個數拿來比"
+        }
+      ],
       "answer": "B",
-      "explanation": "4 比 2 多，所以哥哥比妹妹多。" },
-    { "id": "cnm_p002_q4", "topicId": "cnm_p002", "type": "choice", "difficulty": "advanced",
+      "explanation": "4 比 2 多，所以哥哥比妹妹多。"
+    },
+    {
+      "id": "cnm_p002_q4",
+      "topicId": "cnm_p002",
+      "type": "choice",
+      "difficulty": "advanced",
       "prompt": "有 5 個蘋果和 5 個橙。小明說：「蘋果比橙多，因為蘋果比較大。」他的說法對不對？",
-      "choices": [ { "key": "A", "text": "對，蘋果比較大" }, { "key": "B", "text": "不對，兩者一樣多" }, { "key": "C", "text": "對，蘋果比較重" }, { "key": "D", "text": "不知道" } ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "對，蘋果比較大",
+          "misconception": "把「大」當成「多」，體積和數量是兩回事"
+        },
+        {
+          "key": "B",
+          "text": "不對，兩者一樣多"
+        },
+        {
+          "key": "C",
+          "text": "對，蘋果比較重",
+          "misconception": "把重量當成數量"
+        },
+        {
+          "key": "D",
+          "text": "不知道",
+          "misconception": "沒分清「比較大」和「比較多」"
+        }
+      ],
       "answer": "B",
-      "explanation": "比較多少只看數量，不看大小。都是 5 個，就是一樣多。" },
-
-    { "id": "cnm_p003_q1", "topicId": "cnm_p003", "type": "numeric", "difficulty": "basic",
-      "prompt": "一排有 5 個小朋友，一共有幾個小朋友？", "answer": "5", "verify": "5",
-      "explanation": "問「一共幾個」是數總數，答案是 5。" },
-    { "id": "cnm_p003_q2", "topicId": "cnm_p003", "type": "numeric", "difficulty": "standard",
-      "prompt": "由左邊數起，小美排第 3 個。小美的左邊有幾個小朋友？", "answer": "2", "verify": "3-1",
-      "explanation": "第 3 個的左邊是第 1、第 2 個，共 2 人。「第幾個」不是「有幾個」。" },
-    { "id": "cnm_p003_q3", "topicId": "cnm_p003", "type": "choice", "difficulty": "standard",
+      "explanation": "比較多少只看數量，不看大小。都是 5 個，就是一樣多。"
+    },
+    {
+      "id": "cnm_p003_q1",
+      "topicId": "cnm_p003",
+      "type": "numeric",
+      "difficulty": "basic",
+      "prompt": "一排有 5 個小朋友，一共有幾個小朋友？",
+      "answer": "5",
+      "verify": "5",
+      "explanation": "問「一共幾個」是數總數，答案是 5。"
+    },
+    {
+      "id": "cnm_p003_q2",
+      "topicId": "cnm_p003",
+      "type": "numeric",
+      "difficulty": "standard",
+      "prompt": "由左邊數起，小美排第 3 個。小美的左邊有幾個小朋友？",
+      "answer": "2",
+      "verify": "3-1",
+      "explanation": "第 3 個的左邊是第 1、第 2 個，共 2 人。「第幾個」不是「有幾個」。"
+    },
+    {
+      "id": "cnm_p003_q3",
+      "topicId": "cnm_p003",
+      "type": "choice",
+      "difficulty": "standard",
       "prompt": "排隊有 6 人，小明排最後一個。小明前面有幾人？",
-      "choices": [ { "key": "A", "text": "6 人" }, { "key": "B", "text": "5 人" }, { "key": "C", "text": "7 人" }, { "key": "D", "text": "4 人" } ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "6 人",
+          "misconception": "把「第 6 個」當成前面有 6 人"
+        },
+        {
+          "key": "B",
+          "text": "5 人"
+        },
+        {
+          "key": "C",
+          "text": "7 人",
+          "misconception": "把最後一個人也數進去，多算 1"
+        },
+        {
+          "key": "D",
+          "text": "4 人",
+          "misconception": "數錯中間的人數"
+        }
+      ],
       "answer": "B",
-      "explanation": "最後一個是第 6，前面有 5 人。" },
-    { "id": "cnm_p003_q4", "topicId": "cnm_p003", "type": "numeric", "difficulty": "advanced",
-      "prompt": "由左數起，紅波排第 2，藍波排第 5。紅波和藍波之間有幾個波？", "answer": "2", "verify": "5-2-1",
-      "explanation": "中間是第 3 和第 4 個，共 2 個。要減去兩端的兩個波。" },
-
-    { "id": "cnm_p004_q1", "topicId": "cnm_p004", "type": "numeric", "difficulty": "basic",
-      "prompt": "5 可以分成 2 和幾？", "answer": "3", "verify": "5-2",
-      "explanation": "2 和 3 合起來是 5。" },
-    { "id": "cnm_p004_q2", "topicId": "cnm_p004", "type": "numeric", "difficulty": "basic",
-      "prompt": "3 和 2 合起來是幾？", "answer": "5", "verify": "3+2",
-      "explanation": "3 加 2 得 5。" },
-    { "id": "cnm_p004_q3", "topicId": "cnm_p004", "type": "choice", "difficulty": "standard",
+      "explanation": "最後一個是第 6，前面有 5 人。"
+    },
+    {
+      "id": "cnm_p003_q4",
+      "topicId": "cnm_p003",
+      "type": "numeric",
+      "difficulty": "advanced",
+      "prompt": "由左數起，紅波排第 2，藍波排第 5。紅波和藍波之間有幾個波？",
+      "answer": "2",
+      "verify": "5-2-1",
+      "explanation": "中間是第 3 和第 4 個，共 2 個。要減去兩端的兩個波。"
+    },
+    {
+      "id": "cnm_p004_q1",
+      "topicId": "cnm_p004",
+      "type": "numeric",
+      "difficulty": "basic",
+      "prompt": "5 可以分成 2 和幾？",
+      "answer": "3",
+      "verify": "5-2",
+      "explanation": "2 和 3 合起來是 5。"
+    },
+    {
+      "id": "cnm_p004_q2",
+      "topicId": "cnm_p004",
+      "type": "numeric",
+      "difficulty": "basic",
+      "prompt": "3 和 2 合起來是幾？",
+      "answer": "5",
+      "verify": "3+2",
+      "explanation": "3 加 2 得 5。"
+    },
+    {
+      "id": "cnm_p004_q3",
+      "topicId": "cnm_p004",
+      "type": "choice",
+      "difficulty": "standard",
       "prompt": "4 可以分成 1 和幾？",
-      "choices": [ { "key": "A", "text": "2" }, { "key": "B", "text": "3" }, { "key": "C", "text": "4" }, { "key": "D", "text": "5" } ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "2",
+          "misconception": "1 + 2 = 3，不是 4"
+        },
+        {
+          "key": "B",
+          "text": "3"
+        },
+        {
+          "key": "C",
+          "text": "4",
+          "misconception": "把整個 4 當成另一份，沒有分開"
+        },
+        {
+          "key": "D",
+          "text": "5",
+          "misconception": "1 + 5 = 6，超過 4"
+        }
+      ],
       "answer": "B",
-      "explanation": "1 + 3 = 4，所以另一份是 3。" },
-    { "id": "cnm_p004_q4", "topicId": "cnm_p004", "type": "numeric", "difficulty": "advanced",
-      "prompt": "把 5 分成兩份，其中一份是 0，另一份是幾？", "answer": "5", "verify": "5-0",
-      "explanation": "0 和 5 合起來是 5，所以另一份是 5。" },
-
-    { "id": "cnm_p008_q1", "topicId": "cnm_p008", "type": "numeric", "difficulty": "basic",
-      "prompt": "9 的後面一個數是幾？", "answer": "10", "verify": "9+1",
-      "explanation": "9 之後是 10。" },
-    { "id": "cnm_p008_q2", "topicId": "cnm_p008", "type": "numeric", "difficulty": "basic",
-      "prompt": "7 的前面一個數是幾？", "answer": "6", "verify": "7-1",
-      "explanation": "7 之前是 6。" },
-    { "id": "cnm_p008_q3", "topicId": "cnm_p008", "type": "choice", "difficulty": "standard",
+      "explanation": "1 + 3 = 4，所以另一份是 3。"
+    },
+    {
+      "id": "cnm_p004_q4",
+      "topicId": "cnm_p004",
+      "type": "numeric",
+      "difficulty": "advanced",
+      "prompt": "把 5 分成兩份，其中一份是 0，另一份是幾？",
+      "answer": "5",
+      "verify": "5-0",
+      "explanation": "0 和 5 合起來是 5，所以另一份是 5。"
+    },
+    {
+      "id": "cnm_p008_q1",
+      "topicId": "cnm_p008",
+      "type": "numeric",
+      "difficulty": "basic",
+      "prompt": "9 的後面一個數是幾？",
+      "answer": "10",
+      "verify": "9+1",
+      "explanation": "9 之後是 10。"
+    },
+    {
+      "id": "cnm_p008_q2",
+      "topicId": "cnm_p008",
+      "type": "numeric",
+      "difficulty": "basic",
+      "prompt": "7 的前面一個數是幾？",
+      "answer": "6",
+      "verify": "7-1",
+      "explanation": "7 之前是 6。"
+    },
+    {
+      "id": "cnm_p008_q3",
+      "topicId": "cnm_p008",
+      "type": "choice",
+      "difficulty": "standard",
       "prompt": "由 6 數到 10（6 和 10 都要數），一共數了幾個數？",
-      "choices": [ { "key": "A", "text": "4 個" }, { "key": "B", "text": "5 個" }, { "key": "C", "text": "6 個" }, { "key": "D", "text": "10 個" } ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "4 個",
+          "misconception": "用 10−6 = 4，漏掉起點 6"
+        },
+        {
+          "key": "B",
+          "text": "5 個"
+        },
+        {
+          "key": "C",
+          "text": "6 個",
+          "misconception": "由 5 開始數，多算一個"
+        },
+        {
+          "key": "D",
+          "text": "10 個",
+          "misconception": "把最大的數 10 當成數量"
+        }
+      ],
       "answer": "B",
-      "explanation": "6、7、8、9、10，共 5 個。10 − 6 = 4 會漏掉起點。" },
-    { "id": "cnm_p008_q4", "topicId": "cnm_p008", "type": "numeric", "difficulty": "advanced",
-      "prompt": "10 裡面有幾個「一」？", "answer": "10", "verify": "10",
-      "explanation": "10 就是 10 個一。（10 也是 1 個十，但這裡問「一」。）" },
-
-    { "id": "cnm_p009_q1", "topicId": "cnm_p009", "type": "numeric", "difficulty": "basic",
-      "prompt": "8 比 5 多幾？", "answer": "3", "verify": "8-5",
-      "explanation": "求多幾用大數減小數：8 − 5 = 3。" },
-    { "id": "cnm_p009_q2", "topicId": "cnm_p009", "type": "numeric", "difficulty": "basic",
-      "prompt": "5 比 9 少幾？", "answer": "4", "verify": "9-5",
-      "explanation": "求少幾也是大數減小數：9 − 5 = 4。" },
-    { "id": "cnm_p009_q3", "topicId": "cnm_p009", "type": "choice", "difficulty": "standard",
+      "explanation": "6、7、8、9、10，共 5 個。10 − 6 = 4 會漏掉起點。"
+    },
+    {
+      "id": "cnm_p008_q4",
+      "topicId": "cnm_p008",
+      "type": "numeric",
+      "difficulty": "advanced",
+      "prompt": "10 裡面有幾個「一」？",
+      "answer": "10",
+      "verify": "10",
+      "explanation": "10 就是 10 個一。（10 也是 1 個十，但這裡問「一」。）"
+    },
+    {
+      "id": "cnm_p009_q1",
+      "topicId": "cnm_p009",
+      "type": "numeric",
+      "difficulty": "basic",
+      "prompt": "8 比 5 多幾？",
+      "answer": "3",
+      "verify": "8-5",
+      "explanation": "求多幾用大數減小數：8 − 5 = 3。"
+    },
+    {
+      "id": "cnm_p009_q2",
+      "topicId": "cnm_p009",
+      "type": "numeric",
+      "difficulty": "basic",
+      "prompt": "5 比 9 少幾？",
+      "answer": "4",
+      "verify": "9-5",
+      "explanation": "求少幾也是大數減小數：9 − 5 = 4。"
+    },
+    {
+      "id": "cnm_p009_q3",
+      "topicId": "cnm_p009",
+      "type": "choice",
+      "difficulty": "standard",
       "prompt": "哥哥有 9 粒糖，妹妹有 6 粒。妹妹比哥哥少幾粒？",
-      "choices": [ { "key": "A", "text": "3 粒" }, { "key": "B", "text": "6 粒" }, { "key": "C", "text": "15 粒" }, { "key": "D", "text": "9 粒" } ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "3 粒"
+        },
+        {
+          "key": "B",
+          "text": "6 粒",
+          "misconception": "直接抄了妹妹的 6 粒"
+        },
+        {
+          "key": "C",
+          "text": "15 粒",
+          "misconception": "用了加法：9 + 6 = 15"
+        },
+        {
+          "key": "D",
+          "text": "9 粒",
+          "misconception": "直接抄了哥哥的 9 粒"
+        }
+      ],
       "answer": "A",
-      "explanation": "9 − 6 = 3。C 是把兩個數相加，題目問的是「少幾」，不是「合起來」。 " },
-    { "id": "cnm_p009_q4", "topicId": "cnm_p009", "type": "numeric", "difficulty": "advanced",
-      "prompt": "小美有 8 張貼紙，小明有 5 張。小明比小美少幾張？", "answer": "3", "verify": "8-5",
-      "explanation": "8 − 5 = 3。題目把「誰比誰少」換了說法，仍然是大數減小數。" },
-
-    { "id": "cnm_p016_q1", "topicId": "cnm_p016", "type": "numeric", "difficulty": "basic",
-      "prompt": "12 的後面一個數是幾？", "answer": "13", "verify": "12+1",
-      "explanation": "12 之後是 13。" },
-    { "id": "cnm_p016_q2", "topicId": "cnm_p016", "type": "numeric", "difficulty": "basic",
-      "prompt": "20 是幾個十？", "answer": "2", "verify": "2",
-      "explanation": "20 是 2 個十。" },
-    { "id": "cnm_p016_q3", "topicId": "cnm_p016", "type": "choice", "difficulty": "standard",
+      "explanation": "9 − 6 = 3。C 是把兩個數相加，題目問的是「少幾」，不是「合起來」。 "
+    },
+    {
+      "id": "cnm_p009_q4",
+      "topicId": "cnm_p009",
+      "type": "numeric",
+      "difficulty": "advanced",
+      "prompt": "小美有 8 張貼紙，小明有 5 張。小明比小美少幾張？",
+      "answer": "3",
+      "verify": "8-5",
+      "explanation": "8 − 5 = 3。題目把「誰比誰少」換了說法，仍然是大數減小數。"
+    },
+    {
+      "id": "cnm_p016_q1",
+      "topicId": "cnm_p016",
+      "type": "numeric",
+      "difficulty": "basic",
+      "prompt": "12 的後面一個數是幾？",
+      "answer": "13",
+      "verify": "12+1",
+      "explanation": "12 之後是 13。"
+    },
+    {
+      "id": "cnm_p016_q2",
+      "topicId": "cnm_p016",
+      "type": "numeric",
+      "difficulty": "basic",
+      "prompt": "20 是幾個十？",
+      "answer": "2",
+      "verify": "2",
+      "explanation": "20 是 2 個十。"
+    },
+    {
+      "id": "cnm_p016_q3",
+      "topicId": "cnm_p016",
+      "type": "choice",
+      "difficulty": "standard",
       "prompt": "由 10 數到 20（10 和 20 都要數），一共數了幾個數？",
-      "choices": [ { "key": "A", "text": "10 個" }, { "key": "B", "text": "11 個" }, { "key": "C", "text": "20 個" }, { "key": "D", "text": "12 個" } ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "10 個",
+          "misconception": "用 20−10 = 10，漏掉起點 10"
+        },
+        {
+          "key": "B",
+          "text": "11 個"
+        },
+        {
+          "key": "C",
+          "text": "20 個",
+          "misconception": "把最大的數 20 當成數量"
+        },
+        {
+          "key": "D",
+          "text": "12 個",
+          "misconception": "多數了兩個"
+        }
+      ],
       "answer": "B",
-      "explanation": "10 到 20 共 11 個數。20 − 10 = 10 漏了起點 10。" },
-    { "id": "cnm_p016_q4", "topicId": "cnm_p016", "type": "numeric", "difficulty": "advanced",
-      "prompt": "15 裡面有 1 個十和幾個一？", "answer": "5", "verify": "15-10",
-      "explanation": "15 = 10 + 5，即 1 個十和 5 個一。" },
-
-    { "id": "cnm_p022_q1", "topicId": "cnm_p022", "type": "numeric", "difficulty": "basic",
-      "prompt": "課室有 6 張桌子和 4 張椅子。桌子比椅子多幾張？", "answer": "2", "verify": "6-4",
-      "explanation": "6 − 4 = 2。" },
-    { "id": "cnm_p022_q2", "topicId": "cnm_p022", "type": "choice", "difficulty": "standard",
+      "explanation": "10 到 20 共 11 個數。20 − 10 = 10 漏了起點 10。"
+    },
+    {
+      "id": "cnm_p016_q4",
+      "topicId": "cnm_p016",
+      "type": "numeric",
+      "difficulty": "advanced",
+      "prompt": "15 裡面有 1 個十和幾個一？",
+      "answer": "5",
+      "verify": "15-10",
+      "explanation": "15 = 10 + 5，即 1 個十和 5 個一。"
+    },
+    {
+      "id": "cnm_p022_q1",
+      "topicId": "cnm_p022",
+      "type": "numeric",
+      "difficulty": "basic",
+      "prompt": "課室有 6 張桌子和 4 張椅子。桌子比椅子多幾張？",
+      "answer": "2",
+      "verify": "6-4",
+      "explanation": "6 − 4 = 2。"
+    },
+    {
+      "id": "cnm_p022_q2",
+      "topicId": "cnm_p022",
+      "type": "choice",
+      "difficulty": "standard",
       "prompt": "蘋果、香蕉和橙可以分為一類。以下哪一個也可以放入同一類？",
-      "choices": [ { "key": "A", "text": "麵包" }, { "key": "B", "text": "提子" }, { "key": "C", "text": "牛奶" }, { "key": "D", "text": "鉛筆" } ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "麵包",
+          "misconception": "麵包是食物，但不是水果"
+        },
+        {
+          "key": "B",
+          "text": "提子"
+        },
+        {
+          "key": "C",
+          "text": "牛奶",
+          "misconception": "牛奶是飲品，不是水果"
+        },
+        {
+          "key": "D",
+          "text": "鉛筆",
+          "misconception": "鉛筆不是食物"
+        }
+      ],
       "answer": "B",
-      "explanation": "這一類是水果。提子是水果；麵包、牛奶是食物但不是水果，鉛筆不是食物。" },
-    { "id": "cnm_p022_q3", "topicId": "cnm_p022", "type": "choice", "difficulty": "standard",
+      "explanation": "這一類是水果。提子是水果；麵包、牛奶是食物但不是水果，鉛筆不是食物。"
+    },
+    {
+      "id": "cnm_p022_q3",
+      "topicId": "cnm_p022",
+      "type": "choice",
+      "difficulty": "standard",
       "prompt": "小明把紅波、藍波和紅積木放在一起。他用的分類標準是甚麼？",
-      "choices": [ { "key": "A", "text": "顏色" }, { "key": "B", "text": "形狀" }, { "key": "C", "text": "大小" }, { "key": "D", "text": "用途" } ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "顏色"
+        },
+        {
+          "key": "B",
+          "text": "形狀",
+          "misconception": "有波也有積木，形狀不同，不是形狀"
+        },
+        {
+          "key": "C",
+          "text": "大小",
+          "misconception": "題目沒提大小"
+        },
+        {
+          "key": "D",
+          "text": "用途",
+          "misconception": "不是按用途分"
+        }
+      ],
       "answer": "A",
-      "explanation": "有波也有積木，形狀不同；共同點是顏色（紅、藍都是顏色）。所以標準是顏色。" },
-    { "id": "cnm_p022_q4", "topicId": "cnm_p022", "type": "numeric", "difficulty": "advanced",
-      "prompt": "一籃水果有 3 個蘋果、2 個橙和 1 個梨。一共有幾個水果？", "answer": "6", "verify": "3+2+1",
-      "explanation": "3 + 2 + 1 = 6。要三種都數，不要只數其中兩種。" }
+      "explanation": "有波也有積木，形狀不同；共同點是顏色（紅、藍都是顏色）。所以標準是顏色。"
+    },
+    {
+      "id": "cnm_p022_q4",
+      "topicId": "cnm_p022",
+      "type": "numeric",
+      "difficulty": "advanced",
+      "prompt": "一籃水果有 3 個蘋果、2 個橙和 1 個梨。一共有幾個水果？",
+      "answer": "6",
+      "verify": "3+2+1",
+      "explanation": "3 + 2 + 1 = 6。要三種都數，不要只數其中兩種。"
+    }
   ]
 }

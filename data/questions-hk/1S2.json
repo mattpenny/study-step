@@ -58,7 +58,8 @@
       "choices": [
         {
           "key": "A",
-          "text": "三角形"
+          "text": "三角形",
+          "misconception": "三角形只有 3 條邊"
         },
         {
           "key": "B",
@@ -66,11 +67,13 @@
         },
         {
           "key": "C",
-          "text": "五邊形"
+          "text": "五邊形",
+          "misconception": "五邊形有 5 條邊"
         },
         {
           "key": "D",
-          "text": "圓形"
+          "text": "圓形",
+          "misconception": "圓形由曲線圍成，沒有直邊"
         }
       ],
       "answer": "B",
@@ -85,7 +88,8 @@
       "choices": [
         {
           "key": "A",
-          "text": "三角形"
+          "text": "三角形",
+          "misconception": "不是 3 條邊，所以不是三角形"
         },
         {
           "key": "B",
@@ -93,11 +97,13 @@
         },
         {
           "key": "C",
-          "text": "五邊形"
+          "text": "五邊形",
+          "misconception": "不是 5 條邊"
         },
         {
           "key": "D",
-          "text": "圓形"
+          "text": "圓形",
+          "misconception": "不是由曲線圍成"
         }
       ],
       "answer": "B",
@@ -132,11 +138,13 @@
       "choices": [
         {
           "key": "A",
-          "text": "圓形"
+          "text": "圓形",
+          "misconception": "正方形拼不出圓形"
         },
         {
           "key": "B",
-          "text": "三角形"
+          "text": "三角形",
+          "misconception": "4 個正方形拼不出三角形"
         },
         {
           "key": "C",
@@ -144,7 +152,8 @@
         },
         {
           "key": "D",
-          "text": "五邊形"
+          "text": "五邊形",
+          "misconception": "拼不出五邊形"
         }
       ],
       "answer": "C",
@@ -159,7 +168,8 @@
       "choices": [
         {
           "key": "A",
-          "text": "正方形"
+          "text": "正方形",
+          "misconception": "剪開之後不是正方形"
         },
         {
           "key": "B",
@@ -167,11 +177,13 @@
         },
         {
           "key": "C",
-          "text": "長方形"
+          "text": "長方形",
+          "misconception": "沿對角線剪不會得到長方形"
         },
         {
           "key": "D",
-          "text": "圓形"
+          "text": "圓形",
+          "misconception": "剪直線不會出現圓"
         }
       ],
       "answer": "B",
@@ -198,7 +210,8 @@
         {
           "key": "A",
           "text": "三角形",
-          "figure": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 160 160\"><polygon points=\"80,30 20,132 140,132\" fill=\"currentColor\" fill-opacity=\"0.12\" stroke=\"none\"/><polygon points=\"80,30 20,132 140,132\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/></svg>"
+          "figure": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 160 160\"><polygon points=\"80,30 20,132 140,132\" fill=\"currentColor\" fill-opacity=\"0.12\" stroke=\"none\"/><polygon points=\"80,30 20,132 140,132\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/></svg>",
+          "misconception": "圖中是 3 條邊，不是 4 條"
         },
         {
           "key": "B",
@@ -208,12 +221,14 @@
         {
           "key": "C",
           "text": "圓形",
-          "figure": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 160 160\"><circle cx=\"80\" cy=\"82\" r=\"50\" fill=\"currentColor\" fill-opacity=\"0.12\" stroke=\"none\"/><circle cx=\"80\" cy=\"82\" r=\"50\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\"/></svg>"
+          "figure": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 160 160\"><circle cx=\"80\" cy=\"82\" r=\"50\" fill=\"currentColor\" fill-opacity=\"0.12\" stroke=\"none\"/><circle cx=\"80\" cy=\"82\" r=\"50\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\"/></svg>",
+          "misconception": "圓形沒有直邊"
         },
         {
           "key": "D",
           "text": "六邊形",
-          "figure": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 160 160\"><polygon points=\"135,80 107,128 53,128 25,80 53,32 107,32\" fill=\"currentColor\" fill-opacity=\"0.12\" stroke=\"none\"/><polygon points=\"135,80 107,128 53,128 25,80 53,32 107,32\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/></svg>"
+          "figure": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 160 160\"><polygon points=\"135,80 107,128 53,128 25,80 53,32 107,32\" fill=\"currentColor\" fill-opacity=\"0.12\" stroke=\"none\"/><polygon points=\"135,80 107,128 53,128 25,80 53,32 107,32\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/></svg>",
+          "misconception": "圖中是 6 條邊"
         }
       ],
       "answer": "B",

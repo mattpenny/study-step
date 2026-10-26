@@ -48,6 +48,16 @@ label { font-weight: 700; }
 .verdict.ok { background: var(--ok-bg); color: var(--ok); }
 .verdict.no { background: var(--bad-bg); color: var(--bad); }
 .refans { background: var(--ok-bg); border: 1px dashed var(--ok); padding: 10px 12px; border-radius: 10px; margin: 10px 0; white-space: pre-wrap; overflow-wrap: anywhere; }
+.misconception {
+  background: var(--danger-soft, #fdecec);
+  border-left: 4px solid var(--danger, #d9534f);
+  padding: 10px 12px;
+  border-radius: 8px;
+  margin: 10px 0;
+  line-height: 1.55;
+}
+.misconception b { margin-right: 4px; }
+.misconception .small { margin-top: 4px; opacity: 0.75; font-size: 0.86em; }
 .explain { background: var(--junior-soft); border-left: 4px solid var(--junior); padding: 10px 12px; border-radius: 8px; margin: 10px 0; white-space: pre-wrap; overflow-wrap: anywhere; }
 .choices { display: flex; flex-direction: column; gap: 8px; margin: 8px 0; }
 button.choice { text-align: left; width: 100%; min-height: 48px; padding: 12px 14px; font-size: 1.02rem; font-weight: 600; white-space: pre-wrap; border-radius: 12px; }

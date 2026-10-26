@@ -5,242 +5,1073 @@
   "strand": "數",
   "source": "EDB 小學 1N2 基本加法和減法：學習重點 1 理解加減法基本概念、2 進行18以內的加減法口算、3 認識0的概念、4 理解加減法的關係、5 認識加法交換性質",
   "objectives": [
-    { "code": "1", "text": "理解加法和減法的基本概念", "topics": ["cnm_p006", "cnm_p007"] },
-    { "code": "2", "text": "進行18以內的加法和減法口算", "topics": ["cnm_p010", "cnm_p011", "cnm_p012", "cnm_p013", "cnm_p018", "cnm_p019", "cnm_p020", "cnm_p021", "cnm_p025", "cnm_p027"] },
-    { "code": "3", "text": "認識0的概念（0+4=4、4−0=4 等性質）", "topics": ["cnm_p005"] },
-    { "code": "4", "text": "理解加法和減法的關係（想加算減）", "topics": ["cnm_p026"] }
+    {
+      "code": "1",
+      "text": "理解加法和減法的基本概念",
+      "topics": [
+        "cnm_p006",
+        "cnm_p007"
+      ]
+    },
+    {
+      "code": "2",
+      "text": "進行18以內的加法和減法口算",
+      "topics": [
+        "cnm_p010",
+        "cnm_p011",
+        "cnm_p012",
+        "cnm_p013",
+        "cnm_p018",
+        "cnm_p019",
+        "cnm_p020",
+        "cnm_p021",
+        "cnm_p025",
+        "cnm_p027"
+      ]
+    },
+    {
+      "code": "3",
+      "text": "認識0的概念（0+4=4、4−0=4 等性質）",
+      "topics": [
+        "cnm_p005"
+      ]
+    },
+    {
+      "code": "4",
+      "text": "理解加法和減法的關係（想加算減）",
+      "topics": [
+        "cnm_p026"
+      ]
+    }
   ],
   "gaps": [
-    { "code": "5", "text": "認識加法交換性質（減法沒有交換性質）", "reason": "沒有獨立知識點；已在 p006 q4 出一題帶過，但建議補一個知識點。" }
+    {
+      "code": "5",
+      "text": "認識加法交換性質（減法沒有交換性質）",
+      "reason": "沒有獨立知識點；已在 p006 q4 出一題帶過，但建議補一個知識點。"
+    }
   ],
   "note": "陷阱集中在三處：連減與加減混合的計算順序（p012、p013 的干擾項就是「先減後加」）、湊十時忘記把借出的數加回（p019、p025）、以及把「吃了」誤作加法（p007）。",
   "questions": [
-    { "id": "cnm_p006_q1", "topicId": "cnm_p006", "type": "numeric", "difficulty": "basic",
-      "prompt": "2 + 3 = ?", "answer": "5", "verify": "2+3",
-      "explanation": "2 和 3 合起來是 5。" },
-    { "id": "cnm_p006_q2", "topicId": "cnm_p006", "type": "numeric", "difficulty": "basic",
-      "prompt": "4 + 1 = ?", "answer": "5", "verify": "4+1",
-      "explanation": "4 再數 1 個就是 5。" },
-    { "id": "cnm_p006_q3", "topicId": "cnm_p006", "type": "choice", "difficulty": "standard",
+    {
+      "id": "cnm_p006_q1",
+      "topicId": "cnm_p006",
+      "type": "numeric",
+      "difficulty": "basic",
+      "prompt": "2 + 3 = ?",
+      "answer": "5",
+      "verify": "2+3",
+      "explanation": "2 和 3 合起來是 5。"
+    },
+    {
+      "id": "cnm_p006_q2",
+      "topicId": "cnm_p006",
+      "type": "numeric",
+      "difficulty": "basic",
+      "prompt": "4 + 1 = ?",
+      "answer": "5",
+      "verify": "4+1",
+      "explanation": "4 再數 1 個就是 5。"
+    },
+    {
+      "id": "cnm_p006_q3",
+      "topicId": "cnm_p006",
+      "type": "choice",
+      "difficulty": "standard",
       "prompt": "有 2 隻紅鳥和 3 隻藍鳥，一共有幾隻鳥？",
-      "choices": [ { "key": "A", "text": "1 隻" }, { "key": "B", "text": "5 隻" }, { "key": "C", "text": "6 隻" }, { "key": "D", "text": "4 隻" } ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "1 隻",
+          "misconception": "用 3−2 = 1 求相差，但題目問「一共」"
+        },
+        {
+          "key": "B",
+          "text": "5 隻"
+        },
+        {
+          "key": "C",
+          "text": "6 隻",
+          "misconception": "用了乘法 2 × 3"
+        },
+        {
+          "key": "D",
+          "text": "4 隻",
+          "misconception": "數錯"
+        }
+      ],
       "answer": "B",
-      "explanation": "求「一共」用加法：2 + 3 = 5。選 A 是用 3 − 2，把「合起來」當成「相差」。 " },
-    { "id": "cnm_p006_q4", "topicId": "cnm_p006", "type": "choice", "difficulty": "advanced",
+      "explanation": "求「一共」用加法：2 + 3 = 5。選 A 是用 3 − 2，把「合起來」當成「相差」。 "
+    },
+    {
+      "id": "cnm_p006_q4",
+      "topicId": "cnm_p006",
+      "type": "choice",
+      "difficulty": "advanced",
       "prompt": "1 + 3 和 3 + 1 的答案一樣嗎？",
-      "choices": [ { "key": "A", "text": "一樣，都是 4" }, { "key": "B", "text": "不一樣，1 + 3 較大" }, { "key": "C", "text": "不一樣，3 + 1 較大" }, { "key": "D", "text": "不知道" } ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "一樣，都是 4"
+        },
+        {
+          "key": "B",
+          "text": "不一樣，1 + 3 較大",
+          "misconception": "以為排在前面的數比較大"
+        },
+        {
+          "key": "C",
+          "text": "不一樣，3 + 1 較大",
+          "misconception": "以為大數在前就比較大"
+        },
+        {
+          "key": "D",
+          "text": "不知道",
+          "misconception": "沒有把兩邊都算一次"
+        }
+      ],
       "answer": "A",
-      "explanation": "兩個數交換位置，和不变。但減法沒有這個性質：3 − 1 和 1 − 3 不一樣。" },
-
-    { "id": "cnm_p007_q1", "topicId": "cnm_p007", "type": "numeric", "difficulty": "basic",
-      "prompt": "5 − 2 = ?", "answer": "3", "verify": "5-2",
-      "explanation": "5 去掉 2 個，剩 3 個。" },
-    { "id": "cnm_p007_q2", "topicId": "cnm_p007", "type": "numeric", "difficulty": "basic",
-      "prompt": "4 − 4 = ?", "answer": "0", "verify": "4-4",
-      "explanation": "全部去掉，就是 0。" },
-    { "id": "cnm_p007_q3", "topicId": "cnm_p007", "type": "choice", "difficulty": "standard",
+      "explanation": "兩個數交換位置，和不变。但減法沒有這個性質：3 − 1 和 1 − 3 不一樣。"
+    },
+    {
+      "id": "cnm_p007_q1",
+      "topicId": "cnm_p007",
+      "type": "numeric",
+      "difficulty": "basic",
+      "prompt": "5 − 2 = ?",
+      "answer": "3",
+      "verify": "5-2",
+      "explanation": "5 去掉 2 個，剩 3 個。"
+    },
+    {
+      "id": "cnm_p007_q2",
+      "topicId": "cnm_p007",
+      "type": "numeric",
+      "difficulty": "basic",
+      "prompt": "4 − 4 = ?",
+      "answer": "0",
+      "verify": "4-4",
+      "explanation": "全部去掉，就是 0。"
+    },
+    {
+      "id": "cnm_p007_q3",
+      "topicId": "cnm_p007",
+      "type": "choice",
+      "difficulty": "standard",
       "prompt": "有 5 粒糖，吃了 2 粒，還有幾粒？",
-      "choices": [ { "key": "A", "text": "3 粒" }, { "key": "B", "text": "7 粒" }, { "key": "C", "text": "2 粒" }, { "key": "D", "text": "5 粒" } ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "3 粒"
+        },
+        {
+          "key": "B",
+          "text": "7 粒",
+          "misconception": "看到數字就相加：5 + 2 = 7"
+        },
+        {
+          "key": "C",
+          "text": "2 粒",
+          "misconception": "抄了吃掉的數"
+        },
+        {
+          "key": "D",
+          "text": "5 粒",
+          "misconception": "以為沒有變化"
+        }
+      ],
       "answer": "A",
-      "explanation": "「吃了」是去掉，用減法：5 − 2 = 3。選 B 是看到數字就相加。" },
-    { "id": "cnm_p007_q4", "topicId": "cnm_p007", "type": "choice", "difficulty": "advanced",
+      "explanation": "「吃了」是去掉，用減法：5 − 2 = 3。選 B 是看到數字就相加。"
+    },
+    {
+      "id": "cnm_p007_q4",
+      "topicId": "cnm_p007",
+      "type": "choice",
+      "difficulty": "advanced",
       "prompt": "樹上有 5 隻鳥，飛走了 5 隻，樹上還有幾隻？",
-      "choices": [ { "key": "A", "text": "5 隻" }, { "key": "B", "text": "10 隻" }, { "key": "C", "text": "0 隻" }, { "key": "D", "text": "1 隻" } ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "5 隻",
+          "misconception": "以為飛走了還在"
+        },
+        {
+          "key": "B",
+          "text": "10 隻",
+          "misconception": "用了加法 5 + 5"
+        },
+        {
+          "key": "C",
+          "text": "0 隻"
+        },
+        {
+          "key": "D",
+          "text": "1 隻",
+          "misconception": "以為還會剩 1 隻"
+        }
+      ],
       "answer": "C",
-      "explanation": "5 − 5 = 0，全部飛走了。" },
-
-    { "id": "cnm_p010_q1", "topicId": "cnm_p010", "type": "numeric", "difficulty": "basic",
-      "prompt": "6 + 3 = ?", "answer": "9", "verify": "6+3",
-      "explanation": "6 再數 3 個：7、8、9。" },
-    { "id": "cnm_p010_q2", "topicId": "cnm_p010", "type": "numeric", "difficulty": "basic",
-      "prompt": "8 + 2 = ?", "answer": "10", "verify": "8+2",
-      "explanation": "8 和 2 剛好湊成 10。" },
-    { "id": "cnm_p010_q3", "topicId": "cnm_p010", "type": "choice", "difficulty": "standard",
+      "explanation": "5 − 5 = 0，全部飛走了。"
+    },
+    {
+      "id": "cnm_p010_q1",
+      "topicId": "cnm_p010",
+      "type": "numeric",
+      "difficulty": "basic",
+      "prompt": "6 + 3 = ?",
+      "answer": "9",
+      "verify": "6+3",
+      "explanation": "6 再數 3 個：7、8、9。"
+    },
+    {
+      "id": "cnm_p010_q2",
+      "topicId": "cnm_p010",
+      "type": "numeric",
+      "difficulty": "basic",
+      "prompt": "8 + 2 = ?",
+      "answer": "10",
+      "verify": "8+2",
+      "explanation": "8 和 2 剛好湊成 10。"
+    },
+    {
+      "id": "cnm_p010_q3",
+      "topicId": "cnm_p010",
+      "type": "choice",
+      "difficulty": "standard",
       "prompt": "小明有 4 本書，姐姐有 6 本。一共有幾本書？",
-      "choices": [ { "key": "A", "text": "2 本" }, { "key": "B", "text": "10 本" }, { "key": "C", "text": "24 本" }, { "key": "D", "text": "6 本" } ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "2 本",
+          "misconception": "用 6−4 = 2 求相差，但題目問「一共」"
+        },
+        {
+          "key": "B",
+          "text": "10 本"
+        },
+        {
+          "key": "C",
+          "text": "24 本",
+          "misconception": "用了乘法 4 × 6"
+        },
+        {
+          "key": "D",
+          "text": "6 本",
+          "misconception": "抄了姐姐的本數"
+        }
+      ],
       "answer": "B",
-      "explanation": "4 + 6 = 10。選 A 是用 6 − 4 求相差，但題目問「一共」。" },
-    { "id": "cnm_p010_q4", "topicId": "cnm_p010", "type": "numeric", "difficulty": "advanced",
-      "prompt": "7 + 3 = ?", "answer": "10", "verify": "7+3",
-      "explanation": "7 和 3 湊成 10。" },
-
-    { "id": "cnm_p011_q1", "topicId": "cnm_p011", "type": "numeric", "difficulty": "basic",
-      "prompt": "9 − 4 = ?", "answer": "5", "verify": "9-4",
-      "explanation": "9 去掉 4，剩 5。" },
-    { "id": "cnm_p011_q2", "topicId": "cnm_p011", "type": "numeric", "difficulty": "basic",
-      "prompt": "10 − 3 = ?", "answer": "7", "verify": "10-3",
-      "explanation": "10 去掉 3，剩 7。" },
-    { "id": "cnm_p011_q3", "topicId": "cnm_p011", "type": "choice", "difficulty": "standard",
+      "explanation": "4 + 6 = 10。選 A 是用 6 − 4 求相差，但題目問「一共」。"
+    },
+    {
+      "id": "cnm_p010_q4",
+      "topicId": "cnm_p010",
+      "type": "numeric",
+      "difficulty": "advanced",
+      "prompt": "7 + 3 = ?",
+      "answer": "10",
+      "verify": "7+3",
+      "explanation": "7 和 3 湊成 10。"
+    },
+    {
+      "id": "cnm_p011_q1",
+      "topicId": "cnm_p011",
+      "type": "numeric",
+      "difficulty": "basic",
+      "prompt": "9 − 4 = ?",
+      "answer": "5",
+      "verify": "9-4",
+      "explanation": "9 去掉 4，剩 5。"
+    },
+    {
+      "id": "cnm_p011_q2",
+      "topicId": "cnm_p011",
+      "type": "numeric",
+      "difficulty": "basic",
+      "prompt": "10 − 3 = ?",
+      "answer": "7",
+      "verify": "10-3",
+      "explanation": "10 去掉 3，剩 7。"
+    },
+    {
+      "id": "cnm_p011_q3",
+      "topicId": "cnm_p011",
+      "type": "choice",
+      "difficulty": "standard",
       "prompt": "有 8 個蘋果，吃了 3 個，還有幾個？",
-      "choices": [ { "key": "A", "text": "5 個" }, { "key": "B", "text": "11 個" }, { "key": "C", "text": "3 個" }, { "key": "D", "text": "8 個" } ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "5 個"
+        },
+        {
+          "key": "B",
+          "text": "11 個",
+          "misconception": "用了加法 8 + 3 = 11"
+        },
+        {
+          "key": "C",
+          "text": "3 個",
+          "misconception": "抄了吃掉的數"
+        },
+        {
+          "key": "D",
+          "text": "8 個",
+          "misconception": "以為沒有變化"
+        }
+      ],
       "answer": "A",
-      "explanation": "8 − 3 = 5。" },
-    { "id": "cnm_p011_q4", "topicId": "cnm_p011", "type": "numeric", "difficulty": "advanced",
-      "prompt": "10 − 10 = ?", "answer": "0", "verify": "10-10",
-      "explanation": "全部拿走，就是 0。" },
-
-    { "id": "cnm_p012_q1", "topicId": "cnm_p012", "type": "numeric", "difficulty": "basic",
-      "prompt": "2 + 3 + 4 = ?", "answer": "9", "verify": "2+3+4",
-      "explanation": "先算 2 + 3 = 5，再算 5 + 4 = 9。" },
-    { "id": "cnm_p012_q2", "topicId": "cnm_p012", "type": "numeric", "difficulty": "basic",
-      "prompt": "10 − 2 − 3 = ?", "answer": "5", "verify": "10-2-3",
-      "explanation": "先算 10 − 2 = 8，再算 8 − 3 = 5。" },
-    { "id": "cnm_p012_q3", "topicId": "cnm_p012", "type": "choice", "difficulty": "standard",
+      "explanation": "8 − 3 = 5。"
+    },
+    {
+      "id": "cnm_p011_q4",
+      "topicId": "cnm_p011",
+      "type": "numeric",
+      "difficulty": "advanced",
+      "prompt": "10 − 10 = ?",
+      "answer": "0",
+      "verify": "10-10",
+      "explanation": "全部拿走，就是 0。"
+    },
+    {
+      "id": "cnm_p012_q1",
+      "topicId": "cnm_p012",
+      "type": "numeric",
+      "difficulty": "basic",
+      "prompt": "2 + 3 + 4 = ?",
+      "answer": "9",
+      "verify": "2+3+4",
+      "explanation": "先算 2 + 3 = 5，再算 5 + 4 = 9。"
+    },
+    {
+      "id": "cnm_p012_q2",
+      "topicId": "cnm_p012",
+      "type": "numeric",
+      "difficulty": "basic",
+      "prompt": "10 − 2 − 3 = ?",
+      "answer": "5",
+      "verify": "10-2-3",
+      "explanation": "先算 10 − 2 = 8，再算 8 − 3 = 5。"
+    },
+    {
+      "id": "cnm_p012_q3",
+      "topicId": "cnm_p012",
+      "type": "choice",
+      "difficulty": "standard",
       "prompt": "10 − 4 − 3 = ?",
-      "choices": [ { "key": "A", "text": "3" }, { "key": "B", "text": "9" }, { "key": "C", "text": "1" }, { "key": "D", "text": "17" } ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "3"
+        },
+        {
+          "key": "B",
+          "text": "9",
+          "misconception": "先算 4−3 = 1，再 10−1，順序錯了"
+        },
+        {
+          "key": "C",
+          "text": "1",
+          "misconception": "只算了 4−3，忘了再從 10 減"
+        },
+        {
+          "key": "D",
+          "text": "17",
+          "misconception": "把減法當成加法"
+        }
+      ],
       "answer": "A",
-      "explanation": "從左到右：10 − 4 = 6，6 − 3 = 3。選 B 是先算 4 − 3 = 1，順序錯了。" },
-    { "id": "cnm_p012_q4", "topicId": "cnm_p012", "type": "numeric", "difficulty": "advanced",
-      "prompt": "1 + 2 + 3 + 4 = ?", "answer": "10", "verify": "1+2+3+4",
-      "explanation": "逐個加：1+2=3，3+3=6，6+4=10。" },
-
-    { "id": "cnm_p013_q1", "topicId": "cnm_p013", "type": "numeric", "difficulty": "basic",
-      "prompt": "7 + 2 − 3 = ?", "answer": "6", "verify": "7+2-3",
-      "explanation": "從左到右：7 + 2 = 9，9 − 3 = 6。" },
-    { "id": "cnm_p013_q2", "topicId": "cnm_p013", "type": "numeric", "difficulty": "basic",
-      "prompt": "9 − 5 + 1 = ?", "answer": "5", "verify": "9-5+1",
-      "explanation": "從左到右：9 − 5 = 4，4 + 1 = 5。" },
-    { "id": "cnm_p013_q3", "topicId": "cnm_p013", "type": "choice", "difficulty": "standard",
+      "explanation": "從左到右：10 − 4 = 6，6 − 3 = 3。選 B 是先算 4 − 3 = 1，順序錯了。"
+    },
+    {
+      "id": "cnm_p012_q4",
+      "topicId": "cnm_p012",
+      "type": "numeric",
+      "difficulty": "advanced",
+      "prompt": "1 + 2 + 3 + 4 = ?",
+      "answer": "10",
+      "verify": "1+2+3+4",
+      "explanation": "逐個加：1+2=3，3+3=6，6+4=10。"
+    },
+    {
+      "id": "cnm_p013_q1",
+      "topicId": "cnm_p013",
+      "type": "numeric",
+      "difficulty": "basic",
+      "prompt": "7 + 2 − 3 = ?",
+      "answer": "6",
+      "verify": "7+2-3",
+      "explanation": "從左到右：7 + 2 = 9，9 − 3 = 6。"
+    },
+    {
+      "id": "cnm_p013_q2",
+      "topicId": "cnm_p013",
+      "type": "numeric",
+      "difficulty": "basic",
+      "prompt": "9 − 5 + 1 = ?",
+      "answer": "5",
+      "verify": "9-5+1",
+      "explanation": "從左到右：9 − 5 = 4，4 + 1 = 5。"
+    },
+    {
+      "id": "cnm_p013_q3",
+      "topicId": "cnm_p013",
+      "type": "choice",
+      "difficulty": "standard",
       "prompt": "8 − 3 + 2 = ?",
-      "choices": [ { "key": "A", "text": "3" }, { "key": "B", "text": "7" }, { "key": "C", "text": "13" }, { "key": "D", "text": "9" } ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "3",
+          "misconception": "先算 3+2 = 5，再 8−5，順序錯了"
+        },
+        {
+          "key": "B",
+          "text": "7"
+        },
+        {
+          "key": "C",
+          "text": "13",
+          "misconception": "把減法當成加法"
+        },
+        {
+          "key": "D",
+          "text": "9",
+          "misconception": "先減後加：8−3+2 算成 8+3−2"
+        }
+      ],
       "answer": "B",
-      "explanation": "從左到右：8 − 3 = 5，5 + 2 = 7。選 A 是先把 3 + 2 算成 5，再 8 − 5，順序錯了。" },
-    { "id": "cnm_p013_q4", "topicId": "cnm_p013", "type": "choice", "difficulty": "advanced",
+      "explanation": "從左到右：8 − 3 = 5，5 + 2 = 7。選 A 是先把 3 + 2 算成 5，再 8 − 5，順序錯了。"
+    },
+    {
+      "id": "cnm_p013_q4",
+      "topicId": "cnm_p013",
+      "type": "choice",
+      "difficulty": "advanced",
       "prompt": "6 + 4 − 5 = ?",
-      "choices": [ { "key": "A", "text": "5" }, { "key": "B", "text": "15" }, { "key": "C", "text": "3" }, { "key": "D", "text": "7" } ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "5"
+        },
+        {
+          "key": "B",
+          "text": "15",
+          "misconception": "把減法當成加法"
+        },
+        {
+          "key": "C",
+          "text": "3",
+          "misconception": "符號看錯，把 +4 看成 −4"
+        },
+        {
+          "key": "D",
+          "text": "7",
+          "misconception": "先減 4 再加 5：6−4+5 = 7，順序錯了"
+        }
+      ],
       "answer": "A",
-      "explanation": "6 + 4 = 10，10 − 5 = 5。" },
-
-    { "id": "cnm_p018_q1", "topicId": "cnm_p018", "type": "numeric", "difficulty": "basic",
-      "prompt": "12 + 3 = ?", "answer": "15", "verify": "12+3",
-      "explanation": "個位 2 + 3 = 5，十位不變，得 15。" },
-    { "id": "cnm_p018_q2", "topicId": "cnm_p018", "type": "numeric", "difficulty": "basic",
-      "prompt": "10 + 7 = ?", "answer": "17", "verify": "10+7",
-      "explanation": "10 加 7，就是 17。" },
-    { "id": "cnm_p018_q3", "topicId": "cnm_p018", "type": "choice", "difficulty": "standard",
+      "explanation": "6 + 4 = 10，10 − 5 = 5。"
+    },
+    {
+      "id": "cnm_p018_q1",
+      "topicId": "cnm_p018",
+      "type": "numeric",
+      "difficulty": "basic",
+      "prompt": "12 + 3 = ?",
+      "answer": "15",
+      "verify": "12+3",
+      "explanation": "個位 2 + 3 = 5，十位不變，得 15。"
+    },
+    {
+      "id": "cnm_p018_q2",
+      "topicId": "cnm_p018",
+      "type": "numeric",
+      "difficulty": "basic",
+      "prompt": "10 + 7 = ?",
+      "answer": "17",
+      "verify": "10+7",
+      "explanation": "10 加 7，就是 17。"
+    },
+    {
+      "id": "cnm_p018_q3",
+      "topicId": "cnm_p018",
+      "type": "choice",
+      "difficulty": "standard",
       "prompt": "14 + 5 = ?",
-      "choices": [ { "key": "A", "text": "19" }, { "key": "B", "text": "64" }, { "key": "C", "text": "9" }, { "key": "D", "text": "15" } ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "19"
+        },
+        {
+          "key": "B",
+          "text": "64",
+          "misconception": "把十位的 1 也拿去加 5"
+        },
+        {
+          "key": "C",
+          "text": "9",
+          "misconception": "只算個位 4+5 = 9，漏了十位"
+        },
+        {
+          "key": "D",
+          "text": "15",
+          "misconception": "個位算對但十位抄錯"
+        }
+      ],
       "answer": "A",
-      "explanation": "個位 4 + 5 = 9，十位仍是 1，得 19。選 B 是把十位的 1 也拿去加 5 了。" },
-    { "id": "cnm_p018_q4", "topicId": "cnm_p018", "type": "numeric", "difficulty": "advanced",
-      "prompt": "13 + 6 = ?", "answer": "19", "verify": "13+6",
-      "explanation": "個位 3 + 6 = 9，得 19。" },
-
-    { "id": "cnm_p019_q1", "topicId": "cnm_p019", "type": "numeric", "difficulty": "basic",
-      "prompt": "用湊十法算 8 + 5：先從 5 拿出 2 給 8，湊成 10。5 還剩幾？", "answer": "3", "verify": "5-2",
-      "explanation": "5 拿出 2，還剩 3。" },
-    { "id": "cnm_p019_q2", "topicId": "cnm_p019", "type": "numeric", "difficulty": "basic",
-      "prompt": "8 + 5 = ?", "answer": "13", "verify": "8+5",
-      "explanation": "湊十法：8 + 2 = 10，10 + 3 = 13。" },
-    { "id": "cnm_p019_q3", "topicId": "cnm_p019", "type": "choice", "difficulty": "standard",
+      "explanation": "個位 4 + 5 = 9，十位仍是 1，得 19。選 B 是把十位的 1 也拿去加 5 了。"
+    },
+    {
+      "id": "cnm_p018_q4",
+      "topicId": "cnm_p018",
+      "type": "numeric",
+      "difficulty": "advanced",
+      "prompt": "13 + 6 = ?",
+      "answer": "19",
+      "verify": "13+6",
+      "explanation": "個位 3 + 6 = 9，得 19。"
+    },
+    {
+      "id": "cnm_p019_q1",
+      "topicId": "cnm_p019",
+      "type": "numeric",
+      "difficulty": "basic",
+      "prompt": "用湊十法算 8 + 5：先從 5 拿出 2 給 8，湊成 10。5 還剩幾？",
+      "answer": "3",
+      "verify": "5-2",
+      "explanation": "5 拿出 2，還剩 3。"
+    },
+    {
+      "id": "cnm_p019_q2",
+      "topicId": "cnm_p019",
+      "type": "numeric",
+      "difficulty": "basic",
+      "prompt": "8 + 5 = ?",
+      "answer": "13",
+      "verify": "8+5",
+      "explanation": "湊十法：8 + 2 = 10，10 + 3 = 13。"
+    },
+    {
+      "id": "cnm_p019_q3",
+      "topicId": "cnm_p019",
+      "type": "choice",
+      "difficulty": "standard",
       "prompt": "用湊十法算 9 + 6，9 需要加幾才湊成 10？",
-      "choices": [ { "key": "A", "text": "1" }, { "key": "B", "text": "2" }, { "key": "C", "text": "6" }, { "key": "D", "text": "9" } ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "1"
+        },
+        {
+          "key": "B",
+          "text": "2",
+          "misconception": "記成 8 要加 2 才湊十"
+        },
+        {
+          "key": "C",
+          "text": "6",
+          "misconception": "直接抄了 6"
+        },
+        {
+          "key": "D",
+          "text": "9",
+          "misconception": "直接抄了 9"
+        }
+      ],
       "answer": "A",
-      "explanation": "9 + 1 = 10，所以需要 1。" },
-    { "id": "cnm_p019_q4", "topicId": "cnm_p019", "type": "choice", "difficulty": "advanced",
+      "explanation": "9 + 1 = 10，所以需要 1。"
+    },
+    {
+      "id": "cnm_p019_q4",
+      "topicId": "cnm_p019",
+      "type": "choice",
+      "difficulty": "advanced",
       "prompt": "算 7 + 6：先把 6 分成 3 和 3，7 + 3 = 10，再 10 + 3。答案是？",
-      "choices": [ { "key": "A", "text": "12" }, { "key": "B", "text": "13" }, { "key": "C", "text": "16" }, { "key": "D", "text": "11" } ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "12",
+          "misconception": "忘記把剩下的 3 加回去"
+        },
+        {
+          "key": "B",
+          "text": "13"
+        },
+        {
+          "key": "C",
+          "text": "16",
+          "misconception": "湊成 10 之後又把 6 整個加上去"
+        },
+        {
+          "key": "D",
+          "text": "11",
+          "misconception": "少加了 2"
+        }
+      ],
       "answer": "B",
-      "explanation": "10 + 3 = 13。選 C 是忘記已經湊成 10，直接把 10 和 6 相加。" },
-
-    { "id": "cnm_p020_q1", "topicId": "cnm_p020", "type": "numeric", "difficulty": "basic",
-      "prompt": "9 + 2 = ?", "answer": "11", "verify": "9+2",
-      "explanation": "9 + 1 = 10，再 + 1 = 11。" },
-    { "id": "cnm_p020_q2", "topicId": "cnm_p020", "type": "numeric", "difficulty": "basic",
-      "prompt": "9 + 7 = ?", "answer": "16", "verify": "9+7",
-      "explanation": "9 + 1 = 10，7 剩 6，10 + 6 = 16。" },
-    { "id": "cnm_p020_q3", "topicId": "cnm_p020", "type": "choice", "difficulty": "standard",
+      "explanation": "10 + 3 = 13。選 C 是忘記已經湊成 10，直接把 10 和 6 相加。"
+    },
+    {
+      "id": "cnm_p020_q1",
+      "topicId": "cnm_p020",
+      "type": "numeric",
+      "difficulty": "basic",
+      "prompt": "9 + 2 = ?",
+      "answer": "11",
+      "verify": "9+2",
+      "explanation": "9 + 1 = 10，再 + 1 = 11。"
+    },
+    {
+      "id": "cnm_p020_q2",
+      "topicId": "cnm_p020",
+      "type": "numeric",
+      "difficulty": "basic",
+      "prompt": "9 + 7 = ?",
+      "answer": "16",
+      "verify": "9+7",
+      "explanation": "9 + 1 = 10，7 剩 6，10 + 6 = 16。"
+    },
+    {
+      "id": "cnm_p020_q3",
+      "topicId": "cnm_p020",
+      "type": "choice",
+      "difficulty": "standard",
       "prompt": "9 + 9 = ?",
-      "choices": [ { "key": "A", "text": "18" }, { "key": "B", "text": "17" }, { "key": "C", "text": "99" }, { "key": "D", "text": "19" } ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "18"
+        },
+        {
+          "key": "B",
+          "text": "17",
+          "misconception": "湊十後少加了 1"
+        },
+        {
+          "key": "C",
+          "text": "99",
+          "misconception": "把兩個 9 併寫成 99"
+        },
+        {
+          "key": "D",
+          "text": "19",
+          "misconception": "多加 1"
+        }
+      ],
       "answer": "A",
-      "explanation": "9 + 1 = 10，另一個 9 剩 8，10 + 8 = 18。" },
-    { "id": "cnm_p020_q4", "topicId": "cnm_p020", "type": "choice", "difficulty": "advanced",
+      "explanation": "9 + 1 = 10，另一個 9 剩 8，10 + 8 = 18。"
+    },
+    {
+      "id": "cnm_p020_q4",
+      "topicId": "cnm_p020",
+      "type": "choice",
+      "difficulty": "advanced",
       "prompt": "算 9 + 4：從 4 拿 1 給 9，9 + 1 = 10，4 剩 3。所以 9 + 4 = ?",
-      "choices": [ { "key": "A", "text": "13" }, { "key": "B", "text": "14" }, { "key": "C", "text": "12" }, { "key": "D", "text": "15" } ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "13"
+        },
+        {
+          "key": "B",
+          "text": "14",
+          "misconception": "忘了把借出的 1 從 4 減掉"
+        },
+        {
+          "key": "C",
+          "text": "12",
+          "misconception": "少加了 2"
+        },
+        {
+          "key": "D",
+          "text": "15",
+          "misconception": "多加 2"
+        }
+      ],
       "answer": "A",
-      "explanation": "10 + 3 = 13。選 B 是忘了把借出的 1 減掉。" },
-
-    { "id": "cnm_p021_q1", "topicId": "cnm_p021", "type": "numeric", "difficulty": "basic",
-      "prompt": "8 + 7 = ?", "answer": "15", "verify": "8+7",
-      "explanation": "8 + 2 = 10，7 剩 5，10 + 5 = 15。" },
-    { "id": "cnm_p021_q2", "topicId": "cnm_p021", "type": "numeric", "difficulty": "basic",
-      "prompt": "7 + 6 = ?", "answer": "13", "verify": "7+6",
-      "explanation": "7 + 3 = 10，6 剩 3，10 + 3 = 13。" },
-    { "id": "cnm_p021_q3", "topicId": "cnm_p021", "type": "choice", "difficulty": "standard",
+      "explanation": "10 + 3 = 13。選 B 是忘了把借出的 1 減掉。"
+    },
+    {
+      "id": "cnm_p021_q1",
+      "topicId": "cnm_p021",
+      "type": "numeric",
+      "difficulty": "basic",
+      "prompt": "8 + 7 = ?",
+      "answer": "15",
+      "verify": "8+7",
+      "explanation": "8 + 2 = 10，7 剩 5，10 + 5 = 15。"
+    },
+    {
+      "id": "cnm_p021_q2",
+      "topicId": "cnm_p021",
+      "type": "numeric",
+      "difficulty": "basic",
+      "prompt": "7 + 6 = ?",
+      "answer": "13",
+      "verify": "7+6",
+      "explanation": "7 + 3 = 10，6 剩 3，10 + 3 = 13。"
+    },
+    {
+      "id": "cnm_p021_q3",
+      "topicId": "cnm_p021",
+      "type": "choice",
+      "difficulty": "standard",
       "prompt": "8 + 8 = ?",
-      "choices": [ { "key": "A", "text": "16" }, { "key": "B", "text": "15" }, { "key": "C", "text": "17" }, { "key": "D", "text": "88" } ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "16"
+        },
+        {
+          "key": "B",
+          "text": "15",
+          "misconception": "少加了 1"
+        },
+        {
+          "key": "C",
+          "text": "17",
+          "misconception": "多加 1"
+        },
+        {
+          "key": "D",
+          "text": "88",
+          "misconception": "把兩個 8 併寫成 88"
+        }
+      ],
       "answer": "A",
-      "explanation": "8 + 2 = 10，另一個 8 剩 6，10 + 6 = 16。" },
-    { "id": "cnm_p021_q4", "topicId": "cnm_p021", "type": "choice", "difficulty": "advanced",
+      "explanation": "8 + 2 = 10，另一個 8 剩 6，10 + 6 = 16。"
+    },
+    {
+      "id": "cnm_p021_q4",
+      "topicId": "cnm_p021",
+      "type": "choice",
+      "difficulty": "advanced",
       "prompt": "6 + 7 = ?",
-      "choices": [ { "key": "A", "text": "13" }, { "key": "B", "text": "12" }, { "key": "C", "text": "14" }, { "key": "D", "text": "11" } ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "13"
+        },
+        {
+          "key": "B",
+          "text": "12",
+          "misconception": "少加了 1"
+        },
+        {
+          "key": "C",
+          "text": "14",
+          "misconception": "多加 1"
+        },
+        {
+          "key": "D",
+          "text": "11",
+          "misconception": "少加了 2"
+        }
+      ],
       "answer": "A",
-      "explanation": "6 + 4 = 10，7 剩 3，10 + 3 = 13。也可以想 7 + 6，答案一樣。" },
-
-    { "id": "cnm_p025_q1", "topicId": "cnm_p025", "type": "numeric", "difficulty": "basic",
-      "prompt": "13 − 9 = ?", "answer": "4", "verify": "13-9",
-      "explanation": "破十法：13 − 10 = 3，再加回 1，得 4。" },
-    { "id": "cnm_p025_q2", "topicId": "cnm_p025", "type": "numeric", "difficulty": "basic",
-      "prompt": "17 − 9 = ?", "answer": "8", "verify": "17-9",
-      "explanation": "17 − 10 = 7，再加回 1，得 8。" },
-    { "id": "cnm_p025_q3", "topicId": "cnm_p025", "type": "choice", "difficulty": "standard",
+      "explanation": "6 + 4 = 10，7 剩 3，10 + 3 = 13。也可以想 7 + 6，答案一樣。"
+    },
+    {
+      "id": "cnm_p025_q1",
+      "topicId": "cnm_p025",
+      "type": "numeric",
+      "difficulty": "basic",
+      "prompt": "13 − 9 = ?",
+      "answer": "4",
+      "verify": "13-9",
+      "explanation": "破十法：13 − 10 = 3，再加回 1，得 4。"
+    },
+    {
+      "id": "cnm_p025_q2",
+      "topicId": "cnm_p025",
+      "type": "numeric",
+      "difficulty": "basic",
+      "prompt": "17 − 9 = ?",
+      "answer": "8",
+      "verify": "17-9",
+      "explanation": "17 − 10 = 7，再加回 1，得 8。"
+    },
+    {
+      "id": "cnm_p025_q3",
+      "topicId": "cnm_p025",
+      "type": "choice",
+      "difficulty": "standard",
       "prompt": "12 − 9 = ?",
-      "choices": [ { "key": "A", "text": "3" }, { "key": "B", "text": "2" }, { "key": "C", "text": "21" }, { "key": "D", "text": "1" } ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "3"
+        },
+        {
+          "key": "B",
+          "text": "2",
+          "misconception": "12−10 = 2，忘了把多減的 1 加回"
+        },
+        {
+          "key": "C",
+          "text": "21",
+          "misconception": "把減法當成加法"
+        },
+        {
+          "key": "D",
+          "text": "1",
+          "misconception": "算錯"
+        }
+      ],
       "answer": "A",
-      "explanation": "12 − 10 = 2，再加回 1，得 3。選 B 是忘了把多減的 1 加回去。" },
-    { "id": "cnm_p025_q4", "topicId": "cnm_p025", "type": "numeric", "difficulty": "advanced",
-      "prompt": "18 − 9 = ?", "answer": "9", "verify": "18-9",
-      "explanation": "18 − 10 = 8，加回 1 得 9。（也可以想 9 + 9 = 18。）" },
-
-    { "id": "cnm_p026_q1", "topicId": "cnm_p026", "type": "numeric", "difficulty": "basic",
-      "prompt": "14 − 8 = ?", "answer": "6", "verify": "14-8",
-      "explanation": "14 − 10 = 4，加回 2，得 6。" },
-    { "id": "cnm_p026_q2", "topicId": "cnm_p026", "type": "numeric", "difficulty": "basic",
-      "prompt": "15 − 7 = ?", "answer": "8", "verify": "15-7",
-      "explanation": "15 − 10 = 5，加回 3，得 8。" },
-    { "id": "cnm_p026_q3", "topicId": "cnm_p026", "type": "choice", "difficulty": "standard",
+      "explanation": "12 − 10 = 2，再加回 1，得 3。選 B 是忘了把多減的 1 加回去。"
+    },
+    {
+      "id": "cnm_p025_q4",
+      "topicId": "cnm_p025",
+      "type": "numeric",
+      "difficulty": "advanced",
+      "prompt": "18 − 9 = ?",
+      "answer": "9",
+      "verify": "18-9",
+      "explanation": "18 − 10 = 8，加回 1 得 9。（也可以想 9 + 9 = 18。）"
+    },
+    {
+      "id": "cnm_p026_q1",
+      "topicId": "cnm_p026",
+      "type": "numeric",
+      "difficulty": "basic",
+      "prompt": "14 − 8 = ?",
+      "answer": "6",
+      "verify": "14-8",
+      "explanation": "14 − 10 = 4，加回 2，得 6。"
+    },
+    {
+      "id": "cnm_p026_q2",
+      "topicId": "cnm_p026",
+      "type": "numeric",
+      "difficulty": "basic",
+      "prompt": "15 − 7 = ?",
+      "answer": "8",
+      "verify": "15-7",
+      "explanation": "15 − 10 = 5，加回 3，得 8。"
+    },
+    {
+      "id": "cnm_p026_q3",
+      "topicId": "cnm_p026",
+      "type": "choice",
+      "difficulty": "standard",
       "prompt": "13 − 6 = ?",
-      "choices": [ { "key": "A", "text": "7" }, { "key": "B", "text": "6" }, { "key": "C", "text": "19" }, { "key": "D", "text": "5" } ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "7"
+        },
+        {
+          "key": "B",
+          "text": "6",
+          "misconception": "抄了減數 6"
+        },
+        {
+          "key": "C",
+          "text": "19",
+          "misconception": "把減法當成加法"
+        },
+        {
+          "key": "D",
+          "text": "5",
+          "misconception": "算成 13−8"
+        }
+      ],
       "answer": "A",
-      "explanation": "13 − 10 = 3，加回 4，得 7。（也可以想 6 + 7 = 13。）" },
-    { "id": "cnm_p026_q4", "topicId": "cnm_p026", "type": "choice", "difficulty": "advanced",
+      "explanation": "13 − 10 = 3，加回 4，得 7。（也可以想 6 + 7 = 13。）"
+    },
+    {
+      "id": "cnm_p026_q4",
+      "topicId": "cnm_p026",
+      "type": "choice",
+      "difficulty": "advanced",
       "prompt": "用「想加算減」算 14 − 8：因為 8 + 6 = 14，所以 14 − 8 = ?",
-      "choices": [ { "key": "A", "text": "6" }, { "key": "B", "text": "8" }, { "key": "C", "text": "22" }, { "key": "D", "text": "5" } ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "6"
+        },
+        {
+          "key": "B",
+          "text": "8",
+          "misconception": "抄了減數 8"
+        },
+        {
+          "key": "C",
+          "text": "22",
+          "misconception": "把減法當成加法"
+        },
+        {
+          "key": "D",
+          "text": "5",
+          "misconception": "想成 8+5 = 13，抄錯了另一個加數"
+        }
+      ],
       "answer": "A",
-      "explanation": "加法和減法互為逆運算，8 + 6 = 14 就表示 14 − 8 = 6。" },
-
-    { "id": "cnm_p027_q1", "topicId": "cnm_p027", "type": "numeric", "difficulty": "basic",
-      "prompt": "12 − 5 = ?", "answer": "7", "verify": "12-5",
-      "explanation": "12 − 2 = 10，再減 3，得 7。" },
-    { "id": "cnm_p027_q2", "topicId": "cnm_p027", "type": "numeric", "difficulty": "basic",
-      "prompt": "11 − 4 = ?", "answer": "7", "verify": "11-4",
-      "explanation": "11 − 1 = 10，再減 3，得 7。" },
-    { "id": "cnm_p027_q3", "topicId": "cnm_p027", "type": "choice", "difficulty": "standard",
+      "explanation": "加法和減法互為逆運算，8 + 6 = 14 就表示 14 − 8 = 6。"
+    },
+    {
+      "id": "cnm_p027_q1",
+      "topicId": "cnm_p027",
+      "type": "numeric",
+      "difficulty": "basic",
+      "prompt": "12 − 5 = ?",
+      "answer": "7",
+      "verify": "12-5",
+      "explanation": "12 − 2 = 10，再減 3，得 7。"
+    },
+    {
+      "id": "cnm_p027_q2",
+      "topicId": "cnm_p027",
+      "type": "numeric",
+      "difficulty": "basic",
+      "prompt": "11 − 4 = ?",
+      "answer": "7",
+      "verify": "11-4",
+      "explanation": "11 − 1 = 10，再減 3，得 7。"
+    },
+    {
+      "id": "cnm_p027_q3",
+      "topicId": "cnm_p027",
+      "type": "choice",
+      "difficulty": "standard",
       "prompt": "13 − 3 = ?",
-      "choices": [ { "key": "A", "text": "10" }, { "key": "B", "text": "16" }, { "key": "C", "text": "9" }, { "key": "D", "text": "11" } ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "10"
+        },
+        {
+          "key": "B",
+          "text": "16",
+          "misconception": "把減法當成加法"
+        },
+        {
+          "key": "C",
+          "text": "9",
+          "misconception": "算成 13−4"
+        },
+        {
+          "key": "D",
+          "text": "11",
+          "misconception": "算成 13−2"
+        }
+      ],
       "answer": "A",
-      "explanation": "13 − 3 = 10。減 3 剛好把個位的 3 減掉。" },
-    { "id": "cnm_p027_q4", "topicId": "cnm_p027", "type": "choice", "difficulty": "advanced",
+      "explanation": "13 − 3 = 10。減 3 剛好把個位的 3 減掉。"
+    },
+    {
+      "id": "cnm_p027_q4",
+      "topicId": "cnm_p027",
+      "type": "choice",
+      "difficulty": "advanced",
       "prompt": "15 − 2 = ?",
-      "choices": [ { "key": "A", "text": "13" }, { "key": "B", "text": "17" }, { "key": "C", "text": "12" }, { "key": "D", "text": "3" } ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "13"
+        },
+        {
+          "key": "B",
+          "text": "17",
+          "misconception": "把減法當成加法"
+        },
+        {
+          "key": "C",
+          "text": "12",
+          "misconception": "算成 15−3"
+        },
+        {
+          "key": "D",
+          "text": "3",
+          "misconception": "個位減完之後又減了一次"
+        }
+      ],
       "answer": "A",
-      "explanation": "個位 5 − 2 = 3，十位不變，得 13。" },
-
-    { "id": "cnm_p005_q1", "topicId": "cnm_p005", "type": "numeric", "difficulty": "basic",
-      "prompt": "盤子上有 0 個蘋果，即是盤上有幾個蘋果？", "answer": "0", "verify": "0",
-      "explanation": "0 表示一個也沒有。" },
-    { "id": "cnm_p005_q2", "topicId": "cnm_p005", "type": "numeric", "difficulty": "basic",
-      "prompt": "3 − 3 = ?", "answer": "0", "verify": "3-3",
-      "explanation": "全部減去，得 0。" },
-    { "id": "cnm_p005_q3", "topicId": "cnm_p005", "type": "choice", "difficulty": "standard",
+      "explanation": "個位 5 − 2 = 3，十位不變，得 13。"
+    },
+    {
+      "id": "cnm_p005_q1",
+      "topicId": "cnm_p005",
+      "type": "numeric",
+      "difficulty": "basic",
+      "prompt": "盤子上有 0 個蘋果，即是盤上有幾個蘋果？",
+      "answer": "0",
+      "verify": "0",
+      "explanation": "0 表示一個也沒有。"
+    },
+    {
+      "id": "cnm_p005_q2",
+      "topicId": "cnm_p005",
+      "type": "numeric",
+      "difficulty": "basic",
+      "prompt": "3 − 3 = ?",
+      "answer": "0",
+      "verify": "3-3",
+      "explanation": "全部減去，得 0。"
+    },
+    {
+      "id": "cnm_p005_q3",
+      "topicId": "cnm_p005",
+      "type": "choice",
+      "difficulty": "standard",
       "prompt": "0 + 4 = ?",
-      "choices": [ { "key": "A", "text": "0" }, { "key": "B", "text": "4" }, { "key": "C", "text": "04" }, { "key": "D", "text": "不能計算" } ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "0",
+          "misconception": "把「0 就是沒有」誤解成結果是 0"
+        },
+        {
+          "key": "B",
+          "text": "4"
+        },
+        {
+          "key": "C",
+          "text": "04",
+          "misconception": "把 0 和 4 併寫"
+        },
+        {
+          "key": "D",
+          "text": "不能計算",
+          "misconception": "以為 0 不能參與計算"
+        }
+      ],
       "answer": "B",
-      "explanation": "0 加任何數，還是那個數：0 + 4 = 4。選 A 是把「0 就是沒有」誤解成「結果是 0」。" },
-    { "id": "cnm_p005_q4", "topicId": "cnm_p005", "type": "choice", "difficulty": "advanced",
+      "explanation": "0 加任何數，還是那個數：0 + 4 = 4。選 A 是把「0 就是沒有」誤解成「結果是 0」。"
+    },
+    {
+      "id": "cnm_p005_q4",
+      "topicId": "cnm_p005",
+      "type": "choice",
+      "difficulty": "advanced",
       "prompt": "小明說：「0 就是沒有，所以 0 不是數。」他的說法對不對？",
-      "choices": [ { "key": "A", "text": "對，0 不是數" }, { "key": "B", "text": "不對，0 是一個數，表示一個也沒有" }, { "key": "C", "text": "對，0 只能出現在答案裡" }, { "key": "D", "text": "不知道" } ],
+      "choices": [
+        {
+          "key": "A",
+          "text": "對，0 不是數",
+          "misconception": "把「沒有」當成「不存在」"
+        },
+        {
+          "key": "B",
+          "text": "不對，0 是一個數，表示一個也沒有"
+        },
+        {
+          "key": "C",
+          "text": "對，0 只能出現在答案裡",
+          "misconception": "以為 0 只是計算出來的結果"
+        },
+        {
+          "key": "D",
+          "text": "不知道",
+          "misconception": "沒想過 0 能不能比大小"
+        }
+      ],
       "answer": "B",
-      "explanation": "0 是一個數，可以寫、可以比大小、可以計算，只是它表示「沒有」。0 比 1 小。" }
+      "explanation": "0 是一個數，可以寫、可以比大小、可以計算，只是它表示「沒有」。0 比 1 小。"
+    }
   ]
 }
