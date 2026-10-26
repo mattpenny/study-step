@@ -99,6 +99,10 @@ def main():
     phy_map = {e["topicId"]: e for e in load(HK / "hk-edb-physics.json")["entries"]}
     eng_map = {e["topicId"]: e for e in load(HK / "hk-edb-english.json")["entries"]}
     units_doc = load(HK / "math-learning-units.json")
+    ov_path = HK / "unit-overrides.json"
+    ov_doc = load(ov_path) if ov_path.exists() else {}
+    unit_override = ov_doc.get("overrides", {})
+    unit_meta = ov_doc.get("units", {})
     primary_units = {u["code"]: u for u in units_doc["primary"]["units"]}
     js_units = {("S%d" % u["unit"]): u for u in units_doc["junior_secondary"]["units"]}
     ss_units = {}
@@ -124,6 +128,13 @@ def main():
             stage = stage_of_math(entry, primary_units)
             unit, unit_name = entry["unit"], entry["unitName"]
             strand = entry.get("strand") or ""
+            # 逐点修正：以 EDB 学习重点实际所在的单元为准
+            fixed = unit_override.get(tid)
+            if fixed:
+                unit = fixed
+                meta = unit_meta.get(fixed) or {}
+                unit_name = meta.get("name", unit_name)
+                strand = meta.get("strand", strand)
             if stage.startswith("P") and strand == "數與代數":
                 strand = "數"          # 小学数学分成「數」和「代數」两个范畴
             confidence = entry.get("confidence", "inferred")
@@ -261,7 +272,8 @@ def main():
         print("    - %s ← %s（%s ← %s）"
               % (e["topicId"], e["prerequisiteId"],
                  grade_of[e["topicId"]], grade_of[e["prerequisiteId"]]))
-    print("学习单元：%d 个" % len(standards["items"]))
+    print("学习单元：%d 个（其中 %d 个知识点按 EDB 学习重点位置逐点修正）"
+          % (len(standards["items"]), sum(1 for t in out_topics if t["id"] in unit_override)))
     print("\n各学科：")
     for s in structure:
         print("  %-8s %4d 点" % (s["subject"], s["count"]))

@@ -731,7 +731,7 @@
       "unit": "S11",
       "title": "多項式",
       "source": "EDB 課程指引",
-      "topicCount": 26
+      "topicCount": 14
     },
     {
       "id": "edb-math:S12",
@@ -741,7 +741,17 @@
       "unit": "S12",
       "title": "恆等式",
       "source": "EDB 課程指引",
-      "topicCount": 3
+      "topicCount": 6
+    },
+    {
+      "id": "edb-math:S13",
+      "subject": "math",
+      "keyStage": "KS3",
+      "strand": "數與代數",
+      "unit": "S13",
+      "title": "公式",
+      "source": "EDB 課程指引",
+      "topicCount": 9
     },
     {
       "id": "edb-math:S14",

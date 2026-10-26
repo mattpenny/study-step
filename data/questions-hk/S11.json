@@ -1,0 +1,403 @@
+{
+  "unit": "S11",
+  "unitName": "多項式",
+  "keyStage": "KS3",
+  "strand": "數與代數",
+  "source": "EDB《數學課程及評估指引》初中學習內容 S11 多項式：11.1 理解多項式的概念；11.2 進行多項式的加、減、乘及其混合運算；11.3 因式分解多項式（提取公因式、十字相乘法）",
+  "note": "全部用香港術語（多項式、係數、次數、同類項、常數項、周界、闊），不用內地的「整式」「周長」。數值題的 verify 是可獨立計算的表達式，由 scripts/merge_hk_questions.py 核對。",
+  "questions": [
+    { "id": "cnm_031_q1", "topicId": "cnm_031", "type": "numeric", "difficulty": "basic",
+      "prompt": "單項式 −7x³y² 的係數是多少？",
+      "answer": "-7", "verify": "-7",
+      "explanation": "係數是數字因數，即 −7；x³y² 是字母部分。" },
+
+    { "id": "cnm_031_q2", "topicId": "cnm_031", "type": "numeric", "difficulty": "basic",
+      "prompt": "單項式 −7x³y² 的次數是多少？",
+      "answer": "5", "verify": "3+2",
+      "explanation": "次數是所有字母指數之和：3 + 2 = 5。" },
+
+    { "id": "cnm_031_q3", "topicId": "cnm_031", "type": "choice", "difficulty": "standard",
+      "prompt": "下列哪一個是單項式？",
+      "choices": [
+        { "key": "A", "text": "5x²y" },
+        { "key": "B", "text": "5x² + y" },
+        { "key": "C", "text": "5(x² + y)" },
+        { "key": "D", "text": "5 / x²" }
+      ],
+      "answer": "A",
+      "explanation": "單項式是數與字母的積，不含加減，字母也不在分母。B、C 有加法，D 的 x 在分母。" },
+
+    { "id": "cnm_031_q4", "topicId": "cnm_031", "type": "numeric", "difficulty": "standard",
+      "prompt": "單項式 4x²y³z 的次數是多少？",
+      "answer": "6", "verify": "2+3+1",
+      "explanation": "z 的指數是 1，所以 2 + 3 + 1 = 6。" },
+
+    { "id": "cnm_032_q1", "topicId": "cnm_032", "type": "numeric", "difficulty": "basic",
+      "prompt": "多項式 3x² − 5x + 7 共有多少項？",
+      "answer": "3", "verify": "3",
+      "explanation": "三項：3x²、−5x、7。" },
+
+    { "id": "cnm_032_q2", "topicId": "cnm_032", "type": "numeric", "difficulty": "basic",
+      "prompt": "多項式 3x² − 5x + 7 的常數項是多少？",
+      "answer": "7", "verify": "7",
+      "explanation": "不含字母的那一項就是常數項，即 7。" },
+
+    { "id": "cnm_032_q3", "topicId": "cnm_032", "type": "numeric", "difficulty": "standard",
+      "prompt": "多項式 2x³ − x + 4 的次數是多少？",
+      "answer": "3", "verify": "3",
+      "explanation": "次數取最高次項的次數，即 2x³ 的 3 次。" },
+
+    { "id": "cnm_032_q4", "topicId": "cnm_032", "type": "choice", "difficulty": "standard",
+      "prompt": "下列哪一個多項式的次數是 2？",
+      "choices": [
+        { "key": "A", "text": "x³ − 1" },
+        { "key": "B", "text": "2x² + 3x − 1" },
+        { "key": "C", "text": "x + 5" },
+        { "key": "D", "text": "4" }
+      ],
+      "answer": "B",
+      "explanation": "A 是 3 次，B 的最高次項是 2x²，所以是 2 次；C 是 1 次；D 是常數（0 次）。" },
+
+    { "id": "cnm_033_q1", "topicId": "cnm_033", "type": "choice", "difficulty": "basic",
+      "prompt": "下列哪一組是同類項？",
+      "choices": [
+        { "key": "A", "text": "3x² 與 3x" },
+        { "key": "B", "text": "2xy 與 −5xy" },
+        { "key": "C", "text": "x²y 與 xy²" },
+        { "key": "D", "text": "4 與 4x" }
+      ],
+      "answer": "B",
+      "explanation": "同類項要字母相同、指數也相同。B 的字母部分都是 xy，只是係數不同。" },
+
+    { "id": "cnm_033_q2", "topicId": "cnm_033", "type": "numeric", "difficulty": "basic",
+      "prompt": "若 3xᵐ 與 −5x² 是同類項，求 m。",
+      "answer": "2", "verify": "2",
+      "explanation": "同類項的字母指數要相同，所以 m = 2。" },
+
+    { "id": "cnm_033_q3", "topicId": "cnm_033", "type": "choice", "difficulty": "standard",
+      "prompt": "下列哪一組不是同類項？",
+      "choices": [
+        { "key": "A", "text": "2a²b 與 −7ba²" },
+        { "key": "B", "text": "5 與 −3" },
+        { "key": "C", "text": "4x² 與 4y²" },
+        { "key": "D", "text": "xy 與 3yx" }
+      ],
+      "answer": "C",
+      "explanation": "C 的字母不同（x 與 y），不是同類項。A、D 只是字母次序不同，屬同類項；兩個常數也是同類項。" },
+
+    { "id": "cnm_033_q4", "topicId": "cnm_033", "type": "numeric", "difficulty": "standard",
+      "prompt": "若 2xᵃy³ 與 −7x²yᵇ 是同類項，求 a + b。",
+      "answer": "5", "verify": "2+3",
+      "explanation": "同類項要求指數相同：a = 2、b = 3，所以 a + b = 5。" },
+
+    { "id": "cnm_034_q1", "topicId": "cnm_034", "type": "numeric", "difficulty": "basic",
+      "prompt": "化簡 3x + 5y − 2x + 7y 後，x 的係數是多少？",
+      "answer": "1", "verify": "3-2",
+      "explanation": "3x − 2x = x，所以 x 的係數是 1（不是 0，也不要漏寫）。" },
+
+    { "id": "cnm_034_q2", "topicId": "cnm_034", "type": "numeric", "difficulty": "basic",
+      "prompt": "化簡 3a + 5a − 2a 後，結果是 ka，求 k。",
+      "answer": "6", "verify": "3+5-2",
+      "explanation": "3 + 5 − 2 = 6，所以結果是 6a，k = 6。" },
+
+    { "id": "cnm_034_q3", "topicId": "cnm_034", "type": "choice", "difficulty": "standard",
+      "prompt": "化簡 4x² − x² + 2x²。",
+      "choices": [
+        { "key": "A", "text": "5x²" },
+        { "key": "B", "text": "6x²" },
+        { "key": "C", "text": "5x⁴" },
+        { "key": "D", "text": "7x²" }
+      ],
+      "answer": "A",
+      "explanation": "係數相加：4 − 1 + 2 = 5，字母部分 x² 不變，得 5x²。合併同類項時指數不會相加。" },
+
+    { "id": "cnm_034_q4", "topicId": "cnm_034", "type": "numeric", "difficulty": "advanced",
+      "prompt": "化簡 2x²y − 5xy² + 3x²y + xy² 後，x²y 的係數是多少？",
+      "answer": "5", "verify": "2+3",
+      "explanation": "x²y 的同類項是 2x²y 與 3x²y，係數 2 + 3 = 5。（另一組 −5xy² + xy² 合併成 −4xy²。）" },
+
+    { "id": "cnm_035_q1", "topicId": "cnm_035", "type": "numeric", "difficulty": "basic",
+      "prompt": "去掉括號後，−(3x − 5) 等於 −3x + k，求 k。",
+      "answer": "5", "verify": "5",
+      "explanation": "括號前是負號，去括號時括號內每一項都要變號：−(3x − 5) = −3x + 5，所以 k = 5。" },
+
+    { "id": "cnm_035_q2", "topicId": "cnm_035", "type": "choice", "difficulty": "basic",
+      "prompt": "−(2a − 3b) 等於下列哪一個？",
+      "choices": [
+        { "key": "A", "text": "−2a − 3b" },
+        { "key": "B", "text": "−2a + 3b" },
+        { "key": "C", "text": "2a − 3b" },
+        { "key": "D", "text": "2a + 3b" }
+      ],
+      "answer": "B",
+      "explanation": "負號要分配給括號內每一項：−2a + 3b。常見錯誤是只變第一項。" },
+
+    { "id": "cnm_035_q3", "topicId": "cnm_035", "type": "numeric", "difficulty": "standard",
+      "prompt": "化簡 3x − (x − 2) 後，x 的係數是多少？",
+      "answer": "2", "verify": "3-1",
+      "explanation": "3x − x + 2 = 2x + 2，所以 x 的係數是 2。" },
+
+    { "id": "cnm_035_q4", "topicId": "cnm_035", "type": "choice", "difficulty": "standard",
+      "prompt": "−2(3x − 4) 等於下列哪一個？",
+      "choices": [
+        { "key": "A", "text": "−6x − 8" },
+        { "key": "B", "text": "−6x + 8" },
+        { "key": "C", "text": "6x − 8" },
+        { "key": "D", "text": "6x + 8" }
+      ],
+      "answer": "B",
+      "explanation": "−2 × 3x = −6x，−2 × (−4) = +8，所以是 −6x + 8。" },
+
+    { "id": "cnm_036_q1", "topicId": "cnm_036", "type": "numeric", "difficulty": "basic",
+      "prompt": "(3x + 2) + (x − 5) 化簡後，x 的係數是多少？",
+      "answer": "4", "verify": "3+1",
+      "explanation": "3x + x = 4x，所以 x 的係數是 4。" },
+
+    { "id": "cnm_036_q2", "topicId": "cnm_036", "type": "numeric", "difficulty": "basic",
+      "prompt": "(5x² − 3x) − (2x² + x) 化簡後，x² 的係數是多少？",
+      "answer": "3", "verify": "5-2",
+      "explanation": "5x² − 2x² = 3x²，所以 x² 的係數是 3。" },
+
+    { "id": "cnm_036_q3", "topicId": "cnm_036", "type": "choice", "difficulty": "standard",
+      "prompt": "(2x² − x + 1) + (x² + 3x − 4) 等於下列哪一個？",
+      "choices": [
+        { "key": "A", "text": "3x² + 2x − 3" },
+        { "key": "B", "text": "3x² − 4x − 3" },
+        { "key": "C", "text": "3x² + 2x + 3" },
+        { "key": "D", "text": "x² + 2x − 3" }
+      ],
+      "answer": "A",
+      "explanation": "同類項相加：x² 得 3x²，x 得 −x + 3x = 2x，常數得 1 − 4 = −3。" },
+
+    { "id": "cnm_036_q4", "topicId": "cnm_036", "type": "numeric", "difficulty": "advanced",
+      "prompt": "(4a − 3b) − (2a − 5b) 化簡後，b 的係數是多少？",
+      "answer": "2", "verify": "-3-(-5)",
+      "explanation": "減號要分配給括號內每一項：4a − 3b − 2a + 5b = 2a + 2b，所以 b 的係數是 2。" },
+
+    { "id": "cnm_037_q1", "topicId": "cnm_037", "type": "numeric", "difficulty": "basic",
+      "prompt": "先化簡 2(x + 3) − x，再代入 x = 4，求值。",
+      "answer": "10", "verify": "2*(4+3)-4",
+      "explanation": "2(x + 3) − x = 2x + 6 − x = x + 6；代入 x = 4 得 10。" },
+
+    { "id": "cnm_037_q2", "topicId": "cnm_037", "type": "numeric", "difficulty": "standard",
+      "prompt": "當 a = 2、b = −1 時，求 3a − 2b 的值。",
+      "answer": "8", "verify": "3*2-2*(-1)",
+      "explanation": "3(2) − 2(−1) = 6 + 2 = 8。代入負數時要加括號，否則容易錯號。" },
+
+    { "id": "cnm_037_q3", "topicId": "cnm_037", "type": "choice", "difficulty": "standard",
+      "prompt": "化簡 3x − 2(x − 1) 的結果是甚麼？",
+      "choices": [
+        { "key": "A", "text": "x − 2" },
+        { "key": "B", "text": "x + 2" },
+        { "key": "C", "text": "5x − 2" },
+        { "key": "D", "text": "x + 1" }
+      ],
+      "answer": "B",
+      "explanation": "3x − 2x + 2 = x + 2。−2 × (−1) = +2，這一步最易漏。" },
+
+    { "id": "cnm_037_q4", "topicId": "cnm_037", "type": "numeric", "difficulty": "advanced",
+      "prompt": "當 x = −2 時，求 2x² − 3x + 1 的值。",
+      "answer": "15", "verify": "2*4-3*(-2)+1",
+      "explanation": "2(−2)² = 2 × 4 = 8；−3(−2) = +6；再加 1，得 8 + 6 + 1 = 15。" },
+
+    { "id": "cnm_038_q1", "topicId": "cnm_038", "type": "numeric", "difficulty": "basic",
+      "prompt": "一個長方形的長是 (2x + 3)，闊是 x。它的周界中，x 的係數是多少？",
+      "answer": "6", "verify": "2*(2+1)",
+      "explanation": "周界 = 2 × (長 + 闊) = 2(3x + 3) = 6x + 6，所以 x 的係數是 6。" },
+
+    { "id": "cnm_038_q2", "topicId": "cnm_038", "type": "numeric", "difficulty": "basic",
+      "prompt": "三角形的三條邊分別是 (x + 1)、(x + 2) 和 (x + 3)。它的周界中，常數項是多少？",
+      "answer": "6", "verify": "1+2+3",
+      "explanation": "周界 = (x + 1) + (x + 2) + (x + 3) = 3x + 6，常數項是 6。" },
+
+    { "id": "cnm_038_q3", "topicId": "cnm_038", "type": "choice", "difficulty": "standard",
+      "prompt": "長方形的長是 (3x + 1)，闊是 (x + 2)。它的周界是下列哪一個？",
+      "choices": [
+        { "key": "A", "text": "8x + 6" },
+        { "key": "B", "text": "4x + 3" },
+        { "key": "C", "text": "8x + 3" },
+        { "key": "D", "text": "6x + 6" }
+      ],
+      "answer": "A",
+      "explanation": "長 + 闊 = 4x + 3，周界 = 2(4x + 3) = 8x + 6。B 只是長加闊，忘記乘 2。" },
+
+    { "id": "cnm_038_q4", "topicId": "cnm_038", "type": "numeric", "difficulty": "advanced",
+      "prompt": "正方形的邊長是 (2x − 1)。它的周界中，x 的係數是多少？",
+      "answer": "8", "verify": "4*2",
+      "explanation": "周界 = 4(2x − 1) = 8x − 4，所以 x 的係數是 8。" },
+
+    { "id": "cnm_144_q1", "topicId": "cnm_144", "type": "numeric", "difficulty": "basic",
+      "prompt": "(3x²)(4x³) 的係數是多少？",
+      "answer": "12", "verify": "3*4",
+      "explanation": "係數相乘：3 × 4 = 12。" },
+
+    { "id": "cnm_144_q2", "topicId": "cnm_144", "type": "numeric", "difficulty": "basic",
+      "prompt": "(3x²)(4x³) 中，x 的指數是多少？",
+      "answer": "5", "verify": "2+3",
+      "explanation": "同底數相乘，指數相加：x² × x³ = x⁵，指數是 5。" },
+
+    { "id": "cnm_144_q3", "topicId": "cnm_144", "type": "choice", "difficulty": "standard",
+      "prompt": "(−2a²b)(3ab²) 等於下列哪一個？",
+      "choices": [
+        { "key": "A", "text": "−6a³b³" },
+        { "key": "B", "text": "6a³b³" },
+        { "key": "C", "text": "−6a²b²" },
+        { "key": "D", "text": "−5a³b³" }
+      ],
+      "answer": "A",
+      "explanation": "係數 −2 × 3 = −6；a² × a = a³；b × b² = b³，得 −6a³b³。" },
+
+    { "id": "cnm_144_q4", "topicId": "cnm_144", "type": "numeric", "difficulty": "advanced",
+      "prompt": "(2x²y)(−3xy²) 的係數是多少？",
+      "answer": "-6", "verify": "2*(-3)",
+      "explanation": "係數 2 × (−3) = −6，字母部分 x³y³。答案要保留負號。" },
+
+    { "id": "cnm_145_q1", "topicId": "cnm_145", "type": "numeric", "difficulty": "basic",
+      "prompt": "展開 2x(x + 3) 後，x² 的係數是多少？",
+      "answer": "2", "verify": "2*1",
+      "explanation": "2x × x = 2x²，所以 x² 的係數是 2。" },
+
+    { "id": "cnm_145_q2", "topicId": "cnm_145", "type": "numeric", "difficulty": "basic",
+      "prompt": "展開 2x(x + 3) 後，常數項是多少？",
+      "answer": "0", "verify": "0",
+      "explanation": "2x(x + 3) = 2x² + 6x，沒有常數項，即常數項是 0。" },
+
+    { "id": "cnm_145_q3", "topicId": "cnm_145", "type": "choice", "difficulty": "standard",
+      "prompt": "−3a(2a − 5) 等於下列哪一個？",
+      "choices": [
+        { "key": "A", "text": "−6a² + 15a" },
+        { "key": "B", "text": "−6a² − 15a" },
+        { "key": "C", "text": "6a² − 15a" },
+        { "key": "D", "text": "−6a² + 5a" }
+      ],
+      "answer": "A",
+      "explanation": "−3a × 2a = −6a²；−3a × (−5) = +15a，得 −6a² + 15a。" },
+
+    { "id": "cnm_145_q4", "topicId": "cnm_145", "type": "numeric", "difficulty": "advanced",
+      "prompt": "化簡 x(2x − 1) − 2x(x − 3) 後，x 的係數是多少？",
+      "answer": "5", "verify": "-1+6",
+      "explanation": "x(2x − 1) = 2x² − x；2x(x − 3) = 2x² − 6x；相減得 2x² − x − 2x² + 6x = 5x，係數是 5。" },
+
+    { "id": "cnm_146_q1", "topicId": "cnm_146", "type": "choice", "difficulty": "basic",
+      "prompt": "展開 (x + 2)(x − 3)。",
+      "choices": [
+        { "key": "A", "text": "x² − x − 6" },
+        { "key": "B", "text": "x² + x − 6" },
+        { "key": "C", "text": "x² − 6" },
+        { "key": "D", "text": "x² − 5x − 6" }
+      ],
+      "answer": "A",
+      "explanation": "x² − 3x + 2x − 6 = x² − x − 6。四項都要乘到，不要漏項。" },
+
+    { "id": "cnm_146_q2", "topicId": "cnm_146", "type": "numeric", "difficulty": "basic",
+      "prompt": "展開 (x + 1)(x + 2) 後，x 的係數是多少？",
+      "answer": "3", "verify": "1+2",
+      "explanation": "x² + 2x + x + 2 = x² + 3x + 2，所以 x 的係數是 3。" },
+
+    { "id": "cnm_146_q3", "topicId": "cnm_146", "type": "numeric", "difficulty": "standard",
+      "prompt": "展開 (x + 3)(x − 5) 後，常數項是多少？",
+      "answer": "-15", "verify": "3*(-5)",
+      "explanation": "常數項來自兩個常數相乘：3 × (−5) = −15。" },
+
+    { "id": "cnm_146_q4", "topicId": "cnm_146", "type": "choice", "difficulty": "advanced",
+      "prompt": "展開 (2x − 1)(x + 3)。",
+      "choices": [
+        { "key": "A", "text": "2x² + 5x − 3" },
+        { "key": "B", "text": "2x² + 7x − 3" },
+        { "key": "C", "text": "2x² + 5x + 3" },
+        { "key": "D", "text": "2x² − 5x − 3" }
+      ],
+      "answer": "A",
+      "explanation": "2x² + 6x − x − 3 = 2x² + 5x − 3。" },
+
+    { "id": "cnm_150_q1", "topicId": "cnm_150", "type": "choice", "difficulty": "basic",
+      "prompt": "下列哪一個是因式分解？",
+      "choices": [
+        { "key": "A", "text": "(x + 2)(x − 3) = x² − x − 6" },
+        { "key": "B", "text": "x² − x − 6 = (x + 2)(x − 3)" },
+        { "key": "C", "text": "x² − x − 6 − 1 = (x + 2)(x − 3) − 1" },
+        { "key": "D", "text": "x² − x − 6 = x(x − 1) − 6" }
+      ],
+      "answer": "B",
+      "explanation": "因式分解是把多項式寫成幾個因式的積。A 是展開；C、D 右邊不是積。" },
+
+    { "id": "cnm_150_q2", "topicId": "cnm_150", "type": "numeric", "difficulty": "basic",
+      "prompt": "因式分解 x² + 7x + 12 = (x + a)(x + b)，其中 a < b。求 b。",
+      "answer": "4", "verify": "4",
+      "explanation": "要找兩數相乘得 12、相加得 7，即 3 和 4；因為 a < b，所以 b = 4。" },
+
+    { "id": "cnm_150_q3", "topicId": "cnm_150", "type": "choice", "difficulty": "standard",
+      "prompt": "因式分解與展開有甚麼關係？",
+      "choices": [
+        { "key": "A", "text": "兩者是同一件事" },
+        { "key": "B", "text": "兩者互為逆運算" },
+        { "key": "C", "text": "兩者沒有關係" },
+        { "key": "D", "text": "展開是因式分解的特例" }
+      ],
+      "answer": "B",
+      "explanation": "展開把積化開成多項式，因式分解把多項式寫回積，方向相反。" },
+
+    { "id": "cnm_150_q4", "topicId": "cnm_150", "type": "numeric", "difficulty": "standard",
+      "prompt": "若 x² + kx + 6 = (x + 2)(x + 3)，求 k。",
+      "answer": "5", "verify": "2+3",
+      "explanation": "展開右邊得 x² + 5x + 6，與左邊比較得 k = 5。" },
+
+    { "id": "cnm_151_q1", "topicId": "cnm_151", "type": "numeric", "difficulty": "basic",
+      "prompt": "6x² + 9x 提出公因式 3x 後，括號內 x 的係數是多少？",
+      "answer": "2", "verify": "6/3",
+      "explanation": "6x² + 9x = 3x(2x + 3)，括號內 x 的係數是 2。" },
+
+    { "id": "cnm_151_q2", "topicId": "cnm_151", "type": "choice", "difficulty": "basic",
+      "prompt": "8a²b − 12ab² 的公因式是下列哪一個？",
+      "choices": [
+        { "key": "A", "text": "4ab" },
+        { "key": "B", "text": "2ab" },
+        { "key": "C", "text": "4a²b²" },
+        { "key": "D", "text": "ab" }
+      ],
+      "answer": "A",
+      "explanation": "係數的最大公因數是 4，字母取共同的 a 和 b，所以公因式是 4ab。（B、D 能整除但不是最大。）" },
+
+    { "id": "cnm_151_q3", "topicId": "cnm_151", "type": "choice", "difficulty": "standard",
+      "prompt": "3x² − 6x 因式分解的結果是甚麼？",
+      "choices": [
+        { "key": "A", "text": "3x(x − 2)" },
+        { "key": "B", "text": "3x(x − 6)" },
+        { "key": "C", "text": "x(3x − 6)" },
+        { "key": "D", "text": "3(x² − 6x)" }
+      ],
+      "answer": "A",
+      "explanation": "公因式是 3x：3x² ÷ 3x = x，−6x ÷ 3x = −2，得 3x(x − 2)。C、D 沒有提出全部公因式。" },
+
+    { "id": "cnm_151_q4", "topicId": "cnm_151", "type": "numeric", "difficulty": "advanced",
+      "prompt": "4x³ − 8x² + 2x 提出公因式 2x 後，括號內最高次項的係數是多少？",
+      "answer": "2", "verify": "4/2",
+      "explanation": "4x³ ÷ 2x = 2x²，所以括號內最高次項是 2x²，係數是 2。（原式 = 2x(2x² − 4x + 1)。）" },
+
+    { "id": "cnm_155_q1", "topicId": "cnm_155", "type": "numeric", "difficulty": "basic",
+      "prompt": "用因式分解計算 7 × 13 + 7 × 7。",
+      "answer": "140", "verify": "7*(13+7)",
+      "explanation": "提出公因式 7：7(13 + 7) = 7 × 20 = 140。" },
+
+    { "id": "cnm_155_q2", "topicId": "cnm_155", "type": "numeric", "difficulty": "standard",
+      "prompt": "用平方差計算 99² − 1。",
+      "answer": "9800", "verify": "(99+1)*(99-1)",
+      "explanation": "99² − 1² = (99 + 1)(99 − 1) = 100 × 98 = 9800。" },
+
+    { "id": "cnm_155_q3", "topicId": "cnm_155", "type": "choice", "difficulty": "standard",
+      "prompt": "計算 25² − 15²，用下列哪一個方法最方便？",
+      "choices": [
+        { "key": "A", "text": "直接計算 625 − 225" },
+        { "key": "B", "text": "用 (25 + 15)(25 − 15)" },
+        { "key": "C", "text": "用 (25 − 15)²" },
+        { "key": "D", "text": "用 25(25 − 15)" }
+      ],
+      "answer": "B",
+      "explanation": "平方差 (a + b)(a − b) = a² − b²，得 40 × 10 = 400。C、D 都不是平方差公式。" },
+
+    { "id": "cnm_155_q4", "topicId": "cnm_155", "type": "numeric", "difficulty": "advanced",
+      "prompt": "用因式分解計算 101 × 99。",
+      "answer": "9999", "verify": "(100+1)*(100-1)",
+      "explanation": "101 × 99 = (100 + 1)(100 − 1) = 100² − 1² = 10000 − 1 = 9999。" }
+  ]
+}

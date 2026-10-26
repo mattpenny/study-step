@@ -12651,9 +12651,9 @@
     "semester": "全",
     "strand": "數與代數",
     "domain": "數與代數",
-    "unit": "S11",
-    "unitName": "多項式",
-    "chapter": "S11 多項式",
+    "unit": "S12",
+    "unitName": "恆等式",
+    "chapter": "S12 恆等式",
     "type": "procedural",
     "description": "a²-b²=(a+b)(a-b)，把符合平方差结构的多项式因式分解。",
     "mastery_criteria": [
@@ -12667,7 +12667,7 @@
     "external": false,
     "standards": [
       {
-        "id": "edb-math:S11",
+        "id": "edb-math:S12",
         "confidence": "exact"
       }
     ]
@@ -12683,9 +12683,9 @@
     "semester": "全",
     "strand": "數與代數",
     "domain": "數與代數",
-    "unit": "S11",
-    "unitName": "多項式",
-    "chapter": "S11 多項式",
+    "unit": "S12",
+    "unitName": "恆等式",
+    "chapter": "S12 恆等式",
     "type": "procedural",
     "description": "a²±2ab+b²=(a±b)²，识别完全平方式。",
     "mastery_criteria": [
@@ -12699,7 +12699,7 @@
     "external": false,
     "standards": [
       {
-        "id": "edb-math:S11",
+        "id": "edb-math:S12",
         "confidence": "exact"
       }
     ]
@@ -12715,9 +12715,9 @@
     "semester": "全",
     "strand": "數與代數",
     "domain": "數與代數",
-    "unit": "S11",
-    "unitName": "多項式",
-    "chapter": "S11 多項式",
+    "unit": "S12",
+    "unitName": "恆等式",
+    "chapter": "S12 恆等式",
     "type": "procedural",
     "description": "一般先提公因式，再用公式，直至不能再分解。",
     "mastery_criteria": [
@@ -12731,7 +12731,7 @@
     "external": false,
     "standards": [
       {
-        "id": "edb-math:S11",
+        "id": "edb-math:S12",
         "confidence": "exact"
       }
     ]
@@ -12747,9 +12747,9 @@
     "semester": "全",
     "strand": "數與代數",
     "domain": "數與代數",
-    "unit": "S11",
-    "unitName": "多項式",
-    "chapter": "S11 多項式",
+    "unit": "S13",
+    "unitName": "公式",
+    "chapter": "S13 公式",
     "type": "conceptual",
     "description": "形如 A/B（A、B 为整式且 B 含字母）的式子叫分式，分母不为 0 时分式有意义，分子为 0 且分母不为 0 时值为 0。",
     "mastery_criteria": [
@@ -12763,7 +12763,7 @@
     "external": false,
     "standards": [
       {
-        "id": "edb-math:S11",
+        "id": "edb-math:S13",
         "confidence": "exact"
       }
     ]
@@ -12779,9 +12779,9 @@
     "semester": "全",
     "strand": "數與代數",
     "domain": "數與代數",
-    "unit": "S11",
-    "unitName": "多項式",
-    "chapter": "S11 多項式",
+    "unit": "S13",
+    "unitName": "公式",
+    "chapter": "S13 公式",
     "type": "conceptual",
     "description": "分式的分子分母同乘（除以）同一个不为 0 的整式，分式值不变。",
     "mastery_criteria": [
@@ -12795,7 +12795,7 @@
     "external": false,
     "standards": [
       {
-        "id": "edb-math:S11",
+        "id": "edb-math:S13",
         "confidence": "exact"
       }
     ]
@@ -12811,9 +12811,9 @@
     "semester": "全",
     "strand": "數與代數",
     "domain": "數與代數",
-    "unit": "S11",
-    "unitName": "多項式",
-    "chapter": "S11 多項式",
+    "unit": "S13",
+    "unitName": "公式",
+    "chapter": "S13 公式",
     "type": "procedural",
     "description": "把分子分母的公因式约去，化为最简分式，必要时先因式分解。",
     "mastery_criteria": [
@@ -12827,7 +12827,7 @@
     "external": false,
     "standards": [
       {
-        "id": "edb-math:S11",
+        "id": "edb-math:S13",
         "confidence": "exact"
       }
     ]
@@ -12843,9 +12843,9 @@
     "semester": "全",
     "strand": "數與代數",
     "domain": "數與代數",
-    "unit": "S11",
-    "unitName": "多項式",
-    "chapter": "S11 多項式",
+    "unit": "S13",
+    "unitName": "公式",
+    "chapter": "S13 公式",
     "type": "procedural",
     "description": "把异分母分式化为同分母分式，需要确定最简公分母。",
     "mastery_criteria": [
@@ -12859,7 +12859,7 @@
     "external": false,
     "standards": [
       {
-        "id": "edb-math:S11",
+        "id": "edb-math:S13",
         "confidence": "exact"
       }
     ]
@@ -12875,9 +12875,9 @@
     "semester": "全",
     "strand": "數與代數",
     "domain": "數與代數",
-    "unit": "S11",
-    "unitName": "多項式",
-    "chapter": "S11 多項式",
+    "unit": "S13",
+    "unitName": "公式",
+    "chapter": "S13 公式",
     "type": "procedural",
     "description": "分式相乘分子乘分子、分母乘分母；除以分式等于乘它的倒数，乘除后要约分。",
     "mastery_criteria": [
@@ -12891,7 +12891,7 @@
     "external": false,
     "standards": [
       {
-        "id": "edb-math:S11",
+        "id": "edb-math:S13",
         "confidence": "exact"
       }
     ]
@@ -12907,9 +12907,9 @@
     "semester": "全",
     "strand": "數與代數",
     "domain": "數與代數",
-    "unit": "S11",
-    "unitName": "多項式",
-    "chapter": "S11 多項式",
+    "unit": "S13",
+    "unitName": "公式",
+    "chapter": "S13 公式",
     "type": "procedural",
     "description": "同分母分式相加减分母不变，异分母先通分；结果化为最简。",
     "mastery_criteria": [
@@ -12923,7 +12923,7 @@
     "external": false,
     "standards": [
       {
-        "id": "edb-math:S11",
+        "id": "edb-math:S13",
         "confidence": "exact"
       }
     ]
@@ -12939,9 +12939,9 @@
     "semester": "全",
     "strand": "數與代數",
     "domain": "數與代數",
-    "unit": "S11",
-    "unitName": "多項式",
-    "chapter": "S11 多項式",
+    "unit": "S13",
+    "unitName": "公式",
+    "chapter": "S13 公式",
     "type": "procedural",
     "description": "按先乘方、再乘除、后加减、有括号先算括号的顺序进行混合运算，并化简求值。",
     "mastery_criteria": [
@@ -12955,7 +12955,7 @@
     "external": false,
     "standards": [
       {
-        "id": "edb-math:S11",
+        "id": "edb-math:S13",
         "confidence": "exact"
       }
     ]
@@ -13035,9 +13035,9 @@
     "semester": "全",
     "strand": "數與代數",
     "domain": "數與代數",
-    "unit": "S11",
-    "unitName": "多項式",
-    "chapter": "S11 多項式",
+    "unit": "S13",
+    "unitName": "公式",
+    "chapter": "S13 公式",
     "type": "procedural",
     "description": "分母中含未知数的方程叫分式方程，去分母化为整式方程求解，必须检验是否为增根。",
     "mastery_criteria": [
@@ -13051,7 +13051,7 @@
     "external": false,
     "standards": [
       {
-        "id": "edb-math:S11",
+        "id": "edb-math:S13",
         "confidence": "exact"
       }
     ]
@@ -13067,9 +13067,9 @@
     "semester": "全",
     "strand": "數與代數",
     "domain": "數與代數",
-    "unit": "S11",
-    "unitName": "多項式",
-    "chapter": "S11 多項式",
+    "unit": "S13",
+    "unitName": "公式",
+    "chapter": "S13 公式",
     "type": "modeling",
     "description": "用分式方程解决工程、行程、销售等问题，求解后检验并写出答案。",
     "mastery_criteria": [
@@ -13083,7 +13083,7 @@
     "external": false,
     "standards": [
       {
-        "id": "edb-math:S11",
+        "id": "edb-math:S13",
         "confidence": "exact"
       }
     ]
