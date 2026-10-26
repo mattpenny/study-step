@@ -1,0 +1,70 @@
+{
+  "version": 1,
+  "decisions": {
+    "fixed50": false,
+    "quotaByTopicType": true,
+    "teacherQuestionApproval": "ai",
+    "quotaPlan": "balanced",
+    "visibility": "student+teacher"
+  },
+  "mastery": {
+    "rule": "answer_all_correct",
+    "description": "把該知識點的整個題庫全部答對，才算掌握。沒有固定題數——題數由知識點類型決定（見 quotaByType）。",
+    "allowRetryWrongOnly": true,
+    "recordFirstAttemptRate": true,
+    "note": "重做時只重出錯過的題目，但第一次作答的正確率要另外記錄，否則重複做到全對會看不出真實掌握程度。"
+  },
+  "quotaByType": {
+    "procedural": 40,
+    "application": 30,
+    "reasoning": 25,
+    "conceptual": 20,
+    "modeling": 15
+  },
+  "quotaRationale": {
+    "procedural": "有明確算法，可以換數字與情境，題量最多。",
+    "application": "應用題要貼香港情境，寫作成本較高。",
+    "reasoning": "證明與推理題需要逐題設計，不宜靠換數字量產。",
+    "conceptual": "概念辨析的問法有限，硬湊題量會變成同義重複。",
+    "modeling": "建模題最長，每題都要一個完整情境。"
+  },
+  "totals": {
+    "mathTopics": 768,
+    "questionsTarget": 22805,
+    "byType": {
+      "procedural": 12400,
+      "conceptual": 4440,
+      "reasoning": 3025,
+      "application": 2430,
+      "modeling": 510
+    },
+    "byStage": {
+      "P1": 1265,
+      "P2": 1100,
+      "P3": 840,
+      "P4": 1435,
+      "P5": 1600,
+      "P6": 660,
+      "S1-S3": 7600,
+      "S4-S6": 8305
+    }
+  },
+  "aiApproval": {
+    "scope": "老師上傳筆記後自動生成的 10 道題，由 AI 審核，不經人手。",
+    "mustPass": [
+      "答案可獨立驗算：數值題的 verify 表達式重算後必須等於 answer",
+      "選擇題 answer 必須是選項之一，選項內容不得重複",
+      "題幹不得重複，不得洩漏答案",
+      "圖形必須是合法內聯 SVG，有 viewBox，不引用外部資源",
+      "每題要有逐步解說"
+    ],
+    "knownLimits": "規則檢查可以擋掉算錯、抄題、漏項，但擋不住「語意含糊」「超出該學習重點」「選項都講得通」這類問題。這部分要靠語言模型複審，仍會有漏。"
+  },
+  "openQuestions": [],
+  "visibility": {
+    "student": "自己的全部作答紀錄、掌握度、改進建議",
+    "teacher": "所教班級的逐題作答、分數、掌握度；可看單一學生",
+    "parent": "只看到總分與薄弱點摘要，不顯示逐題答案",
+    "note": "學生為未成年人，屬 PDPO 下的個人資料。需要：明確同意、保存期限、查閱與更正機制、以及老師只能看自己班級（按班級做權限，而不是全校可見）。"
+  }
+}
