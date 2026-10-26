@@ -5,7 +5,7 @@
  * 再用 MutationObserver 跟上后面动态渲染出来的内容。
  *
  *  - 繁體：用 assets/i18n-hant.js 里的表（由 scripts/build_i18n_hant.py 从
- *    OpenCC s2tw 反推）逐字 + 最长词组匹配，知识点名称、题目这些内容也会转。
+ *    OpenCC s2hk 反推）逐字 + 最长词组匹配，知识点名称、题目这些内容也会转。
  *  - English：查 assets/i18n-en.js 的界面词典；查不到的中文原样保留
  *    （课程内容没有英文版，见 README 的说明）。
  */
@@ -20,11 +20,13 @@
     en: 'en', 'en-us': 'en', 'en-gb': 'en', 'en-au': 'en'
   };
   var STORE_KEY = 'cmt.lang';
+  /* 本站面向香港，没有指定语言时直接进繁體（香港字形）。 */
+  var DEFAULT_LANG = 'zh-Hant';
   var SKIP_TAGS = { SCRIPT: 1, STYLE: 1, NOSCRIPT: 1, TEXTAREA: 1, CODE: 1, PRE: 1 };
   var ATTRS = ['placeholder', 'title', 'aria-label', 'aria-description', 'alt'];
   var CJK = /[\u3400-\u4dbf\u4e00-\u9fff\uf900-\ufaff]/;
 
-  var lang = 'zh-Hans';
+  var lang = DEFAULT_LANG;
   var textOriginals = new Map();  // Text -> { src, out }
   var attrOriginals = new Map();  // Element -> { attr: { src, out } }
   var listeners = [];
@@ -235,8 +237,13 @@
   }
 
   /* ---------------------------------------------------------------- 切换按钮 */
+  /* 按钮上的 data-lang 只出现在 .lang-btn 上；<html> 用的是 data-i18n-lang。
+   * 两处曾共用 data-lang，于是 closest('[data-lang]') 会一路走到 <html>，
+   * 页面上任何一次点击都被当成切换语言并被 preventDefault 掉——整站按钮全部失效。 */
+  var BTN = '.lang-btn[data-lang]';
+
   function syncButtons() {
-    var buttons = document.querySelectorAll('[data-lang]');
+    var buttons = document.querySelectorAll(BTN);
     for (var i = 0; i < buttons.length; i++) {
       var btn = buttons[i];
       var on = normalize(btn.getAttribute('data-lang')) === lang;
@@ -247,7 +254,7 @@
 
   function bindButtons() {
     document.addEventListener('click', function (event) {
-      var btn = event.target && event.target.closest ? event.target.closest('[data-lang]') : null;
+      var btn = event.target && event.target.closest ? event.target.closest(BTN) : null;
       if (!btn) return;
       event.preventDefault();
       setLang(btn.getAttribute('data-lang'), { remember: true, updateUrl: true });
@@ -264,7 +271,7 @@
     lang = value;
 
     document.documentElement.setAttribute('lang', lang);
-    document.documentElement.setAttribute('data-lang', lang);
+    document.documentElement.setAttribute('data-i18n-lang', lang);
     if (opts.remember !== false) writeStored(lang);
 
     if (changed) {
@@ -281,7 +288,8 @@
   function updateUrl() {
     try {
       var url = new URL(global.location.href);
-      if (lang === 'zh-Hans') url.searchParams.delete('lang');
+      // 只在偏离默认语言时才写 ?lang=，默认的繁體保持地址栏干净
+      if (lang === DEFAULT_LANG) url.searchParams.delete('lang');
       else url.searchParams.set('lang', lang);
       global.history.replaceState(null, '', url.toString());
     } catch (e) { /* 老浏览器 */ }
@@ -289,9 +297,9 @@
 
   function boot() {
     var fromQuery = normalize(new URLSearchParams(global.location.search).get('lang'));
-    lang = fromQuery || readStored() || 'zh-Hans';
+    lang = fromQuery || readStored() || DEFAULT_LANG;
     document.documentElement.setAttribute('lang', lang);
-    document.documentElement.setAttribute('data-lang', lang);
+    document.documentElement.setAttribute('data-i18n-lang', lang);
 
     if (lang !== 'zh-Hans') {
       document.documentElement.classList.add('i18n-booting');
