@@ -1,0 +1,1083 @@
+{
+  "subjects": [
+    {
+      "subject": "math",
+      "count": 768,
+      "stages": [
+        {
+          "stage": "P1",
+          "label": "小一",
+          "keyStage": "KS1",
+          "band": "primary",
+          "count": 38,
+          "strands": [
+            {
+              "strand": "數",
+              "units": [
+                {
+                  "unit": "1N1",
+                  "name": "20以內的數",
+                  "count": 10
+                },
+                {
+                  "unit": "1N2",
+                  "name": "基本加法和減法",
+                  "count": 13
+                },
+                {
+                  "unit": "1N3",
+                  "name": "100以內的數",
+                  "count": 2
+                },
+                {
+                  "unit": "1N4",
+                  "name": "加法和減法(一)",
+                  "count": 8
+                }
+              ]
+            },
+            {
+              "strand": "圖形與空間",
+              "units": [
+                {
+                  "unit": "1S1",
+                  "name": "立體圖形(一)",
+                  "count": 1
+                },
+                {
+                  "unit": "1S3",
+                  "name": "方向和位置(一)",
+                  "count": 1
+                },
+                {
+                  "unit": "1S2",
+                  "name": "平面圖形",
+                  "count": 2
+                }
+              ]
+            },
+            {
+              "strand": "度量",
+              "units": [
+                {
+                  "unit": "1M2",
+                  "name": "貨幣(一)",
+                  "count": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stage": "P2",
+          "label": "小二",
+          "keyStage": "KS1",
+          "band": "primary",
+          "count": 36,
+          "strands": [
+            {
+              "strand": "數據處理",
+              "units": [
+                {
+                  "unit": "2D1",
+                  "name": "象形圖",
+                  "count": 1
+                }
+              ]
+            },
+            {
+              "strand": "數",
+              "units": [
+                {
+                  "unit": "2N3",
+                  "name": "基本乘法",
+                  "count": 6
+                },
+                {
+                  "unit": "2N6",
+                  "name": "基本除法",
+                  "count": 7
+                },
+                {
+                  "unit": "2N4",
+                  "name": "四位數",
+                  "count": 3
+                },
+                {
+                  "unit": "2N5",
+                  "name": "加法和減法(三)",
+                  "count": 7
+                }
+              ]
+            },
+            {
+              "strand": "圖形與空間",
+              "units": [
+                {
+                  "unit": "2S3",
+                  "name": "方向和位置(二)",
+                  "count": 1
+                },
+                {
+                  "unit": "2S1",
+                  "name": "立體圖形(二)",
+                  "count": 2
+                },
+                {
+                  "unit": "2S2",
+                  "name": "角",
+                  "count": 3
+                }
+              ]
+            },
+            {
+              "strand": "度量",
+              "units": [
+                {
+                  "unit": "2M1",
+                  "name": "長度和距離(三)",
+                  "count": 3
+                },
+                {
+                  "unit": "2M2",
+                  "name": "時間(二)",
+                  "count": 3
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stage": "P3",
+          "label": "小三",
+          "keyStage": "KS1",
+          "band": "primary",
+          "count": 28,
+          "strands": [
+            {
+              "strand": "數",
+              "units": [
+                {
+                  "unit": "3N4",
+                  "name": "四則運算(一)",
+                  "count": 3
+                },
+                {
+                  "unit": "3N2",
+                  "name": "乘法(一)",
+                  "count": 4
+                },
+                {
+                  "unit": "3N1",
+                  "name": "五位數",
+                  "count": 1
+                },
+                {
+                  "unit": "3N5",
+                  "name": "分數(一)",
+                  "count": 4
+                },
+                {
+                  "unit": "3N3",
+                  "name": "除法(一)",
+                  "count": 2
+                }
+              ]
+            },
+            {
+              "strand": "度量",
+              "units": [
+                {
+                  "unit": "3M1",
+                  "name": "長度和距離(四)",
+                  "count": 3
+                },
+                {
+                  "unit": "3M5",
+                  "name": "重量",
+                  "count": 3
+                },
+                {
+                  "unit": "3M2",
+                  "name": "時間(三)",
+                  "count": 1
+                },
+                {
+                  "unit": "3M4",
+                  "name": "時間(四)",
+                  "count": 1
+                }
+              ]
+            },
+            {
+              "strand": "圖形與空間",
+              "units": [
+                {
+                  "unit": "3S1",
+                  "name": "四邊形(二)",
+                  "count": 2
+                },
+                {
+                  "unit": "3S2",
+                  "name": "三角形",
+                  "count": 3
+                }
+              ]
+            },
+            {
+              "strand": "數據處理",
+              "units": [
+                {
+                  "unit": "3D1",
+                  "name": "棒形圖(一)",
+                  "count": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stage": "P4",
+          "label": "小四",
+          "keyStage": "KS2",
+          "band": "primary",
+          "count": 47,
+          "strands": [
+            {
+              "strand": "圖形與空間",
+              "units": [
+                {
+                  "unit": "4S2",
+                  "name": "圖形分割和拼砌",
+                  "count": 2
+                },
+                {
+                  "unit": "4S3",
+                  "name": "方向和位置(三)",
+                  "count": 5
+                },
+                {
+                  "unit": "4S1",
+                  "name": "四邊形(三)",
+                  "count": 4
+                }
+              ]
+            },
+            {
+              "strand": "度量",
+              "units": [
+                {
+                  "unit": "4M1",
+                  "name": "周界(一)",
+                  "count": 1
+                },
+                {
+                  "unit": "4M2",
+                  "name": "面積(一)",
+                  "count": 3
+                }
+              ]
+            },
+            {
+              "strand": "數",
+              "units": [
+                {
+                  "unit": "4N7",
+                  "name": "小數(一)",
+                  "count": 4
+                },
+                {
+                  "unit": "4N1",
+                  "name": "乘法(二)",
+                  "count": 4
+                },
+                {
+                  "unit": "4N5",
+                  "name": "四則運算(二)",
+                  "count": 9
+                },
+                {
+                  "unit": "4N8",
+                  "name": "小數(二)",
+                  "count": 4
+                },
+                {
+                  "unit": "4N2",
+                  "name": "除法(二)",
+                  "count": 2
+                },
+                {
+                  "unit": "4N3",
+                  "name": "倍數和因數",
+                  "count": 5
+                },
+                {
+                  "unit": "4N4",
+                  "name": "公倍數和公因數",
+                  "count": 2
+                }
+              ]
+            },
+            {
+              "strand": "數據處理",
+              "units": [
+                {
+                  "unit": "4D1",
+                  "name": "棒形圖(二)",
+                  "count": 2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stage": "P5",
+          "label": "小五",
+          "keyStage": "KS2",
+          "band": "primary",
+          "count": 51,
+          "strands": [
+            {
+              "strand": "數",
+              "units": [
+                {
+                  "unit": "5N1",
+                  "name": "多位數",
+                  "count": 3
+                },
+                {
+                  "unit": "5N4",
+                  "name": "小數(三)",
+                  "count": 7
+                },
+                {
+                  "unit": "5N2",
+                  "name": "分數(三)",
+                  "count": 3
+                },
+                {
+                  "unit": "5N3",
+                  "name": "分數(四)",
+                  "count": 3
+                },
+                {
+                  "unit": "5N5",
+                  "name": "分數(五)",
+                  "count": 9
+                }
+              ]
+            },
+            {
+              "strand": "圖形與空間",
+              "units": [
+                {
+                  "unit": "5S2",
+                  "name": "立體圖形(三)",
+                  "count": 3
+                },
+                {
+                  "unit": "5S1",
+                  "name": "圓",
+                  "count": 6
+                }
+              ]
+            },
+            {
+              "strand": "代數",
+              "units": [
+                {
+                  "unit": "5A1",
+                  "name": "代數的初步認識",
+                  "count": 1
+                },
+                {
+                  "unit": "5A2",
+                  "name": "簡易方程(一)",
+                  "count": 5
+                }
+              ]
+            },
+            {
+              "strand": "度量",
+              "units": [
+                {
+                  "unit": "5M1",
+                  "name": "面積(二)",
+                  "count": 6
+                },
+                {
+                  "unit": "5M2",
+                  "name": "體積(一)",
+                  "count": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stage": "P6",
+          "label": "小六",
+          "keyStage": "KS2",
+          "band": "primary",
+          "count": 22,
+          "strands": [
+            {
+              "strand": "度量",
+              "units": [
+                {
+                  "unit": "6M1",
+                  "name": "角(度)",
+                  "count": 2
+                },
+                {
+                  "unit": "6M2",
+                  "name": "體積(二)",
+                  "count": 4
+                }
+              ]
+            },
+            {
+              "strand": "圖形與空間",
+              "units": [
+                {
+                  "unit": "6S1",
+                  "name": "對稱",
+                  "count": 4
+                }
+              ]
+            },
+            {
+              "strand": "數據處理",
+              "units": [
+                {
+                  "unit": "6D1",
+                  "name": "平均數",
+                  "count": 1
+                },
+                {
+                  "unit": "6D2",
+                  "name": "折線圖",
+                  "count": 1
+                },
+                {
+                  "unit": "6D3",
+                  "name": "圓形圖",
+                  "count": 2
+                }
+              ]
+            },
+            {
+              "strand": "數",
+              "units": [
+                {
+                  "unit": "6N3",
+                  "name": "百分數(一)",
+                  "count": 5
+                },
+                {
+                  "unit": "6N4",
+                  "name": "百分數(二)",
+                  "count": 3
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stage": "S1-S3",
+          "label": "中一至中三",
+          "keyStage": "KS3",
+          "band": "junior",
+          "count": 271,
+          "strands": [
+            {
+              "strand": "數據處理",
+              "units": [
+                {
+                  "unit": "S31",
+                  "name": "概率",
+                  "count": 14
+                },
+                {
+                  "unit": "S28",
+                  "name": "數據的組織",
+                  "count": 11
+                },
+                {
+                  "unit": "S29",
+                  "name": "數據的表達",
+                  "count": 7
+                },
+                {
+                  "unit": "S30",
+                  "name": "集中趨勢的度量",
+                  "count": 8
+                }
+              ]
+            },
+            {
+              "strand": "數與代數",
+              "units": [
+                {
+                  "unit": "S2",
+                  "name": "有向數",
+                  "count": 18
+                },
+                {
+                  "unit": "S6",
+                  "name": "率、比及比例",
+                  "count": 9
+                },
+                {
+                  "unit": "S4",
+                  "name": "有理數與無理數",
+                  "count": 15
+                },
+                {
+                  "unit": "S1",
+                  "name": "基礎計算",
+                  "count": 1
+                },
+                {
+                  "unit": "S10",
+                  "name": "整數指數律",
+                  "count": 8
+                },
+                {
+                  "unit": "S3",
+                  "name": "近似值與數值估算",
+                  "count": 1
+                },
+                {
+                  "unit": "S7",
+                  "name": "代數式",
+                  "count": 6
+                },
+                {
+                  "unit": "S11",
+                  "name": "多項式",
+                  "count": 26
+                },
+                {
+                  "unit": "S8",
+                  "name": "一元一次方程",
+                  "count": 11
+                },
+                {
+                  "unit": "S9",
+                  "name": "二元一次方程",
+                  "count": 7
+                },
+                {
+                  "unit": "S14",
+                  "name": "一元一次不等式",
+                  "count": 8
+                },
+                {
+                  "unit": "S12",
+                  "name": "恆等式",
+                  "count": 3
+                }
+              ]
+            },
+            {
+              "strand": "度量、圖形與空間",
+              "units": [
+                {
+                  "unit": "S17",
+                  "name": "立體圖形",
+                  "count": 6
+                },
+                {
+                  "unit": "S19",
+                  "name": "角和平行線",
+                  "count": 20
+                },
+                {
+                  "unit": "S26",
+                  "name": "直角坐標系",
+                  "count": 7
+                },
+                {
+                  "unit": "S20",
+                  "name": "多邊形",
+                  "count": 8
+                },
+                {
+                  "unit": "S24",
+                  "name": "三角形的心",
+                  "count": 4
+                },
+                {
+                  "unit": "S21",
+                  "name": "全等三角形",
+                  "count": 20
+                },
+                {
+                  "unit": "S27",
+                  "name": "三角學",
+                  "count": 7
+                },
+                {
+                  "unit": "S25",
+                  "name": "畢氏定理",
+                  "count": 7
+                },
+                {
+                  "unit": "S23",
+                  "name": "四邊形",
+                  "count": 10
+                },
+                {
+                  "unit": "S16",
+                  "name": "弧長和扇形面積",
+                  "count": 2
+                },
+                {
+                  "unit": "S18",
+                  "name": "求積法",
+                  "count": 19
+                },
+                {
+                  "unit": "S22",
+                  "name": "相似三角形",
+                  "count": 8
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stage": "S4-S6",
+          "label": "中四至中六",
+          "keyStage": "KS4",
+          "band": "senior",
+          "count": 275,
+          "strands": [
+            {
+              "strand": "數與代數",
+              "units": [
+                {
+                  "unit": "COM2",
+                  "name": "函數及其圖像",
+                  "count": 40
+                },
+                {
+                  "unit": "COM1",
+                  "name": "一元二次方程",
+                  "count": 19
+                },
+                {
+                  "unit": "COM9",
+                  "name": "續函數圖像",
+                  "count": 6
+                },
+                {
+                  "unit": "COM8",
+                  "name": "不等式與線性規畫",
+                  "count": 10
+                },
+                {
+                  "unit": "COM3",
+                  "name": "指數函數與對數函數",
+                  "count": 14
+                },
+                {
+                  "unit": "M215",
+                  "name": "向量的簡介",
+                  "count": 29
+                },
+                {
+                  "unit": "M216",
+                  "name": "純量積與向量積",
+                  "count": 5
+                },
+                {
+                  "unit": "M217",
+                  "name": "向量的應用",
+                  "count": 1
+                },
+                {
+                  "unit": "COM7",
+                  "name": "等差數列與等比數列及其求和法",
+                  "count": 16
+                },
+                {
+                  "unit": "M22",
+                  "name": "數學歸納法",
+                  "count": 2
+                },
+                {
+                  "unit": "M13",
+                  "name": "函數的導數",
+                  "count": 9
+                },
+                {
+                  "unit": "M16",
+                  "name": "求導法的應用",
+                  "count": 6
+                },
+                {
+                  "unit": "M23",
+                  "name": "二項式定理",
+                  "count": 4
+                },
+                {
+                  "unit": "M110",
+                  "name": "條件概率和貝葉斯定理",
+                  "count": 5
+                },
+                {
+                  "unit": "M111",
+                  "name": "離散隨機變量",
+                  "count": 6
+                },
+                {
+                  "unit": "M113",
+                  "name": "二項分佈",
+                  "count": 2
+                },
+                {
+                  "unit": "M116",
+                  "name": "正態分佈的基本定義及其性質",
+                  "count": 1
+                },
+                {
+                  "unit": "M118",
+                  "name": "正態分佈的應用",
+                  "count": 1
+                }
+              ]
+            },
+            {
+              "strand": "數據處理",
+              "units": [
+                {
+                  "unit": "COM17",
+                  "name": "離差的度量",
+                  "count": 16
+                },
+                {
+                  "unit": "COM16",
+                  "name": "續概率",
+                  "count": 13
+                },
+                {
+                  "unit": "COM15",
+                  "name": "排列與組合",
+                  "count": 10
+                }
+              ]
+            },
+            {
+              "strand": "度量、圖形與空間",
+              "units": [
+                {
+                  "unit": "COM11",
+                  "name": "圓的基本性質",
+                  "count": 14
+                },
+                {
+                  "unit": "COM14",
+                  "name": "續三角學",
+                  "count": 28
+                },
+                {
+                  "unit": "COM10",
+                  "name": "直線方程",
+                  "count": 11
+                },
+                {
+                  "unit": "COM13",
+                  "name": "圓方程",
+                  "count": 7
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "subject": "english",
+      "count": 724,
+      "stages": [
+        {
+          "stage": "P1-P3",
+          "label": "小一至小三",
+          "keyStage": "KS1",
+          "band": "primary",
+          "count": 71,
+          "strands": [
+            {
+              "strand": "Knowledge",
+              "units": [
+                {
+                  "unit": "P1-P3-Knowledge",
+                  "name": "phonics / letter-sound knowledge",
+                  "count": 59
+                }
+              ]
+            },
+            {
+              "strand": "Interpersonal",
+              "units": [
+                {
+                  "unit": "P1-P3-Interpersonal",
+                  "name": "communicative functions in everyday contexts",
+                  "count": 12
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stage": "P4-P6",
+          "label": "小四至小六",
+          "keyStage": "KS2",
+          "band": "primary",
+          "count": 137,
+          "strands": [
+            {
+              "strand": "Knowledge",
+              "units": [
+                {
+                  "unit": "P4-P6-Knowledge",
+                  "name": "vocabulary",
+                  "count": 106
+                }
+              ]
+            },
+            {
+              "strand": "Interpersonal",
+              "units": [
+                {
+                  "unit": "P4-P6-Interpersonal",
+                  "name": "communicative functions in everyday contexts",
+                  "count": 31
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stage": "S1-S3",
+          "label": "中一至中三",
+          "keyStage": "KS3",
+          "band": "junior",
+          "count": 257,
+          "strands": [
+            {
+              "strand": "Knowledge",
+              "units": [
+                {
+                  "unit": "S1-S3-Knowledge",
+                  "name": "phonics / letter-sound knowledge",
+                  "count": 202
+                }
+              ]
+            },
+            {
+              "strand": "Interpersonal",
+              "units": [
+                {
+                  "unit": "S1-S3-Interpersonal",
+                  "name": "communicative functions in everyday contexts",
+                  "count": 55
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stage": "S4-S6",
+          "label": "中四至中六",
+          "keyStage": "KS4",
+          "band": "senior",
+          "count": 259,
+          "strands": [
+            {
+              "strand": "Knowledge",
+              "units": [
+                {
+                  "unit": "S4-S6-Knowledge",
+                  "name": "language forms and communicative functions",
+                  "count": 223
+                }
+              ]
+            },
+            {
+              "strand": "Interpersonal",
+              "units": [
+                {
+                  "unit": "S4-S6-Interpersonal",
+                  "name": "communicative functions in everyday contexts",
+                  "count": 36
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "subject": "physics",
+      "count": 269,
+      "stages": [
+        {
+          "stage": "S1-S3",
+          "label": "中一至中三",
+          "keyStage": "KS3",
+          "band": "junior",
+          "count": 92,
+          "strands": [
+            {
+              "strand": "物理",
+              "units": [
+                {
+                  "unit": "SCI11",
+                  "name": "力與運動",
+                  "count": 24
+                },
+                {
+                  "unit": "SCI10",
+                  "name": "感應環境",
+                  "count": 3
+                },
+                {
+                  "unit": "SCI5",
+                  "name": "能量",
+                  "count": 16
+                },
+                {
+                  "unit": "SCI6",
+                  "name": "物質的粒子觀",
+                  "count": 5
+                },
+                {
+                  "unit": "SCI14",
+                  "name": "光、顏色與其他",
+                  "count": 10
+                },
+                {
+                  "unit": "SCI1",
+                  "name": "科學入門",
+                  "count": 4
+                },
+                {
+                  "unit": "SCI8",
+                  "name": "電的使用",
+                  "count": 30
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "stage": "S4-S6",
+          "label": "中四至中六",
+          "keyStage": "KS4",
+          "band": "senior",
+          "count": 177,
+          "strands": [
+            {
+              "strand": "物理",
+              "units": [
+                {
+                  "unit": "PHY-IIa",
+                  "name": "位置與移動",
+                  "count": 9
+                },
+                {
+                  "unit": "PHY-IIb",
+                  "name": "力與運動",
+                  "count": 18
+                },
+                {
+                  "unit": "PHY-IIc",
+                  "name": "拋體運動",
+                  "count": 5
+                },
+                {
+                  "unit": "PHY-IIf",
+                  "name": "勻速圓周運動",
+                  "count": 6
+                },
+                {
+                  "unit": "PHY-IIg",
+                  "name": "萬有引力",
+                  "count": 6
+                },
+                {
+                  "unit": "PHY-IId",
+                  "name": "功、能量和功率",
+                  "count": 8
+                },
+                {
+                  "unit": "PHY-IVa",
+                  "name": "靜電",
+                  "count": 14
+                },
+                {
+                  "unit": "PHY-IVb",
+                  "name": "電路和家居用電",
+                  "count": 19
+                },
+                {
+                  "unit": "PHY-IVc",
+                  "name": "電磁",
+                  "count": 30
+                },
+                {
+                  "unit": "PHY-IIe",
+                  "name": "動量",
+                  "count": 8
+                },
+                {
+                  "unit": "PHY-IIIa",
+                  "name": "波的本質和性質",
+                  "count": 12
+                },
+                {
+                  "unit": "PHY-IIIb",
+                  "name": "光",
+                  "count": 8
+                },
+                {
+                  "unit": "PHY-Ia",
+                  "name": "溫度、熱和內能",
+                  "count": 11
+                },
+                {
+                  "unit": "PHY-Id",
+                  "name": "氣體",
+                  "count": 6
+                },
+                {
+                  "unit": "PHY-Ic",
+                  "name": "物態變化",
+                  "count": 2
+                },
+                {
+                  "unit": "PHY-Vb",
+                  "name": "原子模型",
+                  "count": 7
+                },
+                {
+                  "unit": "PHY-Va",
+                  "name": "輻射與放射現象",
+                  "count": 4
+                },
+                {
+                  "unit": "PHY-Vc",
+                  "name": "核能",
+                  "count": 4
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

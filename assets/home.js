@@ -5,7 +5,6 @@
   try { raw = decodeURIComponent(raw); } catch (e) { /* 保持原样 */ }
   if (/^(?:cnm|cne|cnp|cnc)_[A-Za-z0-9]+$/.test(raw)) return;
 
-  var CN = ['', '一', '二', '三', '四', '五', '六', '七', '八', '九'];
   var subjectParam = new URLSearchParams(location.search).get('subject');
   var subject = subjectParam === 'english' || subjectParam === 'physics' ? subjectParam : 'math';
   var PREFIX = { math: 'cnm_', english: 'cne_', physics: 'cnp_' };
@@ -32,28 +31,28 @@
   if (subject === 'english') {
     document.title = '英语 · 中小学·高中知识图谱';
     var eye = document.querySelector('.eyebrow');
-    if (eye) eye.textContent = '英语：三年级到高中';
+    if (eye) eye.textContent = '英语：小一至中六';
     var primary = document.querySelector('.hero-actions a.btn-primary');
     var browse = document.querySelector('.hero-actions a.btn:not(.btn-primary)');
     if (primary) primary.setAttribute('href', 'diagnose/?subject=english');
     if (browse) browse.setAttribute('href', 'explore/?subject=english');
     var demo = document.querySelector('.quiet-link a');
     if (demo) {
-      demo.setAttribute('href', 'diagnose/?subject=english&grade=' + encodeURIComponent('四上') + '&demo=1');
-      demo.textContent = '先看一遍演示：四年级上册英语';
+      demo.setAttribute('href', 'diagnose/?subject=english&target=cne_p148&demo=1');
+      demo.textContent = '先看一遍演示：现在进行时';
     }
   } else if (subject === 'physics') {
     document.title = '物理 · 中小学·高中知识图谱';
     var peye = document.querySelector('.eyebrow');
-    if (peye) peye.textContent = '物理：初中八、九年级 · 高中必修与选择性必修';
+    if (peye) peye.textContent = '物理：中一至中三科学 · 中四至中六物理';
     var pprimary = document.querySelector('.hero-actions a.btn-primary');
     var pbrowse = document.querySelector('.hero-actions a.btn:not(.btn-primary)');
     if (pprimary) pprimary.setAttribute('href', 'diagnose/?subject=physics');
     if (pbrowse) pbrowse.setAttribute('href', 'explore/?subject=physics');
     var pdemo = document.querySelector('.quiet-link a');
     if (pdemo) {
-      pdemo.setAttribute('href', 'diagnose/?subject=physics&grade=' + encodeURIComponent('八上') + '&demo=1');
-      pdemo.textContent = '先看一遍演示：八年级上册物理';
+      pdemo.setAttribute('href', 'diagnose/?subject=physics&target=cnp_071&demo=1');
+      pdemo.textContent = '先看一遍演示：欧姆定律';
     }
   }
 
@@ -73,7 +72,7 @@
     fetch('data/topics.json'),
     fetch('data/dependencies.json'),
     fetch('data/questions.json'),
-    fetch('data/cn-curriculum-standards.json')
+    fetch('data/edb-standards.json')
   ]).then(function (responses) {
     responses.forEach(function (response, index) {
       if (!response.ok) throw new Error('HTTP ' + response.status);
@@ -96,8 +95,8 @@
     }
     function subjectOfStd(id) {
       id = String(id || '');
-      if (id.indexOf('ces-') === 0) return 'english';
-      if (id.indexOf('cps-') === 0) return 'physics';
+      if (id.indexOf('edb-english:') === 0) return 'english';
+      if (id.indexOf('edb-physics:') === 0) return 'physics';
       return 'math';
     }
     var wantEnglish = subject === 'english';
@@ -115,58 +114,49 @@
     if (!grades) return;
     grades.replaceChildren();
     grades.removeAttribute('aria-busy');
-    function addCard(g, stageName, title, klass, splitText, href) {
-      var list = topics.filter(function (topic) { return topic.grade === g; });
-      var link = document.createElement('a');
-      link.className = 'grade-card ' + klass;
-      link.href = href;
-      var stage = document.createElement('span');
-      stage.className = 'grade-stage';
-      stage.textContent = stageName;
-      var name = document.createElement('strong');
-      name.textContent = title;
-      var count = document.createElement('span');
-      count.className = 'grade-count';
-      count.textContent = list.length + ' 个知识点';
-      var split = document.createElement('span');
-      split.className = 'grade-stage';
-      split.textContent = splitText;
-      link.append(stage, name, count, split);
-      grades.append(link);
-    }
-    var from = wantPhysics ? 8 : (wantEnglish ? 3 : 1);
-    var to = 9;
-    for (var g = from; g <= to; g++) {
-      var list = topics.filter(function (topic) { return topic.grade === g; });
-      var up = list.filter(function (topic) { return topic.semester === '上'; }).length;
-      var down = list.filter(function (topic) { return topic.semester === '下'; }).length;
-      var whole = list.filter(function (topic) { return topic.semester === '全'; }).length;
-      var splitText = whole ? '全一册 ' + whole : '上 ' + up + ' · 下 ' + down;
-      var href = subject !== 'math' ? 'explore/?subject=' + subject + '&grade=' + g : 'explore/?grade=' + g;
-      addCard(g, g <= 6 ? '小学' : (wantPhysics ? '初中物理' : '初中'), CN[g] + '年级', g <= 6 ? 'is-primary' : 'is-junior', splitText, href);
-    }
-    if (wantPhysics) {
-      addCard(10, '高中物理', '必修一', 'is-senior', '必修第一册', 'explore/?subject=physics&grade=10');
-      addCard(11, '高中物理', '必修二', 'is-senior', '必修第二册', 'explore/?subject=physics&grade=11');
-      addCard(12, '高中物理', '必修三', 'is-senior', '必修第三册', 'explore/?subject=physics&grade=12');
-      addCard(13, '高中物理', '选必一', 'is-senior', '选择性必修第一册', 'explore/?subject=physics&grade=13');
-      addCard(14, '高中物理', '选必二', 'is-senior', '选择性必修第二册', 'explore/?subject=physics&grade=14');
-      addCard(15, '高中物理', '选必三', 'is-senior', '选择性必修第三册', 'explore/?subject=physics&grade=15');
-    } else if (wantEnglish) {
-      addCard(10, '高中', '必修一', 'is-senior', '必修第一册', 'explore/?subject=english&grade=10');
-      addCard(11, '高中', '必修二', 'is-senior', '必修第二册', 'explore/?subject=english&grade=11');
-      addCard(12, '高中', '必修三', 'is-senior', '必修第三册', 'explore/?subject=english&grade=12');
-      addCard(13, '高中', '选必一', 'is-senior', '选择性必修第一册', 'explore/?subject=english&grade=13');
-      addCard(14, '高中', '选必二', 'is-senior', '选择性必修第二册', 'explore/?subject=english&grade=14');
-      addCard(15, '高中', '选必三', 'is-senior', '选择性必修第三册', 'explore/?subject=english&grade=15');
-      addCard(16, '高中', '选必四', 'is-senior', '选择性必修第四册', 'explore/?subject=english&grade=16');
-    } else {
-      addCard(10, '高中', '高一', 'is-senior', '必修第一册', 'explore/?grade=10');
-      addCard(11, '高中', '高二', 'is-senior', '必修第二册', 'explore/?grade=11');
-      addCard(12, '高中', '选必一', 'is-senior', '选择性必修第一册', 'explore/?grade=12');
-      addCard(13, '高中', '选必二', 'is-senior', '选择性必修第二册', 'explore/?grade=13');
-      addCard(14, '高中', '选必三', 'is-senior', '选择性必修第三册', 'explore/?grade=14');
-    }
+
+    /* 香港：小学按小一…小六，初中、高中各一个阶段（EDB 的单元不指定年级）。 */
+    var byStage = new Map();
+    topics.forEach(function (topic) {
+      var key = topic.stage || String(topic.grade);
+      if (!byStage.has(key)) {
+        byStage.set(key, {
+          label: topic.stageLabel || '',
+          grade: topic.grade,
+          keyStage: topic.keyStage,
+          topics: []
+        });
+      }
+      byStage.get(key).topics.push(topic);
+    });
+
+    Array.from(byStage.values())
+      .sort(function (a, b) { return a.grade - b.grade; })
+      .forEach(function (group) {
+        var units = new Set(group.topics.map(function (t) { return t.unit; }));
+        var band = group.keyStage === 'KS1' || group.keyStage === 'KS2' ? '小学'
+          : group.keyStage === 'KS3' ? '初中' : '高中';
+        var klass = band === '小学' ? 'is-primary' : band === '初中' ? 'is-junior' : 'is-senior';
+        var href = (subject !== 'math' ? 'explore/?subject=' + subject + '&' : 'explore/?')
+          + 'grade=' + group.grade;
+
+        var link = document.createElement('a');
+        link.className = 'grade-card ' + klass;
+        link.href = href;
+        var stage = document.createElement('span');
+        stage.className = 'grade-stage';
+        stage.textContent = band;
+        var name = document.createElement('strong');
+        name.textContent = group.label;
+        var count = document.createElement('span');
+        count.className = 'grade-count';
+        count.textContent = group.topics.length + ' 个知识点';
+        var split = document.createElement('span');
+        split.className = 'grade-stage';
+        split.textContent = units.size + ' 个学习单元';
+        link.append(stage, name, count, split);
+        grades.append(link);
+      });
   }).catch(function (error) {
     fail('数据没有加载成功（' + (error && error.message ? error.message : error) + '）。请在项目根目录运行 python3 -m http.server 8000，再用浏览器打开，不要直接双击 html 文件。');
   });

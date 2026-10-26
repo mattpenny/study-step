@@ -8,7 +8,7 @@
     conceptual: '概念理解', procedural: '程序性技能', reasoning: '推理证明',
     application: '应用', modeling: '建模'
   };
-  var DOMAIN_ORDER = ['数与代数', '图形与几何', '统计与概率', '综合与实践'];
+  var DOMAIN_ORDER = ['数', '代数', '数与代数', '度量', '图形与空间', '度量、图形与空间', '数据处理', '物理', 'Knowledge', 'Interpersonal'];
 
   var topics = [];
   var deps = [];
@@ -97,6 +97,13 @@
     return nodes;
   }
 
+  /* 香港的年级：小一至小六、中一至中六。EDB 的初中、高中学习单元不指定年级，
+   * 所以初中、高中各算一个阶段，topic.grade 只是排序用的序号。 */
+  var HK_STAGE_BY_GRADE = {
+    1: '小一', 2: '小二', 3: '小三', 4: '小四', 5: '小五', 6: '小六',
+    7: '中一至中三', 10: '中四至中六'
+  };
+
   function stageKind(grade) {
     if (grade <= 6) return 'primary';
     if (grade <= 9) return 'junior';
@@ -107,33 +114,11 @@
     if (grade <= 9) return '初中';
     return '高中';
   }
-  var EN_BOOK = {
-    10: ['必修一', '必修一 · 必修第一册'],
-    11: ['必修二', '必修二 · 必修第二册'],
-    12: ['必修三', '必修三 · 必修第三册'],
-    13: ['选必一', '选必一 · 选择性必修第一册'],
-    14: ['选必二', '选必二 · 选择性必修第二册'],
-    15: ['选必三', '选必三 · 选择性必修第三册'],
-    16: ['选必四', '选必四 · 选择性必修第四册']
-  };
   function gradeWord(grade) {
-    if ((subject === 'english' || subject === 'physics') && EN_BOOK[grade]) return EN_BOOK[grade][0];
-    if (grade === 10) return '高一';
-    if (grade === 11) return '高二';
-    if (grade === 12) return '选必一';
-    if (grade === 13) return '选必二';
-    if (grade === 14) return '选必三';
-    return CN[grade] + '年级';
+    return HK_STAGE_BY_GRADE[grade] || (grade <= 6 ? '小学' : grade <= 9 ? '初中' : '高中');
   }
   function gradeLabel(topic) {
-    if ((subject === 'english' || subject === 'physics') && EN_BOOK[topic.grade]) return EN_BOOK[topic.grade][1];
-    if (topic.grade === 10) return '高一 · 必修第一册';
-    if (topic.grade === 11) return '高二 · 必修第二册';
-    if (topic.grade === 12) return '选必一 · 选择性必修第一册';
-    if (topic.grade === 13) return '选必二 · 选择性必修第二册';
-    if (topic.grade === 14) return '选必三 · 选择性必修第三册';
-    if (topic.semester === '全') return CN[topic.grade] + '年级全一册';
-    return CN[topic.grade] + '年级' + topic.semester + '册';
+    return topic.stageLabel || gradeWord(topic.grade);
   }
   function paint(grade, colors) {
     if (grade <= 6) return { bg: colors.primaryBg, border: colors.primary, cls: 'primary' };
@@ -142,16 +127,7 @@
   }
 
   function chapterOf(topic) {
-    var text = topic.chapter || '未分章';
-    var primary = /^[一二三四五六七八九]年级[上下全]册\s+(.+)$/.exec(text);
-    if (primary) return primary[1];
-    var enHs = /^(?:必修第[一二三]册|选择性必修第[一二三四]册) ((?:欢迎单元|第\d+单元) .+)$/.exec(text);
-    if (enHs) return enHs[1];
-    var model = /^(高[一二]|选必[一二三]) (数学建模|数学探究) (\S+)$/.exec(text);
-    if (model) return model[2] + ' ' + model[3];
-    var junior = /^\S+\s+(第\S+章)\s+(.+)$/.exec(text);
-    if (junior) return junior[1] + ' ' + junior[2].replace(/\s+\d+(?:\.\d+)*$/, '');
-    return text;
+    return topic.chapter || '未分单元';
   }
 
   function readHash() {
@@ -255,7 +231,6 @@
     var id = String(topic.id || '');
     if (id.indexOf('cne_') === 0) return 'english';
     if (id.indexOf('cnp_') === 0) return 'physics';
-    if (id.indexOf('cnc_') === 0) return 'chinese';
     return 'math';
   }
 
@@ -289,10 +264,10 @@
     var volumeMap = new Map();
     topics.forEach(function (topic) {
       if (!passFilter(topic)) return;
-      var key = topic.grade + topic.semester;
+      var key = topic.stage || String(topic.grade);
       var volume = volumeMap.get(key);
       if (!volume) {
-        volume = { label: gradeLabel(topic), grade: topic.grade, semester: topic.semester, chapters: [], chapterMap: new Map() };
+        volume = { label: gradeLabel(topic), grade: topic.grade, stage: topic.stage, chapters: [], chapterMap: new Map() };
         volumeMap.set(key, volume);
         volumes.push(volume);
       }
@@ -306,7 +281,7 @@
       chapter.topics.push(topic);
     });
     volumes.sort(function (a, b) {
-      return a.grade - b.grade || (a.semester === b.semester ? 0 : a.semester === '上' ? -1 : 1);
+      return a.grade - b.grade;
     });
 
     var shown = 0;
@@ -399,7 +374,7 @@
     if (!selected || !byId.has(selected)) {
       box.replaceChildren(el('div', { class: 'detail-empty' },
         el('h1', { text: '选择一个知识点' }),
-        el('p', { text: '可以搜索，也可以按年级、册、章展开。选中之后，中间只画它附近的先修，以及后面一层会用到它的知识点。' })));
+        el('p', { text: '可以搜索，也可以按学习阶段、单元展开。选中之后，中间只画它附近的先修，以及后面一层会用到它的知识点。' })));
       document.title = subject === 'english' ? '知识图谱 · 英语' : subject === 'physics' ? '知识图谱 · 物理' : '知识图谱 · 中小学·高中知识图谱';
       return;
     }
@@ -423,10 +398,10 @@
       href: diagHref
     }, '诊断这个知识点'));
     parts.push(el('dl', { class: 'meta-grid' },
-      metaItem('年级册次', gradeLabel(topic)),
-      metaItem('领域', topic.domain),
+      metaItem('学习阶段', gradeLabel(topic)),
+      metaItem('范畴', topic.domain),
       metaItem('类型', TYPE_ZH[topic.type] || topic.type),
-      metaItem('章节', topic.chapter, true)));
+      metaItem('学习单元', topic.chapter, true)));
     if (topic.description) parts.push(el('p', { class: 'desc', text: topic.description }));
     if (topic.root_reason) parts.push(el('p', { class: 'root-reason', text: topic.root_reason }));
 
@@ -441,10 +416,10 @@
       var item = stdById.get(entry.id);
       return el('div', { class: 'std' },
         el('div', { class: 'std-id' }, el('code', { text: entry.id }), ' · ' + (entry.confidence === 'exact' ? '直接对应' : '推断对应')),
-        el('p', { text: item ? item.text : '（课标文件中找不到该条目）' }),
+        el('p', { text: item ? item.title + '（' + item.strand + ' · ' + item.keyStage + '）' : '（找不到这个学习单元）' }),
         entry.note ? el('p', { class: 'muted', text: '说明：' + entry.note }) : null);
-    }) : [el('p', { class: 'muted', text: '没有对应的课标条目。' })];
-    parts.push(el('section', null, el('h2', { text: '课标条目' }), standardNodes));
+    }) : [el('p', { class: 'muted', text: '没有对应的 EDB 学习单元。' })];
+    parts.push(el('section', null, el('h2', { text: 'EDB 学习单元' }), standardNodes));
 
     if (topic.mathLinks && topic.mathLinks.length) {
       parts.push(el('section', null,
@@ -867,11 +842,6 @@
     var explicit = params.get('subject');
     if (explicit === 'english' || explicit === 'math' || explicit === 'physics' || explicit === 'chinese') return explicit;
     var hash = readHash();
-    if (/^cnc_[A-Za-z0-9]+$/.test(hash)) {
-      params.set('subject', 'chinese');
-      history.replaceState(null, '', location.pathname + '?' + params.toString() + '#' + hash);
-      return 'chinese';
-    }
     if (/^cnp_[A-Za-z0-9]+$/.test(hash)) {
       params.set('subject', 'physics');
       history.replaceState(null, '', location.pathname + '?' + params.toString() + '#' + hash);
@@ -883,6 +853,22 @@
       return 'english';
     }
     return 'math';
+  }
+
+  /* 年级下拉按当前学科实际出现的阶段生成：小学是小一…小六，
+   * 初中、高中是「中一至中三」「中四至中六」（EDB 不指定年级）。 */
+  function renderStageOptions() {
+    var select = $('fGrade');
+    if (!select) return;
+    var seen = new Map();
+    topics.forEach(function (topic) {
+      if (!seen.has(topic.grade)) seen.set(topic.grade, topic.stageLabel || gradeWord(topic.grade));
+    });
+    select.replaceChildren();
+    select.append(el('option', { value: '', text: '全部阶段' }));
+    Array.from(seen.keys()).sort(function (a, b) { return a - b; }).forEach(function (g) {
+      select.append(el('option', { value: String(g), text: seen.get(g) }));
+    });
   }
 
   function configureSubject() {
@@ -903,23 +889,16 @@
       document.querySelectorAll('#stage-tabs [data-stage]').forEach(function (button) {
         button.hidden = button.getAttribute('data-stage') === 'p';
       });
-      var physicsGrade = $('fGrade');
-      physicsGrade.replaceChildren();
-      physicsGrade.append(el('option', { value: '', text: '全部年级' }));
-      physicsGrade.append(el('option', { value: '8', text: '八年级（上、下册）' }));
-      physicsGrade.append(el('option', { value: '9', text: '九年级全一册' }));
-      [
-        [10, '必修第一册'], [11, '必修第二册'], [12, '必修第三册'],
-        [13, '选择性必修第一册'], [14, '选择性必修第二册'], [15, '选择性必修第三册']
-      ].forEach(function (row) {
-        physicsGrade.append(el('option', { value: String(row[0]), text: row[1] }));
-      });
+      renderStageOptions();
       var physicsSample = $('pick-sample');
       if (physicsSample) physicsSample.textContent = '先看看「欧姆定律」';
       document.title = '知识图谱 · 物理';
       return;
     }
-    if (subject !== 'english') return;
+    if (subject !== 'english') {
+      renderStageOptions();
+      return;
+    }
     var tabs = document.querySelectorAll('#stage-tabs [data-stage]');
     var spec = [['', '全部'], ['p', '小学'], ['j', '初中'], ['h', '高中']];
     tabs.forEach(function (button, index) {
@@ -931,20 +910,8 @@
         button.hidden = true;
       }
     });
-    $('stage-tabs').setAttribute('aria-label', '学段');
-    var gradeSelect = $('fGrade');
-    gradeSelect.replaceChildren();
-    gradeSelect.append(el('option', { value: '', text: '全部年级' }));
-    [3, 4, 5, 6, 7, 8, 9].forEach(function (g) {
-      gradeSelect.append(el('option', { value: String(g), text: CN[g] + '年级' }));
-    });
-    [
-      [10, '必修第一册'], [11, '必修第二册'], [12, '必修第三册'],
-      [13, '选择性必修第一册'], [14, '选择性必修第二册'],
-      [15, '选择性必修第三册'], [16, '选择性必修第四册']
-    ].forEach(function (row) {
-      gradeSelect.append(el('option', { value: String(row[0]), text: row[1] }));
-    });
+    $('stage-tabs').setAttribute('aria-label', '学习阶段');
+    renderStageOptions();
     var sample = $('pick-sample');
     if (sample) sample.textContent = '先看看「现在进行时」';
     document.title = '知识图谱 · 英语';
@@ -953,7 +920,7 @@
   function applyQuery() {
     var params = new URLSearchParams(location.search);
     var gradeValue = params.get('grade') || '';
-    var gradeOk = subject === 'english' ? /^(?:[3-9]|1[0-6])$/ : subject === 'physics' ? /^(?:[89]|1[0-5])$/ : /^(?:[1-9]|1[0-4])$/;
+    var gradeOk = /^(?:[1-9]|1[0-2])$/;
     if (gradeOk.test(gradeValue)) grade = gradeValue;
     var stageValue = params.get('stage') || '';
     if (stageValue === 'p' || stageValue === 'j' || stageValue === 'h') stage = stageValue;
@@ -1110,7 +1077,7 @@
   }
 
   async function load() {
-    var files = ['topics.json', 'dependencies.json', 'id-aliases.json', 'cn-curriculum-standards.json'];
+    var files = ['topics.json', 'dependencies.json', 'id-aliases.json', 'edb-standards.json'];
     var responses = await Promise.all(files.map(function (file) { return fetch('../data/' + file); }));
     responses.forEach(function (response, responseIndex) {
       if (!response.ok) throw new Error(files[responseIndex] + ' HTTP ' + response.status);
@@ -1154,6 +1121,7 @@
   applyQuery();
   bind();
   load().then(function () { return loadQuestions(); }).then(function () {
+    renderStageOptions();   /* 数据到了才知道这个学科有哪些阶段 */
     fillDomain();
     syncControls();
     renderList();

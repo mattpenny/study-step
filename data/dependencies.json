@@ -738,12 +738,6 @@
     "reason": "学习「一位小数的加减」需要先掌握「一位小数的初步认识」。"
   },
   {
-    "topicId": "cnm_p095",
-    "prerequisiteId": "cnm_p039",
-    "strength": "hard",
-    "reason": "学习「简单的搭配」需要先掌握「2到6的乘法口诀」。"
-  },
-  {
     "topicId": "cnm_p096",
     "prerequisiteId": "cnm_p053",
     "strength": "hard",
@@ -924,18 +918,6 @@
     "reason": "学习「求小数的近似数」需要先掌握「比较小数的大小」。"
   },
   {
-    "topicId": "cnm_p121",
-    "prerequisiteId": "cnm_p097",
-    "strength": "hard",
-    "reason": "学习「求小数的近似数」需要先掌握「大数的改写和近似」。"
-  },
-  {
-    "topicId": "cnm_p122",
-    "prerequisiteId": "cnm_p105",
-    "strength": "hard",
-    "reason": "学习「三角形的分类」需要先掌握「平行四边形和梯形的特征」。"
-  },
-  {
     "topicId": "cnm_p123",
     "prerequisiteId": "cnm_p122",
     "strength": "hard",
@@ -1006,18 +988,6 @@
     "prerequisiteId": "cnm_p108",
     "strength": "hard",
     "reason": "学习「复式条形统计图」需要先掌握「条形统计图」。"
-  },
-  {
-    "topicId": "cnm_p131",
-    "prerequisiteId": "cnm_p087",
-    "strength": "hard",
-    "reason": "学习「鸡兔同笼」需要先掌握「两位数乘法的应用」。"
-  },
-  {
-    "topicId": "cnm_p131",
-    "prerequisiteId": "cnm_p111",
-    "strength": "soft",
-    "reason": "「常见数量关系」对学习「鸡兔同笼」有帮助，但不会前者也可以开始学后者。"
   },
   {
     "topicId": "cnm_p132",
@@ -1422,18 +1392,6 @@
     "reason": "学习「折线统计图」需要先掌握「平均数」。"
   },
   {
-    "topicId": "cnm_p176",
-    "prerequisiteId": "cnm_p057",
-    "strength": "hard",
-    "reason": "学习「找次品」需要先掌握「乘加乘减的运算顺序」。"
-  },
-  {
-    "topicId": "cnm_p176",
-    "prerequisiteId": "cnm_p140",
-    "strength": "soft",
-    "reason": "「可能性」对学习「找次品」有帮助，但不会前者也可以开始学后者。"
-  },
-  {
     "topicId": "cnm_p177",
     "prerequisiteId": "cnm_p173",
     "strength": "hard",
@@ -1824,18 +1782,6 @@
     "reason": "学习「用比例解决实际问题」需要先掌握「解比例」。"
   },
   {
-    "topicId": "cnm_p216",
-    "prerequisiteId": "cnm_p043",
-    "strength": "hard",
-    "reason": "学习「鸽巢问题」需要先掌握「除法的意义」。"
-  },
-  {
-    "topicId": "cnm_p216",
-    "prerequisiteId": "cnm_p050",
-    "strength": "soft",
-    "reason": "「有余数除法的意义」对学习「鸽巢问题」有帮助，但不会前者也可以开始学后者。"
-  },
-  {
     "topicId": "cnm_001",
     "prerequisiteId": "cnm_p201",
     "strength": "hard",
@@ -2002,12 +1948,6 @@
     "prerequisiteId": "cnm_p214",
     "strength": "hard",
     "reason": "学习「反比例函数的概念」需要先会小学的「反比例」。反比例函数是小学已学反比例关系的函数化表达，小学经验可以迁移。"
-  },
-  {
-    "topicId": "cnm_244",
-    "prerequisiteId": "cnm_p171",
-    "strength": "hard",
-    "reason": "学习「图形的旋转」需要先会小学的「旋转」。小学已初步认识旋转。"
   },
   {
     "topicId": "cnm_268",
@@ -2224,12 +2164,6 @@
     "prerequisiteId": "cnm_022",
     "strength": "soft",
     "reason": "用科学记数法表示有效数字"
-  },
-  {
-    "topicId": "cnm_024",
-    "prerequisiteId": "cnm_020",
-    "strength": "hard",
-    "reason": "数位权重用到幂的运算"
   },
   {
     "topicId": "cnm_025",
@@ -2542,12 +2476,6 @@
     "prerequisiteId": "cnm_040",
     "strength": "hard",
     "reason": "证明同角的余角相等要用等量代换和等式的性质，需要先掌握等式的性质"
-  },
-  {
-    "topicId": "cnm_061",
-    "prerequisiteId": "cnm_055",
-    "strength": "hard",
-    "reason": "需要线段长度的运算"
   },
   {
     "topicId": "cnm_062",
@@ -4315,12 +4243,6 @@
   },
   {
     "topicId": "cnm_218",
-    "prerequisiteId": "cnm_215",
-    "strength": "hard",
-    "reason": "调查分析要刻画数据的离散程度，需要先掌握极差、方差与标准差"
-  },
-  {
-    "topicId": "cnm_218",
     "prerequisiteId": "cnm_217",
     "strength": "soft",
     "reason": "调查的数据量较大时需要分组整理，由分组数据估计平均数的方法有帮助"
@@ -4632,90 +4554,6 @@
     "reason": "反比例函数的应用是用函数刻画实际问题，需要有函数建模的经验"
   },
   {
-    "topicId": "cnm_243",
-    "prerequisiteId": "cnm_242",
-    "strength": "hard",
-    "reason": "高铁运行中的数量关系可用反比例函数建模，需要先会实际问题与反比例函数"
-  },
-  {
-    "topicId": "cnm_243",
-    "prerequisiteId": "cnm_047",
-    "strength": "soft",
-    "reason": "高铁运行涉及路程、速度、时间的关系，行程问题的经验有帮助"
-  },
-  {
-    "topicId": "cnm_244",
-    "prerequisiteId": "cnm_056",
-    "strength": "hard",
-    "reason": "旋转角是一个角，需要先理解角的概念与表示"
-  },
-  {
-    "topicId": "cnm_245",
-    "prerequisiteId": "cnm_244",
-    "strength": "hard",
-    "reason": "研究旋转的性质，需要先理解图形旋转的概念"
-  },
-  {
-    "topicId": "cnm_245",
-    "prerequisiteId": "cnm_137",
-    "strength": "soft",
-    "reason": "相等线段构成等腰三角形"
-  },
-  {
-    "topicId": "cnm_246",
-    "prerequisiteId": "cnm_245",
-    "strength": "hard",
-    "reason": "旋转作图依据旋转的性质确定对应点，需要先掌握旋转的性质"
-  },
-  {
-    "topicId": "cnm_246",
-    "prerequisiteId": "cnm_127",
-    "strength": "hard",
-    "reason": "旋转作图要作出指定大小的旋转角，需要会作等角"
-  },
-  {
-    "topicId": "cnm_247",
-    "prerequisiteId": "cnm_245",
-    "strength": "hard",
-    "reason": "用旋转变换解决证明和计算问题，需要先掌握旋转的性质"
-  },
-  {
-    "topicId": "cnm_247",
-    "prerequisiteId": "cnm_126",
-    "strength": "hard",
-    "reason": "旋转变换中常需证明三角形全等，需要先会综合运用全等判定"
-  },
-  {
-    "topicId": "cnm_247",
-    "prerequisiteId": "cnm_130",
-    "strength": "soft",
-    "reason": "与全等辅助线方法相通"
-  },
-  {
-    "topicId": "cnm_248",
-    "prerequisiteId": "cnm_245",
-    "strength": "hard",
-    "reason": "中心对称是旋转角为180°的特殊旋转，需要先掌握旋转的性质"
-  },
-  {
-    "topicId": "cnm_248",
-    "prerequisiteId": "cnm_131",
-    "strength": "soft",
-    "reason": "中心对称可与轴对称对比学习，学过轴对称有助于理解区别"
-  },
-  {
-    "topicId": "cnm_249",
-    "prerequisiteId": "cnm_248",
-    "strength": "hard",
-    "reason": "关于原点对称的点的坐标规律源于中心对称，需要先理解中心对称"
-  },
-  {
-    "topicId": "cnm_249",
-    "prerequisiteId": "cnm_136",
-    "strength": "hard",
-    "reason": "与轴对称坐标规律对比"
-  },
-  {
     "topicId": "cnm_250",
     "prerequisiteId": "cnm_056",
     "strength": "hard",
@@ -4752,12 +4590,6 @@
     "reason": "弧、弦、圆心角的关系研究圆中的元素，需要先理解圆的有关概念"
   },
   {
-    "topicId": "cnm_252",
-    "prerequisiteId": "cnm_245",
-    "strength": "hard",
-    "reason": "可借助旋转不变性证明"
-  },
-  {
     "topicId": "cnm_253",
     "prerequisiteId": "cnm_252",
     "strength": "hard",
@@ -4792,12 +4624,6 @@
     "prerequisiteId": "cnm_181",
     "strength": "hard",
     "reason": "圆内接四边形对角互补，要用到四边形内角和为360°的结论"
-  },
-  {
-    "topicId": "cnm_256",
-    "prerequisiteId": "cnm_250",
-    "strength": "hard",
-    "reason": "弧长研究圆的一部分，需要先理解圆的有关概念"
   },
   {
     "topicId": "cnm_257",
@@ -4918,18 +4744,6 @@
     "prerequisiteId": "cnm_256",
     "strength": "soft",
     "reason": "正多边形作图要把圆周等分，等分圆周与弧长的知识有关"
-  },
-  {
-    "topicId": "cnm_267",
-    "prerequisiteId": "cnm_235",
-    "strength": "hard",
-    "reason": "生活中的优化问题常转化为求二次函数的最值，需要先会求最值"
-  },
-  {
-    "topicId": "cnm_267",
-    "prerequisiteId": "cnm_141",
-    "strength": "soft",
-    "reason": "最短路径也是一种优化"
   },
   {
     "topicId": "cnm_268",
@@ -5082,12 +4896,6 @@
     "reason": "转化为解直角三角形"
   },
   {
-    "topicId": "cnm_280",
-    "prerequisiteId": "cnm_203",
-    "strength": "soft",
-    "reason": "坡度反映倾斜程度，可与一次函数的斜率类比理解"
-  },
-  {
     "topicId": "cnm_281",
     "prerequisiteId": "cnm_051",
     "strength": "hard",
@@ -5137,12 +4945,6 @@
   },
   {
     "topicId": "cnm_289",
-    "prerequisiteId": "cnm_287",
-    "strength": "hard",
-    "reason": "判断游戏是否公平要先用列表法或树状图算出各方获胜的概率"
-  },
-  {
-    "topicId": "cnm_289",
     "prerequisiteId": "cnm_288",
     "strength": "soft",
     "reason": "当结果不等可能时可以用试验频率来检验游戏的公平性"
@@ -5158,18 +4960,6 @@
     "prerequisiteId": "cnm_279",
     "strength": "soft",
     "reason": "车位尺寸的测算与仰角、俯角、方向角问题同属解直角三角形的实际建模"
-  },
-  {
-    "topicId": "cnm_291",
-    "prerequisiteId": "cnm_283",
-    "strength": "hard",
-    "reason": "建筑的三视图是分析其外形的主要工具，需要先会三视图及由三视图想象立体图形"
-  },
-  {
-    "topicId": "cnm_291",
-    "prerequisiteId": "cnm_274",
-    "strength": "soft",
-    "reason": "建筑模型与实物之间的比例换算沿用相似三角形实际应用中的思想"
   },
   {
     "topicId": "cnm_292",
@@ -5424,114 +5214,6 @@
     "reason": "撰写调查分析报告时要避免图表误导读者，辨识误导的能力有帮助"
   },
   {
-    "topicId": "cnm_h001",
-    "prerequisiteId": "cnm_025",
-    "strength": "soft",
-    "reason": "用字母表示集合里的元素，需要先会用字母表示数。"
-  },
-  {
-    "topicId": "cnm_h002",
-    "prerequisiteId": "cnm_h001",
-    "strength": "hard",
-    "reason": "判断一个对象属不属于集合，要先知道集合是由确定元素组成的。"
-  },
-  {
-    "topicId": "cnm_h003",
-    "prerequisiteId": "cnm_h002",
-    "strength": "hard",
-    "reason": "列举法要确认写出来的每一个对象都属于这个集合。"
-  },
-  {
-    "topicId": "cnm_h004",
-    "prerequisiteId": "cnm_h003",
-    "strength": "hard",
-    "reason": "描述法和列举法是同一批集合的两种写法，先会列举再读描述更稳。"
-  },
-  {
-    "topicId": "cnm_h005",
-    "prerequisiteId": "cnm_h004",
-    "strength": "hard",
-    "reason": "常用数集常用描述法表示，需要先读得懂描述法。"
-  },
-  {
-    "topicId": "cnm_h005",
-    "prerequisiteId": "cnm_078",
-    "strength": "hard",
-    "reason": "自然数集、整数集、有理数集和实数集的划分，直接用到实数的分类。"
-  },
-  {
-    "topicId": "cnm_h006",
-    "prerequisiteId": "cnm_h005",
-    "strength": "hard",
-    "reason": "判断数集之间谁包含谁，要先认识这些常用数集。"
-  },
-  {
-    "topicId": "cnm_h007",
-    "prerequisiteId": "cnm_h006",
-    "strength": "hard",
-    "reason": "真子集是去掉自身之后的子集，必须先会判断子集。"
-  },
-  {
-    "topicId": "cnm_h008",
-    "prerequisiteId": "cnm_h006",
-    "strength": "hard",
-    "reason": "交集是两个集合的公共部分，判断时要用到元素是否属于集合以及子集语言。"
-  },
-  {
-    "topicId": "cnm_h009",
-    "prerequisiteId": "cnm_h008",
-    "strength": "hard",
-    "reason": "并集个数要用到交集，避免把公共元素算两次。"
-  },
-  {
-    "topicId": "cnm_h010",
-    "prerequisiteId": "cnm_h009",
-    "strength": "hard",
-    "reason": "补集和并集一起才能说清全集被分成的两部分。"
-  },
-  {
-    "topicId": "cnm_h011",
-    "prerequisiteId": "cnm_h010",
-    "strength": "hard",
-    "reason": "交、并、补的混合运算要先分别会做这三种运算。"
-  },
-  {
-    "topicId": "cnm_h012",
-    "prerequisiteId": "cnm_h006",
-    "strength": "hard",
-    "reason": "充分条件可以用集合包含来理解：能推出，就是一个集合落在另一个里面。"
-  },
-  {
-    "topicId": "cnm_h012",
-    "prerequisiteId": "cnm_071",
-    "strength": "soft",
-    "reason": "充分条件和必要条件说的是命题之间的推出，需要知道命题是什么。"
-  },
-  {
-    "topicId": "cnm_h013",
-    "prerequisiteId": "cnm_h012",
-    "strength": "hard",
-    "reason": "充要条件就是充分条件和必要条件同时成立。"
-  },
-  {
-    "topicId": "cnm_h014",
-    "prerequisiteId": "cnm_h012",
-    "strength": "hard",
-    "reason": "含有量词的命题仍要判断能不能推出，需要先会看条件关系。"
-  },
-  {
-    "topicId": "cnm_h015",
-    "prerequisiteId": "cnm_h014",
-    "strength": "hard",
-    "reason": "否定全称或存在命题，要先分清句子用的是哪一种量词。"
-  },
-  {
-    "topicId": "cnm_h016",
-    "prerequisiteId": "cnm_h005",
-    "strength": "hard",
-    "reason": "不等式比较的是实数，对象都在实数集里。"
-  },
-  {
     "topicId": "cnm_h016",
     "prerequisiteId": "cnm_040",
     "strength": "hard",
@@ -5620,12 +5302,6 @@
     "prerequisiteId": "cnm_h024",
     "strength": "hard",
     "reason": "实际限制常常列成一元二次不等式，再求符合实际的解。"
-  },
-  {
-    "topicId": "cnm_h027",
-    "prerequisiteId": "cnm_h001",
-    "strength": "hard",
-    "reason": "高中用集合与对应定义函数，要先知道集合的含义。"
   },
   {
     "topicId": "cnm_h027",
@@ -5860,12 +5536,6 @@
     "prerequisiteId": "cnm_056",
     "strength": "hard",
     "reason": "任意角仍然是角，只是允许继续旋转，需要先认识角。"
-  },
-  {
-    "topicId": "cnm_h055",
-    "prerequisiteId": "cnm_244",
-    "strength": "soft",
-    "reason": "正角和负角按旋转方向区分，旋转的概念在图形的旋转里学过。"
   },
   {
     "topicId": "cnm_h056",
@@ -6178,12 +5848,6 @@
     "prerequisiteId": "cnm_h092",
     "strength": "hard",
     "reason": "用向量得到的边角关系要和正余弦定理对照。"
-  },
-  {
-    "topicId": "cnm_h097",
-    "prerequisiteId": "cnm_h005",
-    "strength": "hard",
-    "reason": "复数是实数集的扩充，要先认识实数集。"
   },
   {
     "topicId": "cnm_h098",
@@ -6510,12 +6174,6 @@
     "reason": "样本点是随机试验的结果，随机事件的语言在初中学过。"
   },
   {
-    "topicId": "cnm_h134",
-    "prerequisiteId": "cnm_h001",
-    "strength": "hard",
-    "reason": "样本空间是所有结果组成的集合。"
-  },
-  {
     "topicId": "cnm_h135",
     "prerequisiteId": "cnm_h134",
     "strength": "hard",
@@ -6526,12 +6184,6 @@
     "prerequisiteId": "cnm_h135",
     "strength": "hard",
     "reason": "事件的交、并、补要先把事件看成集合。"
-  },
-  {
-    "topicId": "cnm_h136",
-    "prerequisiteId": "cnm_h008",
-    "strength": "hard",
-    "reason": "同时发生就是交集，至少一个发生就是并集。"
   },
   {
     "topicId": "cnm_h137",
@@ -7020,120 +6672,6 @@
     "reason": "许多应用最后要落到弦长。"
   },
   {
-    "topicId": "cnm_h183",
-    "prerequisiteId": "cnm_h173",
-    "strength": "hard",
-    "reason": "椭圆定义用到平面上的两点距离，要先会算距离。"
-  },
-  {
-    "topicId": "cnm_h183",
-    "prerequisiteId": "cnm_h176",
-    "strength": "soft",
-    "reason": "椭圆可以看成把圆在一个方向上拉伸，圆的方程是对照。"
-  },
-  {
-    "topicId": "cnm_h183",
-    "prerequisiteId": "cnm_h171",
-    "strength": "soft",
-    "reason": "用坐标研究椭圆时，平面上的直线方程是后面求交点的基础。"
-  },
-  {
-    "topicId": "cnm_h184",
-    "prerequisiteId": "cnm_h183",
-    "strength": "hard",
-    "reason": "椭圆的标准方程由定义里的距离之和推导出来。"
-  },
-  {
-    "topicId": "cnm_h185",
-    "prerequisiteId": "cnm_h184",
-    "strength": "hard",
-    "reason": "a、b、c 的关系 a²=b²+c² 是标准方程里的参数关系。"
-  },
-  {
-    "topicId": "cnm_h186",
-    "prerequisiteId": "cnm_h184",
-    "strength": "hard",
-    "reason": "范围、对称性和顶点都从标准方程读出。"
-  },
-  {
-    "topicId": "cnm_h187",
-    "prerequisiteId": "cnm_h186",
-    "strength": "hard",
-    "reason": "简单应用要先会用椭圆的顶点和 a、b、c。"
-  },
-  {
-    "topicId": "cnm_h188",
-    "prerequisiteId": "cnm_h183",
-    "strength": "hard",
-    "reason": "双曲线把椭圆定义里的距离之和改成距离之差的绝对值。"
-  },
-  {
-    "topicId": "cnm_h189",
-    "prerequisiteId": "cnm_h188",
-    "strength": "hard",
-    "reason": "双曲线的标准方程由距离之差的定义推出。"
-  },
-  {
-    "topicId": "cnm_h189",
-    "prerequisiteId": "cnm_h184",
-    "strength": "soft",
-    "reason": "标准方程的写法与椭圆类似，只是符号和 a、b 的关系不同。"
-  },
-  {
-    "topicId": "cnm_h190",
-    "prerequisiteId": "cnm_h189",
-    "strength": "hard",
-    "reason": "双曲线的顶点、范围和对称性由标准方程读出。"
-  },
-  {
-    "topicId": "cnm_h191",
-    "prerequisiteId": "cnm_h189",
-    "strength": "hard",
-    "reason": "渐近线的方程由双曲线的标准方程确定。"
-  },
-  {
-    "topicId": "cnm_h192",
-    "prerequisiteId": "cnm_h183",
-    "strength": "hard",
-    "reason": "抛物线仍用距离定义，只是一边改成到焦点、一边改成到准线。"
-  },
-  {
-    "topicId": "cnm_h192",
-    "prerequisiteId": "cnm_065",
-    "strength": "soft",
-    "reason": "点到准线的距离是点到直线的距离。"
-  },
-  {
-    "topicId": "cnm_h193",
-    "prerequisiteId": "cnm_h192",
-    "strength": "hard",
-    "reason": "抛物线的标准方程由焦点和准线的定义推导。"
-  },
-  {
-    "topicId": "cnm_h194",
-    "prerequisiteId": "cnm_h193",
-    "strength": "hard",
-    "reason": "抛物线的顶点、对称轴和开口由标准方程读出。"
-  },
-  {
-    "topicId": "cnm_h195",
-    "prerequisiteId": "cnm_h194",
-    "strength": "hard",
-    "reason": "抛物线的简单应用要先会用它的标准方程和焦点。"
-  },
-  {
-    "topicId": "cnm_h196",
-    "prerequisiteId": "cnm_h184",
-    "strength": "hard",
-    "reason": "把直线代入椭圆方程后看交点个数，要先有椭圆方程。"
-  },
-  {
-    "topicId": "cnm_h196",
-    "prerequisiteId": "cnm_h171",
-    "strength": "hard",
-    "reason": "直线要写成可以代入的方程，一般式或斜截式都可以。"
-  },
-  {
     "topicId": "cnm_h197",
     "prerequisiteId": "cnm_h027",
     "strength": "hard",
@@ -7405,12 +6943,6 @@
   },
   {
     "topicId": "cnm_h230",
-    "prerequisiteId": "cnm_p095",
-    "strength": "hard",
-    "reason": "分类加法是小学里简单搭配继续发展后的计数原理。"
-  },
-  {
-    "topicId": "cnm_h230",
     "prerequisiteId": "cnm_286",
     "strength": "soft",
     "reason": "用列举法数清互斥的几类结果，就是分类加法的具体做法。"
@@ -7626,30 +7158,6 @@
     "reason": "这两个公式是均值和方差在二项分布上的结果。"
   },
   {
-    "topicId": "cnm_h257",
-    "prerequisiteId": "cnm_h237",
-    "strength": "hard",
-    "reason": "不放回抽取的概率用组合数计算分子和分母。"
-  },
-  {
-    "topicId": "cnm_h257",
-    "prerequisiteId": "cnm_h250",
-    "strength": "hard",
-    "reason": "超几何分布也要写成每个取值对应一个概率的分布列。"
-  },
-  {
-    "topicId": "cnm_h258",
-    "prerequisiteId": "cnm_h257",
-    "strength": "hard",
-    "reason": "超几何分布的均值 nK/N 针对的就是这个分布。"
-  },
-  {
-    "topicId": "cnm_h258",
-    "prerequisiteId": "cnm_h252",
-    "strength": "soft",
-    "reason": "它仍是分布列均值的一个封闭公式。"
-  },
-  {
     "topicId": "cnm_h259",
     "prerequisiteId": "cnm_h127",
     "strength": "hard",
@@ -7666,102 +7174,6 @@
     "prerequisiteId": "cnm_h259",
     "strength": "hard",
     "reason": "经验规则说的是正态曲线在均值两侧若干个标准差内的比例。"
-  },
-  {
-    "topicId": "cnm_h261",
-    "prerequisiteId": "cnm_h130",
-    "strength": "hard",
-    "reason": "看成对数据之前，要会用样本的数字特征认识一组数据。"
-  },
-  {
-    "topicId": "cnm_h262",
-    "prerequisiteId": "cnm_h261",
-    "strength": "hard",
-    "reason": "相关系数把散点图上的线性趋势量化。"
-  },
-  {
-    "topicId": "cnm_h263",
-    "prerequisiteId": "cnm_h262",
-    "strength": "hard",
-    "reason": "比较相关性强弱，就是比较样本相关系数的绝对值。"
-  },
-  {
-    "topicId": "cnm_h264",
-    "prerequisiteId": "cnm_h261",
-    "strength": "hard",
-    "reason": "只有先看到线性相关，才用一条直线去拟合。"
-  },
-  {
-    "topicId": "cnm_h264",
-    "prerequisiteId": "cnm_201",
-    "strength": "hard",
-    "reason": "回归直线的主体是一次函数。"
-  },
-  {
-    "topicId": "cnm_h265",
-    "prerequisiteId": "cnm_h264",
-    "strength": "hard",
-    "reason": "最小二乘是为这条带误差的直线选择具体参数。"
-  },
-  {
-    "topicId": "cnm_h266",
-    "prerequisiteId": "cnm_h265",
-    "strength": "hard",
-    "reason": "斜率和截距的公式是最小二乘原理算出来的估计。"
-  },
-  {
-    "topicId": "cnm_h266",
-    "prerequisiteId": "cnm_219",
-    "strength": "soft",
-    "reason": "推导斜率时会出现二次式的和，一元二次方程是代数背景。"
-  },
-  {
-    "topicId": "cnm_h267",
-    "prerequisiteId": "cnm_h266",
-    "strength": "hard",
-    "reason": "把新的 x 代入已经估计出的直线，才得到预测值。"
-  },
-  {
-    "topicId": "cnm_h268",
-    "prerequisiteId": "cnm_h142",
-    "strength": "hard",
-    "reason": "列联表里的每一格都是一类结果的频数，频数和频率在必修里已经用过。"
-  },
-  {
-    "topicId": "cnm_h268",
-    "prerequisiteId": "cnm_h230",
-    "strength": "soft",
-    "reason": "表格的行合计、列合计是把互斥的格子相加。"
-  },
-  {
-    "topicId": "cnm_h269",
-    "prerequisiteId": "cnm_h268",
-    "strength": "hard",
-    "reason": "独立性检验看的就是这张列联表偏离独立假设有多远。"
-  },
-  {
-    "topicId": "cnm_h269",
-    "prerequisiteId": "cnm_h140",
-    "strength": "soft",
-    "reason": "这里的独立和事件相互独立是同一种想法，用在分类变量上。"
-  },
-  {
-    "topicId": "cnm_h270",
-    "prerequisiteId": "cnm_h269",
-    "strength": "hard",
-    "reason": "统计量是把独立性检验的偏离程度算成一个数。"
-  },
-  {
-    "topicId": "cnm_h271",
-    "prerequisiteId": "cnm_h267",
-    "strength": "hard",
-    "reason": "建立统计模型进行预测，核心的一步是用回归直线做预测并回头检验。"
-  },
-  {
-    "topicId": "cnm_h271",
-    "prerequisiteId": "cnm_h269",
-    "strength": "soft",
-    "reason": "同一册的统计建模也会碰到分类变量是否有关联。"
   },
   {
     "topicId": "cne_p003",
@@ -13302,30 +12714,6 @@
     "reason": "学习「平行四边形的底和高」需要先掌握「垂直」。"
   },
   {
-    "topicId": "cnm_p241",
-    "prerequisiteId": "cnm_p179",
-    "strength": "hard",
-    "reason": "学习「体育中的数学」需要先掌握「分数乘法的应用」。"
-  },
-  {
-    "topicId": "cnm_p241",
-    "prerequisiteId": "cnm_p190",
-    "strength": "soft",
-    "reason": "学习「体育中的数学」需要先掌握「圆的周长」。"
-  },
-  {
-    "topicId": "cnm_p242",
-    "prerequisiteId": "cnm_p196",
-    "strength": "hard",
-    "reason": "学习「水是生命之源」需要先掌握「求一个数的百分之几」。"
-  },
-  {
-    "topicId": "cnm_p242",
-    "prerequisiteId": "cnm_p179",
-    "strength": "soft",
-    "reason": "学习「水是生命之源」需要先掌握「分数乘法的应用」。"
-  },
-  {
     "topicId": "cnm_p058",
     "prerequisiteId": "cnm_p223",
     "strength": "hard",
@@ -13420,12 +12808,6 @@
     "prerequisiteId": "cnm_p231",
     "strength": "soft",
     "reason": "学习「列代数式」需要先掌握「乘法模型」。"
-  },
-  {
-    "topicId": "cnm_244",
-    "prerequisiteId": "cnm_p238",
-    "strength": "soft",
-    "reason": "学习「图形的旋转」需要先掌握「图形的运动」。"
   },
   {
     "topicId": "cnm_131",

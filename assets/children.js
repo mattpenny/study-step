@@ -6,8 +6,8 @@
   var REC_KEY = 'cnmChildren.records.v1';
   var MAX_CHILDREN = 8;
   var MAX_RECORDS = 40;
-  var GRADES = ['一年级', '二年级', '三年级', '四年级', '五年级', '六年级', '七年级', '八年级', '九年级', '高一', '高二', '高三'];
-  var TEXTBOOKS = ['人教版', '北师大版', '苏教版', '沪教版', '外研版', '译林版', '其他'];
+  var GRADES = ['小一', '小二', '小三', '小四', '小五', '小六', '中一', '中二', '中三', '中四', '中五', '中六'];
+  var TEXTBOOKS = ['朗文 Longman', '牛津 Oxford', '培生 Pearson', '现代教育', '教图', '其他'];
 
   function read(k, fallback) {
     try { var v = JSON.parse(localStorage.getItem(k)); return v == null ? fallback : v; } catch (e) { return fallback; }

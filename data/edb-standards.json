@@ -1,0 +1,1487 @@
+{
+  "edition": "hk-edb",
+  "label": "香港教育局課程指引的學習單元",
+  "note": "以小學／初中／高中數學學習內容、科學（中一至中三）與物理課程及評估指引、英國語文課程指引為依據；英語沒有單元，按學習階段與學習範疇對齊。",
+  "items": [
+    {
+      "id": "edb-english:P1-P3-Interpersonal",
+      "subject": "english",
+      "keyStage": "KS1",
+      "strand": "Interpersonal",
+      "unit": "P1-P3-Interpersonal",
+      "title": "communicative functions in everyday contexts",
+      "source": "EDB 課程指引",
+      "topicCount": 12
+    },
+    {
+      "id": "edb-english:P1-P3-Knowledge",
+      "subject": "english",
+      "keyStage": "KS1",
+      "strand": "Knowledge",
+      "unit": "P1-P3-Knowledge",
+      "title": "phonics / letter-sound knowledge",
+      "source": "EDB 課程指引",
+      "topicCount": 59
+    },
+    {
+      "id": "edb-english:P4-P6-Interpersonal",
+      "subject": "english",
+      "keyStage": "KS2",
+      "strand": "Interpersonal",
+      "unit": "P4-P6-Interpersonal",
+      "title": "communicative functions in everyday contexts",
+      "source": "EDB 課程指引",
+      "topicCount": 31
+    },
+    {
+      "id": "edb-english:P4-P6-Knowledge",
+      "subject": "english",
+      "keyStage": "KS2",
+      "strand": "Knowledge",
+      "unit": "P4-P6-Knowledge",
+      "title": "vocabulary",
+      "source": "EDB 課程指引",
+      "topicCount": 106
+    },
+    {
+      "id": "edb-english:S1-S3-Interpersonal",
+      "subject": "english",
+      "keyStage": "KS3",
+      "strand": "Interpersonal",
+      "unit": "S1-S3-Interpersonal",
+      "title": "communicative functions in everyday contexts",
+      "source": "EDB 課程指引",
+      "topicCount": 55
+    },
+    {
+      "id": "edb-english:S1-S3-Knowledge",
+      "subject": "english",
+      "keyStage": "KS3",
+      "strand": "Knowledge",
+      "unit": "S1-S3-Knowledge",
+      "title": "phonics / letter-sound knowledge",
+      "source": "EDB 課程指引",
+      "topicCount": 202
+    },
+    {
+      "id": "edb-english:S4-S6-Interpersonal",
+      "subject": "english",
+      "keyStage": "KS4",
+      "strand": "Interpersonal",
+      "unit": "S4-S6-Interpersonal",
+      "title": "communicative functions in everyday contexts",
+      "source": "EDB 課程指引",
+      "topicCount": 36
+    },
+    {
+      "id": "edb-english:S4-S6-Knowledge",
+      "subject": "english",
+      "keyStage": "KS4",
+      "strand": "Knowledge",
+      "unit": "S4-S6-Knowledge",
+      "title": "language forms and communicative functions",
+      "source": "EDB 課程指引",
+      "topicCount": 223
+    },
+    {
+      "id": "edb-math:1M2",
+      "subject": "math",
+      "keyStage": "KS1",
+      "strand": "度量",
+      "unit": "1M2",
+      "title": "貨幣(一)",
+      "source": "EDB 課程指引",
+      "topicCount": 1
+    },
+    {
+      "id": "edb-math:1N1",
+      "subject": "math",
+      "keyStage": "KS1",
+      "strand": "數",
+      "unit": "1N1",
+      "title": "20以內的數",
+      "source": "EDB 課程指引",
+      "topicCount": 10
+    },
+    {
+      "id": "edb-math:1N2",
+      "subject": "math",
+      "keyStage": "KS1",
+      "strand": "數",
+      "unit": "1N2",
+      "title": "基本加法和減法",
+      "source": "EDB 課程指引",
+      "topicCount": 13
+    },
+    {
+      "id": "edb-math:1N3",
+      "subject": "math",
+      "keyStage": "KS1",
+      "strand": "數",
+      "unit": "1N3",
+      "title": "100以內的數",
+      "source": "EDB 課程指引",
+      "topicCount": 2
+    },
+    {
+      "id": "edb-math:1N4",
+      "subject": "math",
+      "keyStage": "KS1",
+      "strand": "數",
+      "unit": "1N4",
+      "title": "加法和減法(一)",
+      "source": "EDB 課程指引",
+      "topicCount": 8
+    },
+    {
+      "id": "edb-math:1S1",
+      "subject": "math",
+      "keyStage": "KS1",
+      "strand": "圖形與空間",
+      "unit": "1S1",
+      "title": "立體圖形(一)",
+      "source": "EDB 課程指引",
+      "topicCount": 1
+    },
+    {
+      "id": "edb-math:1S2",
+      "subject": "math",
+      "keyStage": "KS1",
+      "strand": "圖形與空間",
+      "unit": "1S2",
+      "title": "平面圖形",
+      "source": "EDB 課程指引",
+      "topicCount": 2
+    },
+    {
+      "id": "edb-math:1S3",
+      "subject": "math",
+      "keyStage": "KS1",
+      "strand": "圖形與空間",
+      "unit": "1S3",
+      "title": "方向和位置(一)",
+      "source": "EDB 課程指引",
+      "topicCount": 1
+    },
+    {
+      "id": "edb-math:2D1",
+      "subject": "math",
+      "keyStage": "KS1",
+      "strand": "數據處理",
+      "unit": "2D1",
+      "title": "象形圖",
+      "source": "EDB 課程指引",
+      "topicCount": 1
+    },
+    {
+      "id": "edb-math:2M1",
+      "subject": "math",
+      "keyStage": "KS1",
+      "strand": "度量",
+      "unit": "2M1",
+      "title": "長度和距離(三)",
+      "source": "EDB 課程指引",
+      "topicCount": 3
+    },
+    {
+      "id": "edb-math:2M2",
+      "subject": "math",
+      "keyStage": "KS1",
+      "strand": "度量",
+      "unit": "2M2",
+      "title": "時間(二)",
+      "source": "EDB 課程指引",
+      "topicCount": 3
+    },
+    {
+      "id": "edb-math:2N3",
+      "subject": "math",
+      "keyStage": "KS1",
+      "strand": "數",
+      "unit": "2N3",
+      "title": "基本乘法",
+      "source": "EDB 課程指引",
+      "topicCount": 6
+    },
+    {
+      "id": "edb-math:2N4",
+      "subject": "math",
+      "keyStage": "KS1",
+      "strand": "數",
+      "unit": "2N4",
+      "title": "四位數",
+      "source": "EDB 課程指引",
+      "topicCount": 3
+    },
+    {
+      "id": "edb-math:2N5",
+      "subject": "math",
+      "keyStage": "KS1",
+      "strand": "數",
+      "unit": "2N5",
+      "title": "加法和減法(三)",
+      "source": "EDB 課程指引",
+      "topicCount": 7
+    },
+    {
+      "id": "edb-math:2N6",
+      "subject": "math",
+      "keyStage": "KS1",
+      "strand": "數",
+      "unit": "2N6",
+      "title": "基本除法",
+      "source": "EDB 課程指引",
+      "topicCount": 7
+    },
+    {
+      "id": "edb-math:2S1",
+      "subject": "math",
+      "keyStage": "KS1",
+      "strand": "圖形與空間",
+      "unit": "2S1",
+      "title": "立體圖形(二)",
+      "source": "EDB 課程指引",
+      "topicCount": 2
+    },
+    {
+      "id": "edb-math:2S2",
+      "subject": "math",
+      "keyStage": "KS1",
+      "strand": "圖形與空間",
+      "unit": "2S2",
+      "title": "角",
+      "source": "EDB 課程指引",
+      "topicCount": 3
+    },
+    {
+      "id": "edb-math:2S3",
+      "subject": "math",
+      "keyStage": "KS1",
+      "strand": "圖形與空間",
+      "unit": "2S3",
+      "title": "方向和位置(二)",
+      "source": "EDB 課程指引",
+      "topicCount": 1
+    },
+    {
+      "id": "edb-math:3D1",
+      "subject": "math",
+      "keyStage": "KS1",
+      "strand": "數據處理",
+      "unit": "3D1",
+      "title": "棒形圖(一)",
+      "source": "EDB 課程指引",
+      "topicCount": 1
+    },
+    {
+      "id": "edb-math:3M1",
+      "subject": "math",
+      "keyStage": "KS1",
+      "strand": "度量",
+      "unit": "3M1",
+      "title": "長度和距離(四)",
+      "source": "EDB 課程指引",
+      "topicCount": 3
+    },
+    {
+      "id": "edb-math:3M2",
+      "subject": "math",
+      "keyStage": "KS1",
+      "strand": "度量",
+      "unit": "3M2",
+      "title": "時間(三)",
+      "source": "EDB 課程指引",
+      "topicCount": 1
+    },
+    {
+      "id": "edb-math:3M4",
+      "subject": "math",
+      "keyStage": "KS1",
+      "strand": "度量",
+      "unit": "3M4",
+      "title": "時間(四)",
+      "source": "EDB 課程指引",
+      "topicCount": 1
+    },
+    {
+      "id": "edb-math:3M5",
+      "subject": "math",
+      "keyStage": "KS1",
+      "strand": "度量",
+      "unit": "3M5",
+      "title": "重量",
+      "source": "EDB 課程指引",
+      "topicCount": 3
+    },
+    {
+      "id": "edb-math:3N1",
+      "subject": "math",
+      "keyStage": "KS1",
+      "strand": "數",
+      "unit": "3N1",
+      "title": "五位數",
+      "source": "EDB 課程指引",
+      "topicCount": 1
+    },
+    {
+      "id": "edb-math:3N2",
+      "subject": "math",
+      "keyStage": "KS1",
+      "strand": "數",
+      "unit": "3N2",
+      "title": "乘法(一)",
+      "source": "EDB 課程指引",
+      "topicCount": 4
+    },
+    {
+      "id": "edb-math:3N3",
+      "subject": "math",
+      "keyStage": "KS1",
+      "strand": "數",
+      "unit": "3N3",
+      "title": "除法(一)",
+      "source": "EDB 課程指引",
+      "topicCount": 2
+    },
+    {
+      "id": "edb-math:3N4",
+      "subject": "math",
+      "keyStage": "KS1",
+      "strand": "數",
+      "unit": "3N4",
+      "title": "四則運算(一)",
+      "source": "EDB 課程指引",
+      "topicCount": 3
+    },
+    {
+      "id": "edb-math:3N5",
+      "subject": "math",
+      "keyStage": "KS1",
+      "strand": "數",
+      "unit": "3N5",
+      "title": "分數(一)",
+      "source": "EDB 課程指引",
+      "topicCount": 4
+    },
+    {
+      "id": "edb-math:3S1",
+      "subject": "math",
+      "keyStage": "KS1",
+      "strand": "圖形與空間",
+      "unit": "3S1",
+      "title": "四邊形(二)",
+      "source": "EDB 課程指引",
+      "topicCount": 2
+    },
+    {
+      "id": "edb-math:3S2",
+      "subject": "math",
+      "keyStage": "KS1",
+      "strand": "圖形與空間",
+      "unit": "3S2",
+      "title": "三角形",
+      "source": "EDB 課程指引",
+      "topicCount": 3
+    },
+    {
+      "id": "edb-math:4D1",
+      "subject": "math",
+      "keyStage": "KS2",
+      "strand": "數據處理",
+      "unit": "4D1",
+      "title": "棒形圖(二)",
+      "source": "EDB 課程指引",
+      "topicCount": 2
+    },
+    {
+      "id": "edb-math:4M1",
+      "subject": "math",
+      "keyStage": "KS2",
+      "strand": "度量",
+      "unit": "4M1",
+      "title": "周界(一)",
+      "source": "EDB 課程指引",
+      "topicCount": 1
+    },
+    {
+      "id": "edb-math:4M2",
+      "subject": "math",
+      "keyStage": "KS2",
+      "strand": "度量",
+      "unit": "4M2",
+      "title": "面積(一)",
+      "source": "EDB 課程指引",
+      "topicCount": 3
+    },
+    {
+      "id": "edb-math:4N1",
+      "subject": "math",
+      "keyStage": "KS2",
+      "strand": "數",
+      "unit": "4N1",
+      "title": "乘法(二)",
+      "source": "EDB 課程指引",
+      "topicCount": 4
+    },
+    {
+      "id": "edb-math:4N2",
+      "subject": "math",
+      "keyStage": "KS2",
+      "strand": "數",
+      "unit": "4N2",
+      "title": "除法(二)",
+      "source": "EDB 課程指引",
+      "topicCount": 2
+    },
+    {
+      "id": "edb-math:4N3",
+      "subject": "math",
+      "keyStage": "KS2",
+      "strand": "數",
+      "unit": "4N3",
+      "title": "倍數和因數",
+      "source": "EDB 課程指引",
+      "topicCount": 5
+    },
+    {
+      "id": "edb-math:4N4",
+      "subject": "math",
+      "keyStage": "KS2",
+      "strand": "數",
+      "unit": "4N4",
+      "title": "公倍數和公因數",
+      "source": "EDB 課程指引",
+      "topicCount": 2
+    },
+    {
+      "id": "edb-math:4N5",
+      "subject": "math",
+      "keyStage": "KS2",
+      "strand": "數",
+      "unit": "4N5",
+      "title": "四則運算(二)",
+      "source": "EDB 課程指引",
+      "topicCount": 9
+    },
+    {
+      "id": "edb-math:4N7",
+      "subject": "math",
+      "keyStage": "KS2",
+      "strand": "數",
+      "unit": "4N7",
+      "title": "小數(一)",
+      "source": "EDB 課程指引",
+      "topicCount": 4
+    },
+    {
+      "id": "edb-math:4N8",
+      "subject": "math",
+      "keyStage": "KS2",
+      "strand": "數",
+      "unit": "4N8",
+      "title": "小數(二)",
+      "source": "EDB 課程指引",
+      "topicCount": 4
+    },
+    {
+      "id": "edb-math:4S1",
+      "subject": "math",
+      "keyStage": "KS2",
+      "strand": "圖形與空間",
+      "unit": "4S1",
+      "title": "四邊形(三)",
+      "source": "EDB 課程指引",
+      "topicCount": 4
+    },
+    {
+      "id": "edb-math:4S2",
+      "subject": "math",
+      "keyStage": "KS2",
+      "strand": "圖形與空間",
+      "unit": "4S2",
+      "title": "圖形分割和拼砌",
+      "source": "EDB 課程指引",
+      "topicCount": 2
+    },
+    {
+      "id": "edb-math:4S3",
+      "subject": "math",
+      "keyStage": "KS2",
+      "strand": "圖形與空間",
+      "unit": "4S3",
+      "title": "方向和位置(三)",
+      "source": "EDB 課程指引",
+      "topicCount": 5
+    },
+    {
+      "id": "edb-math:5A1",
+      "subject": "math",
+      "keyStage": "KS2",
+      "strand": "代數",
+      "unit": "5A1",
+      "title": "代數的初步認識",
+      "source": "EDB 課程指引",
+      "topicCount": 1
+    },
+    {
+      "id": "edb-math:5A2",
+      "subject": "math",
+      "keyStage": "KS2",
+      "strand": "代數",
+      "unit": "5A2",
+      "title": "簡易方程(一)",
+      "source": "EDB 課程指引",
+      "topicCount": 5
+    },
+    {
+      "id": "edb-math:5M1",
+      "subject": "math",
+      "keyStage": "KS2",
+      "strand": "度量",
+      "unit": "5M1",
+      "title": "面積(二)",
+      "source": "EDB 課程指引",
+      "topicCount": 6
+    },
+    {
+      "id": "edb-math:5M2",
+      "subject": "math",
+      "keyStage": "KS2",
+      "strand": "度量",
+      "unit": "5M2",
+      "title": "體積(一)",
+      "source": "EDB 課程指引",
+      "topicCount": 5
+    },
+    {
+      "id": "edb-math:5N1",
+      "subject": "math",
+      "keyStage": "KS2",
+      "strand": "數",
+      "unit": "5N1",
+      "title": "多位數",
+      "source": "EDB 課程指引",
+      "topicCount": 3
+    },
+    {
+      "id": "edb-math:5N2",
+      "subject": "math",
+      "keyStage": "KS2",
+      "strand": "數",
+      "unit": "5N2",
+      "title": "分數(三)",
+      "source": "EDB 課程指引",
+      "topicCount": 3
+    },
+    {
+      "id": "edb-math:5N3",
+      "subject": "math",
+      "keyStage": "KS2",
+      "strand": "數",
+      "unit": "5N3",
+      "title": "分數(四)",
+      "source": "EDB 課程指引",
+      "topicCount": 3
+    },
+    {
+      "id": "edb-math:5N4",
+      "subject": "math",
+      "keyStage": "KS2",
+      "strand": "數",
+      "unit": "5N4",
+      "title": "小數(三)",
+      "source": "EDB 課程指引",
+      "topicCount": 7
+    },
+    {
+      "id": "edb-math:5N5",
+      "subject": "math",
+      "keyStage": "KS2",
+      "strand": "數",
+      "unit": "5N5",
+      "title": "分數(五)",
+      "source": "EDB 課程指引",
+      "topicCount": 9
+    },
+    {
+      "id": "edb-math:5S1",
+      "subject": "math",
+      "keyStage": "KS2",
+      "strand": "圖形與空間",
+      "unit": "5S1",
+      "title": "圓",
+      "source": "EDB 課程指引",
+      "topicCount": 6
+    },
+    {
+      "id": "edb-math:5S2",
+      "subject": "math",
+      "keyStage": "KS2",
+      "strand": "圖形與空間",
+      "unit": "5S2",
+      "title": "立體圖形(三)",
+      "source": "EDB 課程指引",
+      "topicCount": 3
+    },
+    {
+      "id": "edb-math:6D1",
+      "subject": "math",
+      "keyStage": "KS2",
+      "strand": "數據處理",
+      "unit": "6D1",
+      "title": "平均數",
+      "source": "EDB 課程指引",
+      "topicCount": 1
+    },
+    {
+      "id": "edb-math:6D2",
+      "subject": "math",
+      "keyStage": "KS2",
+      "strand": "數據處理",
+      "unit": "6D2",
+      "title": "折線圖",
+      "source": "EDB 課程指引",
+      "topicCount": 1
+    },
+    {
+      "id": "edb-math:6D3",
+      "subject": "math",
+      "keyStage": "KS2",
+      "strand": "數據處理",
+      "unit": "6D3",
+      "title": "圓形圖",
+      "source": "EDB 課程指引",
+      "topicCount": 2
+    },
+    {
+      "id": "edb-math:6M1",
+      "subject": "math",
+      "keyStage": "KS2",
+      "strand": "度量",
+      "unit": "6M1",
+      "title": "角(度)",
+      "source": "EDB 課程指引",
+      "topicCount": 2
+    },
+    {
+      "id": "edb-math:6M2",
+      "subject": "math",
+      "keyStage": "KS2",
+      "strand": "度量",
+      "unit": "6M2",
+      "title": "體積(二)",
+      "source": "EDB 課程指引",
+      "topicCount": 4
+    },
+    {
+      "id": "edb-math:6N3",
+      "subject": "math",
+      "keyStage": "KS2",
+      "strand": "數",
+      "unit": "6N3",
+      "title": "百分數(一)",
+      "source": "EDB 課程指引",
+      "topicCount": 5
+    },
+    {
+      "id": "edb-math:6N4",
+      "subject": "math",
+      "keyStage": "KS2",
+      "strand": "數",
+      "unit": "6N4",
+      "title": "百分數(二)",
+      "source": "EDB 課程指引",
+      "topicCount": 3
+    },
+    {
+      "id": "edb-math:6S1",
+      "subject": "math",
+      "keyStage": "KS2",
+      "strand": "圖形與空間",
+      "unit": "6S1",
+      "title": "對稱",
+      "source": "EDB 課程指引",
+      "topicCount": 4
+    },
+    {
+      "id": "edb-math:S1",
+      "subject": "math",
+      "keyStage": "KS3",
+      "strand": "數與代數",
+      "unit": "S1",
+      "title": "基礎計算",
+      "source": "EDB 課程指引",
+      "topicCount": 1
+    },
+    {
+      "id": "edb-math:S10",
+      "subject": "math",
+      "keyStage": "KS3",
+      "strand": "數與代數",
+      "unit": "S10",
+      "title": "整數指數律",
+      "source": "EDB 課程指引",
+      "topicCount": 8
+    },
+    {
+      "id": "edb-math:S11",
+      "subject": "math",
+      "keyStage": "KS3",
+      "strand": "數與代數",
+      "unit": "S11",
+      "title": "多項式",
+      "source": "EDB 課程指引",
+      "topicCount": 26
+    },
+    {
+      "id": "edb-math:S12",
+      "subject": "math",
+      "keyStage": "KS3",
+      "strand": "數與代數",
+      "unit": "S12",
+      "title": "恆等式",
+      "source": "EDB 課程指引",
+      "topicCount": 3
+    },
+    {
+      "id": "edb-math:S14",
+      "subject": "math",
+      "keyStage": "KS3",
+      "strand": "數與代數",
+      "unit": "S14",
+      "title": "一元一次不等式",
+      "source": "EDB 課程指引",
+      "topicCount": 8
+    },
+    {
+      "id": "edb-math:S16",
+      "subject": "math",
+      "keyStage": "KS3",
+      "strand": "度量、圖形與空間",
+      "unit": "S16",
+      "title": "弧長和扇形面積",
+      "source": "EDB 課程指引",
+      "topicCount": 2
+    },
+    {
+      "id": "edb-math:S17",
+      "subject": "math",
+      "keyStage": "KS3",
+      "strand": "度量、圖形與空間",
+      "unit": "S17",
+      "title": "立體圖形",
+      "source": "EDB 課程指引",
+      "topicCount": 6
+    },
+    {
+      "id": "edb-math:S18",
+      "subject": "math",
+      "keyStage": "KS3",
+      "strand": "度量、圖形與空間",
+      "unit": "S18",
+      "title": "求積法",
+      "source": "EDB 課程指引",
+      "topicCount": 19
+    },
+    {
+      "id": "edb-math:S19",
+      "subject": "math",
+      "keyStage": "KS3",
+      "strand": "度量、圖形與空間",
+      "unit": "S19",
+      "title": "角和平行線",
+      "source": "EDB 課程指引",
+      "topicCount": 20
+    },
+    {
+      "id": "edb-math:S2",
+      "subject": "math",
+      "keyStage": "KS3",
+      "strand": "數與代數",
+      "unit": "S2",
+      "title": "有向數",
+      "source": "EDB 課程指引",
+      "topicCount": 18
+    },
+    {
+      "id": "edb-math:S20",
+      "subject": "math",
+      "keyStage": "KS3",
+      "strand": "度量、圖形與空間",
+      "unit": "S20",
+      "title": "多邊形",
+      "source": "EDB 課程指引",
+      "topicCount": 8
+    },
+    {
+      "id": "edb-math:S21",
+      "subject": "math",
+      "keyStage": "KS3",
+      "strand": "度量、圖形與空間",
+      "unit": "S21",
+      "title": "全等三角形",
+      "source": "EDB 課程指引",
+      "topicCount": 20
+    },
+    {
+      "id": "edb-math:S22",
+      "subject": "math",
+      "keyStage": "KS3",
+      "strand": "度量、圖形與空間",
+      "unit": "S22",
+      "title": "相似三角形",
+      "source": "EDB 課程指引",
+      "topicCount": 8
+    },
+    {
+      "id": "edb-math:S23",
+      "subject": "math",
+      "keyStage": "KS3",
+      "strand": "度量、圖形與空間",
+      "unit": "S23",
+      "title": "四邊形",
+      "source": "EDB 課程指引",
+      "topicCount": 10
+    },
+    {
+      "id": "edb-math:S24",
+      "subject": "math",
+      "keyStage": "KS3",
+      "strand": "度量、圖形與空間",
+      "unit": "S24",
+      "title": "三角形的心",
+      "source": "EDB 課程指引",
+      "topicCount": 4
+    },
+    {
+      "id": "edb-math:S25",
+      "subject": "math",
+      "keyStage": "KS3",
+      "strand": "度量、圖形與空間",
+      "unit": "S25",
+      "title": "畢氏定理",
+      "source": "EDB 課程指引",
+      "topicCount": 7
+    },
+    {
+      "id": "edb-math:S26",
+      "subject": "math",
+      "keyStage": "KS3",
+      "strand": "度量、圖形與空間",
+      "unit": "S26",
+      "title": "直角坐標系",
+      "source": "EDB 課程指引",
+      "topicCount": 7
+    },
+    {
+      "id": "edb-math:S27",
+      "subject": "math",
+      "keyStage": "KS3",
+      "strand": "度量、圖形與空間",
+      "unit": "S27",
+      "title": "三角學",
+      "source": "EDB 課程指引",
+      "topicCount": 7
+    },
+    {
+      "id": "edb-math:S28",
+      "subject": "math",
+      "keyStage": "KS3",
+      "strand": "數據處理",
+      "unit": "S28",
+      "title": "數據的組織",
+      "source": "EDB 課程指引",
+      "topicCount": 11
+    },
+    {
+      "id": "edb-math:S29",
+      "subject": "math",
+      "keyStage": "KS3",
+      "strand": "數據處理",
+      "unit": "S29",
+      "title": "數據的表達",
+      "source": "EDB 課程指引",
+      "topicCount": 7
+    },
+    {
+      "id": "edb-math:S3",
+      "subject": "math",
+      "keyStage": "KS3",
+      "strand": "數與代數",
+      "unit": "S3",
+      "title": "近似值與數值估算",
+      "source": "EDB 課程指引",
+      "topicCount": 1
+    },
+    {
+      "id": "edb-math:S30",
+      "subject": "math",
+      "keyStage": "KS3",
+      "strand": "數據處理",
+      "unit": "S30",
+      "title": "集中趨勢的度量",
+      "source": "EDB 課程指引",
+      "topicCount": 8
+    },
+    {
+      "id": "edb-math:S31",
+      "subject": "math",
+      "keyStage": "KS3",
+      "strand": "數據處理",
+      "unit": "S31",
+      "title": "概率",
+      "source": "EDB 課程指引",
+      "topicCount": 14
+    },
+    {
+      "id": "edb-math:S4",
+      "subject": "math",
+      "keyStage": "KS3",
+      "strand": "數與代數",
+      "unit": "S4",
+      "title": "有理數與無理數",
+      "source": "EDB 課程指引",
+      "topicCount": 15
+    },
+    {
+      "id": "edb-math:S6",
+      "subject": "math",
+      "keyStage": "KS3",
+      "strand": "數與代數",
+      "unit": "S6",
+      "title": "率、比及比例",
+      "source": "EDB 課程指引",
+      "topicCount": 9
+    },
+    {
+      "id": "edb-math:S7",
+      "subject": "math",
+      "keyStage": "KS3",
+      "strand": "數與代數",
+      "unit": "S7",
+      "title": "代數式",
+      "source": "EDB 課程指引",
+      "topicCount": 6
+    },
+    {
+      "id": "edb-math:S8",
+      "subject": "math",
+      "keyStage": "KS3",
+      "strand": "數與代數",
+      "unit": "S8",
+      "title": "一元一次方程",
+      "source": "EDB 課程指引",
+      "topicCount": 11
+    },
+    {
+      "id": "edb-math:S9",
+      "subject": "math",
+      "keyStage": "KS3",
+      "strand": "數與代數",
+      "unit": "S9",
+      "title": "二元一次方程",
+      "source": "EDB 課程指引",
+      "topicCount": 7
+    },
+    {
+      "id": "edb-math:COM1",
+      "subject": "math",
+      "keyStage": "KS4",
+      "strand": "數與代數",
+      "unit": "COM1",
+      "title": "一元二次方程",
+      "source": "EDB 課程指引",
+      "topicCount": 19
+    },
+    {
+      "id": "edb-math:COM10",
+      "subject": "math",
+      "keyStage": "KS4",
+      "strand": "度量、圖形與空間",
+      "unit": "COM10",
+      "title": "直線方程",
+      "source": "EDB 課程指引",
+      "topicCount": 11
+    },
+    {
+      "id": "edb-math:COM11",
+      "subject": "math",
+      "keyStage": "KS4",
+      "strand": "度量、圖形與空間",
+      "unit": "COM11",
+      "title": "圓的基本性質",
+      "source": "EDB 課程指引",
+      "topicCount": 14
+    },
+    {
+      "id": "edb-math:COM13",
+      "subject": "math",
+      "keyStage": "KS4",
+      "strand": "度量、圖形與空間",
+      "unit": "COM13",
+      "title": "圓方程",
+      "source": "EDB 課程指引",
+      "topicCount": 7
+    },
+    {
+      "id": "edb-math:COM14",
+      "subject": "math",
+      "keyStage": "KS4",
+      "strand": "度量、圖形與空間",
+      "unit": "COM14",
+      "title": "續三角學",
+      "source": "EDB 課程指引",
+      "topicCount": 28
+    },
+    {
+      "id": "edb-math:COM15",
+      "subject": "math",
+      "keyStage": "KS4",
+      "strand": "數據處理",
+      "unit": "COM15",
+      "title": "排列與組合",
+      "source": "EDB 課程指引",
+      "topicCount": 10
+    },
+    {
+      "id": "edb-math:COM16",
+      "subject": "math",
+      "keyStage": "KS4",
+      "strand": "數據處理",
+      "unit": "COM16",
+      "title": "續概率",
+      "source": "EDB 課程指引",
+      "topicCount": 13
+    },
+    {
+      "id": "edb-math:COM17",
+      "subject": "math",
+      "keyStage": "KS4",
+      "strand": "數據處理",
+      "unit": "COM17",
+      "title": "離差的度量",
+      "source": "EDB 課程指引",
+      "topicCount": 16
+    },
+    {
+      "id": "edb-math:COM2",
+      "subject": "math",
+      "keyStage": "KS4",
+      "strand": "數與代數",
+      "unit": "COM2",
+      "title": "函數及其圖像",
+      "source": "EDB 課程指引",
+      "topicCount": 40
+    },
+    {
+      "id": "edb-math:COM3",
+      "subject": "math",
+      "keyStage": "KS4",
+      "strand": "數與代數",
+      "unit": "COM3",
+      "title": "指數函數與對數函數",
+      "source": "EDB 課程指引",
+      "topicCount": 14
+    },
+    {
+      "id": "edb-math:COM7",
+      "subject": "math",
+      "keyStage": "KS4",
+      "strand": "數與代數",
+      "unit": "COM7",
+      "title": "等差數列與等比數列及其求和法",
+      "source": "EDB 課程指引",
+      "topicCount": 16
+    },
+    {
+      "id": "edb-math:COM8",
+      "subject": "math",
+      "keyStage": "KS4",
+      "strand": "數與代數",
+      "unit": "COM8",
+      "title": "不等式與線性規畫",
+      "source": "EDB 課程指引",
+      "topicCount": 10
+    },
+    {
+      "id": "edb-math:COM9",
+      "subject": "math",
+      "keyStage": "KS4",
+      "strand": "數與代數",
+      "unit": "COM9",
+      "title": "續函數圖像",
+      "source": "EDB 課程指引",
+      "topicCount": 6
+    },
+    {
+      "id": "edb-math:M110",
+      "subject": "math",
+      "keyStage": "KS4",
+      "strand": "數與代數",
+      "unit": "M110",
+      "title": "條件概率和貝葉斯定理",
+      "source": "EDB 課程指引",
+      "topicCount": 5
+    },
+    {
+      "id": "edb-math:M111",
+      "subject": "math",
+      "keyStage": "KS4",
+      "strand": "數與代數",
+      "unit": "M111",
+      "title": "離散隨機變量",
+      "source": "EDB 課程指引",
+      "topicCount": 6
+    },
+    {
+      "id": "edb-math:M113",
+      "subject": "math",
+      "keyStage": "KS4",
+      "strand": "數與代數",
+      "unit": "M113",
+      "title": "二項分佈",
+      "source": "EDB 課程指引",
+      "topicCount": 2
+    },
+    {
+      "id": "edb-math:M116",
+      "subject": "math",
+      "keyStage": "KS4",
+      "strand": "數與代數",
+      "unit": "M116",
+      "title": "正態分佈的基本定義及其性質",
+      "source": "EDB 課程指引",
+      "topicCount": 1
+    },
+    {
+      "id": "edb-math:M118",
+      "subject": "math",
+      "keyStage": "KS4",
+      "strand": "數與代數",
+      "unit": "M118",
+      "title": "正態分佈的應用",
+      "source": "EDB 課程指引",
+      "topicCount": 1
+    },
+    {
+      "id": "edb-math:M13",
+      "subject": "math",
+      "keyStage": "KS4",
+      "strand": "數與代數",
+      "unit": "M13",
+      "title": "函數的導數",
+      "source": "EDB 課程指引",
+      "topicCount": 9
+    },
+    {
+      "id": "edb-math:M16",
+      "subject": "math",
+      "keyStage": "KS4",
+      "strand": "數與代數",
+      "unit": "M16",
+      "title": "求導法的應用",
+      "source": "EDB 課程指引",
+      "topicCount": 6
+    },
+    {
+      "id": "edb-math:M215",
+      "subject": "math",
+      "keyStage": "KS4",
+      "strand": "數與代數",
+      "unit": "M215",
+      "title": "向量的簡介",
+      "source": "EDB 課程指引",
+      "topicCount": 29
+    },
+    {
+      "id": "edb-math:M216",
+      "subject": "math",
+      "keyStage": "KS4",
+      "strand": "數與代數",
+      "unit": "M216",
+      "title": "純量積與向量積",
+      "source": "EDB 課程指引",
+      "topicCount": 5
+    },
+    {
+      "id": "edb-math:M217",
+      "subject": "math",
+      "keyStage": "KS4",
+      "strand": "數與代數",
+      "unit": "M217",
+      "title": "向量的應用",
+      "source": "EDB 課程指引",
+      "topicCount": 1
+    },
+    {
+      "id": "edb-math:M22",
+      "subject": "math",
+      "keyStage": "KS4",
+      "strand": "數與代數",
+      "unit": "M22",
+      "title": "數學歸納法",
+      "source": "EDB 課程指引",
+      "topicCount": 2
+    },
+    {
+      "id": "edb-math:M23",
+      "subject": "math",
+      "keyStage": "KS4",
+      "strand": "數與代數",
+      "unit": "M23",
+      "title": "二項式定理",
+      "source": "EDB 課程指引",
+      "topicCount": 4
+    },
+    {
+      "id": "edb-physics:SCI1",
+      "subject": "physics",
+      "keyStage": "KS3",
+      "strand": "物理",
+      "unit": "SCI1",
+      "title": "科學入門",
+      "source": "EDB 課程指引",
+      "topicCount": 4
+    },
+    {
+      "id": "edb-physics:SCI10",
+      "subject": "physics",
+      "keyStage": "KS3",
+      "strand": "物理",
+      "unit": "SCI10",
+      "title": "感應環境",
+      "source": "EDB 課程指引",
+      "topicCount": 3
+    },
+    {
+      "id": "edb-physics:SCI11",
+      "subject": "physics",
+      "keyStage": "KS3",
+      "strand": "物理",
+      "unit": "SCI11",
+      "title": "力與運動",
+      "source": "EDB 課程指引",
+      "topicCount": 24
+    },
+    {
+      "id": "edb-physics:SCI14",
+      "subject": "physics",
+      "keyStage": "KS3",
+      "strand": "物理",
+      "unit": "SCI14",
+      "title": "光、顏色與其他",
+      "source": "EDB 課程指引",
+      "topicCount": 10
+    },
+    {
+      "id": "edb-physics:SCI5",
+      "subject": "physics",
+      "keyStage": "KS3",
+      "strand": "物理",
+      "unit": "SCI5",
+      "title": "能量",
+      "source": "EDB 課程指引",
+      "topicCount": 16
+    },
+    {
+      "id": "edb-physics:SCI6",
+      "subject": "physics",
+      "keyStage": "KS3",
+      "strand": "物理",
+      "unit": "SCI6",
+      "title": "物質的粒子觀",
+      "source": "EDB 課程指引",
+      "topicCount": 5
+    },
+    {
+      "id": "edb-physics:SCI8",
+      "subject": "physics",
+      "keyStage": "KS3",
+      "strand": "物理",
+      "unit": "SCI8",
+      "title": "電的使用",
+      "source": "EDB 課程指引",
+      "topicCount": 30
+    },
+    {
+      "id": "edb-physics:PHY-IIIa",
+      "subject": "physics",
+      "keyStage": "KS4",
+      "strand": "物理",
+      "unit": "PHY-IIIa",
+      "title": "波的本質和性質",
+      "source": "EDB 課程指引",
+      "topicCount": 12
+    },
+    {
+      "id": "edb-physics:PHY-IIIb",
+      "subject": "physics",
+      "keyStage": "KS4",
+      "strand": "物理",
+      "unit": "PHY-IIIb",
+      "title": "光",
+      "source": "EDB 課程指引",
+      "topicCount": 8
+    },
+    {
+      "id": "edb-physics:PHY-IIa",
+      "subject": "physics",
+      "keyStage": "KS4",
+      "strand": "物理",
+      "unit": "PHY-IIa",
+      "title": "位置與移動",
+      "source": "EDB 課程指引",
+      "topicCount": 9
+    },
+    {
+      "id": "edb-physics:PHY-IIb",
+      "subject": "physics",
+      "keyStage": "KS4",
+      "strand": "物理",
+      "unit": "PHY-IIb",
+      "title": "力與運動",
+      "source": "EDB 課程指引",
+      "topicCount": 18
+    },
+    {
+      "id": "edb-physics:PHY-IIc",
+      "subject": "physics",
+      "keyStage": "KS4",
+      "strand": "物理",
+      "unit": "PHY-IIc",
+      "title": "拋體運動",
+      "source": "EDB 課程指引",
+      "topicCount": 5
+    },
+    {
+      "id": "edb-physics:PHY-IId",
+      "subject": "physics",
+      "keyStage": "KS4",
+      "strand": "物理",
+      "unit": "PHY-IId",
+      "title": "功、能量和功率",
+      "source": "EDB 課程指引",
+      "topicCount": 8
+    },
+    {
+      "id": "edb-physics:PHY-IIe",
+      "subject": "physics",
+      "keyStage": "KS4",
+      "strand": "物理",
+      "unit": "PHY-IIe",
+      "title": "動量",
+      "source": "EDB 課程指引",
+      "topicCount": 8
+    },
+    {
+      "id": "edb-physics:PHY-IIf",
+      "subject": "physics",
+      "keyStage": "KS4",
+      "strand": "物理",
+      "unit": "PHY-IIf",
+      "title": "勻速圓周運動",
+      "source": "EDB 課程指引",
+      "topicCount": 6
+    },
+    {
+      "id": "edb-physics:PHY-IIg",
+      "subject": "physics",
+      "keyStage": "KS4",
+      "strand": "物理",
+      "unit": "PHY-IIg",
+      "title": "萬有引力",
+      "source": "EDB 課程指引",
+      "topicCount": 6
+    },
+    {
+      "id": "edb-physics:PHY-IVa",
+      "subject": "physics",
+      "keyStage": "KS4",
+      "strand": "物理",
+      "unit": "PHY-IVa",
+      "title": "靜電",
+      "source": "EDB 課程指引",
+      "topicCount": 14
+    },
+    {
+      "id": "edb-physics:PHY-IVb",
+      "subject": "physics",
+      "keyStage": "KS4",
+      "strand": "物理",
+      "unit": "PHY-IVb",
+      "title": "電路和家居用電",
+      "source": "EDB 課程指引",
+      "topicCount": 19
+    },
+    {
+      "id": "edb-physics:PHY-IVc",
+      "subject": "physics",
+      "keyStage": "KS4",
+      "strand": "物理",
+      "unit": "PHY-IVc",
+      "title": "電磁",
+      "source": "EDB 課程指引",
+      "topicCount": 30
+    },
+    {
+      "id": "edb-physics:PHY-Ia",
+      "subject": "physics",
+      "keyStage": "KS4",
+      "strand": "物理",
+      "unit": "PHY-Ia",
+      "title": "溫度、熱和內能",
+      "source": "EDB 課程指引",
+      "topicCount": 11
+    },
+    {
+      "id": "edb-physics:PHY-Ic",
+      "subject": "physics",
+      "keyStage": "KS4",
+      "strand": "物理",
+      "unit": "PHY-Ic",
+      "title": "物態變化",
+      "source": "EDB 課程指引",
+      "topicCount": 2
+    },
+    {
+      "id": "edb-physics:PHY-Id",
+      "subject": "physics",
+      "keyStage": "KS4",
+      "strand": "物理",
+      "unit": "PHY-Id",
+      "title": "氣體",
+      "source": "EDB 課程指引",
+      "topicCount": 6
+    },
+    {
+      "id": "edb-physics:PHY-Va",
+      "subject": "physics",
+      "keyStage": "KS4",
+      "strand": "物理",
+      "unit": "PHY-Va",
+      "title": "輻射與放射現象",
+      "source": "EDB 課程指引",
+      "topicCount": 4
+    },
+    {
+      "id": "edb-physics:PHY-Vb",
+      "subject": "physics",
+      "keyStage": "KS4",
+      "strand": "物理",
+      "unit": "PHY-Vb",
+      "title": "原子模型",
+      "source": "EDB 課程指引",
+      "topicCount": 7
+    },
+    {
+      "id": "edb-physics:PHY-Vc",
+      "subject": "physics",
+      "keyStage": "KS4",
+      "strand": "物理",
+      "unit": "PHY-Vc",
+      "title": "核能",
+      "source": "EDB 課程指引",
+      "topicCount": 4
+    }
+  ]
+}

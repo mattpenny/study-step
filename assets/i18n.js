@@ -118,7 +118,7 @@
         return src.replace(rule[0], repl);
       }
     }
-    // 「小满 · 一年级 · 人教版」这类用 · 拼起来的短标签：逐段翻译，
+    // 「小满 · 中一 · 朗文」这类用 · 拼起来的短标签：逐段翻译，
     // 认不出来的段（人名、章节名这些内容）原样留着。
     if (depth < 3 && text.indexOf(' · ') > 0) {
       var parts = text.split(' · ');

@@ -6,10 +6,10 @@
  *         nextItem(graph, session) -> {topicId, question, attempt} | null   （要出的具体题目；attempt 为 1 或 2）
  *         applyAnswer(graph, session, id, 'correct'|'wrong'|'skip', {text}) -> 新 session（不修改入参）
  *         summarize(graph, session) -> 结果（根因、学习路径、掌握/不稳/薄弱/未测）
- *         gradeTargets(graph, '一年级'|'七上'|'高一'|'选必二', subject?) -> {ids, volumes, label} | null
- *           默认 subject 为 math，不把英语卷进数学的整册；'english' 只取英语（含九全），'physics' 只取物理（八上、八下、九全），'all' 不限学科
+ *         gradeTargets(graph, 'P4'|'小四'|'S1-S3'|'中一至中三', subject?) -> {ids, volumes, label} | null
+ *           范围是香港的学习阶段；subject 默认 math，'all' 不限学科
  *         createSession(graph, ids, {mode:'screen'}) -> 筛查会话：范围 = 目标本身，回溯不出范围，默认题量上限 SCREEN_LIMIT
- *         chapterSummary(graph, session) -> 按章汇总（薄弱章节在前）
+ *         chapterSummary(graph, session) -> 按学习单元汇总（薄弱单元在前）
  *         layout(graph, session, summary) -> 路径图的分层布局
  *         judgeQuestion(question, userText) -> {verdict:'correct'|'wrong'|'manual', reason}
  *         judgeAnswer(user, reference) -> 同上（只按参考答案文本判，旧接口）
@@ -483,28 +483,22 @@
    * 初中："七上 第一章 有理数 1.1" -> {volume:'七上', chapterNo:'第一章', chapterName:'有理数', section:'1.1'}
    * 小学："一年级上册 第1单元 单元名" 或 "一年级上册 综合与实践 活动名"
    */
+  /* 香港：一个学习单元就是「章」。volume 用学习阶段，chapterNo 用单元编号
+   * （1N1 / S11 / PHY-II / S1-S3-Knowledge），chapterName 用单元名。 */
+  function parseUnit(topic) {
+    if (!topic) return { volume: '', chapterNo: '', chapterName: '', section: '' };
+    return {
+      volume: topic.stageLabel || '',
+      chapterNo: topic.unit || '',
+      chapterName: topic.unitName || topic.chapter || '',
+      section: ''
+    };
+  }
+
+  /* 兼容旧接口：传入 topic 对象时走 parseUnit，传入字符串时按原样当单元名。 */
   function parseChapter(chapter) {
-    const s = chapter || '';
-    const pm = /^([一二三四五六七八九])年级([上下全])册 (第\d+单元|预备单元\d) (.+)$/.exec(s);
-    if (pm) return { volume: pm[1] + pm[2], chapterNo: pm[3], chapterName: pm[4], section: '' };
-    const pi = /^([一二三四五六])年级([上下])册 (综合与实践) (.+)$/.exec(s);
-    if (pi) return { volume: pi[1] + pi[2], chapterNo: pi[3], chapterName: pi[4], section: '' };
-    // 高中英语按册名解析，避免「第1单元 Teenage Life」被空格拆成章名和节。
-    const enHs = /^(必修第([一二三])册|选择性必修第([一二三四])册) (欢迎单元|第\d+单元) (.+)$/.exec(s);
-    if (enHs) {
-      return {
-        volume: enHs[2] ? ('必修' + enHs[2]) : ('选必' + enHs[3]),
-        chapterNo: enHs[4],
-        chapterName: enHs[5],
-        section: ''
-      };
-    }
-    // 高中数学不拆上下册。高一/高二是必修两册，选必一/二/三是选择性必修三册。
-    const hs = /^(高[一二]|选必[一二三]) (数学建模|数学探究) (\S+)$/.exec(s);
-    if (hs) return { volume: hs[1], chapterNo: hs[2], chapterName: hs[3], section: '' };
-    const m = /^(\S+) (第\S+章) (\S+?)(?: (\S+))?$/.exec(s);
-    if (!m) return { volume: '', chapterNo: '', chapterName: s, section: '' };
-    return { volume: m[1], chapterNo: m[2], chapterName: m[3], section: m[4] || '' };
+    if (chapter && typeof chapter === 'object') return parseUnit(chapter);
+    return { volume: '', chapterNo: '', chapterName: String(chapter || ''), section: '' };
   }
 
   /** 学科：显式 subject 优先，否则 cne_ 是英语、cnp_ 是物理、cnc_ 是语文，其余算数学。 */
@@ -517,62 +511,25 @@
   }
 
   /**
-   * 整年级 / 整册的知识点：'一年级' = 一上 + 一下，'七上' = 七年级上册。
-   * 高中不拆上下册：'高一' / '高一必修' = 必修第一册，'高二' / '高二必修' = 必修第二册。
-   * '选必一' / '选择性必修第一册'、选必二、选必三 = 选择性必修三册。
-   * 高中英语用「必修一」「必修二」「必修三」「选必四」，不占用数学的「高一」「高二」。
-   * subject 默认 math，避免三上、四上和选必一把英语和数学混在一起。
-   * 不带 subject 时「必修一」没有数学知识点，返回 null。
-   * 返回 {ids, volumes, label}（ids 按 topics 文件顺序，只含正式知识点）；不认识的写法返回 null。
+   * 一个学习阶段的知识点。scope 可以是阶段键（P1…P6 / S1-S3 / S4-S6）或中文标签（小一、中一至中三）。
+   * subject 默认 math；不带 subject 时不会把英语、物理混进来。
+   * 返回 {ids, volumes, label}（ids 按 topics 文件顺序）；不认识的写法返回 null。
    */
   function gradeTargets(graph, scope, subject) {
     const subj = subject == null || subject === '' ? 'math' : subject;
     const key = String(scope == null ? '' : scope).trim();
-    const books = {
-      '高一': ['高一', '高一（必修第一册）'],
-      '高一必修': ['高一', '高一（必修第一册）'],
-      '高二': ['高二', '高二（必修第二册）'],
-      '高二必修': ['高二', '高二（必修第二册）'],
-      '选必一': ['选必一', '选必一（选择性必修第一册）'],
-      '选择性必修第一册': ['选必一', '选必一（选择性必修第一册）'],
-      '选必二': ['选必二', '选必二（选择性必修第二册）'],
-      '选择性必修第二册': ['选必二', '选必二（选择性必修第二册）'],
-      '选必三': ['选必三', '选必三（选择性必修第三册）'],
-      '选择性必修第三册': ['选必三', '选必三（选择性必修第三册）'],
-      '必修一': ['必修一', '必修一（必修第一册）'],
-      '必修第一册': ['必修一', '必修一（必修第一册）'],
-      '必修二': ['必修二', '必修二（必修第二册）'],
-      '必修第二册': ['必修二', '必修二（必修第二册）'],
-      '必修三': ['必修三', '必修三（必修第三册）'],
-      '必修第三册': ['必修三', '必修三（必修第三册）'],
-      '选必四': ['选必四', '选必四（选择性必修第四册）'],
-      '选择性必修第四册': ['选必四', '选必四（选择性必修第四册）']
-    };
-    let volumes = null;
+    if (!key) return null;
+    const ids = [];
     let label = '';
-    if (books[key]) {
-      volumes = [books[key][0]];
-      label = books[key][1];
-    } else {
-      const g = /^([一二三四五六七八九])年级$/.exec(key);
-      const v = /^([一二三四五六七八九])([上下])$/.exec(key);
-      const whole = /^([一二三四五六七八九])全$/.exec(key);
-      if (g) {
-        volumes = [g[1] + '上', g[1] + '下'];
-        if (g[1] === '九') volumes.push('九全');
-        label = g[1] + '年级';
-      } else if (whole) {
-        volumes = [whole[1] + '全'];
-        label = whole[1] + '年级全一册';
-      } else if (v) { volumes = [key]; label = v[1] + '年级' + (v[2] === '上' ? '上册' : '下册'); }
-    }
-    if (!volumes) return null;
-    const ids = graph.topics.filter(function (t) {
-      if (t.external) return false;
-      if (subj !== 'all' && subjectOf(t) !== subj) return false;
-      return volumes.indexOf(parseChapter(t.chapter).volume) >= 0;
-    }).map(function (t) { return t.id; });
-    return ids.length ? { ids: ids, volumes: volumes, label: label } : null;
+    graph.topics.forEach(function (t) {
+      if (t.external) return;
+      if (subj !== 'all' && subjectOf(t) !== subj) return;
+      if (t.stage !== key && t.stageLabel !== key) return;
+      if (!label) label = t.stageLabel || key;
+      ids.push(t.id);
+    });
+    if (!ids.length) return null;
+    return { ids: ids, volumes: [key], label: label };
   }
 
   /**
@@ -585,7 +542,7 @@
     const list = [];
     graph.topics.forEach(function (t) {
       if (t.external || !inOrder.has(t.id)) return;
-      const c = parseChapter(t.chapter);
+      const c = parseUnit(t);
       const key = c.volume + ' ' + c.chapterNo + ' ' + c.chapterName;
       let ch = byKey[key];
       if (!ch) {
@@ -969,6 +926,7 @@
     summarize: summarize,
     layout: layout,
     parseChapter: parseChapter,
+    parseUnit: parseUnit,
     gradeRank: gradeRank,
     resolveTargets: resolveTargets,
     normalizeText: normalizeText,
