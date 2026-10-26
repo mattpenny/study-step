@@ -37,7 +37,7 @@
       "reason": "沒有對應知識點。"
     }
   ],
-  "note": "陷阱：圖形名稱由「邊數」決定，不看大小和方向；長方形、正方形都是四邊形。",
+  "note": "陷阱：圖形名稱由「邊數」決定，不看大小和方向；長方形、正方形都是四邊形。 部分題目附圖（內聯 SVG），圖形選項用 hideChoiceText 只顯示圖。",
   "questions": [
     {
       "id": "cnm_p023_q1",
@@ -186,6 +186,49 @@
       "answer": "8",
       "verify": "4*2",
       "explanation": "每個大正方形用 4 個，2 個就是 4 × 2 = 8 個。"
+    },
+    {
+      "id": "cnm_p023_q5",
+      "topicId": "cnm_p023",
+      "type": "choice",
+      "difficulty": "standard",
+      "prompt": "以下哪一個圖形是四邊形？",
+      "hideChoiceText": true,
+      "choices": [
+        {
+          "key": "A",
+          "text": "三角形",
+          "figure": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 160 160\"><polygon points=\"80,30 20,132 140,132\" fill=\"currentColor\" fill-opacity=\"0.12\" stroke=\"none\"/><polygon points=\"80,30 20,132 140,132\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/></svg>"
+        },
+        {
+          "key": "B",
+          "text": "四邊形",
+          "figure": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 160 160\"><polygon points=\"32,36 128,36 128,124 32,124\" fill=\"currentColor\" fill-opacity=\"0.12\" stroke=\"none\"/><polygon points=\"32,36 128,36 128,124 32,124\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/></svg>"
+        },
+        {
+          "key": "C",
+          "text": "圓形",
+          "figure": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 160 160\"><circle cx=\"80\" cy=\"82\" r=\"50\" fill=\"currentColor\" fill-opacity=\"0.12\" stroke=\"none\"/><circle cx=\"80\" cy=\"82\" r=\"50\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\"/></svg>"
+        },
+        {
+          "key": "D",
+          "text": "六邊形",
+          "figure": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 160 160\"><polygon points=\"135,80 107,128 53,128 25,80 53,32 107,32\" fill=\"currentColor\" fill-opacity=\"0.12\" stroke=\"none\"/><polygon points=\"135,80 107,128 53,128 25,80 53,32 107,32\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/></svg>"
+        }
+      ],
+      "answer": "B",
+      "explanation": "四邊形有 4 條邊。A 有 3 條邊，D 有 6 條邊，C 沒有邊（是曲線圍成的）。"
+    },
+    {
+      "id": "cnm_p023_q6",
+      "topicId": "cnm_p023",
+      "type": "numeric",
+      "difficulty": "advanced",
+      "prompt": "圖中這個圖形有幾條邊？",
+      "figure": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 160 160\"><polygon points=\"96,26 150,72 128,140 60,138 22,66\" fill=\"currentColor\" fill-opacity=\"0.12\" stroke=\"none\"/><polygon points=\"96,26 150,72 128,140 60,138 22,66\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/></svg>",
+      "answer": "5",
+      "verify": "5",
+      "explanation": "逐條數：5 條。圖形斜放不影響它的名稱，仍然是五邊形。"
     }
   ]
 }

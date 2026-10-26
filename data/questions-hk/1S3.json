@@ -20,7 +20,7 @@
       "reason": "抽取時混入了 1E1 增潤課題的內容，不是本單元學習重點。"
     }
   ],
-  "note": "陷阱：換了觀察者，左右會相反（p015 q3）。這是小一最常見的誤解。",
+  "note": "陷阱：換了觀察者，左右會相反（p015 q3）。這是小一最常見的誤解。 部分題目附圖（內聯 SVG），圖形選項用 hideChoiceText 只顯示圖。",
   "questions": [
     {
       "id": "cnm_p015_q1",
@@ -129,6 +129,34 @@
       ],
       "answer": "B",
       "explanation": "小華在小美右邊。"
+    },
+    {
+      "id": "cnm_p015_q5",
+      "topicId": "cnm_p015",
+      "type": "choice",
+      "difficulty": "standard",
+      "prompt": "看圖，球在盒子的哪一邊？",
+      "figure": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 160 160\"><line x1=\"20\" y1=\"140\" x2=\"140\" y2=\"140\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><polygon points=\"50,90 110,90 110,140 50,140\" fill=\"currentColor\" fill-opacity=\"0.12\" stroke=\"none\"/><line x1=\"50\" y1=\"90\" x2=\"110\" y2=\"90\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><line x1=\"110\" y1=\"90\" x2=\"110\" y2=\"140\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><line x1=\"110\" y1=\"140\" x2=\"50\" y2=\"140\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><line x1=\"50\" y1=\"140\" x2=\"50\" y2=\"90\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><circle cx=\"80\" cy=\"62\" r=\"20\" fill=\"currentColor\" fill-opacity=\"0.12\" stroke=\"none\"/><circle cx=\"80\" cy=\"62\" r=\"20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\"/></svg>",
+      "choices": [
+        {
+          "key": "A",
+          "text": "上面"
+        },
+        {
+          "key": "B",
+          "text": "下面"
+        },
+        {
+          "key": "C",
+          "text": "左邊"
+        },
+        {
+          "key": "D",
+          "text": "右邊"
+        }
+      ],
+      "answer": "A",
+      "explanation": "球放在盒子的頂上，所以在盒子的上面。"
     }
   ]
 }

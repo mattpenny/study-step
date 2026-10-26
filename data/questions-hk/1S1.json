@@ -13,7 +13,7 @@
       ]
     }
   ],
-  "note": "香港用語是角柱／圓柱／角錐／圓錐／球；長方體和正方體都是角柱的例子。",
+  "note": "香港用語是角柱／圓柱／角錐／圓錐／球；長方體和正方體都是角柱的例子。 部分題目附圖（內聯 SVG），圖形選項用 hideChoiceText 只顯示圖。",
   "questions": [
     {
       "id": "cnm_p014_q1",
@@ -122,6 +122,38 @@
       ],
       "answer": "A",
       "explanation": "正方體有平平的面，平面與平面貼合就能疊穩。會滾的球和圓柱就疊不穩。"
+    },
+    {
+      "id": "cnm_p014_q5",
+      "topicId": "cnm_p014",
+      "type": "choice",
+      "difficulty": "standard",
+      "prompt": "以下哪一個立體向任何方向都可以滾動？",
+      "hideChoiceText": true,
+      "choices": [
+        {
+          "key": "A",
+          "text": "長方體",
+          "figure": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 160 160\"><polygon points=\"36,56 116,56 116,128 36,128\" fill=\"currentColor\" fill-opacity=\"0.12\" stroke=\"none\"/><line x1=\"36\" y1=\"56\" x2=\"116\" y2=\"56\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><line x1=\"116\" y1=\"56\" x2=\"116\" y2=\"128\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><line x1=\"116\" y1=\"128\" x2=\"36\" y2=\"128\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><line x1=\"36\" y1=\"128\" x2=\"36\" y2=\"56\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><line x1=\"36\" y1=\"56\" x2=\"62\" y2=\"32\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><line x1=\"116\" y1=\"56\" x2=\"142\" y2=\"32\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><line x1=\"62\" y1=\"32\" x2=\"142\" y2=\"32\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><line x1=\"142\" y1=\"32\" x2=\"142\" y2=\"104\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><line x1=\"116\" y1=\"128\" x2=\"142\" y2=\"104\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\" stroke-linecap=\"round\"/></svg>"
+        },
+        {
+          "key": "B",
+          "text": "球",
+          "figure": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 160 160\"><circle cx=\"80\" cy=\"80\" r=\"50\" fill=\"currentColor\" fill-opacity=\"0.12\" stroke=\"none\"/><circle cx=\"80\" cy=\"80\" r=\"50\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\"/><path d=\"M40,62 A52,52 0 0 1 120,62\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\"/></svg>"
+        },
+        {
+          "key": "C",
+          "text": "圓柱",
+          "figure": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 160 160\"><path d=\"M42,46 L42,124 A38,13 0 0 0 118,124 L118,46 Z\" fill=\"currentColor\" fill-opacity=\"0.12\" stroke=\"none\"/><line x1=\"42\" y1=\"46\" x2=\"42\" y2=\"124\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><line x1=\"118\" y1=\"46\" x2=\"118\" y2=\"124\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><path d=\"M42,124 A38,13 0 0 0 118,124\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><ellipse cx=\"80\" cy=\"46\" rx=\"38\" ry=\"13\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\"/></svg>"
+        },
+        {
+          "key": "D",
+          "text": "角錐",
+          "figure": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 160 160\"><path d=\"M80,28 L35,122 A45,14 0 0 0 125,122 Z\" fill=\"currentColor\" fill-opacity=\"0.12\" stroke=\"none\"/><line x1=\"80\" y1=\"28\" x2=\"35\" y2=\"122\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><line x1=\"80\" y1=\"28\" x2=\"125\" y2=\"122\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><path d=\"M35,122 A45,14 0 0 0 125,122\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><path d=\"M35,122 A45,14 0 0 1 125,122\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\"/></svg>"
+        }
+      ],
+      "answer": "B",
+      "explanation": "球的表面到處都是曲面，向任何方向都能滾。圓柱只能向一個方向滾，長方體和角錐有平平的面，滾不動。"
     }
   ]
 }

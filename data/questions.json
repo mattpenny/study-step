@@ -951,6 +951,38 @@
     "explanation": "正方體有平平的面，平面與平面貼合就能疊穩。會滾的球和圓柱就疊不穩。"
   },
   {
+    "id": "cnm_p014_q5",
+    "topicId": "cnm_p014",
+    "type": "choice",
+    "difficulty": "standard",
+    "prompt": "以下哪一個立體向任何方向都可以滾動？",
+    "hideChoiceText": true,
+    "choices": [
+      {
+        "key": "A",
+        "text": "長方體",
+        "figure": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 160 160\"><polygon points=\"36,56 116,56 116,128 36,128\" fill=\"currentColor\" fill-opacity=\"0.12\" stroke=\"none\"/><line x1=\"36\" y1=\"56\" x2=\"116\" y2=\"56\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><line x1=\"116\" y1=\"56\" x2=\"116\" y2=\"128\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><line x1=\"116\" y1=\"128\" x2=\"36\" y2=\"128\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><line x1=\"36\" y1=\"128\" x2=\"36\" y2=\"56\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><line x1=\"36\" y1=\"56\" x2=\"62\" y2=\"32\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><line x1=\"116\" y1=\"56\" x2=\"142\" y2=\"32\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><line x1=\"62\" y1=\"32\" x2=\"142\" y2=\"32\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><line x1=\"142\" y1=\"32\" x2=\"142\" y2=\"104\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><line x1=\"116\" y1=\"128\" x2=\"142\" y2=\"104\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\" stroke-linecap=\"round\"/></svg>"
+      },
+      {
+        "key": "B",
+        "text": "球",
+        "figure": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 160 160\"><circle cx=\"80\" cy=\"80\" r=\"50\" fill=\"currentColor\" fill-opacity=\"0.12\" stroke=\"none\"/><circle cx=\"80\" cy=\"80\" r=\"50\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\"/><path d=\"M40,62 A52,52 0 0 1 120,62\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\"/></svg>"
+      },
+      {
+        "key": "C",
+        "text": "圓柱",
+        "figure": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 160 160\"><path d=\"M42,46 L42,124 A38,13 0 0 0 118,124 L118,46 Z\" fill=\"currentColor\" fill-opacity=\"0.12\" stroke=\"none\"/><line x1=\"42\" y1=\"46\" x2=\"42\" y2=\"124\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><line x1=\"118\" y1=\"46\" x2=\"118\" y2=\"124\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><path d=\"M42,124 A38,13 0 0 0 118,124\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><ellipse cx=\"80\" cy=\"46\" rx=\"38\" ry=\"13\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\"/></svg>"
+      },
+      {
+        "key": "D",
+        "text": "角錐",
+        "figure": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 160 160\"><path d=\"M80,28 L35,122 A45,14 0 0 0 125,122 Z\" fill=\"currentColor\" fill-opacity=\"0.12\" stroke=\"none\"/><line x1=\"80\" y1=\"28\" x2=\"35\" y2=\"122\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><line x1=\"80\" y1=\"28\" x2=\"125\" y2=\"122\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><path d=\"M35,122 A45,14 0 0 0 125,122\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><path d=\"M35,122 A45,14 0 0 1 125,122\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\"/></svg>"
+      }
+    ],
+    "answer": "B",
+    "explanation": "球的表面到處都是曲面，向任何方向都能滾。圓柱只能向一個方向滾，長方體和角錐有平平的面，滾不動。"
+  },
+  {
     "id": "cnm_p015_q1",
     "topicId": "cnm_p015",
     "type": "choice",
@@ -1057,6 +1089,34 @@
     ],
     "answer": "B",
     "explanation": "小華在小美右邊。"
+  },
+  {
+    "id": "cnm_p015_q5",
+    "topicId": "cnm_p015",
+    "type": "choice",
+    "difficulty": "standard",
+    "prompt": "看圖，球在盒子的哪一邊？",
+    "figure": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 160 160\"><line x1=\"20\" y1=\"140\" x2=\"140\" y2=\"140\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><polygon points=\"50,90 110,90 110,140 50,140\" fill=\"currentColor\" fill-opacity=\"0.12\" stroke=\"none\"/><line x1=\"50\" y1=\"90\" x2=\"110\" y2=\"90\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><line x1=\"110\" y1=\"90\" x2=\"110\" y2=\"140\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><line x1=\"110\" y1=\"140\" x2=\"50\" y2=\"140\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><line x1=\"50\" y1=\"140\" x2=\"50\" y2=\"90\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\" stroke-linecap=\"round\"/><circle cx=\"80\" cy=\"62\" r=\"20\" fill=\"currentColor\" fill-opacity=\"0.12\" stroke=\"none\"/><circle cx=\"80\" cy=\"62\" r=\"20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\"/></svg>",
+    "choices": [
+      {
+        "key": "A",
+        "text": "上面"
+      },
+      {
+        "key": "B",
+        "text": "下面"
+      },
+      {
+        "key": "C",
+        "text": "左邊"
+      },
+      {
+        "key": "D",
+        "text": "右邊"
+      }
+    ],
+    "answer": "A",
+    "explanation": "球放在盒子的頂上，所以在盒子的上面。"
   },
   {
     "id": "cnm_p016_q1",
@@ -1615,6 +1675,49 @@
     "answer": "5",
     "verify": "5",
     "explanation": "「五邊形」的名字就說明了它有 5 條邊。"
+  },
+  {
+    "id": "cnm_p023_q5",
+    "topicId": "cnm_p023",
+    "type": "choice",
+    "difficulty": "standard",
+    "prompt": "以下哪一個圖形是四邊形？",
+    "hideChoiceText": true,
+    "choices": [
+      {
+        "key": "A",
+        "text": "三角形",
+        "figure": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 160 160\"><polygon points=\"80,30 20,132 140,132\" fill=\"currentColor\" fill-opacity=\"0.12\" stroke=\"none\"/><polygon points=\"80,30 20,132 140,132\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/></svg>"
+      },
+      {
+        "key": "B",
+        "text": "四邊形",
+        "figure": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 160 160\"><polygon points=\"32,36 128,36 128,124 32,124\" fill=\"currentColor\" fill-opacity=\"0.12\" stroke=\"none\"/><polygon points=\"32,36 128,36 128,124 32,124\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/></svg>"
+      },
+      {
+        "key": "C",
+        "text": "圓形",
+        "figure": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 160 160\"><circle cx=\"80\" cy=\"82\" r=\"50\" fill=\"currentColor\" fill-opacity=\"0.12\" stroke=\"none\"/><circle cx=\"80\" cy=\"82\" r=\"50\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\"/></svg>"
+      },
+      {
+        "key": "D",
+        "text": "六邊形",
+        "figure": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 160 160\"><polygon points=\"135,80 107,128 53,128 25,80 53,32 107,32\" fill=\"currentColor\" fill-opacity=\"0.12\" stroke=\"none\"/><polygon points=\"135,80 107,128 53,128 25,80 53,32 107,32\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/></svg>"
+      }
+    ],
+    "answer": "B",
+    "explanation": "四邊形有 4 條邊。A 有 3 條邊，D 有 6 條邊，C 沒有邊（是曲線圍成的）。"
+  },
+  {
+    "id": "cnm_p023_q6",
+    "topicId": "cnm_p023",
+    "type": "numeric",
+    "difficulty": "advanced",
+    "prompt": "圖中這個圖形有幾條邊？",
+    "figure": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 160 160\"><polygon points=\"96,26 150,72 128,140 60,138 22,66\" fill=\"currentColor\" fill-opacity=\"0.12\" stroke=\"none\"/><polygon points=\"96,26 150,72 128,140 60,138 22,66\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.2\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/></svg>",
+    "answer": "5",
+    "verify": "5",
+    "explanation": "逐條數：5 條。圖形斜放不影響它的名稱，仍然是五邊形。"
   },
   {
     "id": "cnm_p024_q1",
