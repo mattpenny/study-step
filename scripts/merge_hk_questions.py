@@ -158,6 +158,33 @@ def check_unit(doc, path, topic_ids):
             if to_fraction(got) != want:
                 err("%s：verify=%s 算得 %s，与 answer=%s 不符"
                     % (where, expr, got, answer))
+    # 学习重点覆盖：文件若声明了 objectives，就要每个知识点都归属到某一条，
+    # 且每条都要真的有题目 —— 这样「按学习重点覆盖」是可验证的，不靠人记。
+    objs = doc.get("objectives")
+    if objs:
+        declared = {}
+        for o in objs:
+            code = o.get("code")
+            if not code:
+                err("%s：objectives 里有一条没有 code" % unit)
+                continue
+            if not o.get("topics"):
+                err("%s：学习重点 %s 没有挂任何知识点" % (unit, code))
+            for tid in o.get("topics") or []:
+                if tid not in topic_ids:
+                    err("%s：学习重点 %s 挂了不存在的知识点 %s" % (unit, code, tid))
+                elif tid in declared:
+                    err("%s：知识点 %s 同时挂在 %s 和 %s" % (unit, tid, declared[tid], code))
+                else:
+                    declared[tid] = code
+        for tid in by_topic:
+            if tid not in declared:
+                err("%s：知识点 %s 有题目，但没有归到任何一条学习重点" % (unit, tid))
+        for o in objs:
+            code = o.get("code")
+            n = sum(by_topic.get(t, 0) for t in (o.get("topics") or []))
+            if code and not n:
+                err("%s：学习重点 %s 没有题目" % (unit, code))
     return questions
 
 
@@ -183,6 +210,9 @@ def main():
         total += len(qs)
         print("%-6s %-10s %2d 点 %3d 题  %s"
               % (unit, doc.get("unitName", ""), len(topics), len(qs), path.name))
+        for o in doc.get("objectives") or []:
+            n = sum(1 for q in qs if q.get("topicId") in (o.get("topics") or []))
+            print("         %-6s %-28s %2d 题" % (o.get("code"), (o.get("text") or "")[:26], n))
 
     if errors:
         print("\n===== 校验未通过（%d）=====" % len(errors))
